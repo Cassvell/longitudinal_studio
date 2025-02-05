@@ -1,0 +1,113 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Blanc} and {Richmond}(1980)]{blanc_ddyn}
+M.~{Blanc} and A.~D. {Richmond}.
+\newblock {The ionospheric disturbance dynamo}.
+\newblock \emph{Journal of Geophysical Research}, 85\penalty0 (A4):\penalty0
+  1669--1686, April 1980.
+\newblock \href{https://doi.org/10.1029/JA085iA04p01669}{\ttfamily\path{
+  doi:10.1029/JA085iA04p01669}}.
+
+\bibitem[Castellanos-Velazco et~al.(2024)Castellanos-Velazco, Corona-Romero,
+  González-Esparza, Sergeeva, Caccavari-Garza, and
+  Gatica-Acevedo]{CASTELLANOSVELAZCO2024}
+C.I. Castellanos-Velazco, P.~Corona-Romero, J.A. González-Esparza, M.A.
+  Sergeeva, A.L. Caccavari-Garza, and V.J. Gatica-Acevedo.
+\newblock Low latitude geomagnetic response associated with intense geomagnetic
+  storms: Regional space weather in mexico.
+\newblock \emph{Journal of Atmospheric and Solar-Terrestrial Physics},
+  259:\penalty0 106237, 2024.
+\newblock ISSN 1364-6826.
+\newblock
+  \href{https://doi.org/https://doi.org/10.1016/j.jastp.2024.106237}{\ttfamily\path{
+  doi:https://doi.org/10.1016/j.jastp.2024.106237}}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S1364682624000658}.
+
+\bibitem[{Cooper} and {Cowan}(2008)]{cooper_semblance}
+G.~R.~J. {Cooper} and D.~R. {Cowan}.
+\newblock {Comparing time series using wavelet-based semblance analysis}.
+\newblock \emph{Computers and Geosciences}, 34\penalty0 (2):\penalty0 95--102,
+  February 2008.
+\newblock \href{https://doi.org/10.1016/j.cageo.2007.03.009}{\ttfamily\path{
+  doi:10.1016/j.cageo.2007.03.009}}.
+
+\bibitem[{Gjerloev}(2012)]{baseline_Gjerloev}
+J.~W. {Gjerloev}.
+\newblock {The SuperMAG data processing technique}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 117\penalty0
+  (A9):\penalty0 A09213, September 2012.
+\newblock \href{https://doi.org/10.1029/2012JA017683}{\ttfamily\path{
+  doi:10.1029/2012JA017683}}.
+
+\bibitem[INTERMAGNET(2021)]{intermagnet}
+INTERMAGNET.
+\newblock International real-time magnetic observatory network, 2021.
+\newblock URL \url{https://www.intermagnet.org/index-eng.php}.
+
+\bibitem[Knecht and B.M(1985)]{l_handbook_geof_sw_Geom_field}
+D.J Knecht and .~Shuman B.M.
+\newblock \emph{HANDBOOK OF GEOPHYSICS AND THE SPACE ENVIROMENT, chapter 4, THE
+  GEOMAGNETIC FIELD}.
+\newblock ed by A. S. Jursa, Boston: Air Force Geophysics Laborator, 1985.
+
+\bibitem[{Nishida}(1968)]{nishida_68_fluctuations}
+Atsuhiro {Nishida}.
+\newblock {Geomagnetic D$_{p}$ 2 fluctuations and associated magnetospheric
+  phenomena}.
+\newblock \emph{Journal of Geophysical Research}, 73\penalty0 (5):\penalty0
+  1795--1803, March 1968.
+\newblock \href{https://doi.org/10.1029/JA073i005p01795}{\ttfamily\path{
+  doi:10.1029/JA073i005p01795}}.
+
+\bibitem[{Rishbeth} and {Garriott}(1969)]{1969intro_to_iono_p}
+Henry {Rishbeth} and Owen~K. {Garriott}.
+\newblock \emph{{Introduction to ionospheric physics}}.
+\newblock 1969.
+
+\bibitem[Torrence and Compo(1998)]{APracticalGuidetoWaveletAnalysis}
+Christopher Torrence and Gilbert~P. Compo.
+\newblock A practical guide to wavelet analysis.
+\newblock \emph{Bulletin of the American Meteorological Society}, 79\penalty0
+  (1):\penalty0 61 -- 78, 1998.
+\newblock
+  \href{https://doi.org/10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2}{\ttfamily\path{
+  doi:10.1175/1520-0477(1998)079<0061:APGTWA>2.0.CO;2}}.
+\newblock URL
+  \url{https://journals.ametsoc.org/view/journals/bams/79/1/1520-0477_1998_079_0061_apgtwa_2_0_co_2.xml}.
+
+\bibitem[{van de Kamp}(2013)]{vanKampt}
+M.~{van de Kamp}.
+\newblock {Harmonic quiet-day curves as magnetometer baselines for ionospheric
+  current analyses}.
+\newblock \emph{Geoscientific Instrumentation, Methods and Data Systems},
+  2\penalty0 (2):\penalty0 289--304, November 2013.
+\newblock \href{https://doi.org/10.5194/gi-2-289-2013}{\ttfamily\path{
+  doi:10.5194/gi-2-289-2013}}.
+
+\bibitem[{Younas} et~al.(2020){Younas}, {Amory-Mazaudier}, {Khan}, and
+  {Fleury}]{amory2020_filtros}
+W.~{Younas}, C.~{Amory-Mazaudier}, Majid {Khan}, and R.~{Fleury}.
+\newblock {Ionospheric and Magnetic Signatures of a Space Weather Event on
+  25-29 August 2018: CME and HSSWs}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 125\penalty0
+  (8):\penalty0 e27981, August 2020.
+\newblock \href{https://doi.org/10.1029/2020JA027981}{\ttfamily\path{
+  doi:10.1029/2020JA027981}}.
+
+\bibitem[{Younas} et~al.(2021){Younas}, {Amory-Mazaudier}, {Khan}, and {Le
+  Huy}]{amory_younas2021}
+Waqar {Younas}, C.~{Amory-Mazaudier}, Majid {Khan}, and M.~{Le Huy}.
+\newblock {Magnetic Signatures of Ionospheric Disturbance Dynamo for CME and
+  HSSWs Generated Storms}.
+\newblock \emph{Space Weather}, 19\penalty0 (9):\penalty0 e02825, September
+  2021.
+\newblock \href{https://doi.org/10.1029/2021SW002825}{\ttfamily\path{
+  doi:10.1029/2021SW002825}}.
+
+\end{thebibliography}

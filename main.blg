@@ -1,0 +1,97 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: mplainnat.bst
+Database file #1: ref_longstudio.bib
+I was expecting a `,' or a `}'---line 178 of file ref_longstudio.bib
+ :  
+ :  year = "2018"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 697 of file ref_longstudio.bib
+ :  
+ :  doi = {10.29327/2pangeo.a29}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 829 of file ref_longstudio.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 838 of file ref_longstudio.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 846 of file ref_longstudio.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1013 of file ref_longstudio.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1021 of file ref_longstudio.bib
+ :  keywords = "Geomagnetic Index"
+ :                                .
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1110 of file ref_longstudio.bib
+ :  
+ :  % volume = "65",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1135 of file ref_longstudio.bib
+ :  note = "consultado, 2021"
+ :                           .
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1347 of file ref_longstudio.bib
+ :  
+ :  %   subtitle = {Fact Sheet N°282},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1357 of file ref_longstudio.bib
+ :  
+ :  %   subtitle = {Fact Sheet N°282},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty publisher in 1969intro_to_iono_p
+You've used 12 entries,
+            2876 wiz_defined-function locations,
+            713 strings with 7719 characters,
+and the built_in function-call counts, 5329 in all, are:
+= -- 466
+> -- 280
+< -- 9
++ -- 96
+- -- 84
+* -- 461
+:= -- 830
+add.period$ -- 48
+call.type$ -- 12
+change.case$ -- 62
+chr.to.int$ -- 12
+cite$ -- 25
+duplicate$ -- 249
+empty$ -- 459
+format.name$ -- 106
+if$ -- 1113
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 13
+newline$ -- 80
+num.names$ -- 48
+pop$ -- 123
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 175
+stack$ -- 0
+substring$ -- 156
+swap$ -- 19
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 122
+warning$ -- 1
+while$ -- 42
+width$ -- 0
+write$ -- 183
+(There were 11 error messages)
