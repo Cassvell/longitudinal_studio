@@ -6,8 +6,9 @@
 }      % copyright
 
 \usepackage[margin=1in]{geometry} % full-width
-
+\usepackage{caption} % Add this to your preamble
 % AMS Packages
+\usepackage{mathtools}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
@@ -88,7 +89,7 @@
 		\noindent\textbf{Keywords:} Disturbed dynamo, wavelet
 	\end{abstract}
 
-	\tableofcontents
+%	\tableofcontents
 	
 	\section{Introduction}
 	\label{sec:intro}
@@ -96,17 +97,17 @@
 	During geomagnetic storms (GS), one of the responses which arise in the ionosphere is the driving of electric currents. In the case of mid-low geomagnetic latitude ranges, we highlight the presence of the Disturbed dynamo (Ddyn) and the disturbed polar current number 2 (DP2). \\
 	
 	\subsection{Geomagnetic Data}
-	The geomagnetic data analyzed in this paper corresponded to the observatories shown within the Table \ref{tab:obs}. magnetic data can be obtained from INTERMAGNET (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet})  where as it is shown, all the observatories are present within the a narrow range of magnetic latitude ($21 - 33^\circ$). On the other hand, this observatories envelope quite different Universal Time (UT) zones. We have to deal with limitations for the aim of this project due to the lack of data availability for some observatories during the period of interest combined with the absence of observatories at some points. In the end it was decided to divide the longitudinal study in five sectors in function of the UT zones for each observatory:
+	The geomagnetic data analyzed in this paper corresponded to the observatories shown within the Table \ref{tab:obs}. Magnetic data was obtained from INTERMAGNET (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet})  where as it is shown, all the observatories are present within the a narrow range of magnetic latitude ($21 - 33^\circ$). On the other hand, this observatories envelope quite different Universal Time (UT) zones. A limitation for the aim of this project is the lack of availability data from some observatories during the period of interest besides there the absence of points lacking ground based magnetometers due to the geography. In the end it was decided to divide the longitudinal study in five sectors, in function of the UT zones for each observatory:
 	
 	\begin{enumerate}
-		\item sector 1: GUI (UTC 0), TAM (UTC 1) 
-		\item sector 2: JAI (UTC 5:30)
-		\item sector 3: LZH, BMT (UTC 8), CYG, KNY, KAK (UTC 9)
-		\item sector 4: HON (UTC -10)
-		\item sector 5: TEO (UTC -6), SJG (UTC -4) 
+		\item sector 1: GUI (UT 0), TAM (UT 1) 
+		\item sector 2: JAI (UT 5:30)
+		\item sector 3: LZH, BMT (UT 8), CYG, KNY, KAK (UT 9)
+		\item sector 4: HON (UT -10)
+		\item sector 5: TEO (UT -6), SJG (UT -4) 
 	\end{enumerate}
 	
-	Although the distance between each observatory presents a limitation for studying the longitudinal develop of the GS, we can still analyze the response for different time sectors in which each observatory was present during the main phase. 
+	Although the distance between each observatory presents a limitation for analyzing the longitudinal develop of the GS and its regional response, we can still analyze the response within different time sectors in which each observatory was present during the main phase. 
 	
 \begin{table}[htbp]
 	\caption{List of observatories considered for this study.}
@@ -140,16 +141,17 @@
 
 	\section{Methodology}
 	\label{sec:method}
-	\subsection{Processing magnetic data}
+	
 	
 	\subsection{Isolation of magnetic fluctuations of ionospheric origin}
 	According to \cite{1969intro_to_iono_p, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt}, we can approach the recordings of a local magnetometer as:
 	\begin{equation}
 		H_{loc} = H_{SQ} + H_0 + H_{MT} + H_{I},
 	\end{equation}
-	\noindent where $H_{SQ}$ is the diurnal variation and $H_0$ is the monthly baseline. $H_{MT}$ on the other hand are the variations induced due to the magnetospheric currents activity and intensification during GS. Finally, $H_I$ stands for the magnetic variations driven by ionospheric currents activity during a GS.\\
 	
-	For mid-low magnetic latitudes, we can approach roughly enough $H_{MT}$ as $H_{MT} \approx SYM - H \cdot cos(\lambda)$, being $\lambda$ the geomagnetic latitude of certain observatory. Thus $H_I$ can be approached by:
+	\noindent where $H_{SQ}$ is the diurnal variation and $H_0$ is the monthly baseline, we deepen about how we model them in the Appendix \ref{a1}. $H_{MT}$ on the other hand are the variations induced due to the magnetospheric currents activity and intensification during the GS. Finally, $H_I$ stands for the magnetic variations driven by ionospheric currents activity during a GS.\\
+	
+	For mid-low magnetic latitudes, according to \cite{amory2020_filtros}, we can approach roughly enough $H_{MT}$ as $H_{MT} \approx SYM - H \cdot cos(\lambda)$, being $\lambda$ the geomagnetic latitude of each observatory, shown in column 6 of Table \ref{tab:obs}. Thus $H_I$ can be approached by:
 	
 	\begin{equation}
 		H_I = H_{DDEF} + H_{PPEF} \approx H_{loc} - (H_{SQ} + H_0 + SYM-H \cdot cos(\lambda))
@@ -159,35 +161,122 @@
 	
 	
 	\subsection{Time-Frequency Analysis}
-	In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we can proceed from the consideration that both ionospheric currents induce quasi periodic fluctuation \cite{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence we begin with a Fourier Analysis, setting passband filters for fluctuations of periods ~24 h to reconstruct $H_{DDEF}$, meanwhile using highpass filters to reconstruct $H_{PPEF}$.\\
+	In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we can proceed from the consideration that both ionospheric currents induce quasi periodic fluctuations \cite{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence we begin with a Fourier Analysis, setting passband filters for fluctuations of periods ~24 h to reconstruct $H_{DDEF}$, meanwhile using highpass filters to reconstruct $H_{PPEF}$.\\
 	
-	However, from \cite{CASTELLANOSVELAZCO2024} it is concluded the need of compliment the analysis, performing wavelet techniques \cite{APracticalGuidetoWaveletAnalysis}, as shown in \cite{amory_younas2021} where they performed a crosswavelet transform to $H_{SQ}$ and $H_I$. Thus, they applied a semblance analysis \cite{cooper_semblance}. The purpose of such process is to compare to time series ($H_{SQ}$ and $H_I$) which have similar band frequency fluctuations ($f \approx 1.15e-5 Hz$ or $T \approx 24 h$) identify which signal is more correlated to $H_{DDEF}$ activity.\\
+	However, Fourier analysis only give a frequency domain perspective. In order to analyze also the time domain, we perform wavelet techniques \citep{APracticalGuidetoWaveletAnalysis}, as done in \cite{amory_younas2021} in order to compare two time series ($H_{SQ}$ and $H_I$) which have similar band frequency fluctuations ($f \approx 1.15e-5 Hz$ or $T \approx 24 h$). Then identify which signal is more correlated to $H_{DDEF}$ activity.\\
 	
-	
-	For the present paper, we performed a wavelet analysis ($W$), using the Morlet function as mother wavelet. Hence we computed the wavelet spectrum ($|\psi_0|^2$) in order to observe the power of the signal related to $H_I$. As second stage of this time-frequency analysis, we computed the cross-wavelet:
+	In the present paper, we performed a wavelet analysis ($W$), using the Morlet function as the mother wavelet. Hence we computed the wavelet spectrum ($|\psi_0|^2$) in order to observe the power of the signal related to $H_I$. As second stage of this time-frequency analysis, we computed the cross-wavelet:
 	
 	\begin{equation}
 		\label{eq:xwt}
 		W_n^{SQ,H_I}(s) = W_n^{H_{SQ}}(s) W_n^{H_I *}(s),
 	\end{equation}
-	\noindent being $s$ the scale of the wavelet transform, $n$ the index number of each time series. In the right side of equation \ref{eq:xwt} $W_n^{H_{SQ}}(s)$ is the wavelet transform applied to the diurnal variation meanwhile $ W_n^{H_I *}(s)$ is the conjugate of the wavelet transform applied to $H_I$. The output of this crosswavelet transform we are interested in, are the resulting amplitude $\alpha$ and the local phase $\theta$. Hence we carry out a semblance analysis described by the following equation:
+	\noindent being $s$ the scale of the wavelet transform and $n$ the index number of each time series. In the right side of equation \ref{eq:xwt} $W_n^{H_{SQ}}(s)$ is the wavelet transform applied to the diurnal variation meanwhile $ W_n^{H_I *}(s)$ is the conjugate of the wavelet transform applied to $H_I$. The output of this crosswavelet transform we are interested in, are the resulting amplitude $\alpha$ and the local phase $\theta$. Hence we carry out a semblance analysis described by the following equation:
 	
 	\begin{equation}
 		semblance = cos ^n(\theta)
 	\end{equation}
 	
-	\noindent being $n$ an odd integer number greater than 1. For this work we decided to set $n=9$ as tested in \cite{cooper_semblance}. From semblance we can obtain a normalized correlation values ranging between -1 and 1, where values closer to -1 are highly correlated to $H_I$, meanwhile values closer to 1 are more correlated to $H_{SQ}$. however, considering that semblance does not give information about the intensity of neither of the implied signals, we can multiply it by the amplitude $\alpha$ and compute $H_{DDEF}$ likewise:
+	\noindent being $n$ an odd integer number greater than 1. We set $n=9$ as tested in \cite{cooper_semblance}. From semblance we can obtain normalized correlation values ranging between -1 and 1, where the signal closer to -1 is  highly correlated to $H_I$, meanwhile the signal closer to 1 is more correlated to $H_{SQ}$. Considering that semblance does not give information about the intensity of neither of the implied signals, we can multiply it by the amplitude $\alpha$ and compute $H_{DDEF}$ likewise:
 	
 	\begin{equation}
-		H_{DDEF} = \alpha \cdot anticorr(semblance),
+		\label{eq:ddyn}
+		H_{DDEF} = \alpha \cdot semblance; semblance_i \geq 0.
 	\end{equation}
-	\noindent since we are not interested in those signals correlated to $H_{SQ}$. Having the wavelet spectrum $|\psi_0(n)|^2$ which give us the power of the signals and $\alpha \cdot anticorr(semblance)$ which highlights the signal related to $H_{DDEF}$, we can observe not only weather $H_{DDEF}$ variations are present during the event but also, their intensity. 
+	
+	 Having the wavelet spectrum $|\psi_0(n)|^2$ which give us the power of the signals and $\alpha \cdot anticorr(semblance)$ which highlights the signal related to $H_{DDEF}$, we can observe not only weather $H_{DDEF}$ variations are present during the event but also, their intensity. 
 	
 	\section{Results}
 	\label{sec:prev-results}
-	\subsection{Fourier Analysis}
+
+	\subsection{Interplanetary Studio}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\textwidth]{fig/ip_2015-03-15_2015-03-19.eps}
+	\caption{Interplanetary measurements. Panel (a): total interplanetary magnetic field (black line) and z component (red line). Panel (b): $V_X$ component of solar wind velocity (orange line) and proton density (blue line). Panel (c): SYM-H index (green line), highlighting the initial phase (light gray shade), main phase 1 (medium gray shade) and main phase 2 (dark gray shade). Panel (d): Energy input Q(t) (purple line), highlighting with gray and dark gray shade the period of maximum energy input}
+	\label{fig:ip}
+\end{figure}	
+	
+	
+\begin{figure}
+	\centering
+	\includegraphics[width=7.0cm]{fig/magdata/gui_2015-03-15_2015-03-28.eps}   
+	\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-15_2015-03-28.eps} 
+	\includegraphics[width=7.0cm]{fig/magdata/jai_2015-03-15_2015-03-28.eps}  
+	\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-15_2015-03-28.eps}
+	\caption{Geomagnetic observations for each magnetic observatory. top panels show planetary geomagnetic indices SYM-H (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
+	\label{fig:magdata}
+\end{figure}
+
+
+
+\begin{figure}
+	\ContinuedFloat % Continue previous figure
+	\centering
+	
+	\includegraphics[width=7.0cm]{fig/magdata/kny_2015-03-15_2015-03-28.eps}  
+	\includegraphics[width=7.0cm]{fig/magdata/kak_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/teo_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-15_2015-03-28.eps}
+	\caption{Geomagnetic observations for each magnetic observatory. top panels show planetary geomagnetic indices SYM-H (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
+\end{figure}
+
+
+	\subsection{Resconstruction Analysis}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-15_2015-03-28.eps}   
+	\includegraphics[width=7.0cm]{fig/diono_recons/tam_2015-03-15_2015-03-28.eps} 
+	\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-15_2015-03-28.eps}  
+	\includegraphics[width=7.0cm]{fig/diono_recons/lzh_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/bmt_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/cyg_2015-03-15_2015-03-28.eps}		\includegraphics[width=7.0cm]{fig/diono_recons/kny_2015-03-15_2015-03-28.eps}  
+	\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/hon_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/sjg_2015-03-15_2015-03-28.eps}
+	\caption{Geomagnetic observations for each magnetic observatory. top panels show planetary geomagnetic indices SYM-H (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
+\end{figure}
 
 	\subsection{Wavelet Analysis}
+	
+	
+%\usepackage{caption} % Add this to your preamble
+
+\begin{figure}
+	\centering
+	\includegraphics[width=7.0cm]{fig/wavelets/gui_2015-03-15_2015-03-28.eps}   
+	\includegraphics[width=7.0cm]{fig/wavelets/tam_2015-03-15_2015-03-28.eps} 
+	\includegraphics[width=7.0cm]{fig/wavelets/jai_2015-03-15_2015-03-28.eps}  
+	\includegraphics[width=7.0cm]{fig/wavelets/lzh_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/wavelets/bmt_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/wavelets/cyg_2015-03-15_2015-03-28.eps}
+	
+	\caption{Wavelet Analysis. Top panels: Local H magnetic component describing the development of the GS (black line) and ASYM-H index describing asymmetric ring current activity (blue line). Middle panels: wavelet spectrum applied to $H_I$ describing the strength of the ionospheric magnetic contribution signal obtained from $|\psi(n)|^2$. Bottom panels: Ddyn correlation obtained from Eq \ref{eq:ddyn}  (Part 1)}
+	\label{fig:wavelets}
+\end{figure}
+
+
+
+\begin{figure}
+	\ContinuedFloat % Continue previous figure
+	\centering
+
+	\includegraphics[width=7.0cm]{fig/wavelets/kny_2015-03-15_2015-03-28.eps}  
+	\includegraphics[width=7.0cm]{fig/wavelets/kak_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/wavelets/hon_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/wavelets/teo_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/wavelets/sjg_2015-03-15_2015-03-28.eps}
+	
+	\caption{Wavelet Analysis. Top panels: Local H magnetic component describing the development of the GS (black line) and ASYM-H index describing asymmetric ring current activity (blue line). Middle panels: wavelet spectrum applied to $H_I$ describing the strength of the ionospheric magnetic contribution signal obtained from $|\psi(n)|^2$. Bottom panels: Ddyn correlation obtained from Eq \ref{eq:ddyn}  (Part 2)}
+\end{figure}
+
+
+
 	
 	\section{Discussion}
 	
@@ -199,6 +288,47 @@
 	
 	On the other hand, in the results obtained through analyzing magnetic data from observatories within sector 3 which corresponds to LZH, BMT, CYG, KNY and KAK we observe very weak and even null $H_{DDEF}$. This is consistent with [...].\\
 	
+	
+	\appendix
+	\section{Processing magnetic data}
+	\label{a1}
+	%	\subsection{Processing magnetic data}
+	It is important to remove the regular variations present within each magnetic register in order to preserve only the magnetic contributions in which we are interested. The main field $H_0$ which can be removed through modeling a daily monthly baseline, was approximated by computing either the daily mode or a center of a gaussian fit \citep{baseline_Gjerloev} for the local-night magnetic data $H[0:3](t)$. Then, we compute $H_0$ from the median of each daily value in march. To not consider daily values during disturbed days, we filtered them by adapting the procedure in \cite{vanKampt}. Hence, we swift a moving window, computing an hourly the Inter Quantil Range (IQR). To filter the disturbed days, we have to set a threshold of variation, where:
+	\begin{equation}
+		IQR_{med}^i > threshold = disturbed
+	\end{equation}
+	
+	This threshold was set considering the distribution of the IQR picks, from selecting maximum IQR ($IQR_{max}$) by resampling data again using tri-hourly bins.\\
+	
+	To compute the diurnal variation, we looked for what we refer as local quiet days (LQD) for each station. Basically, as done in \cite{vanKampt}, we consider as LQD, the five days with minor daily IQR picks. Then, we compute the average of the H component data during those five quietest days:
+	
+	\begin{equation}
+		\label{eq:lqd}
+		<LDQ_H(t)> = \frac{1}{5} \sum_{i=1}^5 H_i(t) - <H_i[0:3](LT)>
+	\end{equation}
+	\noindent where we normalize the offset of each daily data by sustracting the average of the first 4 hours magnetic data in local time, as explained by the second term in the Equation \ref{eq:lqd}. Hence we model the diurnal variation $H_{SQ}$ from applying a low pass filter following the Equation (1) in \cite{vanKampt} to the Fourier Transform of the result in Equation \ref{eq:lqd}.
+	
+	\section{MC Pherron Equation for Inyection function}
+	
+	\begin{equation}
+		\frac{d E(t)}{d t} = U(t) - \frac{E(t)}{\tau}
+	\end{equation}
+	
+	\begin{equation}
+		\frac{d Dst^*}{dt} = Q(t) - \frac{Dst^* (t)}{\tau}	
+	\end{equation}
+	
+	\begin{equation}
+		offset = Q \Delta t
+	\end{equation}
+	
+	  \begin{equation}
+		Q(nT / h) =
+		\begin{cases*}
+			a(E_Y - 0.5) & $E_Y > 0.5 mV m^{-1}$ \\
+			0       &$ E_Y < 0.5 mV m^{-1}$
+		\end{cases*}
+	\end{equation}
 	
 	\paragraph{Acknowledgements} \lipsum[6]
 	
