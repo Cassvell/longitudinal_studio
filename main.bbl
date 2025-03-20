@@ -1,9 +1,34 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Pen(2008)]{Penetration_Efficiency}
+A modeling study of interplanetary-equatorial electric field penetration
+  efficiency.
+\newblock \emph{Chinese Journal of Geophysics}, 51\penalty0 (5):\penalty0
+  909--915, 2008.
+\newblock
+  \href{https://doi.org/https://doi.org/10.1002/cjg2.1286}{\ttfamily\path{
+  doi:https://doi.org/10.1002/cjg2.1286}}.
+\newblock
+  \href{http://arxiv.org/abs/https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/cjg2.1286}{{\ttfamily
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/cjg2.1286}}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/cjg2.1286}.
+
+\bibitem[{Amory-Mazaudier} et~al.(2017){Amory-Mazaudier}, {Bolaji}, and
+  {Doumbia}]{amorymazaudier_2017}
+C.~{Amory-Mazaudier}, O.~S. {Bolaji}, and V.~{Doumbia}.
+\newblock {On the historical origins of the CEJ, DP2, and Ddyn current systems
+  and their roles in the predictions of ionospheric responses to geomagnetic
+  storms at equatorial latitudes}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 122\penalty0
+  (7):\penalty0 7827--7833, July 2017.
+\newblock \href{https://doi.org/10.1002/2017JA024132}{\ttfamily\path{
+  doi:10.1002/2017JA024132}}.
 
 \bibitem[{Blanc} and {Richmond}(1980)]{blanc_ddyn}
 M.~{Blanc} and A.~D. {Richmond}.
@@ -13,21 +38,14 @@ M.~{Blanc} and A.~D. {Richmond}.
 \newblock \href{https://doi.org/10.1029/JA085iA04p01669}{\ttfamily\path{
   doi:10.1029/JA085iA04p01669}}.
 
-\bibitem[Castellanos-Velazco et~al.(2024)Castellanos-Velazco, Corona-Romero,
-  González-Esparza, Sergeeva, Caccavari-Garza, and
-  Gatica-Acevedo]{CASTELLANOSVELAZCO2024}
-C.I. Castellanos-Velazco, P.~Corona-Romero, J.A. González-Esparza, M.A.
-  Sergeeva, A.L. Caccavari-Garza, and V.J. Gatica-Acevedo.
-\newblock Low latitude geomagnetic response associated with intense geomagnetic
-  storms: Regional space weather in mexico.
-\newblock \emph{Journal of Atmospheric and Solar-Terrestrial Physics},
-  259:\penalty0 106237, 2024.
-\newblock ISSN 1364-6826.
-\newblock
-  \href{https://doi.org/https://doi.org/10.1016/j.jastp.2024.106237}{\ttfamily\path{
-  doi:https://doi.org/10.1016/j.jastp.2024.106237}}.
-\newblock URL
-  \url{https://www.sciencedirect.com/science/article/pii/S1364682624000658}.
+\bibitem[Clauer and McPherron(1974)]{substorm_midlat}
+C.~Robert Clauer and Robert~L. McPherron.
+\newblock Mapping the local time-universal time development of magnetospheric
+  substorms using mid-latitude magnetic observations.
+\newblock \emph{Journal of Geophysical Research}, 79\penalty0 (19):\penalty0
+  2811--2820, 1974.
+\newblock \href{https://doi.org/10.1029/JA079i019p02811}{\ttfamily\path{
+  doi:10.1029/JA079i019p02811}}.
 
 \bibitem[{Cooper} and {Cowan}(2008)]{cooper_semblance}
 G.~R.~J. {Cooper} and D.~R. {Cowan}.
@@ -37,6 +55,15 @@ G.~R.~J. {Cooper} and D.~R. {Cowan}.
 \newblock \href{https://doi.org/10.1016/j.cageo.2007.03.009}{\ttfamily\path{
   doi:10.1016/j.cageo.2007.03.009}}.
 
+\bibitem[C.T~Russell(2016)]{l_russell}
+R.~J.~Strangeway C.T~Russell, J. G.~Luhman.
+\newblock \emph{SPACE PHYSICS AN INTRODUCTION}.
+\newblock Cambridge university press. University Pringting House, Cambridge CB2
+  (BS, United Kingdom,
+\newblock 2016.
+  \href{https://isbnsearch.org/isbn/978-1-107-09882-4}{\ttfamily\path{
+  isbn:978-1-107-09882-4}}.
+
 \bibitem[{Gjerloev}(2012)]{baseline_Gjerloev}
 J.~W. {Gjerloev}.
 \newblock {The SuperMAG data processing technique}.
@@ -45,16 +72,68 @@ J.~W. {Gjerloev}.
 \newblock \href{https://doi.org/10.1029/2012JA017683}{\ttfamily\path{
   doi:10.1029/2012JA017683}}.
 
+\bibitem[{Guerrero} et~al.(2017){Guerrero}, {Palacios}, {Rodr{\'\i}guez-Bouza},
+  {Rodr{\'\i}guez-Bilbao}, {Aran}, {Cid}, {Herraiz}, {Saiz},
+  {Rodr{\'\i}guez-Caderot}, and {Cerrato}]{substorm_stpatrick2}
+A.~{Guerrero}, J.~{Palacios}, M.~{Rodr{\'\i}guez-Bouza},
+  I.~{Rodr{\'\i}guez-Bilbao}, A.~{Aran}, C.~{Cid}, M.~{Herraiz}, E.~{Saiz},
+  G.~{Rodr{\'\i}guez-Caderot}, and Y.~{Cerrato}.
+\newblock {Storm and Substorm Causes and Effects at Midlatitude Location for
+  the St. Patrick's 2013 and 2015 Events}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 122\penalty0
+  (10):\penalty0 9994--10, October 2017.
+\newblock \href{https://doi.org/10.1002/2017JA024224}{\ttfamily\path{
+  doi:10.1002/2017JA024224}}.
+
+\bibitem[{Guineva} et~al.(2019){Guineva}, {Despirak}, and
+  {Kleimenova}]{substorm_stpatrick}
+Veneta {Guineva}, Irina {Despirak}, and Natalia {Kleimenova}.
+\newblock {Substorms manifestation at high and mid-latitudes during two large
+  magnetic storm}.
+\newblock \emph{Aerospace Research in Bulgaria}, 31:\penalty0 27--39, January
+  2019.
+\newblock \href{https://doi.org/10.3897/arb.v31.e03}{\ttfamily\path{
+  doi:10.3897/arb.v31.e03}}.
+
+\bibitem[{Hui} et~al.(2017){Hui}, {Chakrabarty}, {Sekar}, {Reeves},
+  {Yoshikawa}, and {Shiokawa}]{substorm_ppef}
+Debrup {Hui}, D.~{Chakrabarty}, R.~{Sekar}, G.~D. {Reeves}, A.~{Yoshikawa}, and
+  K.~{Shiokawa}.
+\newblock {Contribution of storm time substorms to the prompt electric field
+  disturbances in the equatorial ionosphere}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 122\penalty0
+  (5):\penalty0 5568--5578, May 2017.
+\newblock \href{https://doi.org/10.1002/2016JA023754}{\ttfamily\path{
+  doi:10.1002/2016JA023754}}.
+
 \bibitem[INTERMAGNET(2021)]{intermagnet}
 INTERMAGNET.
 \newblock International real-time magnetic observatory network, 2021.
 \newblock URL \url{https://www.intermagnet.org/index-eng.php}.
 
+\bibitem[{Klimenko} and {Klimenko}(2012)]{klimenko_ddyn}
+M.~V. {Klimenko} and V.~V. {Klimenko}.
+\newblock {Disturbance dynamo, prompt penetration electric field and
+  overshielding in the Earth's ionosphere during geomagnetic storm}.
+\newblock \emph{Journal of Atmospheric and Solar-Terrestrial Physics},
+  90:\penalty0 146--155, December 2012.
+\newblock \href{https://doi.org/10.1016/j.jastp.2012.02.018}{\ttfamily\path{
+  doi:10.1016/j.jastp.2012.02.018}}.
+
 \bibitem[Knecht and B.M(1985)]{l_handbook_geof_sw_Geom_field}
 D.J Knecht and .~Shuman B.M.
-\newblock \emph{HANDBOOK OF GEOPHYSICS AND THE SPACE ENVIROMENT, chapter 4, THE
-  GEOMAGNETIC FIELD}.
+\newblock \emph{Handboor of Geophysics and the Space Enviromnent, chaper 4, The
+  Geomagnetic Field}.
 \newblock ed by A. S. Jursa, Boston: Air Force Geophysics Laborator, 1985.
+
+\bibitem[{Le Huy} and {Amory-Mazaudier}(2005)]{ddyn2005}
+Minh {Le Huy} and Christine {Amory-Mazaudier}.
+\newblock {Magnetic signature of the ionospheric disturbance dynamo at
+  equatorial latitudes: ``D$_{dyn}$''}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 110\penalty0
+  (A10):\penalty0 A10301, October 2005.
+\newblock \href{https://doi.org/10.1029/2004JA010578}{\ttfamily\path{
+  doi:10.1029/2004JA010578}}.
 
 \bibitem[{Nishida}(1968)]{nishida_68_fluctuations}
 Atsuhiro {Nishida}.
@@ -89,6 +168,17 @@ M.~{van de Kamp}.
   2\penalty0 (2):\penalty0 289--304, November 2013.
 \newblock \href{https://doi.org/10.5194/gi-2-289-2013}{\ttfamily\path{
   doi:10.5194/gi-2-289-2013}}.
+
+\bibitem[{Wu} et~al.(2016){Wu}, {Liou}, {Lepping}, {Hutting}, {Plunkett},
+  {Howard}, and {Socker}]{stpatrick_ref}
+Chin-Chun {Wu}, Kan {Liou}, Ronald~P. {Lepping}, Lynn {Hutting}, Simon
+  {Plunkett}, Russ~A. {Howard}, and Dennis {Socker}.
+\newblock {The first super geomagnetic storm of solar cycle 24: ``The St.
+  Patrick's day event (17 March 2015)''}.
+\newblock \emph{Earth, Planets and Space}, 68\penalty0 (1):\penalty0 151,
+  December 2016.
+\newblock \href{https://doi.org/10.1186/s40623-016-0525-y}{\ttfamily\path{
+  doi:10.1186/s40623-016-0525-y}}.
 
 \bibitem[{Younas} et~al.(2020){Younas}, {Amory-Mazaudier}, {Khan}, and
   {Fleury}]{amory2020_filtros}
