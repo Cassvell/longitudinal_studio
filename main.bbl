@@ -1,23 +1,9 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{29}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
-
-\bibitem[Pen(2008)]{Penetration_Efficiency}
-A modeling study of interplanetary-equatorial electric field penetration
-  efficiency.
-\newblock \emph{Chinese Journal of Geophysics}, 51\penalty0 (5):\penalty0
-  909--915, 2008.
-\newblock
-  \href{https://doi.org/https://doi.org/10.1002/cjg2.1286}{\ttfamily\path{
-  doi:https://doi.org/10.1002/cjg2.1286}}.
-\newblock
-  \href{http://arxiv.org/abs/https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/cjg2.1286}{{\ttfamily
-  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1002/cjg2.1286}}.
-\newblock URL
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/cjg2.1286}.
 
 \bibitem[{Amory-Mazaudier} et~al.(2017){Amory-Mazaudier}, {Bolaji}, and
   {Doumbia}]{amorymazaudier_2017}
@@ -30,6 +16,14 @@ C.~{Amory-Mazaudier}, O.~S. {Bolaji}, and V.~{Doumbia}.
 \newblock \href{https://doi.org/10.1002/2017JA024132}{\ttfamily\path{
   doi:10.1002/2017JA024132}}.
 
+\bibitem[Amory-Mazaudier(1982)]{DDEF_detection}
+Christine Amory-Mazaudier.
+\newblock Electric currents above saint-santin. i - data.
+\newblock \emph{Journal of Geophysical Research}, 87:\penalty0 2459--2464, 04
+  1982.
+\newblock \href{https://doi.org/10.1029/JA087iA04p02459}{\ttfamily\path{
+  doi:10.1029/JA087iA04p02459}}.
+
 \bibitem[{Blanc} and {Richmond}(1980)]{blanc_ddyn}
 M.~{Blanc} and A.~D. {Richmond}.
 \newblock {The ionospheric disturbance dynamo}.
@@ -37,15 +31,6 @@ M.~{Blanc} and A.~D. {Richmond}.
   1669--1686, April 1980.
 \newblock \href{https://doi.org/10.1029/JA085iA04p01669}{\ttfamily\path{
   doi:10.1029/JA085iA04p01669}}.
-
-\bibitem[Clauer and McPherron(1974)]{substorm_midlat}
-C.~Robert Clauer and Robert~L. McPherron.
-\newblock Mapping the local time-universal time development of magnetospheric
-  substorms using mid-latitude magnetic observations.
-\newblock \emph{Journal of Geophysical Research}, 79\penalty0 (19):\penalty0
-  2811--2820, 1974.
-\newblock \href{https://doi.org/10.1029/JA079i019p02811}{\ttfamily\path{
-  doi:10.1029/JA079i019p02811}}.
 
 \bibitem[{Cooper} and {Cowan}(2008)]{cooper_semblance}
 G.~R.~J. {Cooper} and D.~R. {Cowan}.
@@ -63,6 +48,20 @@ R.~J.~Strangeway C.T~Russell, J. G.~Luhman.
 \newblock 2016.
   \href{https://isbnsearch.org/isbn/978-1-107-09882-4}{\ttfamily\path{
   isbn:978-1-107-09882-4}}.
+
+\bibitem[Fejer et~al.(1983)Fejer, Larsen, and Farley]{Fejer1983}
+B.~G. Fejer, M.~F. Larsen, and D.~T. Farley.
+\newblock Equatorial disturbance dynamo electric fields.
+\newblock \emph{Geophysical Research Letters}, 10\penalty0 (7):\penalty0
+  537--540, 1983.
+\newblock
+  \href{https://doi.org/https://doi.org/10.1029/GL010i007p00537}{\ttfamily\path{
+  doi:https://doi.org/10.1029/GL010i007p00537}}.
+\newblock
+  \href{http://arxiv.org/abs/https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/GL010i007p00537}{{\ttfamily
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/GL010i007p00537}}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/GL010i007p00537}.
 
 \bibitem[{Gjerloev}(2012)]{baseline_Gjerloev}
 J.~W. {Gjerloev}.
@@ -111,6 +110,23 @@ INTERMAGNET.
 \newblock International real-time magnetic observatory network, 2021.
 \newblock URL \url{https://www.intermagnet.org/index-eng.php}.
 
+\bibitem[Jaggi and Wolf(1973)]{Jaggi1973SelfconsistentCO}
+R.~K. Jaggi and Richard~A. Wolf.
+\newblock Self‐consistent calculation of the motion of a sheet of ions in the
+  magnetosphere.
+\newblock \emph{Journal of Geophysical Research}, 78:\penalty0 2852--2866,
+  1973.
+\newblock URL \url{https://api.semanticscholar.org/CorpusID:121315484}.
+
+\bibitem[{Kelley} et~al.(1979){Kelley}, {Fejer}, and {Gonzales}]{Kelley1979}
+M.~C. {Kelley}, B.~G. {Fejer}, and C.~A. {Gonzales}.
+\newblock {An explanation for anomalous equatorial ionospheric electric fields
+  associated with a northward turning of the interplanetary magnetic field}.
+\newblock \emph{Geophysical Research Letters}, 6\penalty0 (4):\penalty0
+  301--304, April 1979.
+\newblock \href{https://doi.org/10.1029/GL006i004p00301}{\ttfamily\path{
+  doi:10.1029/GL006i004p00301}}.
+
 \bibitem[{Klimenko} and {Klimenko}(2012)]{klimenko_ddyn}
 M.~V. {Klimenko} and V.~V. {Klimenko}.
 \newblock {Disturbance dynamo, prompt penetration electric field and
@@ -135,12 +151,40 @@ Minh {Le Huy} and Christine {Amory-Mazaudier}.
 \newblock \href{https://doi.org/10.1029/2004JA010578}{\ttfamily\path{
   doi:10.1029/2004JA010578}}.
 
-\bibitem[{Nishida}(1968)]{nishida_68_fluctuations}
+\bibitem[{Le Huy} and {Amory-Mazaudier}(2008)]{ddyn_diag2}
+Minh {Le Huy} and Christine {Amory-Mazaudier}.
+\newblock {Planetary magnetic signature of the storm wind disturbance dynamo
+  currents: D$_{dyn}$}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 113\penalty0
+  (A2):\penalty0 A02312, February 2008.
+\newblock \href{https://doi.org/10.1029/2007JA012686}{\ttfamily\path{
+  doi:10.1029/2007JA012686}}.
+
+\bibitem[{Liu} et~al.(2013){Liu}, {Yang}, {Lin}, {Chen}, and
+  {Lee}]{statist_iono}
+J.~Y. {Liu}, W.~H. {Yang}, C.~H. {Lin}, Y.~I. {Chen}, and I.~T. {Lee}.
+\newblock {A statistical study on the characteristics of ionospheric storms in
+  the equatorial ionization anomaly region: GPS-TEC observed over Taiwan}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 118\penalty0
+  (6):\penalty0 3856--3865, June 2013.
+\newblock \href{https://doi.org/10.1002/jgra.50366}{\ttfamily\path{
+  doi:10.1002/jgra.50366}}.
+
+\bibitem[{Nishida}(1968{\natexlab{a}})]{nishida_68_coherence}
+Atsuhiro {Nishida}.
+\newblock {Coherence of geomagnetic DP 2 fluctuations with interplanetary
+  magnetic variations}.
+\newblock \emph{Journal of Geophysical Research}, 73\penalty0 (17):\penalty0
+  5549--5559, September 1968{\natexlab{a}}.
+\newblock \href{https://doi.org/10.1029/JA073i017p05549}{\ttfamily\path{
+  doi:10.1029/JA073i017p05549}}.
+
+\bibitem[{Nishida}(1968{\natexlab{b}})]{nishida_68_fluctuations}
 Atsuhiro {Nishida}.
 \newblock {Geomagnetic D$_{p}$ 2 fluctuations and associated magnetospheric
   phenomena}.
 \newblock \emph{Journal of Geophysical Research}, 73\penalty0 (5):\penalty0
-  1795--1803, March 1968.
+  1795--1803, March 1968{\natexlab{b}}.
 \newblock \href{https://doi.org/10.1029/JA073i005p01795}{\ttfamily\path{
   doi:10.1029/JA073i005p01795}}.
 
@@ -168,6 +212,28 @@ M.~{van de Kamp}.
   2\penalty0 (2):\penalty0 289--304, November 2013.
 \newblock \href{https://doi.org/10.5194/gi-2-289-2013}{\ttfamily\path{
   doi:10.5194/gi-2-289-2013}}.
+
+\bibitem[Vasyliunas(1970)]{PPEF_prediction}
+Vytenis~M. Vasyliunas.
+\newblock Mathematical models of magnetospheric convection and its coupling to
+  the ionosphere.
+\newblock In B.~M. McCormac, editor, \emph{Particles and Fields in the
+  Magnetosphere}, pages 60--71, Dordrecht, 1970.
+\newblock Springer Netherlands.
+  \href{https://isbnsearch.org/isbn/978-94-010-3284-1}{\ttfamily\path{
+  isbn:978-94-010-3284-1}}.
+
+\bibitem[Wei et~al.(2015)Wei, Zhao, Li, and Wan]{PPEF_review}
+Yong Wei, Biqiang Zhao, Guozhu Li, and Weixing Wan.
+\newblock Electric field penetration into earth’s ionosphere: a brief review
+  for 2000–2013.
+\newblock \emph{Science Bulletin}, 60\penalty0 (8):\penalty0 748--761, 2015.
+\newblock ISSN 2095-9273.
+\newblock
+  \href{https://doi.org/https://doi.org/10.1007/s11434-015-0749-4}{\ttfamily\path{
+  doi:https://doi.org/10.1007/s11434-015-0749-4}}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S2095927316304376}.
 
 \bibitem[{Wu} et~al.(2016){Wu}, {Liou}, {Lepping}, {Hutting}, {Plunkett},
   {Howard}, and {Socker}]{stpatrick_ref}
@@ -199,5 +265,16 @@ Waqar {Younas}, C.~{Amory-Mazaudier}, Majid {Khan}, and M.~{Le Huy}.
   2021.
 \newblock \href{https://doi.org/10.1029/2021SW002825}{\ttfamily\path{
   doi:10.1029/2021SW002825}}.
+
+\bibitem[{Zaka} et~al.(2009){Zaka}, {Kobea}, {Assamoi}, {Obrou}, {Doumbia},
+  {Boka}, {Adohi}, and {Mene}]{angeoddyn}
+K.~Z. {Zaka}, A.~T. {Kobea}, P.~{Assamoi}, O.~K. {Obrou}, V.~{Doumbia},
+  K.~{Boka}, B.~J.~P. {Adohi}, and N.~M. {Mene}.
+\newblock {Latitudinal profile of the ionospheric disturbance dynamo magnetic
+  signature: comparison with the DP2 magnetic disturbance}.
+\newblock \emph{Annales Geophysicae}, 27\penalty0 (9):\penalty0 3523--3536,
+  September 2009.
+\newblock \href{https://doi.org/10.5194/angeo-27-3523-2009}{\ttfamily\path{
+  doi:10.5194/angeo-27-3523-2009}}.
 
 \end{thebibliography}
