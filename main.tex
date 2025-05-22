@@ -107,26 +107,30 @@ During the Main Phase (MP) of a GS, energy and charged particles are transported
 The concept of PPEF was first introduced by \cite{nishida_68_fluctuations, nishida_68_coherence}, who observed periodic magnetic fluctuations between 4 hours and 30 minutes in ground magnetometers located around the auroral oval and the dip equator, both showing nearly identical fluctuations. Later, \cite{PPEF_prediction, Jaggi1973SelfconsistentCO} developed the first model explaining the penetration of convective electric fields ($\mathbf{E_C}$) during disturbed periods, propagating through Region 1 Field-Aligned Currents (R1-FAC). During quiet periods, $\mathbf{E_C}$ is shielded by a polarized electric field induced by Region 2 Field-Aligned Currents (R2-FAC). However, during the MP of a GS, magnetic reconnection leads to an almost immediate intensification of R1-FAC activity due to the injection of solar wind particles and energy. Since R2-FAC depends on ring current activity to strengthen, it initially fails the shielding of $\mathbf{E_C}$, allowing its transfer to the ionosphere through R1-FAC. This process continues until R2-FAC intensifies its activity though the intensification of ring current, allowing R2-FAC balancing R1-FAC activity, which can take from tens of minutes to several hours \citep{PPEF_review}. During this period of imbalance, $\mathbf{E_C}$ penetrates into the mid- and low-latitude ionosphere, being that the reason for be called Penetration Electric fields. Furthermore, \cite{Kelley1979, PPEF_review} showed that PPEF depends on the southward orientation of the interplanetary magnetic field (IMF) component $B_Z$ and can also be triggered by sharp directional changes in $B_Z$.\\
 
 
-DDEF is associated with an ionospheric current of charged particles injected into the auroral ionosphere, Joule heating occurs, leading to the circulation of equatorward thermospheric winds that drag charged particles (protons) \cite{blanc_ddyn}. When. This charge separation induces a Pedersen current in the same direction, and to the Coriolis effect, proton accumulation and westward circulation occur around the dip equator, generating a poleward electric field. Consequently, a second Pedersen current is induced in the poleward direction, opposing the first current. The above commented phenomena, at mid-latitudes ($\approx 40^\circ$), Hall currents are induced and then interrupted at their terminals and close at adjacent latitudes. This process results in vortex-shaped currents known as the Disturbed Dynamo, characterized by directions opposite to the Solar Quiet (SQ) current. For this reason, the disturbed dynamo is also referred to as the anti-SQ current.\\
+DDEF is associated with an ionospheric current of charged particles injected into the auroral ionosphere, Joule heating occurs, leading to the circulation of equatorward thermospheric winds that drag charged particles (protons) \cite{blanc_ddyn}. When. This charge separation induces a Pedersen current in the same direction, and to the Coriolis effect, proton accumulation and westward circulation occur around the dip equator, generating a poleward electric field. Consequently, a second Pedersen current is induced in the poleward direction, opposing the first current. The above commented phenomena, at mid-latitudes ($\sim 40^\circ$), Hall currents are induced and then interrupted at their terminals and close at adjacent latitudes. This process results in vortex-shaped currents known as the Disturbed Dynamo, characterized by directions opposite to the Solar Quiet (SQ) current. For this reason, the disturbed dynamo is also referred to as the anti-SQ current.\\
 
-Both PPEF and DDEF were studied by \cite{Fejer1983}, who observed their effects using incoherent scatter radar at Jicamarca. Later, \cite{DDEF_detection} detected DDEF above Saint-Santin, with results consistent with the disturbed dynamo model. The first study of magnetic signatures related to DDEF and PPEF was conducted by \cite{ddyn2005}, who modeled the magnetic field associated with ionospheric disturbances resulting from DDEF and PPEF contributions. To distinguish between both effects, \cite{ddyn2005} considered that during the MP, the primary magnetic field contribution comes from PPEF, whereas during the recovery phase (RP), regional magnetic field variations are mainly driven by DDEF. Since this initial approach, several studies \citep{ddyn_diag2, angeoddyn} have focused on analyzing local responses at different latitudes and longitudes. In \cite{statist_iono}, a statistical study was conducted to understand ionospheric responses as a function of local sectors during GS onset. Later, \cite{amory2020_filtros} proposed using Fourier analysis to isolate magnetic fluctuations related to DDEF and PPEF based on their quasi-periodic behavior, identifying periods of approximately 24 hours for DDEF and less than 4 hours for PPEF. Finally, \cite{amory_younas2021} combined cross-wavelet analysis \citep{APracticalGuidetoWaveletAnalysis} with semblance analysis \citep{cooper_semblance} to highlight DDEF magnetic signatures while filtering out other sources with similar fluctuation periods. \\
+Both PPEF and DDEF were studied by \cite{Fejer1983}, who observed their effects using incoherent scatter radar at Jicamarca latitude. Later, \cite{DDEF_detection} detected DDEF above Saint-Santin latitude, with results consistent with the disturbed dynamo model. Later \cite{ddyn2005}, who modeled the magnetic field associated with ionospheric disturbances resulting from DDEF and PPEF contributions. To distinguish between both effects, \cite{ddyn2005} considered that during the MP, the primary magnetic field contribution comes from PPEF, whereas during the recovery phase (RP), regional magnetic field variations are mainly driven by DDEF. Following this initial approach, several studies \citep{ddyn_diag2, angeoddyn} have focused on analyzing local responses at different latitudes and longitudes to analyze the different local responses associate to DDEF phenomena. In \cite{statist_iono}, a statistical study was conducted to understand ionospheric responses as a function of local sectors during GS onset. Later, \cite{amory2020_filtros} proposed using Fourier analysis to isolate magnetic fluctuations related to DDEF and PPEF based on their quasi-periodic behavior, identifying periods of approximately 24 hours for DDEF and less than 4 hours for PPEF. Finally, \cite{amory_younas2021} combined cross-wavelet analysis \citep{APracticalGuidetoWaveletAnalysis} with semblance analysis \citep{cooper_semblance} to highlight DDEF magnetic signatures while filtering out other sources with similar fluctuation periods. \\
 
-In this paper, we adapt the approach of \cite{amory_younas2021} to analyze DDEF and PPEF magnetic signatures at different longitudes during the geomagnetic storm (GS) known as the St. Patrick's event on March $\mathrm{17-18^{th}}$. This event is recognized as the strongest GS of the $24^{th}$ solar cycle. The selected ground magnetometers are located at 11 magnetic observatories distributed across different time zones while maintaining a similar magnetic latitude. Interplanetary data were obtained from the OMNIWeb database (\url{https://omniweb.gsfc.nasa.gov/form/omni_min.html}), and geomagnetic indices were downloaded from the ISGI database (\url{https://isgi.unistra.fr/data_download.php}).\\
+In this paper, we adapt the approach of \cite{amory_younas2021} to analyze DDEF and PPEF magnetic signatures at different longitudes during the geomagnetic storm (GS) known as the St. Patrick's event on March $\mathrm{17-18^{th}}$. This event is recognized as the strongest GS of the $24^{th}$ solar cycle. The selected ground magnetometers are located at 11 magnetic observatories distributed across different time zones while maintaining a similar magnetic latitude.\\
 
 		
-	\subsection{Interplanetary Observations}
-	
-	From Figure \ref{fig:ip}, we present a brief description of the trigger event that led to the St. Patrick's GS. A more detailed description of the trigger event is provided by \cite{stpatrick_ref}. \\  
+\section{St. Patrick Geomagnetic Storm}
 
-	Panel (a) shows the Interplanetary Magnetic Field $B_T$ (black line) and its component $B_Z$ (red line). Panels (b) and (c), on the other hand, present a few properties of the solar wind (SW), including its flow speed $V_X$ (here taken as positive in the anti-sunward direction, black line), the proton temperature (blue line), and the proton density (orange line), as well as the Interplanetary Electric Field, which results from $V_X \times B_Z$. Finally, in panel (e), we present the planetary geomagnetic response, represented by the geomagnetic index SYM-H (green line). \\
+[Introduction]\\
+
+\subsection{Interplanetary Precursor}
+
+From Figure \ref{fig:ip}, we present a brief description of the trigger event that led to the St. Patrick's GS. A more detailed description of the trigger event is provided by \cite{stpatrick_ref}. \\  
+
+Panel (a) shows the Interplanetary Magnetic Field $B_T$ (black line) and its component $B_Z$ (red line). Panels (b) and (c), on the other hand, present a few properties of the solar wind (SW), including its flow speed $V_X$ (here taken as positive in the anti-sunward direction, black line), the proton temperature (blue line), and the proton density (orange line), as well as the Interplanetary Electric Field, which results from $V_X \times B_Z$. Finally, in panel (e), we present the planetary geomagnetic response, represented by the geomagnetic index SYM-H (green line). \\
 
 	
-	The trigger event was highlighted using three vertical dashed lines within panels (a)–(d), as shown in Figure \ref{fig:ip}. The first dashed line (from left to right) indicates the arrival of the Interplanetary Shock (IPS) at 0430 UT, detected at L1. The IPS signature is clearly seen as a step-like effect in $B_T$ and $B_Z$, as well as in the solar wind speed $V_X$ and proton density $n_P$, while it is less noticeable in $T_P$. The arrival of the IPS in Earth's near-space environment led to a compression effect on the dayside magnetosphere, resulting in a temporary enhancement of Earth's H-component magnetic field. This enhancement is seen in the SYM-H index between 0430 and 0700 UT in panel (e), highlighted by light gray shading, and is known as Sudden Storm Commencement (SSC). \\  
+The trigger event was highlighted using three vertical dashed lines within panels (a)–(d), as shown in Figure \ref{fig:ip}. The first dashed line (from left to right) indicates the arrival of the Interplanetary Shock (IPS) at 0430 UT, detected at L1. The IPS signature is clearly seen as a step-like effect in $B_T$ and $B_Z$, as well as in the solar wind speed $V_X$ and proton density $n_P$, while it is less noticeable in $T_P$. The arrival of the IPS in Earth's near-space environment led to a compression effect on the magnetosphere, resulting in a temporary enhancement of Earth's magnetic field. This enhancement is seen in the SYM-H index between 0430 and 0700 UT in panel (e), highlighted by light gray shading, and is known as Sudden Storm Commencement (SSC). \\  
 	
-	Later, the arrival of a CME's sheath was identified by the highly fluctuating behavior of $B_T$ and $B_Z$, as well as an enhancement in $n_P$ and $T$, which are characteristic of a sheath region. It is important to note that the $B_Z$ component changes direction southward between 0600 and 0900 UT, reaching minimum values around -18 nT. Consequently, there is a downward trend in the SYM-H index (panel e), marking the beginning of the main phase (MP) until 0900 UT, when the $B_Z$ component shifts northward. The minimum SYM-H value reached during this period is approximately -80 nT. In panel (f), we observe the onset of activity in the injection function $Q(t)$. This parameter can be used as an indicator of energy input into the ring current during the reconnection process. \\
+	Later, the arrival of a CME's sheath was identified by the highly fluctuating behavior of $B_T$ and $B_Z$, as well as an enhancement in $n_P$ and $T$, which are characteristic of a sheath region. It is important to note that the $B_Z$ component changes direction southward between 0600 and 0900 UT, reaching minimum values around -18 nT. Consequently, there is a downward trend in the SYM-H index (panel e), marking the beginning of the main phase (MP) until 0900 UT, when the $B_Z$ component shifts northward. The minimum SYM-H value reached during this period is approximately -80 nT. \\
 
 	
-	Finally, we indicate the crossing of the CME near 1400 UT (marked by the second dashed line). As indicators, we highlight a less fluctuating behavior in $B_T$ and $B_Z$, as well as a decrease in temperature in panel (d). With the arrival of the CME, a new period of southward $B_Z$ begins, leading to a second phase of magnetic reconnection. Consequently, we observe a second decrease in the SYM-H index from 1200 UT until 2300 UT, reaching a minimum value of -228 nT. The entire MP period is highlighted by gray shading in panel (e).  In panel (f), we highlight the period of interest with light gray shading, where we observe higher injection due to the MP. According to \cite{klimenko_ddyn}, $H_{PPEF}$ fluctuations can also be induced during sudden and sharp northward changes in $B_Z$; therefore, we also highlight periods of sharp decay in $Q(t)$.  When $B_Z$ turns northward again, marking the beginning of the recovery phase, it is highlighted by the third dashed vertical line.\\
+	Finally, we indicate the crossing of the CME near 1400 UT (marked by the second dashed line). As indicators, we highlight a less fluctuating behavior in $B_T$ and $B_Z$, as well as a decrease in temperature in panel (d). With the arrival of the CME, a new period of southward $B_Z$ begins, leading to a second phase of magnetic reconnection. Consequently, we observe a second decrease in the SYM-H index from 1200 UT until 2300 UT, reaching a minimum value of -228 nT. The entire MP period is highlighted by gray shading in panel (e).  In panel (f), we highlight the period of interest with light gray shading, where we observe higher injection due to the MP.\\
 	
 	\begin{figure}
 		\centering
@@ -134,10 +138,13 @@ In this paper, we adapt the approach of \cite{amory_younas2021} to analyze DDEF 
 		\caption{Interplanetary measurements. Panel (a): interplanetary magnetic field total component (black line) and z component (red line). Panel (b): $V_X$ component of solar wind velocity (black line) and Interplanetary Electric Field (blue line). Panel (c): Proton Temperature (blue line) and Proton Density (orange line). Panel (d): SYM-H index (green line), highlighting the initial phase (light gray shade), main phase 1 (medium gray shade) and main phase 2 (dark gray shade).}
 		\label{fig:ip}
 	\end{figure}	
-	
-	
-	\subsection{Geomagnetic Data}
-	
+
+
+\section{Analysis}
+\label{sec:method}
+
+\subsection{Geomagnetic Data}
+
 The geomagnetic data analyzed in this paper were downloaded from the INTERMAGNET public database (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet}), corresponding to the observatories (OB) listed in Table \ref{tab:obs}. Each OB is located within a narrow range of magnetic latitude ($21 - 33^\circ$). They are located also at different Universal Time (UT) zones.\\  
 
 Considering that some OBs are closer to others, the longitudinal study was divided into five zones based on the UT of each OB:  
@@ -152,12 +159,12 @@ Considering that some OBs are closer to others, the longitudinal study was divid
 
 Although the distance between each OB presents a limitation for analyzing the longitudinal development of the GS, we can still examine the response within different time zones in which each OB was located during the MP. \\
 
-	
+
 \begin{table}[htbp]
 	\caption{List of observatories considered for this study.}
 	\begin{tabular}{lccccccc}
 		\hline
-		Country & \multicolumn{1}{l}{Observatory} & \multicolumn{1}{l}{IAGA code} & \multicolumn{1}{l}{geographic } & \multicolumn{1}{l}{geographyc } & \multicolumn{1}{l}{magnetic} & \multicolumn{1}{l}{magnetic } & \multicolumn{1}{l}{UT} \\ 
+		Country/ & \multicolumn{1}{l}{Observatory} & \multicolumn{1}{l}{IAGA code} & \multicolumn{1}{l}{geographic } & \multicolumn{1}{l}{geographyc } & \multicolumn{1}{l}{magnetic} & \multicolumn{1}{l}{magnetic } & \multicolumn{1}{l}{UT Zone} \\ Territory
 		& \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{latitude} & \multicolumn{1}{l}{longitude} & \multicolumn{1}{l}{latitude} & \multicolumn{1}{l}{longitude} & \multicolumn{1}{l}{h} \\ \hline
 		China & Beijing & BMT & 40.3 N & 116.2 E & 30.53 N & 172 W & 8 \\ 
 		South Korea & Cheongyang & CYG & 36.37 N & 126.854 E & 27 N & 162.43 W & 9 \\ 
@@ -180,36 +187,32 @@ Although the distance between each OB presents a limitation for analyzing the lo
 	\caption{Geographic position of every magnetic OB considered for this study. The color code corresponds to different local time regions: blue (UT 0, 1), green (UT 5:30), yellow (UT 8, 9), orange (UT -10), red (-6, -4).}
 	\label{fig:map}
 \end{figure}
-
-
-	\section{Methodology}
-	\label{sec:method}
 	
 	
 	\subsection{Magnetic fluctuations of ionospheric origin}
 	
-According to \cite{1969intro_to_iono_p, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt}, recordings of a ground magnetometer can be considered a linear combination of different geomagnetic sources due to the superposition law:
+It is well accepted that \citep{1969intro_to_iono_p, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt} local recordings $H_{loc}$ of a ground magnetometer can be considered a linear combination of different geomagnetic sources:
 
 \begin{equation}
 	H_{loc} = H_{SQ} + H_0 + H_{MT} + H_{I},
 \end{equation}
 
-\noindent where $H_{SQ}$ represents the diurnal variation and $H_0$ is the main field during a month window. Thus, the local geomagnetic response during a GS is given by:
+\noindent where $H_{SQ}$ represents the diurnal variation and $H_0$ is the main field during a month window. $H_{MT}$ represents the variations induced by the intensification of magnetospheric currents during the GS. Finally, $H_I$ corresponds to the magnetic variations driven by ionospheric current activity during a GS. Thus, the local geomagnetic response during a GS is given by:
 
 \begin{equation}
 	\Delta H = H_{loc} - (H_{SQ} + H_0).
 \end{equation}
 
-We provide a detailed explanation of how we model the regular variations in Appendix \ref{a1}. On the other hand, $H_{MT}$ represents the variations induced by the intensification of magnetospheric currents during the GS. Finally, $H_I$ corresponds to the magnetic variations driven by ionospheric current activity during a GS, which is the primary focus of our study.\\
+We provide a detailed explanation of how we model the regular variations in Appendix \ref{a1}.\\
 
 	
-According to \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}, for mid-low magnetic latitudes, we can approximate $H_{MT}$ as  
+From \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}, for mid-low magnetic latitudes, with $\lambda$ as the geomagnetic latitude of each OB, we can approximate $H_{MT}$ as:
 
 \begin{equation}
-	H_{MT} \approx SYM - H \cdot \cos(\lambda),
+	H_{MT} \approx SYMH \cdot \cos(\lambda),
 \end{equation}
 
-\noindent where $\lambda$ is the geomagnetic latitude of each OB, as shown in column 6 of Table \ref{tab:obs}. Thus, $H_I$ can be approximated as:  
+\noindent Thus, $H_I$ can be approximated as:  
 
 \begin{equation}
 	\label{eq:H_I}
@@ -219,13 +222,10 @@ According to \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}, for mid-lo
 \noindent where $H_{DDEF}$ and $H_{PPEF}$ represent the magnetic fields associated with the disturbed dynamo electric fields and the prompt penetration electric fields, respectively. \\
 
 	
-	
-	\subsection{Time-Frequency Analysis}
-	
-In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we proceed under the assumption that both ionospheric currents drive quasi-periodic fluctuations \cite{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence, we begin with a Fourier analysis, applying passband filters to extract fluctuations with frequencies around $11.5 \mu \text{Hz}$ (corresponding to ~24-hour periods) to reconstruct $H_{DDEF}$.   For $H_{PPEF}$, we apply high-pass filters for frequencies higher than $69.5 \mu \text{Hz}$ (corresponding to periods $\leq$ 4 hours). \\
+In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we proceed under the assumption that both ionospheric currents drive quasi-periodic fluctuations \citep{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence, we begin with a Fourier analysis, applying passband filters to extract fluctuations with frequencies around $11.5 \mu \text{Hz}$ (~24-hour periods) to reconstruct $H_{DDEF}$.   For $H_{PPEF}$, we apply high-pass filters for frequencies higher than $69.5 \mu \text{Hz}$ (corresponding to periods $\leq$ 4 hours). \\
 
 	
-However, Fourier analysis provides only a frequency-domain perspective. To also analyze the time domain, we apply wavelet techniques \citep{APracticalGuidetoWaveletAnalysis}, as done in \cite{amory_younas2021}, where they compare two time series ($H_{SQ}$ and $H_I$) with similar band frequency fluctuations ($f \approx 1.15 \times 10^{-5}$ Hz or $T \approx 24$ h). The goal is to identify which signal is more anti-correlated with $H_{SQ}$ and, consequently, more correlated with $H_{DDEF}$ activity. \\
+Additionally, with the purpose of analyze the time domain, we apply wavelet techniques \citep{APracticalGuidetoWaveletAnalysis}, following \cite{amory_younas2021}, where they compare two time series ($H_{SQ}$ and $H_I$) with similar band frequency fluctuations. The goal is to identify which signal is more anti-correlated with $H_{SQ}$ and, consequently, more correlated with $H_{DDEF}$ activity. \\
 
 More specifically, we perform a wavelet analysis ($W$) \cmmnt{, using the Morlet function as the mother wavelet}, computing the wavelet spectrum ($|\psi_0|^2$) to highlight the power of the signal related to $H_I$. As a second step, we compute the cross-wavelet transform (XWT) as described in \cite{APracticalGuidetoWaveletAnalysis}:  
 
