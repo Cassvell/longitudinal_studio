@@ -227,16 +227,16 @@ In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we proceed under 
 	
 Additionally, with the purpose of analyze the time domain, we apply wavelet techniques \citep{APracticalGuidetoWaveletAnalysis}, following \cite{amory_younas2021}, where they compare two time series ($H_{SQ}$ and $H_I$) with similar band frequency fluctuations. The goal is to identify which signal is more anti-correlated with $H_{SQ}$ and, consequently, more correlated with $H_{DDEF}$ activity. \\
 
-More specifically, we perform a wavelet analysis ($W$) \cmmnt{, using the Morlet function as the mother wavelet}, computing the wavelet spectrum ($|\psi_0|^2$) to highlight the power of the signal related to $H_I$. As a second step, we compute the cross-wavelet transform (XWT) as described in \cite{APracticalGuidetoWaveletAnalysis}:  
+More specifically, we perform a wavelet analysis ($W$), computing the wavelet spectrum ($|\psi_0|^2$) to highlight the power of the signal related to $H_I$ and the cross-wavelet transform (XWT) \citep{APracticalGuidetoWaveletAnalysis}:  
 
 \begin{equation}
 	\label{eq:xwt}
-	W_n^{SQ,H_I}(s) = W_N^{H_{SQ}}(s) W_N^{H_I *}(s),
+	W_n^{SQ,H_I} = W_N^{H_{SQ}} W_N^{H_I *},
 \end{equation}
 
-\noindent where $s$ is the scale of the wavelet transform and $N$ is the index of each time series. On the right-hand side of Equation \ref{eq:xwt}, $W_n^{H_{SQ}}(s)$ represents the wavelet transform applied to the diurnal variation, while $W_n^{H_I *}(s)$ is the conjugate of the wavelet transform applied to $H_I$.  \\
+\noindent where $N$ is the index of each time series, $W_n^{H_{SQ}}$ represents the wavelet transform applied to the diurnal variation, while $W_n^{H_I *}$ is the conjugate of the wavelet transform applied to $H_I$.  \\
 
-According to \cite{cooper_semblance}, one of the XWT outputs, the local phase $\theta$, can be used to compare two datasets based on correlations between their phase angles ($\theta$) as a function of frequency. We then define Semblance as $S = \cos^n(\theta)$, where $n$ is an odd integer greater than 1. We set $n=9$, as tested in \cite{cooper_semblance}. $S$ alone, however, does not provide the intensity of either of the two signals, but rather a correlation ranging from -1 to 1. Values closer to 1 (-1) indicate a stronger correlation with $H_{SQ}$ ($H_{DDEF}$). The lack of amplitude means that semblance is also sensitive to noise. To address this issue, we use the amplitude $\alpha$, another output of the XWT, as a scaling factor to enhance the signals related to $H_{SQ}$ and $H_{DDEF}$. The equation that describes the complete semblance analysis is:  
+The local phase $\theta$, an output from \ref{eq:xwt}, can be used to compare two datasets based on correlations between their phase angles ($\theta$) as a function of frequency meanwhile $\alpha$ (another output from XWT analysis) is used as scale factor. Then, the coherence analysis is represented as: %. We then define Semblance as $S = \cos^n(\theta)$, where $n$ is an odd integer greater than 1. We set $n=9$, as tested in \cite{cooper_semblance}. $S$ alone, however, does not provide the intensity of either of the two signals, but rather a correlation ranging from -1 to 1. Values closer to 1 (-1) indicate a stronger correlation with $H_{SQ}$ ($H_{DDEF}$). The lack of amplitude means that semblance is also sensitive to noise. To address this issue, we use the amplitude $\alpha$, another output of the XWT, as a scaling factor to enhance the signals related to $H_{SQ}$ and $H_{DDEF}$. The equation that describes the complete semblance analysis is:  
 
 \begin{equation}
 	\label{eq:semblance}
@@ -266,33 +266,33 @@ In the following section, we present the geomagnetic response to the St. Patrick
 	\subsection{Geomanetic and Ionospheric response}
 	\label{sub:magdata}
 	
-In the top panels within Figure \ref{fig:magdata}, we show $\Delta H$ for each OB and compare them with the global indices SYM-H and ASYMH, which represent a quantitative measure of the ring current and partial ring current activity, respectively. In bottom panels, we show the results of Equation \ref{eq:H_I} (red line) in comparison to $H_{SQ}$ modeled for each OB (see Appendix \ref{a1} for more details). Within each panel, we highlight local nighttime periods with light gray shading, set from 1800 to 0600 LT each day. This makes it easier to indicate differences in LT for each OB during and after the MP.\\
+In each panels of Figure \ref{fig:magdata}, we show the global indices SYM-H and ASYMH, which represent a quantitative measure of the ring current and partial ring current activity, respectively. In bottom panels, we show the results of Equation \ref{eq:H_I} (red line) in comparison to $H_{SQ}$ modeled for each OB (see Appendix \ref{a1} for more details). Within each panel, we highlight local nighttime periods with light gray shading, set from 1800 to 0600 LT each day. This makes it easier to indicate differences in LT for each OB during and after the MP.\\
 
 Beginning with \textbf{Zone 1} (GUI and TAM plots) at UT-0 where the first stage of the MP (triggered by the CME's sheath) developed on day side. The second stage of the MP (triggered by the CME) occurred partially on the day side and night side, almost centered on the dusk sector (1800 LT). Both cases show an enhancement of $\Delta H$ near local dusk, which is also consistent with an enhancement in ASYMH activity, especially in TAM's local response. In GUI, $\Delta H$ reaches its minimum near 1900 LT, while TAM's minimum occurs at 1800 LT. After their minima, we observe that the local magnetic response remains enhanced until the minimum at SYM-H, which coincides with a second period of ASYMH activity near 2300 LT.\\
 
 	
 In bottom panels, there is sharp crests related to $H_{SQ}$ activity near noon, while $H_{I (GUI, TAM)}$ presents two responses. The first, the most intense response, is developed during the MP and can be related to both PRC activity and $H_{PPEF}$ fluctuations, with peak amplitudes of approximately -110 nT (GUI) and -150 nT (TAM). These responses are mostly observed around the dusk sector, similar to ASYM-H activity, with TAM showing more intense activity. The second effect of interest is the fluctuations associated with $H_{DDEF}$. These fluctuations appear several hours to a day after the MP's conclusion, as mentioned by \cite{ddyn2005}. We can only consider $H_{DDEF}$ fluctuations when $H_I$ is at least one day after the $\Delta H$ minima. Another condition we could appoint is that $H_I$ fluctuations have to be approximately opposed to $H_{SQ}$. In other words, whenever there is a maximum (minimum) in $H_{SQ}$, there is a minimum (maximum) in $H_I$. Therefore, $H_I = H_{DDEF}$ between March $18^{\text{th}}$ and $21^{\text{st}}$.\\
 
-For JAI in \textbf{Zone 2}, it is noticeable that MP on the day side exhibits similar responses for both the global and local magnetic fields. After reaching the dusk sector, the local response shows a sharp enhancement compared with SYM-H; where $\Delta H$ reaches its minima at 2100 LT. Similar to GUI and TAM, this enhancement is consistent with the sharp increase in ASYM-H.\\
+For JAI in \textbf{Zone 2}, it is noticeable that MP on the day side exhibits similar responses for both the global and local magnetic fields. After reaching the dusk sector, the local response shows a sharp enhancement compared with SYMH; where $\Delta H$ reaches its minima at 2100 LT. Similar to GUI and TAM, this enhancement is consistent with the sharp increase in ASYMH.\\
 	 
 	
 \begin{figure}
 	\centering
-	\includegraphics[width=7.0cm]{fig/magdata/gui_2015-03-15_2015-03-28.eps}   
-	\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-15_2015-03-28.eps} 
-	\includegraphics[width=7.0cm]{fig/magdata/jai_2015-03-15_2015-03-28.eps}  
-	\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/kak_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/teo_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-15_2015-03-28.eps}
-	\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYM-H (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
+	\includegraphics[width=7.0cm]{fig/magdata/gui_2015-03-16_2015-03-26.eps}   
+	%\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-16_2015-03-26.eps} 
+	\includegraphics[width=7.0cm]{fig/magdata/jai_2015-03-16_2015-03-26.eps}  
+	%\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-16_2015-03-26.eps}
+	%\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-16_2015-03-26.eps}
+	%\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-16_2015-03-26.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/kak_2015-03-16_2015-03-26.eps}
+	%\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/teo_2015-03-16_2015-03-26.eps}
+	%\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
+	\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
 	\label{fig:magdata}
 \end{figure}
 	
-\textbf{Zone 3} OBs have in common that second stage of MP developed during local night time, reaching a minima $\Delta H$ after the midnight sector. Top panels of LZH, BMT, CYG, and KAK, show enhanced $\Delta H$ activity compared to SYM-H, coinciding with ASYMH highest activity. However, these enhancements are more attenuated as we move eastward, although some fluctuations are still present around the midnight sector. Once the OBs of \textbf{Zone 3} are near the dawn sector, there is a sharp increase in $\Delta H$, which is not present in SYM-H.\\
+\textbf{Zone 3} OBs have in common that second stage of MP developed during local night time, reaching a minima $\Delta H$ after the midnight sector. Top panels of LZH, BMT, CYG, and KAK, show enhanced $\Delta H$ activity compared to SYMH, coinciding with ASYMH highest activity. However, these enhancements are more attenuated as we move eastward, although some fluctuations are still present around the midnight sector. Once the OBs of \textbf{Zone 3} are near the dawn sector, there is a sharp increase in $\Delta H$, which is not present in SYMH.\\
 
 In bottom panels, there is something interesting about both $H_{SQ}$ and $H_I$ behavior. In the case of regular variation, instead of a crest, there is a valley around noon. On the other hand, $H_I$ shows a decrease in the negative enhancements during ASYMH main activity (a few hours before each local midnight), as we move eastward, which is consistent with the decrease in $\Delta H$ shown in the top panels. The positive enhancement around the dawn sector, however, increases as we move eastward. In the case when $H_I \approx H_{DDEF}$, we do not observe remarkable fluctuations, which could indicate that there was no presence of $H_{DDEF}$ in \textbf{Zone 3}.\\
 
@@ -349,15 +349,9 @@ On the other hand, SJG shows a similar response in the spectrogram to TAM's case
 \begin{figure}
 	\centering
 	\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-15_2015-03-28.eps}   
-	\includegraphics[width=7.0cm]{fig/diono_recons/tam_2015-03-15_2015-03-28.eps} 
-	\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-15_2015-03-28.eps}  
-	\includegraphics[width=7.0cm]{fig/diono_recons/lzh_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/bmt_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/cyg_2015-03-15_2015-03-28.eps}		 
+	\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-15_2015-03-28.eps}  	 
 	\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/hon_2015-03-15_2015-03-28.eps}
 	\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/sjg_2015-03-15_2015-03-28.eps}
 
 	\caption{Geomagnetic registers for each magnetic OB. top panels show planetary geomagnetic indices SYM-H (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
 	\label{fig:recons}
@@ -409,15 +403,15 @@ In \cite{stpatrick_ref, amory_younas2021}, it is mentioned the arrival of a High
 \begin{figure}
 	\centering
 	\includegraphics[width=7.0cm]{fig/wavelets/gui_2015-03-15_2015-03-28.eps}   
-	\includegraphics[width=7.0cm]{fig/wavelets/tam_2015-03-15_2015-03-28.eps} 
+	%\includegraphics[width=7.0cm]{fig/wavelets/tam_2015-03-15_2015-03-28.eps} 
 	\includegraphics[width=7.0cm]{fig/wavelets/jai_2015-03-15_2015-03-28.eps}  
-	\includegraphics[width=7.0cm]{fig/wavelets/lzh_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/wavelets/bmt_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/wavelets/cyg_2015-03-15_2015-03-28.eps}
+	%\includegraphics[width=7.0cm]{fig/wavelets/lzh_2015-03-15_2015-03-28.eps}
+	%\includegraphics[width=7.0cm]{fig/wavelets/bmt_2015-03-15_2015-03-28.eps}
+	%\includegraphics[width=7.0cm]{fig/wavelets/cyg_2015-03-15_2015-03-28.eps}
 	\includegraphics[width=7.0cm]{fig/wavelets/kak_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/wavelets/hon_2015-03-15_2015-03-28.eps}
+	%\includegraphics[width=7.0cm]{fig/wavelets/hon_2015-03-15_2015-03-28.eps}
 	\includegraphics[width=7.0cm]{fig/wavelets/teo_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/wavelets/sjg_2015-03-15_2015-03-28.eps}
+	%\includegraphics[width=7.0cm]{fig/wavelets/sjg_2015-03-15_2015-03-28.eps}
 	\caption{Wavelet Analysis. Top panels: Local response $\Delta H_{loc}$ showing the development of GS (black line). Middle panels: wavelet spectrum ($|\psi(n)|^2$) applied to the ionospheric magnetic contribution $H_I$. Bottom panels: $H_{DDEF}$ correlation obtained from Eq \ref{eq:ddyn}  (Part 1)}
 	\label{fig:wavelets}
 \end{figure}
@@ -497,7 +491,34 @@ To compute the diurnal variation, we identified what we refer to as local quiet 
 	
 \noindent where we normalize the offset of each daily data by subtracting the average of the first four hours of magnetic data in local time, as indicated by the second term in Equation \ref{eq:lqd}. Subsequently, we model the diurnal variation $H_{SQ}$ by applying a low-pass filter to the Fourier Transform of the result from Equation \ref{eq:lqd}, following the procedure in Equation (1) of \cite{vanKampt}.
 
+\section{Other Events}
 
+\begin{figure}
+	\centering 
+	\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-16_2015-03-26.eps} 
+	\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-16_2015-03-26.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-16_2015-03-26.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-16_2015-03-26.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
+	\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
+	\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
+	\label{fig:magdata2}
+\end{figure}
+	
+	
+	
+\begin{figure}
+	\centering
+	\includegraphics[width=7.0cm]{fig/diono_recons/tam_2015-03-15_2015-03-28.eps} 
+	\includegraphics[width=7.0cm]{fig/diono_recons/lzh_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/bmt_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/cyg_2015-03-15_2015-03-28.eps}		 
+	\includegraphics[width=7.0cm]{fig/diono_recons/hon_2015-03-15_2015-03-28.eps}
+	\includegraphics[width=7.0cm]{fig/diono_recons/sjg_2015-03-15_2015-03-28.eps}
+	
+	\caption{Geomagnetic registers for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
+	\label{fig:recons2}
+\end{figure}
 	
 	\paragraph{Acknowledgements} 
 	
