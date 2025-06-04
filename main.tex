@@ -64,7 +64,7 @@
 \usepackage{lipsum}
 
 % Author info
-\title{Local Time Impact on Geomagnetic Storm response at mid-low latitudes\\}
+\title{Impact of Local Time on St. Patrick Geomagnetic Storm response at mid-low latitudes\\}
 \author{Castellanos-Velazco C. I.$^{1,3}$ \and Corona-Romero P.$^{2,3}$ \and Sergeeva M.$^{2,3}$ \and Gonzalez-Esparza J.A.$^{}$}
 
 \date{
@@ -72,7 +72,7 @@
 	$^2$ Laboratorio Nacional de Clima Espacial \\
 	$^3$ Instituto de Geofisica
 	% \texttt{auth3@inst2.edu}\\[2ex]%
-%	\today
+	%	\today
 }
 
 \begin{document}
@@ -85,354 +85,457 @@
 		
 		\noindent\textbf{Keywords:} Disturbed dynamo, wavelet
 	\end{abstract}
-
-%	\tableofcontents
+	
+	%	\tableofcontents
 	
 	\section{Introduction}
 	\label{sec:intro}
-
-
-A geomagnetic storm (GS) is a temporary disturbance of Earth’s magnetosphere caused by the injection of energy and charged particles into the system, leading to a significant reduction in the geomagnetic field intensity. These storms are typically triggered by solar phenomena such as Coronal Mass Ejections (CMEs) or high-speed solar wind streams. Due to their potential impacts on technological systems—including disruptions to communications, navigation, and power grids—GSs are among the most extensively studied phenomena in space weather research.\\
-
-
-During the Main Phase (MP) of a GS, energy and charged particles are transported into Earth’s inner magnetosphere. Since the magnetosphere is dynamically coupled with the ionosphere, particularly at high latitudes \citep{l_russell}, the ionosphere exhibits pronounced responses to these perturbations. One critical ionospheric effect is the generation of storm-time electric fields, which manifest differently depending on latitude:
-
-\begin{itemize}
-	\item Prompt Penetration Electric Fields (PPEFs) \citep{nishida_68_coherence}
 	
-	\item  Disturbed Dynamo Electric Fields (DDEFs) \citep{blanc_ddyn}\\
 	
-\end{itemize}
-
-The concept of PPEF was first introduced by \cite{nishida_68_fluctuations, nishida_68_coherence}, who observed periodic magnetic fluctuations between 4 hours and 30 minutes in ground magnetometers located around the auroral oval and the dip equator, both showing nearly identical fluctuations. Later, \cite{PPEF_prediction, Jaggi1973SelfconsistentCO} developed the first model explaining the penetration of convective electric fields ($\mathbf{E_C}$) during disturbed periods, propagating through Region 1 Field-Aligned Currents (R1-FAC). During quiet periods, $\mathbf{E_C}$ is shielded by a polarized electric field induced by Region 2 Field-Aligned Currents (R2-FAC). However, during the MP of a GS, magnetic reconnection leads to an almost immediate intensification of R1-FAC activity due to the injection of solar wind particles and energy. Since R2-FAC depends on ring current activity to strengthen, it initially fails the shielding of $\mathbf{E_C}$, allowing its transfer to the ionosphere through R1-FAC. This process continues until R2-FAC intensifies its activity though the intensification of ring current, allowing R2-FAC balancing R1-FAC activity, which can take from tens of minutes to several hours \citep{PPEF_review}. During this period of imbalance, $\mathbf{E_C}$ penetrates into the mid- and low-latitude ionosphere, being that the reason for be called Penetration Electric fields. Furthermore, \cite{Kelley1979, PPEF_review} showed that PPEF depends on the southward orientation of the interplanetary magnetic field (IMF) component $B_Z$ and can also be triggered by sharp directional changes in $B_Z$.\\
-
-
-DDEF is associated with an ionospheric current of charged particles injected into the auroral ionosphere, Joule heating occurs, leading to the circulation of equatorward thermospheric winds that drag charged particles (protons) \cite{blanc_ddyn}. When. This charge separation induces a Pedersen current in the same direction, and to the Coriolis effect, proton accumulation and westward circulation occur around the dip equator, generating a poleward electric field. Consequently, a second Pedersen current is induced in the poleward direction, opposing the first current. The above commented phenomena, at mid-latitudes ($\sim 40^\circ$), Hall currents are induced and then interrupted at their terminals and close at adjacent latitudes. This process results in vortex-shaped currents known as the Disturbed Dynamo, characterized by directions opposite to the Solar Quiet (SQ) current. For this reason, the disturbed dynamo is also referred to as the anti-SQ current.\\
-
-Both PPEF and DDEF were studied by \cite{Fejer1983}, who observed their effects using incoherent scatter radar at Jicamarca latitude. Later, \cite{DDEF_detection} detected DDEF above Saint-Santin latitude, with results consistent with the disturbed dynamo model. Later \cite{ddyn2005}, who modeled the magnetic field associated with ionospheric disturbances resulting from DDEF and PPEF contributions. To distinguish between both effects, \cite{ddyn2005} considered that during the MP, the primary magnetic field contribution comes from PPEF, whereas during the recovery phase (RP), regional magnetic field variations are mainly driven by DDEF. Following this initial approach, several studies \citep{ddyn_diag2, angeoddyn} have focused on analyzing local responses at different latitudes and longitudes to analyze the different local responses associate to DDEF phenomena. In \cite{statist_iono}, a statistical study was conducted to understand ionospheric responses as a function of local sectors during GS onset. Later, \cite{amory2020_filtros} proposed using Fourier analysis to isolate magnetic fluctuations related to DDEF and PPEF based on their quasi-periodic behavior, identifying periods of approximately 24 hours for DDEF and less than 4 hours for PPEF. Finally, \cite{amory_younas2021} combined cross-wavelet analysis \citep{APracticalGuidetoWaveletAnalysis} with semblance analysis \citep{cooper_semblance} to highlight DDEF magnetic signatures while filtering out other sources with similar fluctuation periods. \\
-
-In this paper, we adapt the approach of \cite{amory_younas2021} to analyze DDEF and PPEF magnetic signatures at different longitudes during the geomagnetic storm (GS) known as the St. Patrick's event on March $\mathrm{17-18^{th}}$. This event is recognized as the strongest GS of the $24^{th}$ solar cycle. The selected ground magnetometers are located at 11 magnetic observatories distributed across different time zones while maintaining a similar magnetic latitude.\\
-
+	A geomagnetic storm (GS) is a temporary disturbance of Earth’s magnetosphere caused by the injection of energy and charged particles into the system, leading to a significant reduction in the geomagnetic field intensity. These storms are typically triggered by solar phenomena such as Coronal Mass Ejections (CMEs) or high-speed solar wind streams. Due to their potential impacts on technological systems—including disruptions to communications, navigation, and power grids—GSs are among the most extensively studied phenomena in space weather research.\\
+	
+	
+	During the Main Phase (MP) of a GS, energy and charged particles are transported into Earth’s inner magnetosphere. Since the magnetosphere is dynamically coupled with the ionosphere, particularly at high latitudes \citep{l_russell}, the ionosphere exhibits pronounced responses to these perturbations. One critical ionospheric effect is the generation of storm-time electric fields, which manifest differently depending on latitude:
+	
+	\begin{itemize}
+		\item Prompt Penetration Electric Fields (PPEFs) \citep{nishida_68_coherence}
 		
-\section{St. Patrick Geomagnetic Storm}
-
-[Introduction]\\
-
-\subsection{Interplanetary Precursor}
-
-From Figure \ref{fig:ip}, we present a brief description of the trigger event that led to the St. Patrick's GS. A more detailed description of the trigger event is provided by \cite{stpatrick_ref}. \\  
-
-Panel (a) shows the Interplanetary Magnetic Field $B_T$ (black line) and its component $B_Z$ (red line). Panels (b) and (c), on the other hand, present a few properties of the solar wind (SW), including its flow speed $V_X$ (here taken as positive in the anti-sunward direction, black line), the proton temperature (blue line), and the proton density (orange line), as well as the Interplanetary Electric Field, which results from $V_X \times B_Z$. Finally, in panel (e), we present the planetary geomagnetic response, represented by the geomagnetic index SYM-H (green line). \\
-
+		\item  Disturbed Dynamo Electric Fields (DDEFs) \citep{blanc_ddyn}\\
+		
+	\end{itemize}
 	
-The trigger event was highlighted using three vertical dashed lines within panels (a)–(d), as shown in Figure \ref{fig:ip}. The first dashed line (from left to right) indicates the arrival of the Interplanetary Shock (IPS) at 0430 UT, detected at L1. The IPS signature is clearly seen as a step-like effect in $B_T$ and $B_Z$, as well as in the solar wind speed $V_X$ and proton density $n_P$, while it is less noticeable in $T_P$. The arrival of the IPS in Earth's near-space environment led to a compression effect on the magnetosphere, resulting in a temporary enhancement of Earth's magnetic field. This enhancement is seen in the SYM-H index between 0430 and 0700 UT in panel (e), highlighted by light gray shading, and is known as Sudden Storm Commencement (SSC). \\  
+	The concept of PPEF was first introduced by \cite{nishida_68_fluctuations, nishida_68_coherence}, who observed periodic magnetic fluctuations between 4 hours and 30 minutes in ground magnetometers located around the auroral oval and the dip equator, both showing nearly identical fluctuations. Later, \cite{PPEF_prediction, Jaggi1973SelfconsistentCO} developed the first model explaining the penetration of convective electric fields ($\mathbf{E_C}$) during disturbed periods, propagating through Region 1 Field-Aligned Currents (R1-FAC). During quiet periods, $\mathbf{E_C}$ is shielded by a polarized electric field induced by Region 2 Field-Aligned Currents (R2-FAC). However, during the MP of a GS, magnetic reconnection leads to an almost immediate intensification of R1-FAC activity due to the injection of solar wind particles and energy. Since R2-FAC depends on ring current activity to strengthen, it initially fails the shielding of $\mathbf{E_C}$, allowing its transfer to the ionosphere through R1-FAC. This process continues until R2-FAC intensifies its activity though the intensification of ring current, allowing R2-FAC balancing R1-FAC activity, which can take from tens of minutes to several hours \citep{PPEF_review}. During this period of imbalance, $\mathbf{E_C}$ penetrates into the mid- and low-latitude ionosphere, being that the reason for be called Penetration Electric fields. Furthermore, \cite{Kelley1979, PPEF_review} showed that PPEF depends on the southward orientation of the interplanetary magnetic field (IMF) component $B_Z$ and can also be triggered by sharp directional changes in $B_Z$.\\
 	
-	Later, the arrival of a CME's sheath was identified by the highly fluctuating behavior of $B_T$ and $B_Z$, as well as an enhancement in $n_P$ and $T$, which are characteristic of a sheath region. It is important to note that the $B_Z$ component changes direction southward between 0600 and 0900 UT, reaching minimum values around -18 nT. Consequently, there is a downward trend in the SYM-H index (panel e), marking the beginning of the main phase (MP) until 0900 UT, when the $B_Z$ component shifts northward. The minimum SYM-H value reached during this period is approximately -80 nT. \\
-
 	
-	Finally, we indicate the crossing of the CME near 1400 UT (marked by the second dashed line). As indicators, we highlight a less fluctuating behavior in $B_T$ and $B_Z$, as well as a decrease in temperature in panel (d). With the arrival of the CME, a new period of southward $B_Z$ begins, leading to a second phase of magnetic reconnection. Consequently, we observe a second decrease in the SYM-H index from 1200 UT until 2300 UT, reaching a minimum value of -228 nT. The entire MP period is highlighted by gray shading in panel (e).  In panel (f), we highlight the period of interest with light gray shading, where we observe higher injection due to the MP.\\
+	DDEF is associated with an ionospheric current of charged particles injected into the auroral ionosphere, Joule heating occurs, leading to the circulation of equatorward thermospheric winds that drag charged particles (protons) \cite{blanc_ddyn}. When. This charge separation induces a Pedersen current in the same direction, and to the Coriolis effect, proton accumulation and westward circulation occur around the dip equator, generating a poleward electric field. Consequently, a second Pedersen current is induced in the poleward direction, opposing the first current. The above commented phenomena, at mid-latitudes ($\sim 40^\circ$), Hall currents are induced and then interrupted at their terminals and close at adjacent latitudes. This process results in vortex-shaped currents known as the Disturbed Dynamo, characterized by directions opposite to the Solar Quiet (SQ) current. For this reason, the disturbed dynamo is also referred to as the anti-SQ current.\\
+	
+	Both PPEF and DDEF were studied by \cite{Fejer1983}, who observed their effects using incoherent scatter radar at Jicamarca latitude. Later, \cite{DDEF_detection} detected DDEF above Saint-Santin latitude, with results consistent with the disturbed dynamo model. Later \cite{ddyn2005}, who modeled the magnetic field associated with ionospheric disturbances resulting from DDEF and PPEF contributions. To distinguish between both effects, \cite{ddyn2005} considered that during the MP, the primary magnetic field contribution comes from PPEF, whereas during the recovery phase (RP), regional magnetic field variations are mainly driven by DDEF. Following this initial approach, several studies \citep{ddyn_diag2, angeoddyn} have focused on analyzing local responses at different latitudes and longitudes to analyze the different local responses associate to DDEF phenomena. In \cite{statist_iono}, a statistical study was conducted to understand ionospheric responses as a function of local sectors during GS onset. Later, \cite{amory2020_filtros} proposed using Fourier analysis to isolate magnetic fluctuations related to DDEF and PPEF based on their quasi-periodic behavior, identifying periods of approximately 24 hours for DDEF and less than 4 hours for PPEF. Finally, \cite{amory_younas2021} combined cross-wavelet analysis \citep{APracticalGuidetoWaveletAnalysis} with semblance analysis \citep{cooper_semblance} to highlight DDEF magnetic signatures while filtering out other sources with similar fluctuation periods. \\
+	
+	In this paper, we adapt the approach of \cite{amory_younas2021} to analyze DDEF and PPEF magnetic signatures at different longitudes during the geomagnetic storm (GS) known as the St. Patrick's event on March $\mathrm{17-18^{th}}$. This event is recognized as the strongest GS of the $24^{th}$ solar cycle. The selected ground magnetometers are located at 11 magnetic observatories distributed across different time zones while maintaining a similar magnetic latitude.\\
+	
+	
+	\section{St. Patrick Geomagnetic Storm}
+	
+	[Introduction]\\
+	
+	\subsection{Interplanetary Precursor}
+	
+	From Figure \ref{fig:ip}, we present a brief description of the trigger event that led to the St. Patrick's GS. A more detailed description of the trigger event is provided by \cite{stpatrick_ref}. \\  
+	
+	Panel (a) shows the Interplanetary Magnetic Field $B_T$ (black line) and its component $B_Z$ (red line). Panels (b) and (c), on the other hand, present a few properties of the solar wind (SW), including its flow speed $V_X$ (here taken as positive in the anti-sunward direction, black line), the proton temperature (blue line), and the proton density (orange line), as well as the Interplanetary Electric Field, which results from $V_X \times B_Z$. Finally, in panel (e), we present the planetary geomagnetic response, represented by the geomagnetic indices SYMH (green line) and ASYMH (orange line) which are a good indicator for the ring current and partial ring current activity . \\
+	
+	
+	The trigger event was highlighted using three vertical dashed lines within panels (a)–(d), as shown in Figure \ref{fig:ip}. The first dashed line (from left to right) indicates the arrival of the Interplanetary Shock (IPS) at 0430 UT, detected at L1. The IPS signature is clearly seen as a step-like effect in $B_T$ and $B_Z$, as well as in the solar wind speed $V_X$ and proton density $n_P$, while it is less noticeable in $T_P$. The arrival of the IPS in Earth's near-space environment led to a compression effect on the magnetosphere, resulting in a temporary enhancement of Earth's magnetic field. This enhancement is seen in the SYMH index between 0430 and 0700 UT in panel (e), highlighted by light gray shading, and is known as Sudden Storm Commencement (SSC). \\  
+	
+	Later, the arrival of a CME's sheath was identified by the highly fluctuating behavior of $B_T$ and $B_Z$, as well as an enhancement in $n_P$ and $T$, which are characteristic of a sheath region. It is important to note that the $B_Z$ component changes direction southward between 0600 and 0900 UT, reaching minimum values around -18 nT. Consequently, there is a downward trend in the SYMH index and a minor enhancement of ASYMH index (panel e), marking the beginning of the main phase (MP) until 0900 UT, when the $B_Z$ component shifts northward. The minimum SYMH value reached during this period is approximately -80 nT meanwhile ASYMH reached 61 nT. \\
+	
+	
+	Finally, we indicate the crossing of the CME near 1400 UT (marked by the second dashed line). As indicators, we highlight a less fluctuating behavior in $B_T$ and $B_Z$, as well as a decrease in temperature in panel (d). With the arrival of the CME, a new period of southward $B_Z$ begins, leading to a second phase of magnetic reconnection. once the CME arrives at earth’s near space and triggers the second stage of MP, there is a sharp increase of ASYMH, reaching a maximum of 273 nT near 1407 UT. After that, SYMH reaches its minimum value of -234 nT at 2247 UT. Coincidentally, the minimum in SYMH is reached at the same time we observe a second enhancement in ASYMH. The entire MP period is highlighted by gray shading in panel (e).\\
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=0.9\textwidth]{fig/ip_2015-03-15_2015-03-19.eps}
-		\caption{Interplanetary measurements. Panel (a): interplanetary magnetic field total component (black line) and z component (red line). Panel (b): $V_X$ component of solar wind velocity (black line) and Interplanetary Electric Field (blue line). Panel (c): Proton Temperature (blue line) and Proton Density (orange line). Panel (d): SYM-H index (green line), highlighting the initial phase (light gray shade), main phase 1 (medium gray shade) and main phase 2 (dark gray shade).}
+		\includegraphics[width=0.9\textwidth]{fig/ip_2015-03-15_2015-03-25.eps}
+		\caption{Interplanetary measurements. Panel (a): interplanetary magnetic field total component (black line) and z component (red line). Panel (b): $V_X$ component of solar wind velocity (black line) and Interplanetary Electric Field (blue line). Panel (c): Proton Temperature (blue line) and Proton Density (orange line). Panel (d): SYMH (green line) and ASYMH index (orange line), highlighting the initial phase (light gray shade), main phase 1 (medium gray shade) and main phase 2 (dark gray shade).}
 		\label{fig:ip}
 	\end{figure}	
-
-
-\section{Analysis}
-\label{sec:method}
-
-\subsection{Geomagnetic Data}
-
-The geomagnetic data analyzed in this paper were downloaded from the INTERMAGNET public database (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet}), corresponding to the observatories (OB) listed in Table \ref{tab:obs}. Each OB is located within a narrow range of magnetic latitude ($21 - 33^\circ$). They are located also at different Universal Time (UT) zones.\\  
-
-Considering that some OBs are closer to others, the longitudinal study was divided into five zones based on the UT of each OB:  
-
-\begin{enumerate}
-	\item Zone 1: GUI (UT 0), TAM (UT 1)  
-	\item Zone 2: JAI (UT 5:30)  
-	\item Zone 3: LZH, BMT (UT 8), CYG, KAK (UT 9)  
-	\item Zone 4: HON (UT -10)  
-	\item Zone 5: TEO (UT -6), SJG (UT -4)  
-\end{enumerate}  
-
-Although the distance between each OB presents a limitation for analyzing the longitudinal development of the GS, we can still examine the response within different time zones in which each OB was located during the MP. \\
-
-
-\begin{table}[htbp]
-	\caption{List of observatories considered for this study.}
-	\begin{tabular}{lccccccc}
-		\hline
-		Country/ & \multicolumn{1}{l}{Observatory} & \multicolumn{1}{l}{IAGA code} & \multicolumn{1}{l}{geographic } & \multicolumn{1}{l}{geographyc } & \multicolumn{1}{l}{magnetic} & \multicolumn{1}{l}{magnetic } & \multicolumn{1}{l}{UT Zone} \\ Territory
-		& \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{latitude} & \multicolumn{1}{l}{longitude} & \multicolumn{1}{l}{latitude} & \multicolumn{1}{l}{longitude} & \multicolumn{1}{l}{h} \\ \hline
-		China & Beijing & BMT & 40.3 N & 116.2 E & 30.53 N & 172 W & 8 \\ 
-		South Korea & Cheongyang & CYG & 36.37 N & 126.854 E & 27 N & 162.43 W & 9 \\ 
-		India & Jaipur & JAI & 26.917 N & 75.8 E & 18.42 N & 150.47 E & 5.5 \\ 
-		Spain & Guimar & GUI & 28.317 N & 16.433 W & 33.21 N & 61.1 E & 0 \\ 
-		USA & Honolulu & HON & 21.317 N & 158 W & 21.49 N & 90.03 W & -10 \\ 
-		Japan & Kakioka & KAK & 36.232 N & 140.186 E & 27.8 N & 149.73 W & 9 \\  
-		China & Lanzhou & LZH & 36.083 N & 103.833 E & 26.23 N & 176.79 E & 8 \\ 
-		USA, Puerto Rico & San Juan & SJG & 18.11 N & 66.15 W & 28.19 N & 6.1 E & -4 \\ 
-		Argelia & Tamanraset & TAM & 22.783 N & 5.571 E & 24.3 N & 82.29 E & 1 \\
-		Mexico & Teoloyucan & TEO & 19.747 N & 99.182 W & 27.81 N & 28.4 W & -6 \\  \hline
-	\end{tabular}
-	\label{tab:obs}
-\end{table}
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=0.7\textwidth]{fig/map.eps}
-	\caption{Geographic position of every magnetic OB considered for this study. The color code corresponds to different local time regions: blue (UT 0, 1), green (UT 5:30), yellow (UT 8, 9), orange (UT -10), red (-6, -4).}
-	\label{fig:map}
-\end{figure}
+	
+	
+	\section{Analysis}
+	\label{sec:method}
+	
+	\subsection{Geomagnetic Data}
+	
+	The geomagnetic data analyzed in this paper were downloaded from the INTERMAGNET public database (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet}), corresponding to the observatories (OB) listed in Table \ref{tab:obs}. Each OB is located within a narrow range of magnetic latitude ($21 - 33^\circ$). They are located also at different Universal Time (UT) zones.\\  
+	
+%	Considering that some OBs are closer to others, the longitudinal study was divided into five zones based on the UT of each OB:  
+	
+%	\begin{enumerate}
+%		\item Zone 1: GUI (UT 0), TAM (UT 1)  
+%		\item Zone 2: JAI (UT 5:30)  
+%		\item Zone 3: LZH, BMT (UT 8), CYG, KAK (UT 9)  
+%		\item Zone 4: HON (UT -10)  
+%		\item Zone 5: TEO (UT -6), SJG (UT -4)  
+%	\end{enumerate}  
+	
+	Although the distance between each OB presents a limitation for analyzing the longitudinal development of the GS, we can still examine the response within different time zones in which each OB was located during the MP. \\
+	
+	
+	\begin{table}[htbp]
+		\caption{List of observatories considered for this study.}
+		\begin{tabular}{lccccccc}
+			\hline
+			Country/ & \multicolumn{1}{l}{Observatory} & \multicolumn{1}{l}{IAGA code} & \multicolumn{1}{l}{geographic } & \multicolumn{1}{l}{geographyc } & \multicolumn{1}{l}{magnetic} & \multicolumn{1}{l}{magnetic } & \multicolumn{1}{l}{UT Zone} \\ Territory
+			& \multicolumn{1}{l}{} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{latitude} & \multicolumn{1}{l}{longitude} & \multicolumn{1}{l}{latitude} & \multicolumn{1}{l}{longitude} & \multicolumn{1}{l}{h} \\ \hline
+			China & Beijing & BMT & 40.3 N & 116.2 E & 30.53 N & 172 W & 8 \\ 
+			South Korea & Cheongyang & CYG & 36.37 N & 126.854 E & 27 N & 162.43 W & 9 \\ 
+			India & Jaipur & JAI & 26.917 N & 75.8 E & 18.42 N & 150.47 E & 5.5 \\ 
+			Spain & Guimar & GUI & 28.317 N & 16.433 W & 33.21 N & 61.1 E & 0 \\ 
+			USA & Honolulu & HON & 21.317 N & 158 W & 21.49 N & 90.03 W & -10 \\ 
+			Japan & Kakioka & KAK & 36.232 N & 140.186 E & 27.8 N & 149.73 W & 9 \\  
+			China & Lanzhou & LZH & 36.083 N & 103.833 E & 26.23 N & 176.79 E & 8 \\ 
+			USA, Puerto Rico & San Juan & SJG & 18.11 N & 66.15 W & 28.19 N & 6.1 E & -4 \\ 
+			Argelia & Tamanraset & TAM & 22.783 N & 5.571 E & 24.3 N & 82.29 E & 1 \\
+			Mexico & Teoloyucan & TEO & 19.747 N & 99.182 W & 27.81 N & 28.4 W & -6 \\  \hline
+		\end{tabular}
+		\label{tab:obs}
+	\end{table}
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\textwidth]{fig/map.eps}
+		\caption{Geographic position of every magnetic OB considered for this study. The color code corresponds to different local time regions: blue (UT 0, 1), green (UT 5:30), yellow (UT 8, 9), orange (UT -10), red (-6, -4).}
+		\label{fig:map}
+	\end{figure}
 	
 	
 	\subsection{Magnetic fluctuations of ionospheric origin}
 	
-It is well accepted that \citep{1969intro_to_iono_p, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt} local recordings $H_{loc}$ of a ground magnetometer can be considered a linear combination of different geomagnetic sources:
-
-\begin{equation}
-	H_{loc} = H_{SQ} + H_0 + H_{MT} + H_{I},
-\end{equation}
-
-\noindent where $H_{SQ}$ represents the diurnal variation and $H_0$ is the main field during a month window. $H_{MT}$ represents the variations induced by the intensification of magnetospheric currents during the GS. Finally, $H_I$ corresponds to the magnetic variations driven by ionospheric current activity during a GS. Thus, the local geomagnetic response during a GS is given by:
-
-\begin{equation}
-	\Delta H = H_{loc} - (H_{SQ} + H_0).
-\end{equation}
-
-We provide a detailed explanation of how we model the regular variations in Appendix \ref{a1}.\\
-
+	It is well accepted that \citep{1969intro_to_iono_p, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt} local recordings $H_{loc}$ of a ground magnetometer can be considered a linear combination of different geomagnetic sources:
 	
-From \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}, for mid-low magnetic latitudes, with $\lambda$ as the geomagnetic latitude of each OB, we can approximate $H_{MT}$ as:
-
-\begin{equation}
-	H_{MT} \approx SYMH \cdot \cos(\lambda),
-\end{equation}
-
-\noindent Thus, $H_I$ can be approximated as:  
-
-\begin{equation}
-	\label{eq:H_I}
-	H_I = H_{DDEF} + H_{PPEF} \approx H - (H_{SQ} + H_0 + SYM - H \cdot \cos(\lambda)),
-\end{equation}
-
-\noindent where $H_{DDEF}$ and $H_{PPEF}$ represent the magnetic fields associated with the disturbed dynamo electric fields and the prompt penetration electric fields, respectively. \\
-
+	\begin{equation}
+		H_{loc} = H_{SQ} + H_0 + H_{MT} + H_{I},
+	\end{equation}
 	
-In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we proceed under the assumption that both ionospheric currents drive quasi-periodic fluctuations \citep{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence, we begin with a Fourier analysis, applying passband filters to extract fluctuations with frequencies around $11.5 \mu \text{Hz}$ (~24-hour periods) to reconstruct $H_{DDEF}$.   For $H_{PPEF}$, we apply high-pass filters for frequencies higher than $69.5 \mu \text{Hz}$ (corresponding to periods $\leq$ 4 hours). \\
-
+	\noindent where $H_{SQ}$ represents the diurnal variation and $H_0$ is the main field during a month window. $H_{MT}$ represents the variations induced by the intensification of magnetospheric currents during the GS. Finally, $H_I$ corresponds to the magnetic variations driven by ionospheric current activity during a GS. Thus, the local geomagnetic response during a GS is given by:
 	
-Additionally, with the purpose of analyze the time domain, we apply wavelet techniques \citep{APracticalGuidetoWaveletAnalysis}, following \cite{amory_younas2021}, where they compare two time series ($H_{SQ}$ and $H_I$) with similar band frequency fluctuations. The goal is to identify which signal is more anti-correlated with $H_{SQ}$ and, consequently, more correlated with $H_{DDEF}$ activity. \\
-
-More specifically, we perform a wavelet analysis ($W$), computing the wavelet spectrum ($|\psi_0|^2$) to highlight the power of the signal related to $H_I$ and the cross-wavelet transform (XWT) \citep{APracticalGuidetoWaveletAnalysis}:  
-
-\begin{equation}
-	\label{eq:xwt}
-	W_n^{SQ,H_I} = W_N^{H_{SQ}} W_N^{H_I *},
-\end{equation}
-
-\noindent where $N$ is the index of each time series, $W_n^{H_{SQ}}$ represents the wavelet transform applied to the diurnal variation, while $W_n^{H_I *}$ is the conjugate of the wavelet transform applied to $H_I$.  \\
-
-The local phase $\theta$, an output from \ref{eq:xwt}, can be used to compare two datasets based on correlations between their phase angles ($\theta$) as a function of frequency meanwhile $\alpha$ (another output from XWT analysis) is used as scale factor. Then, the coherence analysis is represented as: %. We then define Semblance as $S = \cos^n(\theta)$, where $n$ is an odd integer greater than 1. We set $n=9$, as tested in \cite{cooper_semblance}. $S$ alone, however, does not provide the intensity of either of the two signals, but rather a correlation ranging from -1 to 1. Values closer to 1 (-1) indicate a stronger correlation with $H_{SQ}$ ($H_{DDEF}$). The lack of amplitude means that semblance is also sensitive to noise. To address this issue, we use the amplitude $\alpha$, another output of the XWT, as a scaling factor to enhance the signals related to $H_{SQ}$ and $H_{DDEF}$. The equation that describes the complete semblance analysis is:  
-
-\begin{equation}
-	\label{eq:semblance}
-	S = \alpha \cdot \cos^n(\theta).
-\end{equation}
-
+	\begin{equation}
+		\Delta H = H_{loc} - (H_{SQ} + H_0).
+	\end{equation}
 	
-It is important to note that the result of Equation \ref{eq:semblance} includes not only the $H_{DDEF}$ signal but also the signals related to $SQ$ and PRC \citep{amory2020_filtros, amory_younas2021}. To completely isolate $H_{DDEF}$ in the spectrogram, we normalize the result of Equation \ref{eq:semblance} to a range of [-1, 1], as it is easier to separate normalized signals. However, in this case, we reverse the scale so that values closer to 1 can be interpreted as $H_{DDEF}$. Since values closer to 0 are not related to either $H_{SQ}$ or $H_{DDEF}$, we consider correlations greater than 0.5 as indicative of $H_{DDEF}$, as shown below:
-
-\begin{equation}
-	\label{eq:ddyn}
-	\alpha \cdot S = \begin{cases}
-		0, \qquad \qquad \text{if $S_i < 0.6$}, \\
-		H_{DDEF}, \quad \text{if $S_i \geq 0.6$}.
-	\end{cases}
-\end{equation}
-
-Having the wavelet spectrum $|\psi_0(n)|^2$, which gives us the power of the signals, and $\alpha \cdot \text{anticorr}(semblance)$, which highlights the signal related to $H_{DDEF}$, we can observe not only whether $H_{DDEF}$ variations are present during the event but also their intensity.\\
-
+	We provide a detailed explanation of how we model the regular variations in Appendix \ref{a1}.\\
+	
+	
+	From \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}, for mid-low magnetic latitudes, with $\lambda$ as the geomagnetic latitude of each OB, we can approximate $H_{MT}$ as:
+	
+	\begin{equation}
+		H_{MT} \approx SYMH \cdot \cos(\lambda),
+	\end{equation}
+	
+	\noindent Thus, $H_I$ can be approximated as:  
+	
+	\begin{equation}
+		\label{eq:H_I}
+		H_I = H_{DDEF} + H_{PPEF} \approx H - (H_{SQ} + H_0 + SYM - H \cdot \cos(\lambda)),
+	\end{equation}
+	
+	\noindent where $H_{DDEF}$ and $H_{PPEF}$ represent the magnetic fields associated with the disturbed dynamo electric fields and the prompt penetration electric fields, respectively. \\
+	
+	
+	In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we proceed under the assumption that both ionospheric currents drive quasi-periodic fluctuations \citep{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence, we begin with a Fourier analysis, applying passband filters to extract fluctuations with frequencies around $11.5 \mu \text{Hz}$ (~24-hour periods) to reconstruct $H_{DDEF}$.   For $H_{PPEF}$, we apply high-pass filters for frequencies higher than $69.5 \mu \text{Hz}$ (corresponding to periods $\leq$ 4 hours). \\
+	
+	
+	Additionally, with the purpose of analyze the time domain, we apply wavelet techniques \citep{APracticalGuidetoWaveletAnalysis}, following \cite{amory_younas2021}, where they compare two time series ($H_{SQ}$ and $H_I$) with similar band frequency fluctuations. The goal is to identify which signal is more anti-correlated with $H_{SQ}$ and, consequently, more correlated with $H_{DDEF}$ activity. \\
+	
+	More specifically, we perform a wavelet analysis ($W$), using the wavelet spectrum ($|\psi_0|^2$) to highlight the power of the signal related to $H_I$ and the cross-wavelet transform (XWT) \citep{APracticalGuidetoWaveletAnalysis} as:  
+	
+	\begin{equation}
+		\label{eq:xwt}
+		W^{SQ,H_I} = W^{H_{SQ}} W^{H_I *},
+	\end{equation}
+	
+	\noindent where $W^{H_{SQ}}$ and $W^{H_I *}$ are the wavelet transforms applied to the diurnal variation and the conjugate of the wavelet transform applied to $H_I$ respectively.  \\
+	
+	The local phase $\theta$, an output from Equation \ref{eq:xwt}, can be used to compare two datasets based on correlations between their phase angles ($\theta$) as a function of frequency meanwhile $\alpha$ (another output from XWT analysis) is used as scale factor. Then, the coherence analysis is represented as: %. We then define Semblance as $S = \cos^n(\theta)$, where $n$ is an odd integer greater than 1. We set $n=9$, as tested in \cite{cooper_semblance}. $S$ alone, however, does not provide the intensity of either of the two signals, but rather a correlation ranging from -1 to 1. Values closer to 1 (-1) indicate a stronger correlation with $H_{SQ}$ ($H_{DDEF}$). The lack of amplitude means that semblance is also sensitive to noise. To address this issue, we use the amplitude $\alpha$, another output of the XWT, as a scaling factor to enhance the signals related to $H_{SQ}$ and $H_{DDEF}$. The equation that describes the complete semblance analysis is:  
+	
+	\begin{equation}
+		\label{eq:semblance}
+		S = \alpha \cdot \cos^n(\theta).
+	\end{equation}
+	
+	
+	It is important to note that the result of Equation \ref{eq:semblance} includes not only the $H_{DDEF}$ signal but also the signals related to $SQ$ and PRC \citep{amory2020_filtros, amory_younas2021}. To completely isolate $H_{DDEF}$ in the spectrogram, we normalize the result of Equation \ref{eq:semblance} to a range of [-1, 1], as it is easier to separate normalized signals. However, in this case, we reverse the scale so that values closer to 1 can be interpreted as $H_{DDEF}$. Since values closer to 0 are not related to either $H_{SQ}$ or $H_{DDEF}$, we consider correlations greater than 0.5 as indicative of $H_{DDEF}$, as shown below:
+	
+	\begin{equation}
+		\label{eq:ddyn}
+		\alpha \cdot S = \begin{cases}
+			0, \qquad \qquad \text{if $S_i < 0.6$}, \\
+			H_{DDEF}, \quad \text{if $S_i \geq 0.6$}.
+		\end{cases}
+	\end{equation}
+	
+	Having the wavelet spectrum $|\psi_0(n)|^2$, which gives us the power of the signals, and $\alpha \cdot \text{anticorr}(semblance)$, which highlights the signal related to $H_{DDEF}$, we can observe not only whether $H_{DDEF}$ variations are present during the event but also their intensity.\\
+	
 	
 	\section{Results}
 	\label{sec:results}
 	
-In the following section, we present the geomagnetic response to the St. Patrick's GS for each OB listed in Table \ref{tab:obs}. Then we show the results of Equation \ref{eq:H_I} for isolating $H_I$, as well as the reconstruction of $H_{DDEF}$ and $H_{PPEF}$ through Fourier analysis. Finally, we provide the results of Equation \ref{eq:semblance} to isolate the $H_{DDEF}$ signal in the time-frequency domain.\\
-
+	In the following section, we present the geomagnetic response to the St. Patrick's GS for each OB listed in Table \ref{tab:obs}. Then we show the results of Equation \ref{eq:H_I} for isolating $H_I$, as well as the reconstruction of $H_{DDEF}$ and $H_{PPEF}$ through Fourier analysis. Finally, we provide the results of Equation \ref{eq:semblance} to isolate the $H_{DDEF}$ signal in the time-frequency domain.\\
+	
+	In order to study the impact of LT to the local response of the GS, we focused on the results obtained using data provided by
+	those OB which were closer to a certain local sector during the onset of the MP. Then, our main analysis focuses on four points:
+	
+	\begin{enumerate}
+		\item sector 1: closer to noon sector. Represented by GUI 
+		\item sector 2: closer to dusk sector. Represented by JAI 
+		\item sector 3: closer to midnight sector. Represented by KAK
+		\item sector 4: closer to dawn sector. Represented by TEO
+		
+	\end{enumerate}
+	
+	Given how MP period lasted, depending on the sector we are analyzing, each OB was located mostly at day side, night side or both (but with different order). We expect then, completely different responses given the asymmetry of the magnetospheric and Ionospheric system which drive the geomagnetic responses during the GS.\\
+	
+	The results related to the rest of OBs can be checked as a complementary study [see \ref{a2}]. \\
+	
 	
 	\subsection{Geomanetic and Ionospheric response}
 	\label{sub:magdata}
 	
-In each panels of Figure \ref{fig:magdata}, we show the global indices SYM-H and ASYMH, which represent a quantitative measure of the ring current and partial ring current activity, respectively. In bottom panels, we show the results of Equation \ref{eq:H_I} (red line) in comparison to $H_{SQ}$ modeled for each OB (see Appendix \ref{a1} for more details). Within each panel, we highlight local nighttime periods with light gray shading, set from 1800 to 0600 LT each day. This makes it easier to indicate differences in LT for each OB during and after the MP.\\
-
-Beginning with \textbf{Zone 1} (GUI and TAM plots) at UT-0 where the first stage of the MP (triggered by the CME's sheath) developed on day side. The second stage of the MP (triggered by the CME) occurred partially on the day side and night side, almost centered on the dusk sector (1800 LT). Both cases show an enhancement of $\Delta H$ near local dusk, which is also consistent with an enhancement in ASYMH activity, especially in TAM's local response. In GUI, $\Delta H$ reaches its minimum near 1900 LT, while TAM's minimum occurs at 1800 LT. After their minima, we observe that the local magnetic response remains enhanced until the minimum at SYM-H, which coincides with a second period of ASYMH activity near 2300 LT.\\
-
+	In Figures \ref{fig:magdata} and \ref{fig:magdata2} (see Apendix \ref{a2}), we show the  ionospheric disturbance magnetic contribution $H_I$ and the computed diurnal variation $H_{SQ}$ using data from each OB. From Ionospheric magnetic variations, we observe two general behaviors within its activity: 
 	
-In bottom panels, there is sharp crests related to $H_{SQ}$ activity near noon, while $H_{I (GUI, TAM)}$ presents two responses. The first, the most intense response, is developed during the MP and can be related to both PRC activity and $H_{PPEF}$ fluctuations, with peak amplitudes of approximately -110 nT (GUI) and -150 nT (TAM). These responses are mostly observed around the dusk sector, similar to ASYM-H activity, with TAM showing more intense activity. The second effect of interest is the fluctuations associated with $H_{DDEF}$. These fluctuations appear several hours to a day after the MP's conclusion, as mentioned by \cite{ddyn2005}. We can only consider $H_{DDEF}$ fluctuations when $H_I$ is at least one day after the $\Delta H$ minima. Another condition we could appoint is that $H_I$ fluctuations have to be approximately opposed to $H_{SQ}$. In other words, whenever there is a maximum (minimum) in $H_{SQ}$, there is a minimum (maximum) in $H_I$. Therefore, $H_I = H_{DDEF}$ between March $18^{\text{th}}$ and $21^{\text{st}}$.\\
-
-For JAI in \textbf{Zone 2}, it is noticeable that MP on the day side exhibits similar responses for both the global and local magnetic fields. After reaching the dusk sector, the local response shows a sharp enhancement compared with SYMH; where $\Delta H$ reaches its minima at 2100 LT. Similar to GUI and TAM, this enhancement is consistent with the sharp increase in ASYMH.\\
-	 
+	\begin{itemize}
+		\item During the MP: The most intense response; can be related to both PRC activity and $H_{PPEF}$ fluctuations.
+		
+		\item During RP: Fluctuations associated with $H_{DDEF}$. These fluctuations appear several hours to a day after the MP's conclusion. In plots, we can distinguish them when $H_I$ fluctuations are approximately opposed to $H_{SQ}$  \citep{ddyn2005}.
+	\end{itemize}
 	
-\begin{figure}
-	\centering
-	\includegraphics[width=7.0cm]{fig/magdata/gui_2015-03-16_2015-03-26.eps}   
-	%\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-16_2015-03-26.eps} 
-	\includegraphics[width=7.0cm]{fig/magdata/jai_2015-03-16_2015-03-26.eps}  
-	%\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-16_2015-03-26.eps}
-	%\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-16_2015-03-26.eps}
-	%\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-16_2015-03-26.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/kak_2015-03-16_2015-03-26.eps}
-	%\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/teo_2015-03-16_2015-03-26.eps}
-	%\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
-	\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
-	\label{fig:magdata}
-\end{figure}
+	We begin with the first sector, using GUI magnetic data at UT-0. The MP stage we are interested in, occurred partially on the day side and night side, almost centered on the dusk sector (1800 LT). The first enhancement in ASYMH activity occurs when GUI was near noon sector meanwhile the minima of SYMH was reached near midnight sector. In bottom panel, $H_{SQ}$ shows it's peak activity near noon, while $H_{I (GUI)}$ presents its peak amplitude of approximately -110 nT at 1918 LT, being a few time past dusk. About fluctuations when $H_I = H_{DDEF}$ using $H_I$ and $H_SQ$, we observe the opposed pattern between March $18^{\text{th}}$ and $21^{\text{st}}$.\\
 	
-\textbf{Zone 3} OBs have in common that second stage of MP developed during local night time, reaching a minima $\Delta H$ after the midnight sector. Top panels of LZH, BMT, CYG, and KAK, show enhanced $\Delta H$ activity compared to SYMH, coinciding with ASYMH highest activity. However, these enhancements are more attenuated as we move eastward, although some fluctuations are still present around the midnight sector. Once the OBs of \textbf{Zone 3} are near the dawn sector, there is a sharp increase in $\Delta H$, which is not present in SYMH.\\
-
-In bottom panels, there is something interesting about both $H_{SQ}$ and $H_I$ behavior. In the case of regular variation, instead of a crest, there is a valley around noon. On the other hand, $H_I$ shows a decrease in the negative enhancements during ASYMH main activity (a few hours before each local midnight), as we move eastward, which is consistent with the decrease in $\Delta H$ shown in the top panels. The positive enhancement around the dawn sector, however, increases as we move eastward. In the case when $H_I \approx H_{DDEF}$, we do not observe remarkable fluctuations, which could indicate that there was no presence of $H_{DDEF}$ in \textbf{Zone 3}.\\
-
-In \textbf{Zone 4}, represented by HON, the MP phase develops between 2100 and 1400 LT, with the period triggered by the CME occurring during the day side. Unlike the previous cases, $\Delta H$ shows less negative values compared to SYM-H during the highest activity of ASYMH. This happens when HON is near the dawn sector. Near the noon sector, the minimum of SYM-H behaves similarly to $\Delta H$, with about a 1-hour difference between each minimum.\\
-
-$H_{SQ}$ in the bottom panel shows again a sharp crest pattern around noon. $H_I$ shows a positive enhancement during the peak of ASYMH activity, consistent with the behavior observed in the top panel between $\Delta H$ and SYM-H. As for $H_{DDEF}$, some possible fluctuations are observed between March 19$^{th}$ and March 21$^{st}$.\\
-
-Finally, in \textbf{Zone 5} (TEO and SJG), MP (triggered by CME) occurs mostly during day side. On one hand, there is a positive enhancement of $\Delta H$ during the peak ASYMH activity, locally around 800 LT (TEO) and 1000 LT (SJG). On the other hand, the minima of $\Delta H$ is consistent in time with SYM-H, but it shows more negative values. In other words, the local response surpasses the global response. In both cases minimum value is reached after TEO and SJG crossed dusk sector (at 1800 and 2000 LT respectively).\\
-
-Bottom panels show a first positive $H_I$ enhancement of 70 nT in TEO between 0700 and 1000 LT, and 50 nT between 0900 and 1200 LT in SJG. This is followed by enhanced negative activity with amplitudes of -108 and -99 nT, both happening around dusk (1800 LT). While SJG shows $H_I \approx H_{DDEF}$ activity during March 19$^{th}$ to 21$^{st}$, in TEO, $H_I \approx H_{DDEF}$ fluctuations remain visible until March 26$^{th}$, making it the OB where $H_{DDEF}$ seems to last the longest, with a very smooth decay in amplitude.\\
-
-
+	
+	Regarding the second sector, we observe that the sharp increase in ASYMH occurs at 1937 LT in JAI, being near dusk sector. The minimum value in SYMH was  reached at 0417 LT of JAI. Diurnal variation in bottom panels show a lesser amplitude at noon meanwhile the ionospheric disturbance ($H_I$) is considerably more intense with respect to GUI. The peak of this magnetic signature coincides with the peak of activity in ASYMH, near past dusk sector meanwhile there is a second (more atenuated) peak near dawn sector at night side. From observing $SQ$ and $H_I$, there is a lesser notorious opposed pattern, being the March $19^{\text{th}}$ and March $22^{\text{th}}$, days where we infer the activity of $H_{DDEF}$ fluctuations.\\
+	
+	
+	At the third sector proximity during the MP we observe the enhanced ASYMH occurs at 0007 LT of KAK, while SYMH reached a minimum value at 0847 LT. At bottom panel, $SQ$ activity shows a completely different behavior. In this case, at noon sector $SQ$ shows a minimum value instead of a maximum. $H_I$ shows significantly more attenuated amplitudes of activity. Specially, the first peak of activity seen near noon sector (1400 UT). Regarding $H_{DDEF}$ activity using $SQ$ and $H_I$, we do not observe any visible opposed pattern. which could imply the absence of $H_{DDEF}$ fluctuations in that region during the RP.\\
+	
+	At the fourth sector proximity, ASYMH peak occurs at 0800 LT meanwhile SYMH minimum is reached at 1647 LT $H_{SQ}$ fluctuations show again a positive peak at noon meanwhile the two peaks of $H_I$ are more intense than in midnight sector. Specifically, the peak of $H_I$ was driven at 1729 LT. It is also noticeable the most prominent opposed pattern of $H_I$ and $SQ$ during the RP, between March $19^{\text{th}}$ and  March $25^{\text{th}}$, being the region where $H_{DDEF}$ shows a clearer magnetic activity. \\
+	
+	
+	
+	%In bottom panels, there is something interesting about both $H_{SQ}$ and $H_I$ behavior. In the case of regular variation, instead of a crest, there is a valley around noon. On the other hand, $H_I$ shows a decrease in the negative enhancements during ASYMH main activity (a few hours before each local midnight), as we move eastward, which is consistent with the decrease in $\Delta H$ shown in the top panels. The positive enhancement around the dawn sector, however, increases as we move eastward. In the case when $H_I \approx H_{DDEF}$, we do not observe remarkable fluctuations, which could indicate that there was no presence of $H_{DDEF}$ in \textbf{Zone 3}.\\ . 
+	%In bottom panels, there is sharp crests related to $H_{SQ}$ activity near noon, while $H_{I (GUI, TAM)}$ presents two responses. The first, the most intense response, is developed during the MP and can be related to both PRC activity and $H_{PPEF}$ fluctuations, with peak amplitudes of approximately -110 nT (GUI) and -150 nT (TAM). These responses are mostly observed around the dusk sector, similar to ASYM-H activity, with TAM showing more intense activity. The second effect of interest is the fluctuations associated with $H_{DDEF}$. These fluctuations appear several hours to a day after the MP's conclusion, as mentioned by \cite{ddyn2005}. We can only consider $H_{DDEF}$ fluctuations when $H_I$ is at least one day after the $\Delta H$ minima. Another condition we could appoint is that $H_I$ fluctuations have to be approximately opposed to $H_{SQ}$. In other words, whenever there is a maximum (minimum) in $H_{SQ}$, there is a minimum (maximum) in $H_I$. Therefore, $H_I = H_{DDEF}$ between March $18^{\text{th}}$ and $21^{\text{st}}$.\\
+	
+	%Beginning with \textbf{Zone 1} (GUI and TAM plots) at UT-0 where the first stage of the MP (triggered by the CME's sheath) developed on day side. The second stage of the MP (triggered by the CME) occurred partially on the day side and night side, almost centered on the dusk sector (1800 LT). Both cases show an enhancement of $\Delta H$ near local dusk, which is also consistent with an enhancement in ASYMH activity, especially in TAM's local response. In GUI, $\Delta H$ reaches its minimum near 1900 LT, while TAM's minimum occurs at 1800 LT. After their minima, we observe that the local magnetic response remains enhanced until the minimum at SYM-H, which coincides with a second period of ASYMH activity near 2300 LT.\\
+	
+	
+	%In bottom panels, there is sharp crests related to $H_{SQ}$ activity near noon, while $H_{I (GUI, TAM)}$ presents two responses. The first, the most intense response, is developed during the MP and can be related to both PRC activity and $H_{PPEF}$ fluctuations, with peak amplitudes of approximately -110 nT (GUI) and -150 nT (TAM). These responses are mostly observed around the dusk sector, similar to ASYM-H activity, with TAM showing more intense activity. The second effect of interest is the fluctuations associated with $H_{DDEF}$. These fluctuations appear several hours to a day after the MP's conclusion, as mentioned by \cite{ddyn2005}. We can only consider $H_{DDEF}$ fluctuations when $H_I$ is at least one day after the $\Delta H$ minima. Another condition we could appoint is that $H_I$ fluctuations have to be approximately opposed to $H_{SQ}$. In other words, whenever there is a maximum (minimum) in $H_{SQ}$, there is a minimum (maximum) in $H_I$. Therefore, $H_I = H_{DDEF}$ between March $18^{\text{th}}$ and $21^{\text{st}}$.\\
+	
+	%For JAI in \textbf{Zone 2}, it is noticeable that MP on the day side exhibits similar responses for both the global and local magnetic fields. After reaching the dusk sector, the local response shows a sharp enhancement compared with SYMH; where $\Delta H$ reaches its minima at 2100 LT. Similar to GUI and TAM, this enhancement is consistent with the sharp increase in ASYMH.\\
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=7.0cm]{fig/magdata/gui_2015-03-16_2015-03-26.eps}   
+		%\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-16_2015-03-26.eps} 
+		\includegraphics[width=7.0cm]{fig/magdata/jai_2015-03-16_2015-03-26.eps}  
+		%\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-16_2015-03-26.eps}
+		%\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-16_2015-03-26.eps}
+		%\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-16_2015-03-26.eps}
+		\includegraphics[width=7.0cm]{fig/magdata/kak_2015-03-16_2015-03-26.eps}
+		%\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
+		\includegraphics[width=7.0cm]{fig/magdata/teo_2015-03-16_2015-03-26.eps}
+		%\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
+		\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
+		\label{fig:magdata}
+	\end{figure}
+	
+	%\textbf{Zone 3} OBs have in common that second stage of MP developed during local night time, reaching a minima $\Delta H$ after the midnight sector. Top panels of LZH, BMT, CYG, and KAK, show enhanced $\Delta H$ activity compared to SYMH, coinciding with ASYMH highest activity. However, these enhancements are more attenuated as we move eastward, although some fluctuations are still present around the midnight sector. Once the OBs of \textbf{Zone 3} are near the dawn sector, there is a sharp increase in $\Delta H$, which is not present in SYMH.\\
+	
+	%In bottom panels, there is something interesting about both $H_{SQ}$ and $H_I$ behavior. In the case of regular variation, instead of a crest, there is a valley around noon. On the other hand, $H_I$ shows a decrease in the negative enhancements during ASYMH main activity (a few hours before each local midnight), as we move eastward, which is consistent with the decrease in $\Delta H$ shown in the top panels. The positive enhancement around the dawn sector, however, increases as we move eastward. In the case when $H_I \approx H_{DDEF}$, we do not observe remarkable fluctuations, which could indicate that there was no presence of $H_{DDEF}$ in \textbf{Zone 3}.\\
+	
+	%In \textbf{Zone 4}, represented by HON, the MP phase develops between 2100 and 1400 LT, with the period triggered by the CME occurring during the day side. Unlike the previous cases, $\Delta H$ shows less negative values compared to SYMH during the highest activity of ASYMH. This happens when HON is near the dawn sector. Near the noon sector, the minimum of SYMH behaves similarly to $\Delta H$, with about a 1-hour difference between each minimum.\\
+	
+	%$H_{SQ}$ in the bottom panel shows again a sharp crest pattern around noon. $H_I$ shows a positive enhancement during the peak of ASYMH activity, consistent with the behavior observed in the top panel between $\Delta H$ and SYMH. As for $H_{DDEF}$, some possible fluctuations are observed between March 19$^{th}$ and March 21$^{st}$.\\
+	
+	%Finally, in \textbf{Zone 5} (TEO and SJG), MP (triggered by CME) occurs mostly during day side. On one hand, there is a positive enhancement of $\Delta H$ during the peak ASYMH activity, locally around 800 LT (TEO) and 1000 LT (SJG). On the other hand, the minima of $\Delta H$ is consistent in time with SYMH, but it shows more negative values. In other words, the local response surpasses the global response. In both cases minimum value is reached after TEO and SJG crossed dusk sector (at 1800 and 2000 LT respectively).\\
+	
+	%Bottom panels show a first positive $H_I$ enhancement of 70 nT in TEO between 0700 and 1000 LT, and 50 nT between 0900 and 1200 LT in SJG. This is followed by enhanced negative activity with amplitudes of -108 and -99 nT, both happening around dusk (1800 LT). While SJG shows $H_I \approx H_{DDEF}$ activity during March 19$^{th}$ to 21$^{st}$, in TEO, $H_I \approx H_{DDEF}$ fluctuations remain visible until March 26$^{th}$, making it the OB where $H_{DDEF}$ seems to last the longest, with a very smooth decay in amplitude.\\
+	
+	
 	\subsection{Reconstruction of $\mathbf{H_{PPEF}}$ and $\mathbf{H_{DDEF}}$}
-
-The results of applying frequency band filters to the FFT($H_I$) are shown in Figure \ref{fig:recons}. Fluctuations related to $H_{PPEF}$ are represented by red lines while $H_{DDEF}$ fluctuations are represented by black lines. Similar to Figure \ref{fig:magdata}, each local night time period is highlighted with gray shading.\\
-
-In \textbf{Zone 1}, $H_{PPEF}$ fluctuations begin with the onset of the MP. However, the Sheath triggered MP stage did not drive significant $H_{PPEF}$ fluctuations compared to the CME. After the arrival of the CME, there is an enhancement tendency from noon sector toward dusk sector. In both GUI and TAM, there is a sharp fluctuation of -30 nT and -45 nT. Following this, a decreasing trend in amplitudes begins until midnight, when a new sharp peak in $H_{PPEF}$ is observed, reaching 34 nT for GUI and 60 nT for TAM. This enhancement is consistent with the minimum in SYM-H and the end of magnetic reconnection mechanism, as seen in Figure \ref{fig:ip}.\\ 
-
-Based on the previous Figure \ref{fig:magdata} and according to \cite{ddyn2005}, we consider that $H_{DDEF}$ become valid at least one day after the minimum. Then, from March 19 $^{th}$ at midnight is when we can consider $H_{DDEF}$ as valid. Initially, in both GUI and TAM, the maximum amplitude is -20 nT, but these amplitudes decrease rapidly until March 21$^{st}$. In the case of GUI, however, there is a small enhancement between March 22$^{nd}$ and March 23$^{rd}$.\\
-
 	
-Fluctuations $H_{PPEF}$ in JAI (\textbf{Zone 2}) show a tendency during MP related to the CME at night hours. Centered around midnight, appear the highest amplitudes above ~40 nT meanwhile the maximum amplitude is 52 nT, near dawn sector. An enhancement of $H_{PPEF}$ is also present near local dusk, with a magnitude of -41 nT. $H_{DDEF}$, on the other hand, presents a similar behavior as in Zone 1, with an initial amplitude of about 20 nT on March 19$^{th}$, decreasing until March 21$^{st}$.\\
-
-In \textbf{Zone 3}, similar to the previous case, most of the relevant $H_{PPEF}$ fluctuations occur during night hours, including the first two hours after dawn. The $H_{PPEF}$ fluctuations driven by the CME show a sharp enhancement close to each local midnight within this zone. The maximum fluctuation is observed around each local midnight, with values of 50, 55, 47, and 30 nT for LZH, BMT, CYG, and KAK, respectively. After each local dawn, there is another enhancement of $H_{PPEF}$, followed by a sharp decrease in amplitudes. On the other hand, $H_{DDEF}$ fluctuations are practically absent in OBs within this zone, with an initial amplitude of about 10 nT at most, starting from March 19$^{th}$.\\
-
-In HON (\textbf{Zone 4}), the $H_{PPEF}$ fluctuation tendency has considerably smaller amplitudes compared to the previous cases. The maximum fluctuations occur at 2300 LT and 0700 LT, with magnitudes of 34 and 41 nT, respectively. Considering that $H_{DDEF}$ would be valid until March 19$^{th}$–20$^{th}$ for this zone, there are no significant $H_{DDEF}$ fluctuations present in HON either.\\
-
+	The results of applying frequency band filters to the FFT($H_I$) are shown in Figures \ref{fig:recons} and \ref{fig:recons2}. Fluctuations related to $H_{PPEF}$ are represented by red lines while $H_{DDEF}$ fluctuations are represented by black lines. Similar to Figure \ref{fig:magdata}, each local night time period is highlighted with gray shading.\\
 	
-Finally, for \textbf{Zone 5}, we observe that $H_{PPEF}$ fluctuations related to the CME occur during daylight hours. The amplitude tendencies exhibit a very smooth variation in TEO and SJG, with the peak at noon for TEO, while for SJG, it occurs close to 1400 LT, with significantly weaker fluctuations. In both cases, the maximum $H_{PPEF}$ fluctuations occur in two moments: the first at noon (TEO) or 1400 LT (SJG), and the second at dusk. In the case of TEO, the maximum $H_{PPEF}$ fluctuations are about 34 nT, while SJG's maximum fluctuations are about 25 nT. \\
-
-$H_{DDEF}$ fluctuations shows a quite interesting behavior. In the case of TEO, $H_{DDEF}$ presents a higher amplitude of 20 nT compared to HON. Its amplitude damping is also the slowest within this study, making TEO the OB where $H_{DDEF}$ lasts the longest, from March 19$^{th}$ to March 26$^{th}$. In the case of SJG, $H_{DDEF}$ shows a different behavior, being more similar to what is observed in HON.\\
-
-It should be considered that the time at which $H_{DDEF}$ becomes valid in all cases is only an approximation. To assess the period during which $H_{DDEF}$ was present, as well as its intensity, the next procedure demonstrates the results.\\
-
+	In first sector, $H_{PPEF}$ fluctuations begin with the onset of the MP, having a small magnitude. After the arrival of the CME, there is an enhancement tendency from ~1140 LT toward dusk sector. Following this, a decreasing trend in amplitudes begins until midnight, when a sharp peak in $H_{PPEF}$ is observed, reaching 34 nT for GUI. This enhancement occurs when SYMH reaches its minimum, as seen in Figure \ref{fig:ip}. As previously referenced, $H_{DDEF}$ is valid at least one day after the minimum. Then, from March 19 $^{th}$ at midnight is when we can consider $H_{DDEF}$ as valid. Initially, in both GUI, the maximum amplitude is -20 nT, but these amplitudes decrease rapidly until March 21$^{st}$. In the case of GUI, however, there is a small enhancement between March 22$^{nd}$ and March 23$^{rd}$.
+	
+	In second sector, $H_{PPEF}$ fluctuations show a sharp enhancement, right after dusk sector. The maximum amplitude is 52 nT, at ~0430 LT. $H_{DDEF}$, on the other hand, presents a similar behavior as in noon sector, with an initial amplitude of about 20 nT on March 19$^{th}$, decreasing until March 21$^{st}$.\\
+	
+	
+	In the third sector, similar to the previous case, most of the relevant $H_{PPEF}$ fluctuations occur during night hours, including the first two hours after dawn. The $H_{PPEF}$ fluctuations driven by the CME show a sharp enhancement close to each local midnight within this zone. The maximum fluctuation is observed around midnight, at 0049 LT, with a magnitude of 30 nT. After passing through dawn sector at 0830 LT, there is a sharp decrease in the magnitude of $H_{PPEF}$ fluctuations. On the other hand, $H_{DDEF}$ fluctuations are practically absent, with an initial amplitude of about 10 nT at most, starting from March 19$^{th}$.\\
+	
+	In the fourth sector, we observe that most $H_{PPEF}$ fluctuations related to the CME occur during daylight hours. The amplitude tendencies exhibit a very smooth variation. The maximum $H_{PPEF}$ fluctuation amplitudes occur at 1040 LT and near dusk, at 1740 LT, having magnitudes above 34 nT. $H_{DDEF}$ fluctuations shows a quite interesting behavior, presenting a sloe amplitude damping. This means that sector four is the one where $H_{DDEF}$ lasts the longest, from March 19$^{th}$ to March 26$^{th}$. 
+		
+		
+	\begin{figure}
+		\centering
+		\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-15_2015-03-28.eps}   
+		\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-15_2015-03-28.eps}  	 
+		\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-15_2015-03-28.eps}
+		
+		\caption{Geomagnetic registers for each magnetic OB. top panels show planetary geomagnetic indices SYM-H (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
+		\label{fig:recons}
+	\end{figure}
+	%In \textbf{Zone 1}, $H_{PPEF}$ fluctuations begin with the onset of the MP. However, the Sheath triggered MP stage did not drive significant $H_{PPEF}$ fluctuations compared to the CME. After the arrival of the CME, there is an enhancement tendency from noon sector toward dusk sector. In both GUI and TAM, there is a sharp fluctuation of -30 nT and -45 nT. Following this, a decreasing trend in amplitudes begins until midnight, when a new sharp peak in $H_{PPEF}$ is observed, reaching 34 nT for GUI and 60 nT for TAM. This enhancement is consistent with the minimum in SYM-H and the end of magnetic reconnection mechanism, as seen in Figure \ref{fig:ip}.\\ 
+	
+	%Based on the previous Figure \ref{fig:magdata} and according to \cite{ddyn2005}, we consider that $H_{DDEF}$ become valid at least one day after the minimum. Then, from March 19 $^{th}$ at midnight is when we can consider $H_{DDEF}$ as valid. Initially, in both GUI and TAM, the maximum amplitude is -20 nT, but these amplitudes decrease rapidly until March 21$^{st}$. In the case of GUI, however, there is a small enhancement between March 22$^{nd}$ and March 23$^{rd}$.\\
+	
+	
+	%Fluctuations $H_{PPEF}$ in JAI (\textbf{Zone 2}) show a tendency during MP related to the CME at night hours. Centered around midnight, appear the highest amplitudes above ~40 nT meanwhile the maximum amplitude is 52 nT, near dawn sector. An enhancement of $H_{PPEF}$ is also present near local dusk, with a magnitude of -41 nT. $H_{DDEF}$, on the other hand, presents a similar behavior as in Zone 1, with an initial amplitude of about 20 nT on March 19$^{th}$, decreasing until March 21$^{st}$.\\
+	
+	%In \textbf{Zone 3}, similar to the previous case, most of the relevant $H_{PPEF}$ fluctuations occur during night hours, including the first two hours after dawn. The $H_{PPEF}$ fluctuations driven by the CME show a sharp enhancement close to each local midnight within this zone. The maximum fluctuation is observed around each local midnight, with values of 50, 55, 47, and 30 nT for LZH, BMT, CYG, and KAK, respectively. After each local dawn, there is another enhancement of $H_{PPEF}$, followed by a sharp decrease in amplitudes. On the other hand, $H_{DDEF}$ fluctuations are practically absent in OBs within this zone, with an initial amplitude of about 10 nT at most, starting from March 19$^{th}$.\\
+	
+	%In HON (\textbf{Zone 4}), the $H_{PPEF}$ fluctuation tendency has considerably smaller amplitudes compared to the previous cases. The maximum fluctuations occur at 2300 LT and 0700 LT, with magnitudes of 34 and 41 nT, respectively. Considering that $H_{DDEF}$ would be valid until March 19$^{th}$–20$^{th}$ for this zone, there are no significant $H_{DDEF}$ fluctuations present in HON either.\\
+	
+	
+	%Finally, for \textbf{Zone 5}, we observe that $H_{PPEF}$ fluctuations related to the CME occur during daylight hours. The amplitude tendencies exhibit a very smooth variation in TEO and SJG, with the peak at noon for TEO, while for SJG, it occurs close to 1400 LT, with significantly weaker fluctuations. In both cases, the maximum $H_{PPEF}$ fluctuations occur in two moments: the first at noon (TEO) or 1400 LT (SJG), and the second at dusk. In the case of TEO, the maximum $H_{PPEF}$ fluctuations are about 34 nT, while SJG's maximum fluctuations are about 25 nT. \\
+	
+	%$H_{DDEF}$ fluctuations shows a quite interesting behavior. In the case of TEO, $H_{DDEF}$ presents a higher amplitude of 20 nT compared to HON. Its amplitude damping is also the slowest within this study, making TEO the OB where $H_{DDEF}$ lasts the longest, from March 19$^{th}$ to March 26$^{th}$. In the case of SJG, $H_{DDEF}$ shows a different behavior, being more similar to what is observed in HON.\\
+	
+	%It should be considered that the time at which $H_{DDEF}$ becomes valid in all cases is only an approximation. To assess the period during which $H_{DDEF}$ was present, as well as its intensity, the next procedure demonstrates the results.\\
+	
 	
 	
 	\subsection{Wavelet Analysis}
 	
-Results of the wavelet analysis for each OB are shown in Figure \ref{fig:wavelets}. Panels a) display local response $\Delta H$ as a reference for the GS development. Panels b), on the other hand, show $|\psi_0^2|$ to analyze the power of the signals at $f \approx 11.5 \mu Hz$ or $T \approx 24$ hours, as well as when these signals were present. As shown in Figure \ref{fig:recons}, during the MP of every OB, a peak signal is observed which is not related to $H_{DDEF}$ since it takes several hours to a whole day after minimum is reached, for the Ddyn curren to be driven. Thus, we use panel c) to display the normalized semblance analysis ($S$), where we compare two signals with similar frequency bands ($P_I$ and $SQ$). Here, the values range from 0 to 1, where values from 0.6 to 1 (green to red) are more anti-correlated to $SQ$ and therefore, more correlated to $H_{DDEF}$. By examining all three panels, we can study the $H_{DDEF}$ local response for each OB.\\
-
-According to the wavelet spectrogram and semblance analysis in Figure \ref{fig:wavelets}, for the \textbf{Zone 1} OBs, $H_{DDEF}$ is present since March 19$^{th}$ (around 0600 LT in GUI and 1900 LT in TAM) and remains until almost the end of March 21$^{st}$. As seen in Figure \ref{fig:recons}, in GUI, there is a minor intensification of $H_{DDEF}$. The power of the signal in GUI at the beginning is about $4.25 \times 10^{4} \, \mathrm{nT^2/Hz}$, with a damping of $1.17 \times 10^{4} \, \mathrm{nT^2/Hz}$ by March 21$^{st}$. This power remains until March 24$^{th}$, when the signal's correlation drops to 0.5. In the case of TAM, the maximum amplitude during the first day is about $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$, and it drops to $1.17 \times 10^{4} \, \mathrm{nT^2/Hz}$.\\
-
-
-
-In \textbf{Zone 2}, the wavelet spectrogram shows a similar response to TAM. However, the coherent analysis reveals a different result for JAI. The background shows a correlation around 0.5, while we observe notable signals within the frequency range of $13.8 \mu Hz$ (T $\approx 20$ hours), with correlations ranging from 0.75 to 1 during March 19$^{th}$ and between March 25$^{th}$ and 27$^{th}$. The first signal, which can be associated with $H_{DDEF}$, shows a power of $5.95 \times 10^{4}$ to $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$, while the second period has a significantly weaker power of $8.5 \times 10^{3} \, \mathrm{nT^2/Hz}$.\\
-
-In \textbf{Zone 3}, there is no fluctuations related to $H_{DDEF}$ in any of the OBs. The same applies to \textbf{Zone 4}, represented by HON, where the signal identified as anticorrelated with $H_{SQ}$ appears at a frequency range of $23.1 \mu Hz$ (period $\approx 12$ hours), which is about twice the frequency range in which $H_{DDEF}$ is present. A similar pattern is present in \textbf{Zone 3}, but the signals appear at even higher frequencies, ranging from $55.5$ to $69.4 \mu Hz$ (periods of $\approx 5-4$ hours).\\
+	Results of the wavelet analysis for each OB are shown in Figure \ref{fig:wavelets}. Panels a) display local response $\Delta H$ as a reference for the GS development. Panels b), on the other hand, show $|\psi_0^2|$ to analyze the power of the signals at $f \approx 11.5 \mu Hz$ or $T \approx 24$ hours, as well as when these signals were present. As shown in Figure \ref{fig:recons}, during the MP of every OB, a peak signal is observed which is not related to $H_{DDEF}$ since it takes several hours to a whole day after minimum is reached, for the Ddyn curren to be driven. Thus, we use panel c) to display the normalized semblance analysis ($S$), where we compare two signals with similar frequency bands ($P_I$ and $SQ$). Here, the values range from 0 to 1, where values from 0.6 to 1 (green to red) are more anti-correlated to $SQ$ and therefore, more correlated to $H_{DDEF}$. Using each three panels in Figures \ref{fig:wavelets} and \ref{fig:wavelets2}, we can study the $H_{DDEF}$ local response for each point.\\
+	
+	According to the wavelet spectrogram and semblance analysis in Figure \ref{fig:wavelets}, for the sector 1, $H_{DDEF}$ is present since March 19$^{th}$ around 0600 LT and remains until almost the end of March 21$^{st}$. As seen in Figure \ref{fig:recons}, in GUI, there is a minor intensification of $H_{DDEF}$. The power of the signal in GUI at the beginning is about $4.25 \times 10^{4} \, \mathrm{nT^2/Hz}$, with a damping of $1.17 \times 10^{4} \, \mathrm{nT^2/Hz}$ by March 21$^{st}$. This power remains until March 24$^{th}$, when the signal's correlation drops to 0.5. \\
+	
+	In the second sector, the wavelet spectrogram shows a similar but intensified response during the first two days of the RP. However, the coherent analysis reveals a different result for JAI. The background shows a correlation around 0.5, while we observe notable signals within the frequency range of $13.8 \mu Hz$ (T $\approx 20$ hours), with correlations ranging from 0.75 to 1 during March 19$^{th}$ and between March 25$^{th}$ and 27$^{th}$. The first signal, which can be associated with $H_{DDEF}$, shows a power of $5.95 \times 10^{4}$ to $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$, while the second period has a significantly weaker power of $8.5 \times 10^{3} \, \mathrm{nT^2/Hz}$.\\
+	
+	In the third sector, there is no fluctuations related to $H_{DDEF}$. Even the PRC activity which is the strongest signal during MP within the power spectrum is significantly weak in comparison to the previous cases, having a magnitude of $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$.\\
+	
+	The fourth sector exhibits a $H_{DDEF}$ fluctuation power of approximately $4.4 \times 10^{3} \, \mathrm{nT^2/Hz}$, being maintained for several days. We observe also that there is not much difference between PRC power during MP and the $H_{DDEF}$ power during RP. At panel (c), it is shown that $H_{DDEF}$ activity last from March $20^{th}$ until $26^{th}$. Then, we observe a smooth attenuation of power to approximately $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$ until March $26^{th}$, when the correlation drops below 0.5, marking the end of $H_{DDEF}$ activity. Thus, TEO is the point where $H_{DDEF}$ lasts the longest within this study. 
+	
+	%According to the wavelet spectrogram and semblance analysis in Figure \ref{fig:wavelets}, for the \textbf{Zone 1} OBs, $H_{DDEF}$ is present since March 19$^{th}$ (around 0600 LT in GUI and 1900 LT in TAM) and remains until almost the end of March 21$^{st}$. As seen in Figure \ref{fig:recons}, in GUI, there is a minor intensification of $H_{DDEF}$. The power of the signal in GUI at the beginning is about $4.25 \times 10^{4} \, \mathrm{nT^2/Hz}$, with a damping of $1.17 \times 10^{4} \, \mathrm{nT^2/Hz}$ by March 21$^{st}$. This power remains until March 24$^{th}$, when the signal's correlation drops to 0.5. In the case of TAM, the maximum amplitude during the first day is about $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$, and it drops to $1.17 \times 10^{4} \, \mathrm{nT^2/Hz}$.\\
+	
+	
+	%In \textbf{Zone 2}, the wavelet spectrogram shows a similar response to TAM. However, the coherent analysis reveals a different result for JAI. The background shows a correlation around 0.5, while we observe notable signals within the frequency range of $13.8 \mu Hz$ (T $\approx 20$ hours), with correlations ranging from 0.75 to 1 during March 19$^{th}$ and between March 25$^{th}$ and 27$^{th}$. The first signal, which can be associated with $H_{DDEF}$, shows a power of $5.95 \times 10^{4}$ to $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$, while the second period has a significantly weaker power of $8.5 \times 10^{3} \, \mathrm{nT^2/Hz}$.\\
+	
+	%In \textbf{Zone 3}, there is no fluctuations related to $H_{DDEF}$ in any of the OBs. The same applies to \textbf{Zone 4}, represented by HON, where the signal identified as anticorrelated with $H_{SQ}$ appears at a frequency range of $23.1 \mu Hz$ (period $\approx 12$ hours), which is about twice the frequency range in which $H_{DDEF}$ is present. A similar pattern is present in \textbf{Zone 3}, but the signals appear at even higher frequencies, ranging from $55.5$ to $69.4 \mu Hz$ (periods of $\approx 5-4$ hours).\\
+	
+	
+	%\textbf{Zone 5} exhibits quite different behavior. On one hand, we have TEO, where $H_{DDEF}$ fluctuation power is approximately $4.4 \times 10^{3} \, \mathrm{nT^2/Hz}$, and this power is maintained for almost six days starting from March $20^{th}$, the date when, according to the semblance analysis, $H_{DDEF}$ begins its activity. Then, we observe a smooth attenuation of power to approximately $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$ until March $26^{th}$, when the correlation drops below 0.5, marking the end of $H_{DDEF}$ activity. Thus, TEO is the point where $H_{DDEF}$ lasts the longest in this study. \\
+	
+	%On the other hand, SJG shows a similar response in the spectrogram to TAM's case, with $H_{DDEF}$ beginning its activity on March $22^{nd}$ and lasting for about three days. The power of the signal is approximately $8.5 \times 10^{3} \, \mathrm{nT^2/Hz}$, which is one of the weakest observed in this study.\\
+	
 
 	
-\textbf{Zone 5} exhibits quite different behavior. On one hand, we have TEO, where $H_{DDEF}$ fluctuation power is approximately $4.4 \times 10^{3} \, \mathrm{nT^2/Hz}$, and this power is maintained for almost six days starting from March $20^{th}$, the date when, according to the semblance analysis, $H_{DDEF}$ begins its activity. Then, we observe a smooth attenuation of power to approximately $2.55 \times 10^{4} \, \mathrm{nT^2/Hz}$ until March $26^{th}$, when the correlation drops below 0.5, marking the end of $H_{DDEF}$ activity. Thus, TEO is the point where $H_{DDEF}$ lasts the longest in this study. \\
-
-On the other hand, SJG shows a similar response in the spectrogram to TAM's case, with $H_{DDEF}$ beginning its activity on March $22^{nd}$ and lasting for about three days. The power of the signal is approximately $8.5 \times 10^{3} \, \mathrm{nT^2/Hz}$, which is one of the weakest observed in this study.\\
 	
+		\begin{figure}
+		\centering
+		\includegraphics[width=7.0cm]{fig/wavelets/gui_2015-03-15_2015-03-28.eps}   
+		%\includegraphics[width=7.0cm]{fig/wavelets/tam_2015-03-15_2015-03-28.eps} 
+		\includegraphics[width=7.0cm]{fig/wavelets/jai_2015-03-15_2015-03-28.eps}  
+		%\includegraphics[width=7.0cm]{fig/wavelets/lzh_2015-03-15_2015-03-28.eps}
+		%\includegraphics[width=7.0cm]{fig/wavelets/bmt_2015-03-15_2015-03-28.eps}
+		%\includegraphics[width=7.0cm]{fig/wavelets/cyg_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/wavelets/kak_2015-03-15_2015-03-28.eps}
+		%\includegraphics[width=7.0cm]{fig/wavelets/hon_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/wavelets/teo_2015-03-15_2015-03-28.eps}
+		%\includegraphics[width=7.0cm]{fig/wavelets/sjg_2015-03-15_2015-03-28.eps}
+		\caption{Wavelet Analysis. Top panels: Local response $\Delta H_{loc}$ showing the development of GS (black line). Middle panels: wavelet spectrum ($|\psi(n)|^2$) applied to the ionospheric magnetic contribution $H_I$. Bottom panels: $H_{DDEF}$ correlation obtained from Eq \ref{eq:ddyn}  (Part 1)}
+		\label{fig:wavelets}
+	\end{figure}
+	
+	
+	
+	
+	\section{Discussion}
+	
+	From Figures \ref{fig:magdata}, \ref{fig:recons}, and \ref{fig:wavelets}, there are different results for each OB, depending on its proximity to one of the local time sectors. More specifically, the PRC influence on local response. We can confirm this from comparing $H_I$ response during MP in Figures \ref{fig:magdata} and \ref{fig:magdata2} with the bottom panel of \ref{fig:ip} where ASYMH is shown. In each case, we observe a consistent behavior of $H_I$ during ASYMH sharp enhancement at 1407 UT, which can be translated to a contribution from PRC to the local geomagnetic response ($\Delta H$). Considering the shape of the PRC, its contribution to $\Delta H$ thus $H_I$, is not uniform across the sectors studied. Depending on the location of each OB during the MP, contribution from the period of maximum PRC activity will strongly vary. \\
+	
+	
+	Contribution of PRC during its highest activity at 1407 UT in sector 1 seems less significant than in sector 2. In the last one mentioned, $H_I$ reaches its lowest magnitude (~-150 nT) more or less at the same time ASYMH gets its peak value. Considering that at 1407 UT (1937 LT), JAI was close to dusk sector in the night side which means that it was close to one of the joint points where PRC connects with FAC currents during the MP.\\
+	
+	
+	At sector 3 and 4 on the other hand, the contribution of PRC seems to be different. In sector 3, the amplitude in $H_I$ at 1407 UT (2307 LT) is less negative (~64 nT) during the highest PRC activity. In this case, KAK was near crossing midnight sector during the the higher PRC activity. In the panel we see that $H_I$ in KAK receive a small contribution from PRC, considering that $H_I$ values still negative. In other words, from Equation \ref{eq:H_I} we get that negatives $H_I$ means that $\Delta H_{loc}$ is more negative than SYMH hence local geomagnetic response is locally more intense. Sector 4 on the other hand is totally positive during the highest PRC activity, meaning that local geomagnetic response is less intense than the global response. In this case, sector 4 were at 0807 LT which means that it was closer to the other joint point of the PRC with FAC.\\ 
+	
+	From this, we could think that OBs near dusk sector during MP onset (and highest PRC activity) would present a stronger local response, while those near the dawn sector would show a more attenuated response.\\
 		
-\begin{figure}
-	\centering
-	\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-15_2015-03-28.eps}   
-	\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-15_2015-03-28.eps}  	 
-	\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-15_2015-03-28.eps}
+	%the influence of the PRC becomes less significant as the OB is further from the region of PRC activity. In \textbf{Zone 5}, on the other hand, the OB show less negative $\Delta H$ during the peak PRC activity. This is particularly noticeable when an OB cross the dawn sector during the MP. In these cases, there is an enhancement in $\Delta H$, which could be related to the direction of electric currents and fields in this sector, driving a positive $H$ component. Conversely, in the dusk sector, the direction of electric fields and currents may induce a negative $H$. Therefore, OBs near dusk sector during MP would present a stronger local response, while those near the dawn sector would show a more attenuated response.\\
+	
+	
+	%As a result, $H_I$ exhibits different amplitudes and behaviors depending on the sector. In sector 1, $H_I$ shows high negative amplitudes, corresponding to a more negative local response compared to the global one. On the other hand, from \textbf{Zone 2} to \textbf{Zone 4}, there is an attenuation of $H_I$ between 1400 - 1900 UT. The reason for this attenuation is that as an OB gets farther from the PRC's extreme terminal, it results in less contribution from it. Additionally, we observe an enhancement of $H_I$ toward more positive values between 2100 - 0300 LT, which corresponds to a more attenuated local response in comparison to SYM-H. In contrast, OBs in \textbf{Zone 5} show an enhancement of more negative values near local dusk, when SYM-H reaches its minimum. This suggests that OBS within \textbf{Zone 5} experience a sharp negative enhancement of PRC at the end of the MP.\\
+	
+	
 
-	\caption{Geomagnetic registers for each magnetic OB. top panels show planetary geomagnetic indices SYM-H (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
-	\label{fig:recons}
-\end{figure}
+	
+	To confirm  quantitatively the contribution of PRC to $H_I$ and $H_{PPEF}$ we carried out two experiments, highlighting on the time window from 1325 to 1750 UT, during which PRC peak activity occurs. The experiments were:\\
+	
+	
+	\begin{enumerate}
+		\item Analyze the correlation between $H_I$ and ASYMH.
+		\item Analyze the $H_{PPEF}$ fluctuations distribution during MP, looking for the sectors where $H_{PPEF}$ is more intense in general.
+	\end{enumerate}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=7.0cm]{fig/corr/gui_corr.eps}   
+		%\includegraphics[width=5.0cm]{fig/corr/tam_corr.eps} 
+		\includegraphics[width=7.0cm]{fig/corr/jai_corr.eps}  
+		%\includegraphics[width=5.0cm]{fig/corr/lzh_corr.eps}
+		%\includegraphics[width=5.0cm]{fig/corr/bmt_corr.eps}
+		%\includegraphics[width=5.0cm]{fig/corr/cyg_corr.eps}
+		\includegraphics[width=7.0cm]{fig/corr/kak_corr.eps}
+		%\includegraphics[width=5.0cm]{fig/corr/hon_corr.eps}
+		\includegraphics[width=7.0cm]{fig/corr/teo_corr.eps}
+		%\includegraphics[width=5.0cm]{fig/corr/sjg_corr.eps}
+		\caption{Correlation Analysis ASYM-H and $H_I$, during the period 13:25 - 17:50 UT, which is consistent with the period of highest ASYM-H activity }
+		\label{fig:corr}
+	\end{figure}	
+	 
+	
+	In the first experiment, we computed the Pearson correlation  ($\rho$) in two stages: first, $\rho_1$ for ASYMH vs $H_I$, and second, $\rho_2$ for ASYMH vs $H_I$ after removing $H_{PPEF}$ from $H_I$ using a low-pass filter. The results are shown in Figure \ref{fig:corr}, where red diamonds represent $\rho_1$ (before removing $H_{PPEF}$), and gray diamonds represent $\rho_2$ (after removing $H_{PPEF}$).\\
+	
+	Note that the OBs which exhibit stronger correlation (or anti-correlation), such as JAI and TEO (and LZH in the Appendix \ref{a2}). Interestingly, at the beginning of the selected time window (1325 - 1750 UT), JAI and TEO were also the closest OBs to the dusk and dawn sectors, respectively. After removing $H_{PPEF}$ fluctuations from $H_I$, the scattering increases in all OBs, which can be seen especially within those cases where with highest $\rho_1$ values. This reinforces the idea that $H_{PPEF}$ magnitudes are strongly influenced by PRC activity.\\
+	
+%	To conclude the discussion on $H_{PPEF}$, there is another notable feature. At 1730 UT, a substorm onset is reported by \cite{substorm_stpatrick, substorm_stpatrick2}. From \cite{substorm_ppef}, it is concluded that a substorm may affect the penetration efficiency of electric fields, even at mid-low latitude regions. Therefore, we infer that this substorm might influence $H_{PPEF}$ at OBs located near the dusk, dawn, or midnight sectors between 1730 and 1800 UT.\\}	
 
+			
+	For the second experiment, the analysis of $H_{PPEF}$ distribution during MP is shown in Figure \ref{fig:ppef_dist}. From the distributions (top panels) of these four sectors, we fit Gaussian distribution for each case (red line). In order to find out which OB recorded highest $H_{PPEF}$ fluctuations in general, we set thresholds of magnitude for each OB. Thus, any fluctuation where $|H_{PPEF}| > Threshold$ can be considered as highly significant. Hence, with higher thresholds, we can consider higher $H_{PPEF}$ activity in general. Then, we set in a first stage as threshold the double standard deviation $2 \cdot \sigma$ of each Gaussian fit which is shown in Figure \ref{fig:ppef_dist} as red vertical dashed lines.\\ 
+	
+	
+	In bottom panels of Figure \ref{fig:ppef_dist} we show the accumulated distributions (blue line) with its fitted accumulated Gaussian distribution (red line). Thus, from the $95 \%$ of cumulative probability set as second threshold (black dashed line). We observe in general that values of $2\sigma$ and $95 \% CP$ are not so different, then we consider as threshold their average which is represented in each panel as a black dot. From the four sectors analyzed, the highest averaged threshold correspond to JAI (31.07 nT) followed by TEO (22.96) which were located near dawn sector at the beginning of the period. As observed, this indicates that PRC activity had a significant impact on the intensity of $H_{PPEF}$, depending also on the proximity of one of the joint points of PRC - FAC.\\
+	
+	From \cite{amory2020_filtros}, it is clear that the PRC makes an important contribution to the local response, which could affect the results of Equation \ref{eq:H_I} and the reconstruction of $H_{DDEF}$. \\% Considering the PRC's limited longitudinal region of influence, we decided to analyze its contribution to each OB.\\ 
+	
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=7.0cm]{fig/ppef_dist/gui_2015-03-17_2015-03-18.V2.png}      
+		\includegraphics[width=7.0cm]{fig/ppef_dist/jai_2015-03-17_2015-03-18.V2.png}       	 
+		\includegraphics[width=7.0cm]{fig/ppef_dist/kak_2015-03-17_2015-03-18.V2.png}      
+		\includegraphics[width=7.0cm]{fig/ppef_dist/teo_2015-03-17_2015-03-18.V2.png}      	
+		\caption{$H_{PPEF}$ distribution for each OB. Color dashed vertical lines represent the a threshold for $H_{PPEF}$ to be considered as intense amplitudes}
+		\label{fig:ppef_dist}
+	\end{figure}
+	
+	
+	Regarding $H_{DDEF}$ fluctuations, results show different responses. From Figures\ref{fig:magdata} and \ref{fig:magdata2}, periods where $H_I$ show an opposed behavior toward $H_{SQ}$ are present mostly on sectors 1 and 4. From these ones, it is sector 4 where we observe the most prominent opposed behavior. In sectors 2 and 3 on the other hand, there is not a clear behavior which suggest $H_{DDEF}$ activity during RP. Specially in sector 3. This is consistent when we analyze Figures \ref{fig:recons} and \ref{fig:recons2} where reconstruct $H_{DDEF}$ from Fourier analysis and the coherent analysis in Figures \ref{fig:wavelets} and \ref{fig:wavelets2}.\\	
+	
+	
+	In \textbf{sector 1}, $H_{DDEF}$ fluctuations are present during two days (March  $\mathrm{19-20^{th}}$), whereas in \textbf{sectors 2 and 3}, these fluctuations are absent. Finally, in sector 4 $H_{DDEF}$ fluctuations remained during 5 days (March  $\mathrm{21-26^{th}}$).This aligns with the Disturbed Dynamo (Ddyn) model, which predicts that the current system is primarily driven on Earth's day side because its dependence to E region of Ionosphere. 
+	
+	
+	It basically takes several hours for driving Ddyn current after the onset of the GS on the dayside. If we consider that Ddyn current is moving with the dayside (similar to the SQ current) until it gets vanished, then those OB which were present at the dayside during the driving process of Ddyn current are going to be the points where its magnetic signatures are going . Taking  
+	
+	
+	
+	
+	In \cite{stpatrick_ref, amory_younas2021}, it is mentioned that, with the arrival of a High Speed Solar Wind flow after march $\mathrm{18^{th}}$, there were no significant disturbing process but really small injection periods. This could explain the long duration of RP and so lasting effects of $H_DDEF$ as mentioned in \cite{amory_younas2021}. According to them, whether the trigger event is a CME or High-Speed Solar Wind (HSSW), both the duration and longitudinal presence of Ddyn are affected. Their results indicate that a CME-triggered event may not be observed at all longitudes, as was the case here. In contrast, an HSSW-triggered event, even with less energy input than a CME, leads to short injections over a wider period, resulting in Ddyn lasting several days. The duration of $H_{DDEF}$ in TEO and GUI aligns with their findings, where $H_{DDEF}$ lasted about 4-5 days in the American and African sectors, and 1.5 days in Asia.\\
+	
 
-
-\section{Discussion}
-
-From Figures \ref{fig:magdata}, \ref{fig:recons}, and \ref{fig:wavelets}, there are consistent and similar results for the OBs in each Zone. In \textbf{Zone 1}, the MP phase occurs mostly during day time hours, except for the last six hours. As shown in Figure \ref{fig:magdata}, around 1400 UT (1500 LT in the case of TAM), there is an enhancement in the local magnetic response, which coincides with the enhancement of ASYMH. Since ASYMH is a good measure of the asymmetric response of the ring current system, it also reflects the contribution from the PRC. The top panels of Figure \ref{fig:magdata} show that the PRC influences local geomagnetic activity between 1400 UT and 2300 UT.\\
-
-Considering the shape of the PRC, its contribution to $\Delta H$ is not uniform across the OBs, as observed in Figure \ref{fig:magdata}. As we move eastward through \textbf{Zone 2}, \textbf{Zone 3}, and \textbf{Zone 4}, the influence of the PRC becomes less significant as the OB is further from the region of PRC activity. In \textbf{Zone 5}, on the other hand, the OB show less negative $\Delta H$ during the peak PRC activity. This is particularly noticeable when an OB cross the dawn sector during the MP. In these cases, there is an enhancement in $\Delta H$, which could be related to the direction of electric currents and fields in this sector, driving a positive $H$ component. Conversely, in the dusk sector, the direction of electric fields and currents may induce a negative $H$. Therefore, OBs near dusk sector during MP would present a stronger local response, while those near the dawn sector would show a more attenuated response.\\
-
-
-The difference in local enhancement (either negative or positive) due to PRC activity for each OB influences the results of Equation \ref{eq:H_I}. As a result, $H_I$ exhibits different amplitudes and behaviors depending on the Zone. In \textbf{Zone 1}, $H_I$ shows high negative amplitudes, corresponding to a more negative local response compared to the global one. On the other hand, from \textbf{Zone 2} to \textbf{Zone 4}, there is an attenuation of $H_I$ between 1400 - 1900 UT. The reason for this attenuation is that as an OB gets farther from the PRC's extreme terminal, it results in less contribution from it. Additionally, we observe an enhancement of $H_I$ toward more positive values between 2100 - 0300 LT, which corresponds to a more attenuated local response in comparison to SYM-H. In contrast, OBs in \textbf{Zone 5} show an enhancement of more negative values near local dusk, when SYM-H reaches its minimum. This suggests that OBS within \textbf{Zone 5} experience a sharp negative enhancement of PRC at the end of the MP.\\
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=9.0cm]{fig/ppef_dist/sjg_2015-03-17_2015-03-18.png}   
-	\caption{$H_{PPEF}$ distribution for each OB. Color dashed vertical lines represent the a threshold for $H_{PPEF}$ to be considered as intense amplitudes}
-	\label{fig:ppef_dist}
-\end{figure}
-
-As observed in Figure \ref{fig:recons}, $H_{PPEF}$ peak fluctuations are higher in TAM and JAI. This is also evident in Figure \ref{fig:magdata}, where $\Delta H_{loc}$ presents a higher enhancement from PRC contribution. On the other hand, OBs from \textbf{Zone 3} exhibit higher fluctuation tendencies in $H_{PPEF}$.\\
-
-To quantify amplitude tendencies in general, we measured the distribution of $H_{PPEF}$ during MP, as shown in Figure \ref{fig:ppef_dist}. From these distributions, we take $|H_{PPEF}|$ since we are primarily interested in their amplitudes. We then set thresholds for each OB, where any fluctuation exceeding the threshold is considered highly significant. These thresholds are computed by taking twice the standard deviation for each distribution and are represented as dashed lines with different colors for each OB in Figure \ref{fig:ppef_dist}. It is evident that the highest thresholds correspond to OBs crossing between the dusk-midnight sector during the period of highest ASYMH activity (1325 - 1750 UT). These include LZH (2125 - 0150 LT), TAM (1425 - 1850 LT), JAI (1855 - 2320 LT), and CYG (2225 - 0150 LT). As observed, this indicates that PRC activity had a significant impact on the intensity of $H_{PPEF}$.\\
-
-From \cite{amory2020_filtros}, it is clear that the PRC makes an important contribution to the local response, which could affect the results of Equation \ref{eq:H_I} and the reconstruction of $H_{DDEF}$. Considering the PRC's limited longitudinal region of influence, we decided to analyze its contribution to each OB.\\
-
-
-From analyzing $H_{PPEF}$ thresholds, we acknowledge the importance of focusing on the time window from 1325 to 1750 UT, during which PRC peak activity occurs. Therefore, by considering $H_I$ and ASYMH from this time window, we computed a Pearson correlation ($\rho$) in two stages: first, $\rho_1$ for ASYMH - $H_I$, and second, $\rho_2$ for ASYMH - $H_I$ after removing $H_{PPEF}$ from $H_I$ using a low-pass filter. The results are shown in Figure \ref{fig:corr}, where red diamonds represent $\rho_1$, and gray diamonds represent $\rho_2$.\\
-
-Note that a few OBs exhibit a strong correlation (or anti-correlation), such as JAI, LZH, and TEO. Interestingly, at the beginning of this time window, JAI and TEO were also the closest OBs to the dusk and dawn sectors, respectively. On the other hand, after removing $H_{PPEF}$ fluctuations from $H_I$, the scattering increases in all OBs, especially those with the highest $\rho_1$. This reinforces the idea that $H_{PPEF}$ amplitudes are strongly influenced by PRC activity.\\
-
-To conclude the discussion on $H_{PPEF}$, there is another notable feature. At 1730 UT, a substorm onset is reported by \cite{substorm_stpatrick, substorm_stpatrick2}. From \cite{substorm_ppef}, it is concluded that a substorm may affect the penetration efficiency of electric fields, even at mid-low latitude regions. Therefore, we infer that this substorm might influence $H_{PPEF}$ at OBs located near the dusk, dawn, or midnight sectors between 1730 and 1800 UT.\\
-
-
-Regarding $H_{DDEF}$ fluctuations, results show distinct differences when we focus on more eastern OBs, starting with GUI. In \textbf{Zones 1 and 2}, fluctuations of $H_I$ are present during the first three days after March  $\mathrm{18^{th}}$, whereas in \textbf{Zones 3 and 4}, these fluctuations are absent. This was confirmed through the reconstruction of $H_{DDEF}$ and coherence analysis, which revealed no fluctuations related to $H_{DDEF}$ in \textbf{Zones 3 and 4}. Notably, the gray shades in Figures \ref{fig:magdata} and \ref{fig:recons}, which represent local nighttime, show that the MP in \textbf{Zones 3 and 4} occurs during night hours. This aligns with the Ddyn model, which predicts that the current system is primarily driven on Earth's day side, although it can also be present on the night side, but at much lower intensity.\\
-
-After the semblance analysis, we observe that in most OBs (except those in \textbf{Zones 3 and 4}), $H_{DDEF}$ lasts for a maximum of three days. The exceptions are GUI, which shows a minor intensification after its depletion, and TEO, where the amplitude drop is much slower, allowing $H_{DDEF}$ fluctuations to persist for almost a week. The case of TEO is particularly noteworthy, as the nearest OB, SJG, does not exhibit a similar response.\\
-
-
-In \cite{stpatrick_ref, amory_younas2021}, it is mentioned the arrival of a High Speed Solar Wind flow after march $\mathrm{18^{th}}$. This can be seen in panel (b) of Figure \ref{fig:ip} where SW speed remains above 550 $\mathrm{km s^{-1}}$. However, looking at $B_Z$ and $E_Y$ profiles, there were no significant disturbing process but really small injection periods. This could explain the long duration of RP and so lasting effects of DDEF as mentioned in \cite{amory_younas2021}. According to them, whether the trigger event is a CME or High-Speed Solar Wind (HSSW), both the duration and longitudinal presence of Ddyn are affected. Their results indicate that a CME-triggered event may not be observed at all longitudes, as was the case here. In contrast, an HSSW-triggered event, even with less energy input than a CME, leads to short injections over a wider period, resulting in Ddyn lasting several days. The duration of Ddyn in TEO and GUI aligns with their findings, where Ddyn lasted about 4-5 days in the American and African sectors, and 1.5 days in Asia.\\
-
-
-
-
-
-
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=5.0cm]{fig/corr/gui_corr.eps}   
-	\includegraphics[width=5.0cm]{fig/corr/tam_corr.eps} 
-	\includegraphics[width=5.0cm]{fig/corr/jai_corr.eps}  
-	\includegraphics[width=5.0cm]{fig/corr/lzh_corr.eps}
-	\includegraphics[width=5.0cm]{fig/corr/bmt_corr.eps}
-	\includegraphics[width=5.0cm]{fig/corr/cyg_corr.eps}
-	\includegraphics[width=5.0cm]{fig/corr/kak_corr.eps}
-	\includegraphics[width=5.0cm]{fig/corr/hon_corr.eps}
-	\includegraphics[width=5.0cm]{fig/corr/teo_corr.eps}
-	\includegraphics[width=5.0cm]{fig/corr/sjg_corr.eps}
-	\caption{Correlation Analysis ASYM-H and $H_I$, during the period 13:25 - 17:50 UT, which is consistent with the period of highest ASYM-H activity }
-	\label{fig:corr}
-\end{figure}	
+	
+	%Regarding $H_{DDEF}$ fluctuations, results show different responses. From Figures\ref{fig:magdata} and \ref{fig:magdata2}, In \textbf{sector 1}, fluctuations of $H_I$ are present during the first three days after March  $\mathrm{18^{th}}$, whereas in \textbf{Zones 3 and 4}, these fluctuations are absent. This was confirmed through the reconstruction of $H_{DDEF}$ and coherence analysis, which revealed no fluctuations related to $H_{DDEF}$ in \textbf{Zones 3 and 4}. Notably, the gray shades in Figures \ref{fig:magdata} and \ref{fig:recons}, which represent local nighttime, show that the MP in \textbf{Zones 3 and 4} occurs during night hours. This aligns with the Ddyn model, which predicts that the current system is primarily driven on Earth's day side, although it can also be present on the night side, but at much lower intensity.\\
+	
+	
+	After the semblance analysis, we observe that in most OBs (except those in \textbf{Zones 3 and 4}), $H_{DDEF}$ lasts for a maximum of three days. The exceptions are GUI, which shows a minor intensification after its depletion, and TEO, where the amplitude drop is much slower, allowing $H_{DDEF}$ fluctuations to persist for almost a week. The case of TEO is particularly noteworthy, as the nearest OB, SJG, does not exhibit a similar response.\\
+	
+	
 
 	
 	\section{conclusions}
 	
-The aim of this project was to analyze longitudinal magnetic fluctuations driven by ionospheric currents during an intense geomagnetic storm, such as the St. Patrick's event on March 17th, 2015. To achieve this, we used geomagnetic data from ground magnetometer OBs located across different time sectors.\\
-
-Throughout this study, we analyzed the magnetic signatures associated with Prompt Penetration Electric Fields (PPEF) and Disturbed Dynamo Electric Fields (DDEF). We conducted a Fourier analysis to reconstruct $H_{PPEF}$ and $H_{DDEF}$ using high-pass and pass-band filters, respectively. Additionally, we applied the wavelet technique to isolate the $H_{DDEF}$ signal from other sources within the frequency band of 11.5 $\mu$Hz (period $\approx$ 24 hours).\\
+	The aim of this project was to analyze longitudinal magnetic fluctuations driven by ionospheric currents during an intense geomagnetic storm, such as the St. Patrick's event on March 17th, 2015. To achieve this, we used geomagnetic data from ground magnetometer OBs located across different time sectors.\\
 	
-After reconstructing $H_{PPEF}$ for each OB, we reached the following conclusions:\\
+	Throughout this study, we analyzed the magnetic signatures associated with Prompt Penetration Electric Fields (PPEF) and Disturbed Dynamo Electric Fields (DDEF). We conducted a Fourier analysis to reconstruct $H_{PPEF}$ and $H_{DDEF}$ using high-pass and pass-band filters, respectively. Additionally, we applied the wavelet technique to isolate the $H_{DDEF}$ signal from other sources within the frequency band of 11.5 $\mu$Hz (period $\approx$ 24 hours).\\
+	
+	After reconstructing $H_{PPEF}$ for each OB, we reached the following conclusions:\\
 	
 	\begin{itemize}
 		\item $H_{PPEF}$ exhibits higher fluctuations on the night side, particularly when an OB crosses the dusk-midnight sector during peak PRC activity.
-		 
+		
 		\item This behavior is consistent with the correlation analysis, where the highest correlation between ASYM-H and $H_I$ was observed for the same OBs that showed higher $H_{PPEF}$ thresholds.
 		
 		\item The amplitudes of $H_{PPEF}$ are significantly enhanced by PRC activity, especially when the OBs are near the dusk or dawn sectors.
@@ -440,7 +543,7 @@ After reconstructing $H_{PPEF}$ for each OB, we reached the following conclusion
 		\item Some of the highest $H_{PPEF}$ amplitudes occur around the time window during which two substorm onsets were reported (at 17:29 and 22:50 UT) by \cite{substorm_stpatrick, substorm_stpatrick2}. This suggests that substorms may also influence $H_{PPEF}$ amplitudes for OBs near the dusk, midnight, or dawn sectors, which aligns with findings from \cite{substorm_ppef}.
 	\end{itemize}	
 	
-Regarding $H_{DDEF}$ computed through both Fourier and Semblance analysis, we conclude the following:\\
+	Regarding $H_{DDEF}$ computed through both Fourier and Semblance analysis, we conclude the following:\\
 	
 	\begin{itemize}	
 		
@@ -451,68 +554,95 @@ Regarding $H_{DDEF}$ computed through both Fourier and Semblance analysis, we co
 		\item The absence of $H_{DDEF}$ magnetic effects in certain longitudes (\textbf{Zones 3 and 4}) is also consistent with \cite{amory_younas2021}, where it was noted that a CME-triggered event might not be observed at all longitudes, even if the energy input is larger. The shorter duration of energy input in CME events compared to those triggered by high-speed solar wind (HSSW) explains the limited $H_{DDEF}$ in these zones.
 		
 		\item In summary, OBs located on the night side during the main phase (MP) of the geomagnetic storm exhibit lower or even null $H_{DDEF}$ activity. Conversely, the same event may produce a strong and prolonged $H_{DDEF}$ if the OB is situated on the Earth's day side.
-
+		
 	\end{itemize}
 	
 	\appendix
 	\section{Processing magnetic data}
 	\label{a1}
-
-It is crucial to eliminate the regular variations present in the magnetic records to isolate the magnetic contributions of interest. The main field $H_0$, which can be removed by modeling a daily or monthly baseline, was approximated by computing either the daily mode or the center of a Gaussian fit \citep{baseline_Gjerloev} for the local-night magnetic data $H0:3$. Subsequently, $H_0$ was computed from the median of the daily values in March. To exclude daily values during disturbed days, we adapted the procedure outlined in \cite{vanKampt}. Specifically, we applied a moving window, calculating the hourly Interquartile Range (IQR). Disturbed days were identified by setting a threshold for variation, where:
-
-\begin{equation} 
-	IQR_{med}^i > threshold = disturbed
-\end{equation}
-
-
-
-This threshold was set based on the distribution of the IQR peaks, where the maximum IQR ($IQR_{max}$) was selected by resampling the data using tri-hourly bins.\\
-
-To compute the diurnal variation, we identified what we refer to as local quiet days (LQD) for each station. Following the methodology in \cite{vanKampt}, we considered the five days with the smallest daily IQR peaks as LQDs. We then computed the average of the $H$ component data during these five quietest days:
+	
+	It is crucial to eliminate the regular variations present in the magnetic records to isolate the magnetic contributions of interest. The main field $H_0$, which can be removed by modeling a daily or monthly baseline, was approximated by computing either the daily mode or the center of a Gaussian fit \citep{baseline_Gjerloev} for the local-night magnetic data $H0:3$. Subsequently, $H_0$ was computed from the median of the daily values in March. To exclude daily values during disturbed days, we adapted the procedure outlined in \cite{vanKampt}. Specifically, we applied a moving window, calculating the hourly Interquartile Range (IQR). Disturbed days were identified by setting a threshold for variation, where:
+	
+	\begin{equation} 
+		IQR_{med}^i > threshold = disturbed
+	\end{equation}
+	
+	
+	
+	This threshold was set based on the distribution of the IQR peaks, where the maximum IQR ($IQR_{max}$) was selected by resampling the data using tri-hourly bins.\\
+	
+	To compute the diurnal variation, we identified what we refer to as local quiet days (LQD) for each station. Following the methodology in \cite{vanKampt}, we considered the five days with the smallest daily IQR peaks as LQDs. We then computed the average of the $H$ component data during these five quietest days:
 	
 	\begin{equation}
 		\label{eq:lqd}
 		\langle LDQ_H(t) \rangle = \frac{1}{5} \sum_{i=1}^5 H_i(t) - \langle H_i0:3 \rangle
 	\end{equation}
 	
-\noindent where we normalize the offset of each daily data by subtracting the average of the first four hours of magnetic data in local time, as indicated by the second term in Equation \ref{eq:lqd}. Subsequently, we model the diurnal variation $H_{SQ}$ by applying a low-pass filter to the Fourier Transform of the result from Equation \ref{eq:lqd}, following the procedure in Equation (1) of \cite{vanKampt}.
-
-\section{Other Events}
-
-\begin{figure}
-	\centering 
-	\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-16_2015-03-26.eps} 
-	\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-16_2015-03-26.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-16_2015-03-26.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-16_2015-03-26.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
-	\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
-	\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
-	\label{fig:magdata2}
-\end{figure}
+	\noindent where we normalize the offset of each daily data by subtracting the average of the first four hours of magnetic data in local time, as indicated by the second term in Equation \ref{eq:lqd}. Subsequently, we model the diurnal variation $H_{SQ}$ by applying a low-pass filter to the Fourier Transform of the result from Equation \ref{eq:lqd}, following the procedure in Equation (1) of \cite{vanKampt}.
+	
+	\section{Other Events}
+	\label{a2}
+	
+	\begin{figure}
+		\centering 
+		\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-16_2015-03-26.eps} 
+		\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-16_2015-03-26.eps}
+		\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-16_2015-03-26.eps}
+		\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-16_2015-03-26.eps}
+		\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
+		\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
+		\caption{Geomagnetic observations for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and $\Delta H$ (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 1)}
+		\label{fig:magdata2}
+	\end{figure}
 	
 	
 	
-\begin{figure}
-	\centering
-	\includegraphics[width=7.0cm]{fig/diono_recons/tam_2015-03-15_2015-03-28.eps} 
-	\includegraphics[width=7.0cm]{fig/diono_recons/lzh_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/bmt_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/cyg_2015-03-15_2015-03-28.eps}		 
-	\includegraphics[width=7.0cm]{fig/diono_recons/hon_2015-03-15_2015-03-28.eps}
-	\includegraphics[width=7.0cm]{fig/diono_recons/sjg_2015-03-15_2015-03-28.eps}
+	\begin{figure}
+		\centering
+		\includegraphics[width=7.0cm]{fig/diono_recons/tam_2015-03-15_2015-03-28.eps} 
+		\includegraphics[width=7.0cm]{fig/diono_recons/lzh_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/diono_recons/bmt_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/diono_recons/cyg_2015-03-15_2015-03-28.eps}		 
+		\includegraphics[width=7.0cm]{fig/diono_recons/hon_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/diono_recons/sjg_2015-03-15_2015-03-28.eps}
+		
+		\caption{Geomagnetic registers for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
+		\label{fig:recons2}
+	\end{figure}
 	
-	\caption{Geomagnetic registers for each magnetic OB. top panels show planetary geomagnetic indices SYMH (green line) and local processed magnetic registers (black line). Bottom panels: Magnetic contribution of ionospheric origin (red line) and diurnal variation modeled from local quiet days (blue line) (Part 2)}
-	\label{fig:recons2}
-\end{figure}
+	
+			\begin{figure}
+		\centering  
+		\includegraphics[width=7.0cm]{fig/wavelets/tam_2015-03-15_2015-03-28.eps}  
+		\includegraphics[width=7.0cm]{fig/wavelets/lzh_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/wavelets/bmt_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/wavelets/cyg_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/wavelets/hon_2015-03-15_2015-03-28.eps}
+		\includegraphics[width=7.0cm]{fig/wavelets/sjg_2015-03-15_2015-03-28.eps}
+		\caption{Wavelet Analysis. Top panels: Local response $\Delta H_{loc}$ showing the development of GS (black line). Middle panels: wavelet spectrum ($|\psi(n)|^2$) applied to the ionospheric magnetic contribution $H_I$. Bottom panels: $H_{DDEF}$ correlation obtained from Eq \ref{eq:ddyn}  (Part 1)}
+		\label{fig:wavelets2}
+	\end{figure}
+	
+		\begin{figure}
+		\centering
+		\includegraphics[width=6.0cm]{fig/corr/tam_corr.eps} 
+		\includegraphics[width=6.0cm]{fig/corr/lzh_corr.eps}
+		\includegraphics[width=6.0cm]{fig/corr/bmt_corr.eps}
+		\includegraphics[width=6.0cm]{fig/corr/cyg_corr.eps}
+		\includegraphics[width=6.0cm]{fig/corr/hon_corr.eps}
+		\includegraphics[width=6.0cm]{fig/corr/sjg_corr.eps}
+		\caption{Correlation Analysis ASYM-H and $H_I$, during the period 13:25 - 17:50 UT, which is consistent with the period of highest ASYM-H activity }
+		\label{fig:corr2}
+	\end{figure}	
+	
 	
 	\paragraph{Acknowledgements} 
 	
-%	\newpage
+	%	\newpage
 	\bibliography{ref_longstudio}
 	
 	\appendix
 	
-
+	
 	
 \end{document}
