@@ -1,101 +1,99 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: mplainnat.bst
+The style file: unsrtnat.bst
 Database file #1: ref_longstudio.bib
-I was expecting a `,' or a `}'---line 396 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 474 of file ref_longstudio.bib
  :  
  :  year = "2018"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 915 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 993 of file ref_longstudio.bib
  :  
  :  doi = {10.29327/2pangeo.a29}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1047 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1125 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1056 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1134 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1064 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1142 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1231 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1309 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1239 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1317 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1328 of file ref_longstudio.bib
+You're missing a field name---line 1406 of file ref_longstudio.bib
  :  
  :  % volume = "65",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1353 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1431 of file ref_longstudio.bib
  :  note = "consultado, 2021"
  :                           .
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1565 of file ref_longstudio.bib
+You're missing a field name---line 1643 of file ref_longstudio.bib
  :  
  :  %   subtitle = {Fact Sheet N°282},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1575 of file ref_longstudio.bib
+You're missing a field name---line 1653 of file ref_longstudio.bib
  :  
  :  %   subtitle = {Fact Sheet N°282},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You can't pop an empty literal stack for entry l_russell
-while executing---line 1478 of file mplainnat.bst
+Warning--empty journal in P-corona2
+Warning--empty journal in dramaria_13
 Warning--empty publisher in 1969intro_to_iono_p
-You can't pop an empty literal stack for entry PPEF_prediction
-while executing---line 1478 of file mplainnat.bst
-You've used 29 entries,
-            2876 wiz_defined-function locations,
-            839 strings with 11708 characters,
-and the built_in function-call counts, 14419 in all, are:
-= -- 1264
-> -- 849
-< -- 18
-+ -- 289
-- -- 259
-* -- 1333
-:= -- 2236
-add.period$ -- 119
-call.type$ -- 29
-change.case$ -- 170
-chr.to.int$ -- 28
-cite$ -- 59
-duplicate$ -- 624
-empty$ -- 1170
-format.name$ -- 306
-if$ -- 3011
+You've used 34 entries,
+            2481 wiz_defined-function locations,
+            816 strings with 12853 characters,
+and the built_in function-call counts, 14393 in all, are:
+= -- 1197
+> -- 792
+< -- 21
++ -- 306
+- -- 237
+* -- 1266
+:= -- 2358
+add.period$ -- 142
+call.type$ -- 34
+change.case$ -- 65
+chr.to.int$ -- 33
+cite$ -- 37
+duplicate$ -- 671
+empty$ -- 1254
+format.name$ -- 283
+if$ -- 3039
 int.to.chr$ -- 2
-int.to.str$ -- 1
-missing$ -- 31
-newline$ -- 184
-num.names$ -- 118
-pop$ -- 317
+int.to.str$ -- 35
+missing$ -- 36
+newline$ -- 217
+num.names$ -- 104
+pop$ -- 237
 preamble$ -- 1
-purify$ -- 144
+purify$ -- 34
 quote$ -- 0
-skip$ -- 436
+skip$ -- 367
 stack$ -- 0
-substring$ -- 505
-swap$ -- 58
-text.length$ -- 1
+substring$ -- 652
+swap$ -- 112
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 304
-warning$ -- 1
-while$ -- 109
+type$ -- 229
+warning$ -- 3
+while$ -- 102
 width$ -- 0
-write$ -- 443
-(There were 13 error messages)
+write$ -- 523
+(There were 11 error messages)
