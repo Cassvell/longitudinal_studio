@@ -67,7 +67,7 @@
 
 % Author info
 \title{Impact of Local Time on St. Patrick Geomagnetic Storm response at mid-low latitudes\\}
-\author{Castellanos-Velazco C. I.$^{1,3}$ \and Corona-Romero P.$^{2,3}$ \and Sergeeva M.$^{2,3}$ \and Gonzalez-Esparza J.A.$^{}$}
+\author{Castellanos-Velazco C. I.$^{1,3}$ \and Corona-Romero P.$^{2,3}$ \and Sergeeva M.$^{2,3}$ \and Orrala-[] I. D Orrala-Legorreta I.D.$^{1,3}$, \and Gonzalez-Esparza J. A.$^{2,3}$}
 
 \date{
 	$^1$Universidad Nacional Autonoma de Mexico, Posgrado en Ciencias de la Tierra \\ %\texttt{\{auth1, auth3\}@org1.edu}\\%
@@ -82,10 +82,10 @@
 	
 	\begin{abstract}
 		
-		The present study seeks to analyze longitudinally, the magnetic fluctuations associated with Ionospheric currents using 11 observatories encircling the globe at mid-low latitudes. The event to be studied is the geomagnetic storm known as the Saint Patrick event due to his main phase was developing during that celebration (march 17th, 2015). We perform Fourier analysis to reconstruct the magnetic signatures associated to these Ionospheric Currents. At the same time, through a wavelet spectrum in combination with a semblance analysis, we study the Disturbed Dynamo magnetic signatures. Results show that these Ionospheric magnetic signature responses are highly dependent on longitudinal location during The geomagnetic storm's ´Main Phase.  
+	This study analyzes magnetic fluctuations associated with Prompt Penetration Electric Fields (PPEFs) using data from four mid-low latitude observatories separated by $60^\circ$--$90^\circ$ in longitude, covering different local time sectors. We focus on the St. Patrick's Day geomagnetic storm of 17 March 2015. Using Fourier analysis, we reconstruct the magnetic signatures of ionospheric currents. Our results demonstrate that these ionospheric magnetic responses depend strongly on longitudinal location during the storm's main phase and are particularly influenced by partial ring current activity. 
 		\\
 		
-		\noindent\textbf{Keywords:} Disturbed dynamo, wavelet
+		\noindent\textbf{Keywords:} Regional Space weather, Magnetic fluctuations, Prompt-Penetration Electric Fields
 	\end{abstract}
 	
 	%	\tableofcontents
@@ -264,18 +264,11 @@
 		
 	\subsection{Total Electron Content}
 	
-	In order to measure in a general perspective, the ionospheric response, we computed the Total Electron Content (TEC)from GNSS stations located as near as possible from each one of the listed OB. \\
+	The overall ionosphere dynamics in each considered region were characterized by the vertical Total Electron Content (TEC) variations in the vicinity of the chosen magnetic OB. TEC values were derived from GNSS measurements using TayAbsTEC method \cite{estimating_TEC, influence_of_gnss_diffcodebias, gnss_differential_code}. In particular, data from UCOE, LPAL, NPGJ and TSK2 receivers was used to obtain TEC values for TEO, GUI, JAI and KAK regions, respectively.\\
 	
-	[]\\
+	However, the open data obtained for this work, doesn't have the best quality, even more considering the period of time. The quality of data is a sum of errors which depend on the satellite swarm, so as the receptor itself. We could smooth some of these errors but couldn't be avoided at all.\\
 	
-	Considering that we are studying results from points in different sectors (Mexico, Canarias Islands, India and Japan), there can be issues by comparing absolute TEC values. To deal with this issue during TW, for each OB we computed the Disturbance Ionospheric Index (DIX) \citep{dix}:
-	
-	\begin{equation}
-		\label{dix}
-		DIX = \sqrt{ \left( \frac{TEC_i - TEC_i^{\text{med}}}{TEC_i^{\text{med}}} \right)^2 }
-	\end{equation}
-	
-	where $TEC_i$ is the vertical TEC computed from each GNSS station, $TEC_i^{med}$ is stacked median TEC from the 27 days before (considering the Carrington Rotation). With the DIX, each point can be measure by a percentage variation, overcoming the issue of scale difference.
+	Considering that we are studying results from points in different longitudinal sectors (Mexico, Canarias Islands, India and Japan), there can be issues by comparing absolute TEC values. To deal with this issue, we instead analyze relative values, which is, measuring TEC percentage difference of TEC response with respect to the 27 days median TEC prior to the GS \cite{statisticsofGSandISatmidlowlat, dramaria_1}.\\
 	
 	
 	\section{Results}
@@ -283,78 +276,45 @@
 	
 	In the following section, we focus on the results related to the geomagnetic response to the St. Patrick's GS for each OB listed in Table \ref{tab:obs}. Then we show the results of Equation \ref{eq:H_I} for isolating $H_I$, as well as the reconstruction of $H_{PPEF}$ through Fourier analysis. Finally, we provide an analysis related to local time sector in which the GS developed as well as a comparison between each OB result. \\
 	
-	
-	
-	\subsection{Geomanetic and Ionospheric response}
-	\label{sub:magdata}
-	
-	In Figure \ref{fig:magdata}, we show the local index $\Delta$H (black line), the ASYH index (yellow line), and the computed ionospheric disturbance magnetic contribution $H_I$ (red line) for each observatory. We focus on the period, TW, of high ASYH activity from 13:00 UT on March 17 to 01:00 UT the next day. As mentioned previously, this period is divided into two subsets (TW1 and TW2), highlighted by vertical dashed lines and two solid horizontal lines at the top of each panel (blue for TW1 and green for TW2). During these periods, $H_I$ is primarily driven by $H_{PPEF}$ fluctuations.\\
-	
-	We will focus on periods where ASYH exhibited sharp temporal enhancements, or ASYH pulses, at different universal times. Our aim is to observe how each observatory registered different local responses depending on the local time at which these pulses occurred. The first pulse (273 nT at 14:07 UT), which is the most intense, is our primary interest, but we identified three additional pulses. The second pulse (212 nT) occurs at 16:42 UT, while the third (150 nT) is located almost at the transition between TW1 and TW2, at 19:17 UT. Finally, we identify a fourth pulse (174 nT) around 23:00 UT, near the end of TW2.\\
-	
-	We begin by analyzing the magnetic data from GUI. During its local TW1, GUI was on the dayside (11:00-17:00 LT), while TW2 occurred mostly on the nightside. The transition between TW1 and TW2 is nearly centered on the dusk sector (18:00 LT). The peak ASYH enhancement (274 nT) occurs at 12:07 LT at GUI, nearly coinciding with the noon sector. A few hours later at 14:42 LT, there is another ASYH enhancement (212 nT). $\Delta$H shows a smooth decrease during TW1, consistent with the main phase, while $H_I$ appears to exhibit a pattern opposite to ASYH. During TW2, ASYH shows significantly reduced activity, with two smaller enhancements at 17:17 LT and 22:00 LT. In this period, $\Delta$H maintains sustained minimum values around -212 nT until 21:00 LT, when it suddenly increases concurrently with an ASYH enhancement. This increase is also evident in $H_I$..\\ 
-	
-	For JAI magnetic data, we observe that both time windows occur when JAI is on the nightside. During TW1, the peak ASYH enhancement occurs at 19:07 LT, while both $\Delta$H and $H_I$ show a more pronounced decrease compared to GUI. $\Delta$H reaches its minimum nearly simultaneously with the second ASYH pulse. During TW1, $H_I$ appears to have a more clearly opposite pattern to ASYH, which changes completely during TW2. Within TW2 (post-midnight sector), $\Delta$H exhibits periods of pronounced decreases and increases, differing from the behavior at GUI. Around 04:00 LT, there is a sharp increase in both $\Delta$H and $H_I$, corresponding to the final ASYH enhancement in TW2.\\
-	
-	
-	
-	At KAK, we observe during TW1 that $\Delta$H shows a significantly less pronounced decrease during ASYH activity compared to the previous observatories. The minimum $\Delta$H is reached at approximately 02:40 LT, temporally correlated with a small ASYH pulse. $H_I$ also shows a pattern opposite to the ASYH index, though this is only evident until 01:00 LT. After this time, $H_I$ gradually appears to follow a pattern more similar to ASYH. During TW2, $H_I$ maintains intense negative values between -90 nT and -150 nT. There is no apparent response in $\Delta$H during the final ASYH pulse beginning at 08:00 LT. Conversely, $H_I$ shows a growth phase between the two time windows, reaching a maximum value shortly after dawn at 06:00 LT.\\
-	
-	
-	For TEO, which represents the opposite case of JAI, we observe that both TW1 and TW2 occur during dayside hours (morning and afternoon sectors, respectively). In both time windows, we observe an almost linear descending trend in $\Delta$H, unlike the previous cases where the behavior changed between time windows. $\Delta$H reaches a minimum value at approximately 16:20 LT, consistent with the timing of the final ASYH pulse. $H_I$, on the other hand, shows a pattern more similar to ASYH behavior during TW1, with positive values that contrast with previous cases and peak values occurring approximately simultaneously with ASYH pulses. During TW2, however, $H_I$ begins a decreasing phase, reaching a minimum at the same time as $\Delta$H and the final ASYH enhancement.\\ %
-	
-	
-	
-	
-	
 	\begin{figure}
 		\centering
-		\includegraphics[width=7.0cm]{fig/magdata/gui_2015-03-17_2015-03-18m.eps}   
-		%\includegraphics[width=7.0cm]{fig/magdata/tam_2015-03-17_2015-03-26.eps} 
-		\includegraphics[width=7.0cm]{fig/magdata/jai_2015-03-17_2015-03-18m.eps}  
-		%\includegraphics[width=7.0cm]{fig/magdata/lzh_2015-03-17_2015-03-26.eps}
-		%\includegraphics[width=7.0cm]{fig/magdata/bmt_2015-03-17_2015-03-26.eps}
-		%\includegraphics[width=7.0cm]{fig/magdata/cyg_2015-03-17_2015-03-26.eps}
-		\includegraphics[width=7.0cm]{fig/magdata/kak_2015-03-17_2015-03-18m.eps}
-		%\includegraphics[width=7.0cm]{fig/magdata/hon_2015-03-16_2015-03-26.eps}
-		\includegraphics[width=7.0cm]{fig/magdata/teo_2015-03-17_2015-03-18m.eps}
-		%\includegraphics[width=7.0cm]{fig/magdata/sjg_2015-03-16_2015-03-26.eps}
-		\caption{Geomagnetic Observations for each magnetic OB. Each panels show local geomagnetic $\Delta H$ (black line), ASYH (yellow line) and the magnetic contribution of ionospheric origin (red line). In the upper side of each panel, the Time Windows (TW) are highlighted with a blue and black solid line respectively and vertical dotted lines. Each gray shading represents each night hours in Local Time}
+		\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-17_2015-03-19.eps}   
+		\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-17_2015-03-19.eps}  	 
+		\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-17_2015-03-19.eps}
+		\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-17_2015-03-19.eps}
+		\caption{Top panels, local geomagnetic $\Delta H$ (black line), ASYH (yellow line) and the magnetic contribution of ionospheric origin (red line). Mid panels, reconstruction of $H_{PPEF}$. Bottom panels, TEC (orange line) and median TEC (blue line). In the upper side of each panel, the Time Windows (TW) are highlighted with a blue and black solid line respectively and vertical dotted lines. Each gray shading represents each night hours in Local Time}
 		\label{fig:magdata}
 	\end{figure}
 	
 	
-	\subsection{Reconstruction of $\mathbf{H_{PPEF}}$ and TEC response}
+	In Figure \ref{fig:magdata}, we show in top panels, the local index $\Delta$H (black line), the ASYH index (yellow line), and the computed ionospheric disturbance magnetic contribution $H_I$ (red line) for each observatory. We focus on the period, TW, of high ASYH activity from 13:00 UT on March 17 to 01:00 UT the next day. As mentioned previously, this period is divided into two subsets (TW1 and TW2), highlighted by vertical dashed lines and two solid horizontal lines at the top of each panel (blue for TW1 and green for TW2). During these periods, $H_I$ is primarily driven by $H_{PPEF}$ fluctuations. The results of applying frequency band filters to the FFT($H_I$), compared with the ionospheric response are shown in mid panels, represented by red lines.
+	Finally, in bottom panels, we show the TEC response (orange lines), compared with the median TEC (blue line).\\
 	
-	The results of applying frequency band filters to the FFT($H_I$), compared with the ionospheric response, are shown in Figure \ref{fig:recons}. Fluctuations related to $H_{PPEF}$ are represented by red lines in top panels, while TEC DIX is plotted in the bottom panels (blue line). Similar to Figure \ref{fig:magdata}, local nighttime periods and the TW1-TW2 intervals are highlighted by gray shading and vertical dotted lines.\\
+	We will focus on periods where ASYH exhibited sharp temporal enhancements, or ASYH pulses, at different universal times. Our aim is to observe how each observatory registered different local responses depending on the local time at which these pulses occurred. The first pulse (273 nT at 14:07 UT), which is the most intense, is our primary interest, but we identified three additional pulses. The second pulse (212 nT) occurs at 16:42 UT, while the third (150 nT) is located almost at the transition between TW1 and TW2, at 19:17 UT. Finally, we identify a fourth pulse (174 nT) around 23:00 UT, near the end of TW2.\\
 	
-	For GUI, $H_{PPEF}$ fluctuation amplitudes within TW1 and TW2 (afternoon and night sectors, respectively) show peak amplitudes of -29.98 nT at 14:56 LT and 35.66 nT at 21:48 LT. Outside these peaks, we observe little contrast between $H_{PPEF}$ amplitudes inside and outside the TW1 and TW2 periods.\\ 
+	
+	In the case of Ionospheric response, we are focusing primarily on weather or not, we observe a positive or negative response, given the conditions of GNSS data used for the vertical TEC computation. As mentioned in the previous section, we are analyzing the relative variations of TEC response with respect to the 27 days median TEC. Considering that we are analyzing quite different longitude positions, the threshold we are considering to define disturbing conditions is above 30$\%$ \cite{statisticsofGSandISatmidlowlat}.\\
+	
 
-	JAI observatory presents a higher contrast in $H_{PPEF}$ fluctuations between inside and outside TW1 and TW2 (night and post-midnight sectors for JAI). The $H_{PPEF}$ fluctuations show a sharp enhancement upon entering TW1, immediately after the dusk sector. During both TW1 and TW2, $H_{PPEF}$ maintains values above $|20|$ nT, with peaks of -41.32 nT at 18:55 LT (TW1) and 52.73 nT at 04:55 LT (TW2).\\ 
+	
+	We begin by analyzing the magnetic data from GUI. During its local TW1, GUI was on the dayside (11:00-17:00 LT), while TW2 occurred mostly on the nightside. The transition between TW1 and TW2 is nearly centered on the dusk sector (18:00 LT). The peak ASYH enhancement (274 nT) occurs at 12:07 LT at GUI, nearly coinciding with the noon sector. A few hours later at 14:42 LT, there is another ASYH enhancement (212 nT). $\Delta$H shows a smooth decrease during TW1, consistent with the main phase, while $H_I$ appears to exhibit a pattern opposite to ASYH. During TW2, ASYH shows significantly reduced activity, with two smaller enhancements at 17:17 LT and 22:00 LT. In this period, $\Delta$H maintains sustained minimum values around -212 nT until 21:00 LT, when it suddenly increases concurrently with an ASYH enhancement. 
+	$H_{PPEF}$ fluctuation amplitudes within TW1 and TW2 (afternoon and night sectors, respectively) show peak amplitudes of -29.98 nT at 14:56 LT and 35.66 nT at 21:48 LT. Outside these peaks, we observe little contrast between $H_{PPEF}$ amplitudes inside and outside the TW1 and TW2 periods. This increase is also evident in $H_I$. In TEC response, we observe an enhancement period around 16:00 LT, reaching an increment of around 55$\%$ of TECu, followed by a second enhancement of ~58$\%$ almost at the end of TW2 and near midnight.\\ 
+	
+	For JAI magnetic data, we observe that both time windows occur when JAI is on the night side. During TW1, the peak ASYH enhancement occurs at 19:07 LT, while both $\Delta$H and $H_I$ show a more pronounced decrease compared to GUI. $\Delta$H reaches its minimum nearly simultaneously with the second ASYH pulse. During TW1, $H_I$ appears to have a more clearly opposite pattern to ASYH, which changes completely during TW2. Within TW2 (post-midnight sector), $\Delta$H exhibits periods of pronounced decreases and increases, differing from the behavior at GUI. Around 04:00 LT, there is a sharp increase in both $\Delta$H and $H_I$, corresponding to the final ASYH enhancement in TW2. JAI observatory presents a higher contrast in $H_{PPEF}$ fluctuations between inside and outside TW1 and TW2 (night and post-midnight sectors for JAI). The $H_{PPEF}$ fluctuations show a sharp enhancement upon entering TW1, immediately after the dusk sector. During both TW1 and TW2, $H_{PPEF}$ maintains values above $|20|$ nT, with peaks of -41.32 nT at 18:55 LT (TW1) and 52.73 nT at 04:55 LT (TW2). TEC response on the other hand, is does not present a significant difference until the end of TW2, on march 18. During this day, we observe a consistent negative response of around 70$\%$. \\
 	
 	
-	For KAK observatory, $H_{PPEF}$ amplitudes are less intense than at JAI, with peaks of 30.58 nT at 00:48 LT and -29.78 nT at 02:40 LT, both within TW1. Apart from the observed contrast in $H_{PPEF}$ amplitudes upon entering TW1, we observe a decreasing amplitude trend transitioning from TW1 to TW2 toward the dayside.  \\
+	
+	At KAK, we observe during TW1 that $\Delta$H shows a significantly less pronounced decrease during ASYH activity compared to the previous observatories. The minimum $\Delta$H is reached at approximately 02:40 LT, temporally correlated with a small ASYH pulse. $H_I$ also shows a pattern opposite to the ASYH index, though this is only evident until 01:00 LT. After this time, $H_I$ gradually appears to follow a pattern more similar to ASYH. During TW2, $H_I$ maintains intense negative values between -90 nT and -150 nT. There is no apparent response in $\Delta$H during the final ASYH pulse beginning at 08:00 LT. Conversely, $H_I$ shows a growth phase between the two time windows, reaching a maximum value shortly after dawn at 06:00 LT. For KAK $H_{PPEF}$ amplitudes are less intense than at JAI, with peaks of 30.58 nT at 00:48 LT and -29.78 nT at 02:40 LT, both within TW1. Apart from the observed contrast in $H_{PPEF}$ amplitudes upon entering TW1, we observe a decreasing amplitude trend transitioning from TW1 to TW2 toward the dayside. In TEC, we observe similar to JAI, a negative response of ~50$\%$ the next day of MP.\\
 	
 	
-	At TEO, we observe $H_{PPEF}$ amplitude peaks of 35.12 nT at 15:57 LT and -34.63 nT at 16:40 LT during TW2. TEO also shows a noticeable contrast in $H_{PPEF}$ amplitudes inside versus outside the TW1 and TW2 periods. Examining the TEC DIX, we observe two main peaks: the first occurring near the end of TW1 at ~11:00 LT, and the second around 06:00 LT the following day. While the first peak can be related to high $H_{PPEF}$ activity at the end of TW1, the second peak cannot be attributed to the same phenomenon. We specifically compare this with ASYH and $\Delta$H behavior in the vicinity of this peak's occurrence.\\
+	For TEO, which represents the opposite case of JAI, we observe that both TW1 and TW2 occur during dayside hours (morning and afternoon sectors, respectively). In both time windows, we observe an almost linear descending trend in $\Delta$H, unlike the previous cases where the behavior changed between time windows. $\Delta$H reaches a minimum value at approximately 16:20 LT, consistent with the timing of the final ASYH pulse. $H_I$, on the other hand, shows a pattern more similar to ASYH behavior during TW1, with positive values that contrast with previous cases and peak values occurring approximately simultaneously with ASYH pulses. During TW2, however, $H_I$ begins a decreasing phase, reaching a minimum at the same time as $\Delta$H and the final ASYH enhancement. We observe $H_{PPEF}$ amplitude peaks of 35.12 nT at 15:57 LT and -34.63 nT at 16:40 LT during TW2. TEO also shows a noticeable contrast in $H_{PPEF}$ amplitudes inside versus outside the TW1 and TW2 periods. Examining the TEC DIX, we observe two main peaks: the first occurring near the end of TW1 at ~11:00 LT, and the second around 06:00 LT the following day. While the first peak can be related to high $H_{PPEF}$ activity at the end of TW1, the second peak cannot be attributed to the same phenomenon. We specifically compare this with ASYH and $\Delta$H behavior in the vicinity of this peak's occurrence. In this region, we observe a positive response of ~70$\%$ around 11:00 LT, near noon sector. \\ %
 	
+			
 		
-		
-	\begin{figure}
-		\centering
-		\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-17_2015-03-18m.eps}   
-		\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-17_2015-03-18m.eps}  	 
-		\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-17_2015-03-18m.eps}
-		\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-17_2015-03-18m.eps}
-		
-		\caption{Reconstruction of $H_{PPEF}$ (upper panels) and TEC DIX response (bottom panels) for each magnetic OB. Each gray shading represents each Local night time (1800 - 0600 LT). }
-		\label{fig:recons}
-	\end{figure}
-	
 	
 	\section{Discussion}
 	
-	From Figures \ref{fig:magdata} and \ref{fig:recons}, we observe significant variations in the results depending on the local time sector of each observatory during TW1 and TW2. More specifically, we note variations in the partial ring current (PRC) influence on the local response. When comparing the geomagnetic responses, we observe characteristic behaviors in $\Delta$H and consequently in $H_I$.\\
+	From Figure \ref{fig:magdata}, we observe significant variations in the results depending on the local time sector of each observatory during TW1 and TW2. More specifically, we note variations in the partial ring current (PRC) influence on the local response. When comparing the geomagnetic responses, we observe characteristic behaviors in $\Delta$H and consequently in $H_I$.\\
 	
 	
 	For GUI, JAI, and KAK, a decrease in $\Delta$H and consequently in $H_I$ is observed during TW1, particularly at 14:07 UT (corresponding to 12:07, 19:07, and 23:07 LT, respectively). All three observatories exhibit a clear decreasing trend during TW1, with varying degrees of intensity. JAI shows the most pronounced decrease, while KAK displays the least pronounced. In contrast, TEO did not experience a decrease in $\Delta$H and $H_I$, but rather a smooth increase in their magnitudes during the sharp ASYH enhancement.\\
@@ -395,13 +355,11 @@
 	By measuring $\rho$ during individual ASYH pulses, we find that the first pulse shows $\rho$ values of [-0.81 (GUI), -0.91 (JAI), -0.70 (KAK), and 0.88 (TEO)]. For the second and third pulses, only JAI and TEO maintain correlations above 0.8 or below -0.8, while KAK shows values around 0.55. For the final ASYH pulse, only TEO exhibits a correlation slightly above 0.6 (or below -0.6). This supports the interpretation that $H_{PPEF}$ magnitudes are strongly influenced by PRC activity, with a dependence on local time but also, the intensity of PRC activity can be another factor for this influence.\\
 	
 	
-	
-	
 	Following the idea of PRC influencing on $H_{PPEF}$ fluctuation amplitudes, we carried out an analysis of $H_{PPEF}$ distribution magnitudes, from march $17^{th}$ to march $18^{th}$, shown in Figure \ref{fig:ppef_dist}. From top panels, we observe that $H_{PPEF}$ magnitudes (blue bars) in each OB seems to approach to a Gaussian distribution (fitted with a red line). All OB present media $\mu \sim 0$ nT and a very small skewness, seen at first glance. The standard deviation $\sigma$ seen in each OB has a maximum difference goes from 5.2 to 8.15, being not so significant.\\
 	
 	Of the four observatories, the KAK $H_{PPEF}$ distribution is the narrowest and sharpest, characterized by the smallest standard deviation ($\sigma$), the highest peak, and the shortest tails. This indicates that KAK exhibits the least dispersed data with the fewest extreme values and the most stable $H_{PPEF}$ amplitudes throughout the 2-day period. The opposite extreme is observed at JAI, which has the flattest and widest distribution, consistent with the largest $\sigma$, indicating the greatest overall data variability. JAI also possesses the longest tails, suggesting a significantly higher likelihood of extreme $H_{PPEF}$ values.\\
 	
-	The observatories GUI and TEO exhibit intermediate characteristics. GUI shows the second-largest dispersion after JAI, indicating highly variable $H_{PPEF}$ values. However, its tails are shorter than JAI's, meaning it has fewer extreme values than JAI despite its high variability. This high dispersion at GUI implies no strong systematic difference exists between the $H_{PPEF}$ values in the specific time windows (TW1, TW2) and the entire 2-day period, a conclusion supported by the minor amplitude differences shown in Figure \ref{fig:recons}. In contrast, TEO's distribution is narrower than both GUI and JAI but exhibits a higher propensity for extreme values than both GUI and KAK. Consequently, the narrow distributions of KAK and TEO imply a more limited range of background $H_{PPEF}$ amplitudes, making any deviations during the TW1 and TW2 windows more statistically significant relative to their low background variability.\\
+	The observatories GUI and TEO exhibit intermediate characteristics. GUI shows the second-largest dispersion after JAI, indicating highly variable $H_{PPEF}$ values. However, its tails are shorter than JAI's, meaning it has fewer extreme values than JAI despite its high variability. This high dispersion at GUI implies no strong systematic difference exists between the $H_{PPEF}$ values in the specific time windows (TW1, TW2) and the entire 2-day period, a conclusion supported by the minor amplitude differences shown in Figure \ref{fig:magdata}. In contrast, TEO's distribution is narrower than both GUI and JAI but exhibits a higher propensity for extreme values than both GUI and KAK. Consequently, the narrow distributions of KAK and TEO imply a more limited range of background $H_{PPEF}$ amplitudes, making any deviations during the TW1 and TW2 windows more statistically significant relative to their low background variability.\\
 	
 	
 	Hence, we are interested in estimating the point at which $H_{PPEF}$ can be considered as extreme, for each OB. We refer this point as \emph{Threshold}. Thus, higher thresholds imply higher extreme values in general. \\
@@ -413,6 +371,11 @@
 	The highest couple of thresholds correspond to JAI (28.63 and 40.98 nT) followed by TEO (20.31 and 33.79). It is remarkable too how each threshold grew by considering only TW data. In JAI and TEO, the second threshold presents an increment of 43.13 and 66.37$\%$ respectively with respect to the first one. Meanwhile, in GUI and KAK, having significantly minor thresholds, the increment is about 35 and 45 $\%$ respectively. From here, we observe that the Threshold increment in KAK is not so different from JAI meanwhile TEO presents the highest threshold increment of the four OB. What this difference may indicate is how $H_{PPEF}$ intensity is affected by the LT sector at the moment of the highest ASYH activity. This result is consistent with the results of $\rho_{1,2}$ for these OB, which reinforces the idea of $H_{PPEF}$ being influenced by PRC activity, indicating not just the impact of PRC activity but also on the proximity of JAI and TEO to one of the joint points of PRC - FAC during its highest activity.\\
 	
 	
+	Regarding the ionospheric response, we observe that the TEO and GUI regions (monitored by the UCOE and LPAL receivers) present a positive storm effect, while the JAI and KAK regions (monitored by the NPGJ and TSK2 receivers) present a negative effect. From \cite{theonsetofFregdisturbanceatmidlowlatduringGS, statisticsofGSandISatmidlowlat}, it is understood that positive phases at mid-low latitudes are often initiated on the dayside during the main phase of the storm. The physical mechanism for this is complex and involves thermospheric winds, E × B drift, and, most importantly for this study, the presence of eastward Prompt Penetration Electric Fields (PPEF). According to \cite{statisticsofGSandISatmidlowlat}, the influence of PPEF alone may not always induce large TEC enhancements; its effects are often combined with neutral wind circulation and E × B drift to produce significant positive ionospheric storms.\\
+	
+	
+	
+	The negative effects, on the other hand, are more related to regions that were on the nightside during the storm's main phase, which is the case for JAI and KAK in our event. These negative phases, however, typically manifest the following morning in local time. Studies like \cite{responseofthethermosphereandionospheretoGS, prolss1995} describe the mechanism responsible for these negative effects. It involves a storm-induced circulation that pushes molecular-rich air ([N$_2$], [O$_2$]) from high latitudes toward lower latitudes. This increases the $\frac{[N_2]}{[O]}$ ratio, which in turn enhances the loss rate of atomic oxygen ions (O$^+$) through recombination. Although this circulation begins during the night, its effects peak the next morning when photo-ionization commences but is overwhelmed by the heightened recombination rate, resulting in an electron density depletion and a negative TEC storm.\\
 	
 	\begin{figure}
 		\centering
@@ -426,28 +389,35 @@
 	
 	\section{conclusions}
 	
-	The aim of this project was to analyze longitudinal magnetic fluctuations driven by the Prompt Penetration Electric Fields during an intense geomagnetic storm, such as the St. Patrick's event on March 17th, 2015. To achieve this, we used geomagnetic data from ground magnetometer observatories (OB), separated longitudinally at $60-90 ^\circ$ from each other.\\
+	This project analyzed longitudinal magnetic fluctuations driven by Prompt Penetration Electric Fields (PPEF) during the intense St. Patrick's Day geomagnetic storm on March 17, 2015. To achieve this, we utilized geomagnetic data from ground-based observatories separated by 60–90° in longitude.\\
 	
-	Throughout this study, we analyzed the magnetic signatures associated with Ionospheric responses $H_I$ and the magnetic fluctuations associated with Prompt Penetration Electric Fields ($H_{PPEF}$). With a Fourier analysis, we reconstructed $H_{PPEF}$ using high-pass filters for fluctuations of periods minor than 4 h.\\
+	The study focused on isolating two key signatures: the magnetic component associated with the ionospheric current system ($H_I$) and the fluctuations specifically linked to PPEF ($H_{PPEF}$). The $H_{PPEF}$ signal was reconstructed via high-pass filtering to retain fluctuations with periods less than four hours. Our analysis targeted the period of enhanced activity in the ASYH index, which reflects the asymmetric part of the magnetospheric ring current system and is linked to the Partial Ring Current (PRC).\\
 	
+	We investigated the influence of the PRC on both $H_I$ and $H_{PPEF}$. These observations were complemented by analyzing relative Vertical TEC variations, considering deviations greater than 30$\%$ from the 27-day median as significant ionospheric perturbations. We observed positive ionospheric storm effects at the TEO and GUI regions (55$\%$ and 70$\%$ TEC increase, respectively), while the JAI and KAK regions exhibited negative storm effects (70$\%$ and 50$\%$ TEC decrease). This pattern is consistent with the local time of each region during the storm's main phase onset.\\ 
 	
-	We focus on the period of time during which ASYH geomagnetic index presents enhanced activity. This geomagnetic index represents the asymmetric component of the magnetospheric ring current system and is related with the Partial Ring Current (PRC). Thus, we looked for evidences of the influence of PRC on $H_I$ and so, on $H_{PPEF}$.\\ 
-	
-	After comparing $H_I$ and $H_{PPEF}$ with ASYH activity for the OB within time windows which also corresponds to different Local Time sectors depending on each OB (morning, afternoon, night and after-midnight), we reached the following conclusions:\\
+	By comparing $H_I$ and $H_{PPEF}$ with ASY-H activity across different local time sectors and integrating TEC observations, we reached the following conclusions:\\
 	
 	\begin{itemize}
 		
-		\item The PRC activity is highly correlated with the $H_I$ and $H_{PPEF}$ fluctuations during the most geoeffective GS period.
+		\item PRC activity is highly correlated with fluctuations in both $H_I$ and $H_{PPEF}$ during the most geoeffective period of the geomagnetic storm.
 		
-		%The highest correlation/anti-correlation ($\rho$) between ASYH and $H_I$ was observed when the OB is within morning and afternoon sectors, when the highest ASYH activity coincides with dawn and dusk sectors.
+		\item The local geomagnetic response ($\Delta H$) is either enhanced or attenuated depending on the observatory's proximity to the dawn or dusk sectors, where the PRC influence is strongest.
 		
-		\item Depending on which LT sector, the OB is closest (dawn or dusk), the PRC might enhance or attenuate the effects of local geomagnetic response ($\Delta$H)
+		\item High PRC activity significantly affects the magnitude of $H_{PPEF}$, particularly when an observatory is magnetically conjugate to the regions where the PRC connects to the ionosphere via Field-Aligned Currents (FACs).
 		
-		\item PRC high activity affects also $H_{PPEF}$ magnitude, specially when the OB is close to the PRC - FAC joint points during their highest activity.
+		\item Conversely, when an observatory is located far from these PRC-FAC coupling regions (e.g., near the noon sector), the contribution to $H_{PPEF}$ is less significant.
 		
-		\item On the other hand, when the OB is far from the PRC - FAC joint points during this period, $H_{PPEF}$ may not receive a significant contribution. Specially at the noon sector,  
+		\item The TEC enhancements at GUI and TEO are primarily driven by eastward PPEF combined with **E × B** drift from neutral wind circulation.
+		
+		\item The TEC depletions at JAI and KAK are attributed to storm-induced changes in thermospheric composition and circulation. The distinct mechanisms observed between the dayside and nightside regions suggest the presence of a disturbed dynamo.
 		
 	\end{itemize}	
+	
+	
+	\section{Future work}
+	
+	
+	
 	
 	\appendix
 	\section{Processing magnetic data}
@@ -485,9 +455,6 @@
 	\end{equation}
 	
 	\noindent where we normalize the offset of each daily data by subtracting the average of the first four hours of magnetic data in local time, as indicated by the second term in Equation \ref{eq:lqd}. Subsequently, we model the diurnal variation $H_{SQ}$ by applying a low-pass filter to the Fourier Transform of the result from Equation \ref{eq:lqd}, following the procedure in Equation (1) of \cite{vanKampt}.
-	
-	\section{Other Events}
-	\label{a2}
 	
 %	\begin{figure}
 %		\centering 
@@ -532,7 +499,11 @@
 	
 	
 	\paragraph{Acknowledgements} 
-	
+The authors gratefully acknowledge the data and services provided by various institutions that made this work possible. Geomagnetic indices (ASY/SYM-H) were obtained from the International Service of Geomagnetic Indices (ISGI). Global geomagnetic data from the GUI, JAI, and KAK observatories were provided by INTERMAGNET, while local data from the TEO Observatory were sourced from LANCE-SciesMEX, REGMEX, and the Magnetic Service. GNSS data for the LPAL and TSK2 stations were accessed via the International GNSS Service (IGS), and data for the NPGJ station were provided by the NSF SAGE facility operated by EarthScope Consortium (under NSF award 1724509).
+
+We extend our special thanks to the personnel of the Servicio de Geodesia Satelital, particularly Luis Salazar Tlaczani, and the TLALOCNet team for the maintenance of the UCOE station, data acquisition, and IT support. The GNSS data from this network, essential for TEC calculations, are supported by project PAPIIT IN111225 (E. Cabral-Cano).
+
+Finally, this research was funded by the Universidad Nacional Autónoma de México (UNAM) and the Secretaría de Educación, Ciencia, Tecnología e Innovación (SECIHTI).
 	%	\newpage
 	\bibliography{ref_longstudio}
 	

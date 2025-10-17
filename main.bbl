@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -257,14 +257,42 @@ C.~{Amory-Mazaudier}, O.~S. {Bolaji}, and V.~{Doumbia}.
   (7):\penalty0 7827--7833, July 2017.
 \newblock \doi{10.1002/2017JA024132}.
 
-\bibitem[{Jakowski} et~al.(2006){Jakowski}, {Stankov}, {Schlueter}, and
-  {Klaehn}]{dix}
-N.~{Jakowski}, S.~M. {Stankov}, S.~{Schlueter}, and D.~{Klaehn}.
-\newblock {On developing a new ionospheric perturbation index for space weather
-  operations}.
-\newblock \emph{Advances in Space Research}, 38\penalty0 (11):\penalty0
-  2596--2600, January 2006.
-\newblock \doi{10.1016/j.asr.2005.07.043}.
+\bibitem[{Yasyukevich} et~al.(2015{\natexlab{a}}){Yasyukevich}, {Mylnikova},
+  and {Polyakova}]{estimating_TEC}
+Yu.~V. {Yasyukevich}, A.~A. {Mylnikova}, and A.~S. {Polyakova}.
+\newblock {Estimating the total electron content absolute value from the
+  GPS/GLONASS data}.
+\newblock \emph{Results in Physics}, 5:\penalty0 32--33, January
+  2015{\natexlab{a}}.
+\newblock \doi{10.1016/j.rinp.2014.12.006}.
+
+\bibitem[{Yasyukevich} et~al.(2015{\natexlab{b}}){Yasyukevich}, {Mylnikova},
+  {Kunitsyn}, and {Padokhin}]{influence_of_gnss_diffcodebias}
+Yu.~V. {Yasyukevich}, A.~A. {Mylnikova}, V.~E. {Kunitsyn}, and A.~M.
+  {Padokhin}.
+\newblock {Influence of GPS/GLONASS differential code biases on the
+  determination accuracy of the absolute total electron content in the
+  ionosphere}.
+\newblock \emph{Geomagnetism and Aeronomy}, 55\penalty0 (6):\penalty0 763--769,
+  November 2015{\natexlab{b}}.
+\newblock \doi{10.1134/S001679321506016X}.
+
+\bibitem[{Mylnikova} et~al.(2015){Mylnikova}, {Yasyukevich}, {Kunitsyn}, and
+  {Padokhin}]{gnss_differential_code}
+A.~A. {Mylnikova}, Yu.~V. {Yasyukevich}, V.~E. {Kunitsyn}, and A.~M.
+  {Padokhin}.
+\newblock {Variability of GPS/GLONASS differential code biases}.
+\newblock \emph{Results in Physics}, 5:\penalty0 9--10, January 2015.
+\newblock \doi{10.1016/j.rinp.2014.11.002}.
+
+\bibitem[{Vijaya Lekshmi} et~al.(2011){Vijaya Lekshmi}, {Balan}, {Tulasi Ram},
+  and {Liu}]{statisticsofGSandISatmidlowlat}
+D.~{Vijaya Lekshmi}, N.~{Balan}, S.~{Tulasi Ram}, and J.~Y. {Liu}.
+\newblock {Statistics of geomagnetic storms and ionospheric storms at low and
+  mid latitudes in two solar cycles}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 116\penalty0
+  (A11):\penalty0 A11328, November 2011.
+\newblock \doi{10.1029/2011JA017042}.
 
 \bibitem[{Makarov}(2022)]{sym_asym_corr}
 Georgy {Makarov}.
@@ -275,6 +303,28 @@ Georgy {Makarov}.
 \newblock \emph{Solar-Terrestrial Physics}, 8\penalty0 (4):\penalty0 36--43,
   December 2022.
 \newblock \doi{10.12737/stp-84202203}.
+
+\bibitem[{Thomas} and
+  {Venables}(1966)]{theonsetofFregdisturbanceatmidlowlatduringGS}
+L.~{Thomas} and F.~H. {Venables}.
+\newblock {The onset of the F-region disturbance at middle latitudes during
+  magnetic storms}.
+\newblock \emph{Journal of Atmospheric and Terrestrial Physics}, 28\penalty0
+  (6-7):\penalty0 599--605, January 1966.
+\newblock \doi{10.1016/0021-9169(66)90073-0}.
+
+\bibitem[{Fuller-Rowell} et~al.(1994){Fuller-Rowell}, {Codrescu}, {Moffett},
+  and {Quegan}]{responseofthethermosphereandionospheretoGS}
+T.~J. {Fuller-Rowell}, M.~V. {Codrescu}, R.~J. {Moffett}, and S.~{Quegan}.
+\newblock {Response of the thermosphere and ionosphere to geomagnetic storms}.
+\newblock \emph{jgr}, 99\penalty0 (A3):\penalty0 3893--3914, March 1994.
+\newblock \doi{10.1029/93JA02015}.
+
+\bibitem[Pr{\"o}lss(1995)]{prolss1995}
+G.~W. Pr{\"o}lss.
+\newblock \emph{Ionospheric F-region storms}, volume~2, pages 195--248.
+\newblock CRC Press, 1995.
+\newblock \doi{10.1201/9780203713297}.
 
 \bibitem[Solari et~al.(2017)Solari, Egüen, Polo, and Losada]{pot}
 Sebastián Solari, Marta Egüen, María~José Polo, and Miguel~A. Losada.
