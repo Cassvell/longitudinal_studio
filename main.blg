@@ -3,98 +3,98 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrtnat.bst
 Database file #1: ref_longstudio.bib
-I was expecting a `,' or a `}'---line 600 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 633 of file ref_longstudio.bib
  :  
  :  year = "2018"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1119 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1152 of file ref_longstudio.bib
  :  
  :  doi = {10.29327/2pangeo.a29}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1251 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1284 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1260 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1293 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1268 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1301 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1435 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1468 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1443 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1476 of file ref_longstudio.bib
  :  keywords = "Geomagnetic Index"
  :                                .
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1532 of file ref_longstudio.bib
+You're missing a field name---line 1580 of file ref_longstudio.bib
  :  
  :  % volume = "65",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1557 of file ref_longstudio.bib
+I was expecting a `,' or a `}'---line 1605 of file ref_longstudio.bib
  :  note = "consultado, 2021"
  :                           .
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1769 of file ref_longstudio.bib
+You're missing a field name---line 1817 of file ref_longstudio.bib
  :  
  :  %   subtitle = {Fact Sheet N°282},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 1779 of file ref_longstudio.bib
+You're missing a field name---line 1827 of file ref_longstudio.bib
  :  
  :  %   subtitle = {Fact Sheet N°282},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--can't use both author and editor fields in prolss1995
 Warning--empty journal in P-corona2
 Warning--empty journal in dramaria_13
 Warning--empty publisher in 1969intro_to_iono_p
-Warning--can't use both author and editor fields in prolss1995
-You've used 40 entries,
+You've used 44 entries,
             2481 wiz_defined-function locations,
-            865 strings with 14369 characters,
-and the built_in function-call counts, 16896 in all, are:
-= -- 1413
-> -- 916
+            893 strings with 15216 characters,
+and the built_in function-call counts, 18572 in all, are:
+= -- 1545
+> -- 1024
 < -- 25
-+ -- 355
-- -- 273
-* -- 1488
-:= -- 2755
-add.period$ -- 166
-call.type$ -- 40
-change.case$ -- 76
-chr.to.int$ -- 38
-cite$ -- 44
-duplicate$ -- 795
-empty$ -- 1475
-format.name$ -- 327
-if$ -- 3576
++ -- 395
+- -- 305
+* -- 1654
+:= -- 3036
+add.period$ -- 182
+call.type$ -- 44
+change.case$ -- 84
+chr.to.int$ -- 42
+cite$ -- 48
+duplicate$ -- 871
+empty$ -- 1616
+format.name$ -- 363
+if$ -- 3923
 int.to.chr$ -- 3
-int.to.str$ -- 41
-missing$ -- 43
-newline$ -- 253
-num.names$ -- 122
-pop$ -- 278
+int.to.str$ -- 45
+missing$ -- 47
+newline$ -- 277
+num.names$ -- 134
+pop$ -- 302
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 44
 quote$ -- 0
-skip$ -- 433
+skip$ -- 469
 stack$ -- 0
-substring$ -- 765
-swap$ -- 142
+substring$ -- 827
+swap$ -- 154
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 268
+type$ -- 296
 warning$ -- 4
-while$ -- 121
+while$ -- 132
 width$ -- 0
-write$ -- 614
+write$ -- 674
 (There were 11 error messages)

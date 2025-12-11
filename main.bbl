@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{44}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -68,6 +68,21 @@ M.~C. {Kelley}, B.~G. {Fejer}, and C.~A. {Gonzales}.
 \newblock \emph{Geophysical Research Letters}, 6\penalty0 (4):\penalty0
   301--304, April 1979.
 \newblock \doi{10.1029/GL006i004p00301}.
+
+\bibitem[{Vijaya Lekshmi} et~al.(2011){Vijaya Lekshmi}, {Balan}, {Tulasi Ram},
+  and {Liu}]{statisticsofGSandISatmidlowlat}
+D.~{Vijaya Lekshmi}, N.~{Balan}, S.~{Tulasi Ram}, and J.~Y. {Liu}.
+\newblock {Statistics of geomagnetic storms and ionospheric storms at low and
+  mid latitudes in two solar cycles}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 116\penalty0
+  (A11):\penalty0 A11328, November 2011.
+\newblock \doi{10.1029/2011JA017042}.
+
+\bibitem[Pr{\"o}lss(1995)]{prolss1995}
+G.~W. Pr{\"o}lss.
+\newblock \emph{Ionospheric F-region storms}, volume~2, pages 195--248.
+\newblock CRC Press, 1995.
+\newblock \doi{10.1201/9780203713297}.
 
 \bibitem[Fejer et~al.(1983)Fejer, Larsen, and Farley]{Fejer1983}
 B.~G. Fejer, M.~F. Larsen, and D.~T. Farley.
@@ -216,6 +231,23 @@ Chin-Chun {Wu}, Kan {Liou}, Ronald~P. {Lepping}, Lynn {Hutting}, Simon
   December 2016.
 \newblock \doi{10.1186/s40623-016-0525-y}.
 
+\bibitem[{Burton} et~al.(1975){Burton}, {McPherron}, and {Russell}]{burton1975}
+R.~K. {Burton}, R.~L. {McPherron}, and C.~T. {Russell}.
+\newblock {An empirical relationship between interplanetary conditions and
+  Dst}.
+\newblock \emph{Journal of Geophysical Research (Space Physics)}, 80\penalty0
+  (31):\penalty0 4204, November 1975.
+\newblock \doi{10.1029/JA080i031p04204}.
+
+\bibitem[{Xie} et~al.(2008){Xie}, {Gopalswamy}, {St. Cyr}, and
+  {Yashiro}]{P_dyn_geoeff}
+H.~{Xie}, N.~{Gopalswamy}, O.~C. {St. Cyr}, and S.~{Yashiro}.
+\newblock {Effects of solar wind dynamic pressure and preconditioning on large
+  geomagnetic storms}.
+\newblock \emph{Geophysical Research Letters}, 35\penalty0 (6):\penalty0
+  L06S08, March 2008.
+\newblock \doi{10.1029/2007GL032298}.
+
 \bibitem[INTERMAGNET(2021)]{intermagnet}
 INTERMAGNET.
 \newblock International real-time magnetic observatory network, 2021.
@@ -257,6 +289,15 @@ C.~{Amory-Mazaudier}, O.~S. {Bolaji}, and V.~{Doumbia}.
   (7):\penalty0 7827--7833, July 2017.
 \newblock \doi{10.1002/2017JA024132}.
 
+\bibitem[{Takahashi} et~al.(1991){Takahashi}, {Takeda}, and
+  {Yamada}]{prc_simul}
+Shun {Takahashi}, Masahiko {Takeda}, and Yuji {Yamada}.
+\newblock {Simulation of storm-time partial ring current system and the
+  dawn-dusk asymmetry of geomagnetic variation}.
+\newblock \emph{Planetary and Space Science}, 39\penalty0 (6):\penalty0
+  821--832, June 1991.
+\newblock \doi{10.1016/0032-0633(91)90087-Q}.
+
 \bibitem[{Yasyukevich} et~al.(2015{\natexlab{a}}){Yasyukevich}, {Mylnikova},
   and {Polyakova}]{estimating_TEC}
 Yu.~V. {Yasyukevich}, A.~A. {Mylnikova}, and A.~S. {Polyakova}.
@@ -285,14 +326,14 @@ A.~A. {Mylnikova}, Yu.~V. {Yasyukevich}, V.~E. {Kunitsyn}, and A.~M.
 \newblock \emph{Results in Physics}, 5:\penalty0 9--10, January 2015.
 \newblock \doi{10.1016/j.rinp.2014.11.002}.
 
-\bibitem[{Vijaya Lekshmi} et~al.(2011){Vijaya Lekshmi}, {Balan}, {Tulasi Ram},
-  and {Liu}]{statisticsofGSandISatmidlowlat}
-D.~{Vijaya Lekshmi}, N.~{Balan}, S.~{Tulasi Ram}, and J.~Y. {Liu}.
-\newblock {Statistics of geomagnetic storms and ionospheric storms at low and
-  mid latitudes in two solar cycles}.
-\newblock \emph{Journal of Geophysical Research (Space Physics)}, 116\penalty0
-  (A11):\penalty0 A11328, November 2011.
-\newblock \doi{10.1029/2011JA017042}.
+\bibitem[{Kalegaev} et~al.(2008){Kalegaev}, {Bakhmina}, {Alexeev}, {Belenkaya},
+  {Feldstein}, and {Ganushkina}]{pr_asymmetry}
+V.~V. {Kalegaev}, K.~Yu. {Bakhmina}, I.~I. {Alexeev}, E.~S. {Belenkaya}, Ya.~I.
+  {Feldstein}, and N.~V. {Ganushkina}.
+\newblock {Ring current asymmetry during a magnetic storm}.
+\newblock \emph{Geomagnetism and Aeronomy}, 48\penalty0 (6):\penalty0 747--758,
+  December 2008.
+\newblock \doi{10.1134/S0016793208060078}.
 
 \bibitem[{Makarov}(2022)]{sym_asym_corr}
 Georgy {Makarov}.
@@ -319,12 +360,6 @@ T.~J. {Fuller-Rowell}, M.~V. {Codrescu}, R.~J. {Moffett}, and S.~{Quegan}.
 \newblock {Response of the thermosphere and ionosphere to geomagnetic storms}.
 \newblock \emph{jgr}, 99\penalty0 (A3):\penalty0 3893--3914, March 1994.
 \newblock \doi{10.1029/93JA02015}.
-
-\bibitem[Pr{\"o}lss(1995)]{prolss1995}
-G.~W. Pr{\"o}lss.
-\newblock \emph{Ionospheric F-region storms}, volume~2, pages 195--248.
-\newblock CRC Press, 1995.
-\newblock \doi{10.1201/9780203713297}.
 
 \bibitem[Solari et~al.(2017)Solari, Egüen, Polo, and Losada]{pot}
 Sebastián Solari, Marta Egüen, María~José Polo, and Miguel~A. Losada.
