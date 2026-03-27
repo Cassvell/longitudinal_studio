@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.8)  23 MAY 2025 15:29
-=======
 This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.8)  26 MAR 2026 19:01
->>>>>>> version4
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -785,26 +781,6 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./main.aux)
 \openout1 = `main.aux'.
 
-<<<<<<< HEAD
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-=======
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
@@ -823,7 +799,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
 LaTeX Font Info:    ... okay on input line 81.
->>>>>>> version4
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1252,248 +1227,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
 <fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png, id=367, 867.24pt x 867.24pt
 >
-<<<<<<< HEAD
-(epstopdf)                    date: 2025-03-27 17:09:38
-(epstopdf)                    size: 8394580 bytes
-(epstopdf)             Output file: <fig/wavelets/gui_2015-03-15_2015-03-28-eps
--converted-to.pdf>
-(epstopdf)                    date: 2025-03-27 17:40:50
-(epstopdf)                    size: 4242945 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/wavelets/gui_2015-03-1
-5_2015-03-28-eps-converted-to.pdf fig/wavelets/gui_2015-03-15_2015-03-28.eps>
-(epstopdf)             \includegraphics on input line 405.
-Package epstopdf Info: Output file is already uptodate.
-<fig/wavelets/gui_2015-03-15_2015-03-28-eps-converted-to.pdf, id=399, 722.7pt x
- 505.89pt>
-File: fig/wavelets/gui_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic file 
-(type pdf)
-<use fig/wavelets/gui_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/wavelets/gui_2015-03-15_2015-03-28-eps-converted-t
-o.pdf  used on input line 405.
-(pdftex.def)             Requested size: 199.16928pt x 139.41736pt.
-Package epstopdf Info: Source file: <fig/wavelets/jai_2015-03-15_2015-03-28.eps
->
-(epstopdf)                    date: 2025-03-27 17:13:33
-(epstopdf)                    size: 6442813 bytes
-(epstopdf)             Output file: <fig/wavelets/jai_2015-03-15_2015-03-28-eps
--converted-to.pdf>
-(epstopdf)                    date: 2025-03-27 17:40:56
-(epstopdf)                    size: 3362548 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/wavelets/jai_2015-03-1
-5_2015-03-28-eps-converted-to.pdf fig/wavelets/jai_2015-03-15_2015-03-28.eps>
-(epstopdf)             \includegraphics on input line 407.
-Package epstopdf Info: Output file is already uptodate.
-<fig/wavelets/jai_2015-03-15_2015-03-28-eps-converted-to.pdf, id=400, 722.7pt x
- 505.89pt>
-File: fig/wavelets/jai_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic file 
-(type pdf)
-<use fig/wavelets/jai_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/wavelets/jai_2015-03-15_2015-03-28-eps-converted-t
-o.pdf  used on input line 407.
-(pdftex.def)             Requested size: 199.16928pt x 139.41736pt.
-Package epstopdf Info: Source file: <fig/wavelets/kak_2015-03-15_2015-03-28.eps
->
-(epstopdf)                    date: 2025-03-27 17:30:00
-(epstopdf)                    size: 5353667 bytes
-(epstopdf)             Output file: <fig/wavelets/kak_2015-03-15_2015-03-28-eps
--converted-to.pdf>
-(epstopdf)                    date: 2025-03-27 17:41:07
-(epstopdf)                    size: 2888377 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/wavelets/kak_2015-03-1
-5_2015-03-28-eps-converted-to.pdf fig/wavelets/kak_2015-03-15_2015-03-28.eps>
-(epstopdf)             \includegraphics on input line 411.
-Package epstopdf Info: Output file is already uptodate.
-<fig/wavelets/kak_2015-03-15_2015-03-28-eps-converted-to.pdf, id=401, 722.7pt x
- 505.89pt>
-File: fig/wavelets/kak_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic file 
-(type pdf)
-<use fig/wavelets/kak_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/wavelets/kak_2015-03-15_2015-03-28-eps-converted-t
-o.pdf  used on input line 411.
-(pdftex.def)             Requested size: 199.16928pt x 139.41736pt.
-Package epstopdf Info: Source file: <fig/wavelets/teo_2015-03-15_2015-03-28.eps
->
-(epstopdf)                    date: 2025-04-08 13:52:40
-(epstopdf)                    size: 8272175 bytes
-(epstopdf)             Output file: <fig/wavelets/teo_2015-03-15_2015-03-28-eps
--converted-to.pdf>
-(epstopdf)                    date: 2025-04-09 13:17:21
-(epstopdf)                    size: 3781810 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/wavelets/teo_2015-03-1
-5_2015-03-28-eps-converted-to.pdf fig/wavelets/teo_2015-03-15_2015-03-28.eps>
-(epstopdf)             \includegraphics on input line 413.
-Package epstopdf Info: Output file is already uptodate.
-<fig/wavelets/teo_2015-03-15_2015-03-28-eps-converted-to.pdf, id=402, 722.7pt x
- 505.89pt>
-File: fig/wavelets/teo_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic file 
-(type pdf)
-<use fig/wavelets/teo_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/wavelets/teo_2015-03-15_2015-03-28-eps-converted-t
-o.pdf  used on input line 413.
-(pdftex.def)             Requested size: 199.16928pt x 139.41736pt.
-Package epstopdf Info: Source file: <fig/corr/gui_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:32:47
-(epstopdf)                    size: 35434 bytes
-(epstopdf)             Output file: <fig/corr/gui_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:14
-(epstopdf)                    size: 21311 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/gui_corr-eps-conv
-erted-to.pdf fig/corr/gui_corr.eps>
-(epstopdf)             \includegraphics on input line 424.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/gui_corr-eps-converted-to.pdf, id=405, 433.62pt x 433.62pt>
-File: fig/corr/gui_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/gui_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/gui_corr-eps-converted-to.pdf  used on input 
-line 424.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/tam_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:33:48
-(epstopdf)                    size: 36432 bytes
-(epstopdf)             Output file: <fig/corr/tam_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:14
-(epstopdf)                    size: 21513 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/tam_corr-eps-conv
-erted-to.pdf fig/corr/tam_corr.eps>
-(epstopdf)             \includegraphics on input line 425.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/tam_corr-eps-converted-to.pdf, id=406, 433.62pt x 433.62pt>
-File: fig/corr/tam_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/tam_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/tam_corr-eps-converted-to.pdf  used on input 
-line 425.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/jai_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:34:08
-(epstopdf)                    size: 35884 bytes
-(epstopdf)             Output file: <fig/corr/jai_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:14
-(epstopdf)                    size: 21649 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/jai_corr-eps-conv
-erted-to.pdf fig/corr/jai_corr.eps>
-(epstopdf)             \includegraphics on input line 426.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/jai_corr-eps-converted-to.pdf, id=407, 433.62pt x 433.62pt>
-File: fig/corr/jai_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/jai_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/jai_corr-eps-converted-to.pdf  used on input 
-line 426.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/lzh_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:34:40
-(epstopdf)                    size: 36138 bytes
-(epstopdf)             Output file: <fig/corr/lzh_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:14
-(epstopdf)                    size: 21506 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/lzh_corr-eps-conv
-erted-to.pdf fig/corr/lzh_corr.eps>
-(epstopdf)             \includegraphics on input line 427.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/lzh_corr-eps-converted-to.pdf, id=408, 433.62pt x 433.62pt>
-File: fig/corr/lzh_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/lzh_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/lzh_corr-eps-converted-to.pdf  used on input 
-line 427.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/bmt_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:34:59
-(epstopdf)                    size: 36207 bytes
-(epstopdf)             Output file: <fig/corr/bmt_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:15
-(epstopdf)                    size: 21319 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/bmt_corr-eps-conv
-erted-to.pdf fig/corr/bmt_corr.eps>
-(epstopdf)             \includegraphics on input line 428.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/bmt_corr-eps-converted-to.pdf, id=409, 433.62pt x 433.62pt>
-File: fig/corr/bmt_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/bmt_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/bmt_corr-eps-converted-to.pdf  used on input 
-line 428.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/cyg_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:35:11
-(epstopdf)                    size: 35957 bytes
-(epstopdf)             Output file: <fig/corr/cyg_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:15
-(epstopdf)                    size: 21594 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/cyg_corr-eps-conv
-erted-to.pdf fig/corr/cyg_corr.eps>
-(epstopdf)             \includegraphics on input line 429.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/cyg_corr-eps-converted-to.pdf, id=410, 433.62pt x 433.62pt>
-File: fig/corr/cyg_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/cyg_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/cyg_corr-eps-converted-to.pdf  used on input 
-line 429.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/kak_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:35:29
-(epstopdf)                    size: 35655 bytes
-(epstopdf)             Output file: <fig/corr/kak_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:15
-(epstopdf)                    size: 21058 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/kak_corr-eps-conv
-erted-to.pdf fig/corr/kak_corr.eps>
-(epstopdf)             \includegraphics on input line 430.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/kak_corr-eps-converted-to.pdf, id=411, 433.62pt x 433.62pt>
-File: fig/corr/kak_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/kak_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/kak_corr-eps-converted-to.pdf  used on input 
-line 430.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/hon_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:35:54
-(epstopdf)                    size: 35198 bytes
-(epstopdf)             Output file: <fig/corr/hon_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:15
-(epstopdf)                    size: 21246 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/hon_corr-eps-conv
-erted-to.pdf fig/corr/hon_corr.eps>
-(epstopdf)             \includegraphics on input line 431.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/hon_corr-eps-converted-to.pdf, id=412, 433.62pt x 433.62pt>
-File: fig/corr/hon_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/hon_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/hon_corr-eps-converted-to.pdf  used on input 
-line 431.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/teo_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:19:29
-(epstopdf)                    size: 35546 bytes
-(epstopdf)             Output file: <fig/corr/teo_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:16
-(epstopdf)                    size: 21458 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/teo_corr-eps-conv
-erted-to.pdf fig/corr/teo_corr.eps>
-(epstopdf)             \includegraphics on input line 432.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/teo_corr-eps-converted-to.pdf, id=413, 433.62pt x 433.62pt>
-File: fig/corr/teo_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/teo_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/teo_corr-eps-converted-to.pdf  used on input 
-line 432.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-Package epstopdf Info: Source file: <fig/corr/sjg_corr.eps>
-(epstopdf)                    date: 2025-03-25 11:31:18
-(epstopdf)                    size: 35580 bytes
-(epstopdf)             Output file: <fig/corr/sjg_corr-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-03-25 11:36:16
-(epstopdf)                    size: 21383 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/sjg_corr-eps-conv
-erted-to.pdf fig/corr/sjg_corr.eps>
-(epstopdf)             \includegraphics on input line 433.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/sjg_corr-eps-converted-to.pdf, id=414, 433.62pt x 433.62pt>
-File: fig/corr/sjg_corr-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/corr/sjg_corr-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/sjg_corr-eps-converted-to.pdf  used on input 
-line 433.
-(pdftex.def)             Requested size: 142.26378pt x 142.26135pt.
-=======
 File: fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png Graphic file (type png)
->>>>>>> version4
 
 <use fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png>
 Package pdftex.def Info: fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png  use
@@ -1541,265 +1275,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 451--452
  []
 
 
-<<<<<<< HEAD
-(epstopdf)                    date: 2025-05-23 14:45:43
-(epstopdf)                    size: 441842 bytes
-(epstopdf)             Output file: <fig/magdata/tam_2015-03-16_2015-03-26-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 14:47:53
-(epstopdf)                    size: 303474 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/magdata/tam_2015-03-16
-_2015-03-26-eps-converted-to.pdf fig/magdata/tam_2015-03-16_2015-03-26.eps>
-(epstopdf)             \includegraphics on input line 498.
-Package epstopdf Info: Output file is already uptodate.
-<fig/magdata/tam_2015-03-16_2015-03-26-eps-converted-to.pdf, id=591, 722.7pt x 
-433.62pt>
-File: fig/magdata/tam_2015-03-16_2015-03-26-eps-converted-to.pdf Graphic file (
-type pdf)
-<use fig/magdata/tam_2015-03-16_2015-03-26-eps-converted-to.pdf>
-Package pdftex.def Info: fig/magdata/tam_2015-03-16_2015-03-26-eps-converted-to
-.pdf  used on input line 498.
-(pdftex.def)             Requested size: 199.16928pt x 119.5006pt.
-Package epstopdf Info: Source file: <fig/magdata/lzh_2015-03-16_2015-03-26.eps>
-
-(epstopdf)                    date: 2025-05-23 14:46:18
-(epstopdf)                    size: 442696 bytes
-(epstopdf)             Output file: <fig/magdata/lzh_2015-03-16_2015-03-26-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 14:47:54
-(epstopdf)                    size: 302457 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/magdata/lzh_2015-03-16
-_2015-03-26-eps-converted-to.pdf fig/magdata/lzh_2015-03-16_2015-03-26.eps>
-(epstopdf)             \includegraphics on input line 499.
-Package epstopdf Info: Output file is already uptodate.
-<fig/magdata/lzh_2015-03-16_2015-03-26-eps-converted-to.pdf, id=592, 722.7pt x 
-433.62pt>
-File: fig/magdata/lzh_2015-03-16_2015-03-26-eps-converted-to.pdf Graphic file (
-type pdf)
-<use fig/magdata/lzh_2015-03-16_2015-03-26-eps-converted-to.pdf>
-Package pdftex.def Info: fig/magdata/lzh_2015-03-16_2015-03-26-eps-converted-to
-.pdf  used on input line 499.
-(pdftex.def)             Requested size: 199.16928pt x 119.5006pt.
-Package epstopdf Info: Source file: <fig/magdata/bmt_2015-03-16_2015-03-26.eps>
-
-(epstopdf)                    date: 2025-05-23 14:46:21
-(epstopdf)                    size: 443580 bytes
-(epstopdf)             Output file: <fig/magdata/bmt_2015-03-16_2015-03-26-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 14:47:54
-(epstopdf)                    size: 305700 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/magdata/bmt_2015-03-16
-_2015-03-26-eps-converted-to.pdf fig/magdata/bmt_2015-03-16_2015-03-26.eps>
-(epstopdf)             \includegraphics on input line 500.
-Package epstopdf Info: Output file is already uptodate.
-<fig/magdata/bmt_2015-03-16_2015-03-26-eps-converted-to.pdf, id=593, 722.7pt x 
-433.62pt>
-File: fig/magdata/bmt_2015-03-16_2015-03-26-eps-converted-to.pdf Graphic file (
-type pdf)
-<use fig/magdata/bmt_2015-03-16_2015-03-26-eps-converted-to.pdf>
-Package pdftex.def Info: fig/magdata/bmt_2015-03-16_2015-03-26-eps-converted-to
-.pdf  used on input line 500.
-(pdftex.def)             Requested size: 199.16928pt x 119.5006pt.
-Package epstopdf Info: Source file: <fig/magdata/cyg_2015-03-16_2015-03-26.eps>
-
-(epstopdf)                    date: 2025-05-23 14:46:25
-(epstopdf)                    size: 440479 bytes
-(epstopdf)             Output file: <fig/magdata/cyg_2015-03-16_2015-03-26-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 14:47:55
-(epstopdf)                    size: 302035 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/magdata/cyg_2015-03-16
-_2015-03-26-eps-converted-to.pdf fig/magdata/cyg_2015-03-16_2015-03-26.eps>
-(epstopdf)             \includegraphics on input line 501.
-Package epstopdf Info: Output file is already uptodate.
-<fig/magdata/cyg_2015-03-16_2015-03-26-eps-converted-to.pdf, id=594, 722.7pt x 
-433.62pt>
-File: fig/magdata/cyg_2015-03-16_2015-03-26-eps-converted-to.pdf Graphic file (
-type pdf)
-<use fig/magdata/cyg_2015-03-16_2015-03-26-eps-converted-to.pdf>
-Package pdftex.def Info: fig/magdata/cyg_2015-03-16_2015-03-26-eps-converted-to
-.pdf  used on input line 501.
-(pdftex.def)             Requested size: 199.16928pt x 119.5006pt.
-Package epstopdf Info: Source file: <fig/magdata/hon_2015-03-16_2015-03-26.eps>
-
-(epstopdf)                    date: 2025-05-23 14:46:32
-(epstopdf)                    size: 439479 bytes
-(epstopdf)             Output file: <fig/magdata/hon_2015-03-16_2015-03-26-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 14:47:56
-(epstopdf)                    size: 298604 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/magdata/hon_2015-03-16
-_2015-03-26-eps-converted-to.pdf fig/magdata/hon_2015-03-16_2015-03-26.eps>
-(epstopdf)             \includegraphics on input line 502.
-Package epstopdf Info: Output file is already uptodate.
-<fig/magdata/hon_2015-03-16_2015-03-26-eps-converted-to.pdf, id=595, 722.7pt x 
-433.62pt>
-File: fig/magdata/hon_2015-03-16_2015-03-26-eps-converted-to.pdf Graphic file (
-type pdf)
-<use fig/magdata/hon_2015-03-16_2015-03-26-eps-converted-to.pdf>
-Package pdftex.def Info: fig/magdata/hon_2015-03-16_2015-03-26-eps-converted-to
-.pdf  used on input line 502.
-(pdftex.def)             Requested size: 199.16928pt x 119.5006pt.
-Package epstopdf Info: Source file: <fig/magdata/sjg_2015-03-16_2015-03-26.eps>
-
-(epstopdf)                    date: 2025-05-23 13:47:30
-(epstopdf)                    size: 439853 bytes
-(epstopdf)             Output file: <fig/magdata/sjg_2015-03-16_2015-03-26-eps-
-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 14:47:57
-(epstopdf)                    size: 300503 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/magdata/sjg_2015-03-16
-_2015-03-26-eps-converted-to.pdf fig/magdata/sjg_2015-03-16_2015-03-26.eps>
-(epstopdf)             \includegraphics on input line 503.
-Package epstopdf Info: Output file is already uptodate.
-<fig/magdata/sjg_2015-03-16_2015-03-26-eps-converted-to.pdf, id=596, 722.7pt x 
-433.62pt>
-File: fig/magdata/sjg_2015-03-16_2015-03-26-eps-converted-to.pdf Graphic file (
-type pdf)
-<use fig/magdata/sjg_2015-03-16_2015-03-26-eps-converted-to.pdf>
-Package pdftex.def Info: fig/magdata/sjg_2015-03-16_2015-03-26-eps-converted-to
-.pdf  used on input line 503.
-(pdftex.def)             Requested size: 199.16928pt x 119.5006pt.
-Package epstopdf Info: Source file: <fig/diono_recons/tam_2015-03-15_2015-03-28
-.eps>
-(epstopdf)                    date: 2025-05-23 15:13:15
-(epstopdf)                    size: 220610 bytes
-(epstopdf)             Output file: <fig/diono_recons/tam_2015-03-15_2015-03-28
--eps-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 15:15:32
-(epstopdf)                    size: 172781 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/diono_recons/tam_2015-
-03-15_2015-03-28-eps-converted-to.pdf fig/diono_recons/tam_2015-03-15_2015-03-2
-8.eps>
-(epstopdf)             \includegraphics on input line 512.
-Package epstopdf Info: Output file is already uptodate.
-<fig/diono_recons/tam_2015-03-15_2015-03-28-eps-converted-to.pdf, id=597, 722.7
-pt x 289.08pt>
-File: fig/diono_recons/tam_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic f
-ile (type pdf)
-<use fig/diono_recons/tam_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/diono_recons/tam_2015-03-15_2015-03-28-eps-convert
-ed-to.pdf  used on input line 512.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/diono_recons/lzh_2015-03-15_2015-03-28
-.eps>
-(epstopdf)                    date: 2025-05-23 15:13:46
-(epstopdf)                    size: 221256 bytes
-(epstopdf)             Output file: <fig/diono_recons/lzh_2015-03-15_2015-03-28
--eps-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 15:15:32
-(epstopdf)                    size: 174098 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/diono_recons/lzh_2015-
-03-15_2015-03-28-eps-converted-to.pdf fig/diono_recons/lzh_2015-03-15_2015-03-2
-8.eps>
-(epstopdf)             \includegraphics on input line 513.
-Package epstopdf Info: Output file is already uptodate.
-<fig/diono_recons/lzh_2015-03-15_2015-03-28-eps-converted-to.pdf, id=598, 722.7
-pt x 289.08pt>
-File: fig/diono_recons/lzh_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic f
-ile (type pdf)
-<use fig/diono_recons/lzh_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/diono_recons/lzh_2015-03-15_2015-03-28-eps-convert
-ed-to.pdf  used on input line 513.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/diono_recons/bmt_2015-03-15_2015-03-28
-.eps>
-(epstopdf)                    date: 2025-05-23 15:11:54
-(epstopdf)                    size: 221172 bytes
-(epstopdf)             Output file: <fig/diono_recons/bmt_2015-03-15_2015-03-28
--eps-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 15:15:33
-(epstopdf)                    size: 172001 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/diono_recons/bmt_2015-
-03-15_2015-03-28-eps-converted-to.pdf fig/diono_recons/bmt_2015-03-15_2015-03-2
-8.eps>
-(epstopdf)             \includegraphics on input line 514.
-Package epstopdf Info: Output file is already uptodate.
-<fig/diono_recons/bmt_2015-03-15_2015-03-28-eps-converted-to.pdf, id=599, 722.7
-pt x 289.08pt>
-File: fig/diono_recons/bmt_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic f
-ile (type pdf)
-<use fig/diono_recons/bmt_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/diono_recons/bmt_2015-03-15_2015-03-28-eps-convert
-ed-to.pdf  used on input line 514.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/diono_recons/cyg_2015-03-15_2015-03-28
-.eps>
-(epstopdf)                    date: 2025-05-23 15:12:20
-(epstopdf)                    size: 220155 bytes
-(epstopdf)             Output file: <fig/diono_recons/cyg_2015-03-15_2015-03-28
--eps-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 15:15:33
-(epstopdf)                    size: 169275 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/diono_recons/cyg_2015-
-03-15_2015-03-28-eps-converted-to.pdf fig/diono_recons/cyg_2015-03-15_2015-03-2
-8.eps>
-(epstopdf)             \includegraphics on input line 515.
-Package epstopdf Info: Output file is already uptodate.
-<fig/diono_recons/cyg_2015-03-15_2015-03-28-eps-converted-to.pdf, id=600, 722.7
-pt x 289.08pt>
-File: fig/diono_recons/cyg_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic f
-ile (type pdf)
-<use fig/diono_recons/cyg_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/diono_recons/cyg_2015-03-15_2015-03-28-eps-convert
-ed-to.pdf  used on input line 515.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/diono_recons/hon_2015-03-15_2015-03-28
-.eps>
-(epstopdf)                    date: 2025-05-23 15:13:24
-(epstopdf)                    size: 217217 bytes
-(epstopdf)             Output file: <fig/diono_recons/hon_2015-03-15_2015-03-28
--eps-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 15:15:34
-(epstopdf)                    size: 165151 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/diono_recons/hon_2015-
-03-15_2015-03-28-eps-converted-to.pdf fig/diono_recons/hon_2015-03-15_2015-03-2
-8.eps>
-(epstopdf)             \includegraphics on input line 516.
-Package epstopdf Info: Output file is already uptodate.
-<fig/diono_recons/hon_2015-03-15_2015-03-28-eps-converted-to.pdf, id=601, 722.7
-pt x 289.08pt>
-File: fig/diono_recons/hon_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic f
-ile (type pdf)
-<use fig/diono_recons/hon_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/diono_recons/hon_2015-03-15_2015-03-28-eps-convert
-ed-to.pdf  used on input line 516.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/diono_recons/sjg_2015-03-15_2015-03-28
-.eps>
-(epstopdf)                    date: 2025-05-23 15:12:54
-(epstopdf)                    size: 219196 bytes
-(epstopdf)             Output file: <fig/diono_recons/sjg_2015-03-15_2015-03-28
--eps-converted-to.pdf>
-(epstopdf)                    date: 2025-05-23 15:15:34
-(epstopdf)                    size: 173878 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/diono_recons/sjg_2015-
-03-15_2015-03-28-eps-converted-to.pdf fig/diono_recons/sjg_2015-03-15_2015-03-2
-8.eps>
-(epstopdf)             \includegraphics on input line 517.
-Package epstopdf Info: Output file is already uptodate.
-<fig/diono_recons/sjg_2015-03-15_2015-03-28-eps-converted-to.pdf, id=602, 722.7
-pt x 289.08pt>
-File: fig/diono_recons/sjg_2015-03-15_2015-03-28-eps-converted-to.pdf Graphic f
-ile (type pdf)
-<use fig/diono_recons/sjg_2015-03-15_2015-03-28-eps-converted-to.pdf>
-Package pdftex.def Info: fig/diono_recons/sjg_2015-03-15_2015-03-28-eps-convert
-ed-to.pdf  used on input line 517.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
- (./main.bbl [15 <./fig/magdata/tam_2015-03-16_2015-03-26-eps-converted-to.pdf>
- <./fig/magdata/lzh_2015-03-16_2015-03-26-eps-converted-to.pdf> <./fig/magdata/
-bmt_2015-03-16_2015-03-26-eps-converted-to.pdf> <./fig/magdata/cyg_2015-03-16_2
-015-03-26-eps-converted-to.pdf> <./fig/magdata/hon_2015-03-16_2015-03-26-eps-co
-nverted-to.pdf> <./fig/magdata/sjg_2015-03-16_2015-03-26-eps-converted-to.pdf>]
-
-Underfull \hbox (badness 6477) in paragraph at lines 53--65
-\OT1/cmr/m/it/10 Research Letters\OT1/cmr/m/n/10 , 10(7):537--540, 1983.  []$\O
-T1/cmtt/m/n/10 doi : https : / / doi . org / 10 . 1029 / GL010i007p00537$[]\OT1
-/cmr/m/n/10 .
-=======
 Underfull \hbox (badness 10000) in paragraph at lines 454--455
 
->>>>>>> version4
  []
 
 
@@ -1828,13 +1305,10 @@ Underfull \hbox (badness 5908) in paragraph at lines 34--41
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-<<<<<<< HEAD
-=======
 
 
 LaTeX Warning: There were undefined references.
 
->>>>>>> version4
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B92D8A9D8BBFB1C136AC44F884AE834D;990.
  ) 
@@ -1849,26 +1323,6 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
-<<<<<<< HEAD
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (18 pages, 19884116 bytes).
-=======
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
@@ -1887,7 +1341,6 @@ s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 c/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on main.pdf (18 pages, 9324153 bytes).
->>>>>>> version4
 PDF statistics:
  553 PDF objects out of 1000 (max. 8388607)
  443 compressed objects within 5 object streams
