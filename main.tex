@@ -14,6 +14,7 @@
 \usepackage{amssymb}
 \usepackage{babel}
 % Unicode
+\usepackage{subcaption} % en el preámbulo
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{xcolor} % Required for coloring
@@ -66,8 +67,8 @@
 \usepackage{lipsum}
 
 % Author info
-\title{Impact of Local Time on march $17^{th}$ 2015 Geomagnetic Storm response at mid-low latitudes\\}
-\author{Castellanos-Velazco C. I.$^{1,3}$ \and Corona-Romero P.$^{2,3}$ \and Sergeeva M.$^{2,3}$ \and Orrala-Legorreta I. D Orrala-Legorreta I.D.$^{1,3}$, \and Gonzalez-Esparza J. A.$^{2,3}$}
+\title{Impact of Ring Current Asymmetry on Prompt Penetration Electric Fields during march $17^{th}$ 2015 Geomagnetic Storm at mid-low latitudes\\}
+\author{Castellanos-Velazco C. I.$^{1,3}$ \and Corona-Romero P.$^{2,3}$ \and Orrala-Legorreta I. D Orrala-Legorreta I.D.$^{1,3}$, \and Gonzalez-Esparza J. A.$^{2,3}$}
 
 \date{
 	$^1$Universidad Nacional Autonoma de Mexico, Posgrado en Ciencias de la Tierra \\ %\texttt{\{auth1, auth3\}@org1.edu}\\%
@@ -82,10 +83,10 @@
 	
 	\begin{abstract}
 		
-This study analyzes the impact of the partial ring current and Prompt Penetration Electric Fields (PPEFs) on the local geomagnetic response, using data from four mid-to-low latitude observatories separated by approximately $60^\circ$--$90^\circ$ in longitude, covering different local time sectors. We focus on the geomagnetic storm of 17 March 2015. Using Fourier analysis, we reconstruct the magnetic signatures of ionospheric currents. Our results demonstrate that the local geomagnetic response is most significantly affected in the dawn and dusk sectors, where the contribution of the partial ring current to the local magnetic record is most pronounced. 
+This study analyzes the impact of the asymmetric ring current and Prompt Penetration Electric Fields (PPEF) on the local geomagnetic response, using data from eight mid-to-low latitude observatories at north hemisphere, separated by approximately $180^\circ$ in longitude, covering different local time sectors. We focus on the geomagnetic storm of 17th March 2015. Using Fourier analysis, we reconstruct the magnetic signatures related to the PPEF. Our results show that the local geomagnetic response is most significantly affected in the dawn and dusk sectors, where the contribution of the partial ring current and the Field Aligned Currents to the local magnetic record is most pronounced. At the same time, our findings suggest that the asymmetric responses should not be generally considered, since the contribution will not always be homogeneous through different periods and positions. 
 		\\
 		
-		\noindent\textbf{Keywords:} Regional Space weather, Magnetic fluctuations, Prompt-Penetration Electric Fields
+		\noindent\textbf{Keywords:} Regional Space weather, Magnetic fluctuations, Prompt-Penetration Electric Fields, asymmetric ring current
 	\end{abstract}
 	
 	%	\tableofcontents
@@ -94,60 +95,81 @@ This study analyzes the impact of the partial ring current and Prompt Penetratio
 	\label{sec:intro}
 	
 	
-	A geomagnetic storm (GS) is a temporary disturbance of Earth’s magnetosphere caused by the injection of energy and charged particles into the system, leading to a significant reduction in the geomagnetic field intensity. These GS are typically triggered by solar phenomena such as Coronal Mass Ejections (CMEs) or high-speed solar wind (HSSW) streams. Due to their potential impacts on technological systems—including disruptions to communications, navigation, and power grids—GSs are among the most extensively studied phenomena in space weather research.\\
+	A geomagnetic storm (GS) is a temporary disturbance of Earth's magnetosphere caused by the injection of energy and charged particles into the ring current system (RC), which leads to a temporal attenuation of the Horizontal (H) component of the geomagnetic field intensity. This reduction is quantified by geomagnetic indices such as the DST index, hourly sampled, or SYMH index, which is minute sampled. These GS are typically triggered by solar phenomena, including coronal mass ejections (CME) or high-speed solar wind (HSSW) streams. Due to their potential impact on technological systems—such as disruptions to communications, navigation, and power grids—geomagnetic storms are among the most extensively studied phenomena in space weather research.\\
 	
 	
-	During the Main Phase (MP) of a GS, energy and charged particles are transported into Earth’s inner magnetosphere. Since the magnetosphere is dynamically coupled with the ionosphere, particularly at high latitudes \citep{l_russell}, the ionosphere exhibits pronounced responses to these perturbations. One critical ionospheric effect is the generation of storm-time electric fields, which can be manifested at different latitudes:
+
+	The main phase (MP) of a GS is the stage during which energy and charged particles from a CME or HSSW are transported into Earth's inner magnetosphere upon arrival. The magnetosphere is dynamically coupled with the high-latitude ionosphere \citep{l_russell} through field-aligned currents (FAC). These are sheet current systems consisting of two regions. In Region 1 (R1), injection from the solar wind occurs on the dawn side into the ionosphere and exits on the dusk side. In Region 2 (R2), the current direction is opposite (upward from the ionosphere on the dawn side and downward on the dusk side), with linking points located more equatorward.\\ 
 	
-	\begin{itemize}
-		\item Prompt Penetration Electric Fields (PPEF) \citep{nishida_68_fluctuations, nishida_68_coherence}
+	
+	In the magnetosphere, R2-FACs connect in the equatorial plane with the partial ring current (PRC), a westward current flow distinct from the RC. This current system is centered around the evening sector but exhibits a small, swift westward movement, as reported by \cite{Kamide1971, Crooker1972, Fukushima1973}. As shown in Figure \ref{fig:prc}, from the perspective of the northern hemisphere, the PRC closure points with FACs involve downward current (FAC to PRC) on the eastern side and upward current (PRC to FAC) on the western afternoon side. This configuration results in a longitudinal asymmetry in the H-component decrease at mid-low latitudes during the MP, contrasting with the symmetric effect of the ring current. Consequently, the geomagnetic response is more complex than expected due to the effects of PRC, as Dst and SYMH indices by definition focus on the symmetric effects. According to \cite{Fukushima1973}, FAC is the main source for the asymmetric response of what they call \textit{asymmetric ring current} (ARC). In this ARC, the most negative H response is related with the upward closure circuit points with PRC, around 18-20 magnetic local time (MLT) sector during early MP stages. \\
+	
+	
+	
 		
-		\item  Disturbed Dynamo Electric Fields (DDEF) \citep{blanc_ddyn}\\
-		
-	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[width=5.0cm]{fig/prc.png}        	
+		\caption{Simple model explaining the R2FAC-PRC circuit. From the equatorial plane perspective, notice that even when PRC is only connected with R2-FAC, there is a region of descending flux in the eatern side and an ascending flux in the western side. Adapted from \cite{Fukushima1973}.}
+		\label{fig:prc}
+	\end{figure}
 	
-	The concept of PPEF was first introduced by \cite{nishida_68_fluctuations, nishida_68_coherence}, who observed periodic magnetic fluctuations between 4 hours and 30 minutes in ground magnetometers located around the auroral oval and the dip equator, both showing nearly identical fluctuations. Later, \cite{PPEF_prediction, Jaggi1973SelfconsistentCO} developed the first model explaining the penetration of convective electric fields ($\mathbf{E_C}$) during disturbed periods, propagating through Region 1 Field-Aligned Currents (R1-FAC). During quiet periods, $\mathbf{E_C}$ is shielded by a polarized electric field induced by Region 2 Field-Aligned Currents (R2-FAC). However, during the MP of a GS, magnetic reconnection leads to an almost immediate intensification of R1-FAC activity due to the injection of solar wind particles and energy. Since R2-FAC depends on ring current activity to strengthen, it initially fails the shielding of $\mathbf{E_C}$, allowing its transfer to the ionosphere through R1-FAC. This process continues until R2-FAC intensifies its activity though the intensification of ring current, allowing R2-FAC balancing R1-FAC activity, which can take from tens of minutes to several hours \citep{PPEF_review}. During this period of imbalance, $\mathbf{E_C}$ penetrates into the mid- and low-latitude ionosphere, being that the reason to be called Penetration Electric fields. Furthermore, \cite{Kelley1979, PPEF_review} showed that PPEF depends on the southward orientation of the interplanetary magnetic field (IMF) component $B_Z$ and can also be triggered by sharp directional changes in $B_Z$.\\
+	
+	In the ionosphere at high-latitudes, it is located the coupling region with R1-FACs which enables the propagation of interplanetary electric fields (IEF), which can, in turn, penetrate to lower ionospheric latitudes, giving rise to prompt penetration electric fields (PPEF). The concept of PPEF was first introduced by \cite{nishida_68_fluctuations, nishida_68_coherence}, who observed periodic magnetic fluctuations with periods ranging from 30 minutes to 4 hours, detected by groups of ground magnetometers located around the auroral oval and the dip equator. He reported that magnetometer pairs at similar longitudes, in the auroral region and near equator, exhibited nearly identical fluctuations.\\
+	
+
+	Later, \cite{PPEF_prediction, Jaggi1973SelfconsistentCO} developed the first model explaining the penetration of IEFs through R1-FAC. Under normal conditions, these fields are shielded by the action of R2-FAC. However, during periods of intense R1-FAC activity, a state known as \textit{undershielding} occurs, allowing IEFs to propagate through the ionosphere until R2-FAC become intensified by PRC activity. This intensification can lead to an \textit{overshielding} state, representing another imbalance condition. The alternating sequence of undershielding and overshielding gives rise to the fluctuations in PPEFs. This fluctuation process can persist for several hours \citep{PPEF_review} until the MP ceases. PPEF occurrence depends on both the southward orientation of the interplanetary magnetic field (IMF) $B_Z$ component and sharp directional changes in $B_Z$ \citep{Kelley1979, PPEF_review}.\\
+
+	As illustrated in Figure \ref{fig:ppef_diag}, when PPEF, driven by IEFs, is transmitted to the high-latitude ionosphere, they drive Hall and westward Pedersen currents. These PPEF fluctuations can propagate horizontally through the ionosphere via electromagnetic waves toward mid-low latitudes \citep{PPEFtransmission1979, PPEF_review}. Although PPEF amplitudes attenuate with as latitude decreases, they become intensified at equatorial latitudes due to enhanced conductivity in the equatorial ionosphere, giving rise to an equatorial westward Pedersen current. This Pedersen current is depicted in Figure \ref{fig:ppef_diag} as a red line, with arrows indicating the flow direction at equatorial latitudes and current closure at adjacent latitudes near the terminators.\\
+ 
+	
+	On the dayside at mid-to-low latitudes ($20-30^\circ$), an eastward PPEF induces an upward \textbf{E × B} drift, lifting plasma to higher altitudes where recombination is slower, often resulting in a positive ionospheric storm (characterized by an increase in total electron content, TEC). In contrast, storm-induced circulation from high to low latitudes transports molecular-rich air (enriched in [$O_2$] and [$N_2$]), increasing the [$N_2$]/[$O$] ratio. This shift in atmospheric composition enhances the loss rate of atomic oxygen ions ($O^+$) through recombination, which can lead to a negative ionospheric storm (TEC decrease) \citep{statisticsofGSandISatmidlowlat, prolss1995}.\\
 	
 	
-	DDEF on the other hand, are associated with an ionospheric current driven by the injection of charged particles into the auroral ionospher. This injection, produces a Joule heating and leads to the circulation of equatorward thermospheric winds which drag charged particles (protons) \cite{blanc_ddyn}. With the dragged protons, it gets to a charge separation which induces a Pedersen current in the same direction of neutral wind flow. Near the equator, the Coriolis effect produces proton accumulation and westward circulation occur around the dip equator, generating a poleward electric field. Consequently, a second Pedersen current is induced in the poleward direction, opposing the first current. At mid-latitudes ($\sim 40^\circ$), the above commented phenomena, drives Hall currents, which are interrupted at the terminators (limit of day-side with night-side) and get a closure or circuit at adjacent latitudes. This process results in vortex-shaped currents known as the Disturbed Dynamo, characterized by directions opposite to the Solar Quiet (SQ) current. For this reason, the disturbed dynamo is also referred to as the anti-SQ current.\\
+	Another potential effect of PPEF is their contribution to the intensity of geomagnetically induced currents (GIC), as these currents are driven by rapid changes in the geomagnetic field ($dH/dt$) over a region of interest, given the characteristic frequency of PPEF fluctuations. As \cite{vishnupriya_2025_ppef_gics} notes, PPEF can generate differences with respect to quiet electric field conditions at equatorial and low latitudes, particularly on the dayside. Conversely, \cite{Nilam_2022_ppef_gics} concluded that discrepancies between GIC models and $dH/dt$ measurements from ground magnetometers could be explained by the not considering PPEFs and the equatorial electrojet, both of which are localized phenomena.\\
+	
+	PPEF were studied in situ by \cite{Fejer1983}, who observed their effects using incoherent scatter radar at Jicamarca. Subsequently, \cite{ddyn2005} modeled for the first time the magnetic field associated with ionospheric disturbances. They assumed that at mid-to-low latitudes these disturbances are primarily driven by PPEFs and disturbed dynamo electric fields (DDEFs). More recently, \cite{amory2020_filtros} proposed the use of Fourier analysis to isolate magnetic fluctuations related to PPEFs based on their quasi-periodic behavior. Their approach employs high-pass filters for periods shorter than four hours and also considers the contribution of the asymmetry index (ASYH), thereby accounting for the magnetic effects of the PRC and FAC.\\
 
 	
-	At mid-low latitudes ($20-30^\circ$), geomagnetic storms can significantly affect electron density through two primary mechanisms: Prompt Penetration Electric Fields (PPEF) and disturbance dynamo-driven neutral winds. On the dayside, an eastward PPEF causes an upward \textbf{E × B} drift, lifting the plasma to higher altitudes where recombination is slower, often leading to a positive ionospheric storm (TEC increase). In contrast, the storm-induced circulation from high to low latitudes transports molecular-rich air ([$O_2$], [$N_2$]), increasing the $\frac{[N_2]}{[O]}$ ratio. This change in atmospheric composition enhances the loss rate of atomic oxygen ions ($O^+$) through recombination, which can lead to a negative ionospheric storm (TEC decrease) \citep{statisticsofGSandISatmidlowlat, prolss1995}.\\
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{fig/DP2diagram.png}
+	\caption{PPEF transmission circuit, from its propagation toward ionosphere through R1, to the horizontal transmission equatorward and the closure circuit through an equatorial Pedersen Current. Adapted from \cite{PPEF_review}}
+	\label{fig:ppef_diag}
+\end{figure}	
+		
+	In our previous work \citep{CASTELLANOSVELAZCO2024}, we attempted to model $\Delta H$ and $K_{loc}$ by applying the methods from \cite{ddyn2005} to filter the magnetic effects of PPEFs and disturbed dynamo electric fields (DDEFs) for 20 GS. Specifically, we combined these filtered magnetic contributions with the Dst index after scaling it by a latitudinal factor $\lambda$. The objective was to assess whether the resulting $Dst_\lambda$ time series exhibited reduced deviations from local $\Delta H$ compared to the differences typically observed between Dst and $\Delta H$. For certain events, we observed that the average difference between the expected $Dst_\lambda$ and the measured $\Delta H$ was smaller than those between Dst and $\Delta H$. Overall, the average reduction in difference in his regard was approximately $30\%$. Cases in which the reduction was negligible ($<10\%$) likely correspond to events where the asymmetric ring current (ARC) significantly influenced the local response without being accounted for in the model. In contrast, events with a substantial reduction (around $60\%$) suggest that those geomagnetic storms exhibited a relatively weak contribution from the ARC.\\	
 	
-	Both PPEF and DDEF were studied by \cite{Fejer1983}, who observed their effects using incoherent scatter radar at Jicamarca latitude. Later, \cite{DDEF_detection} detected DDEF above Saint-Santin latitude, with results consistent with the disturbed dynamo model. On the other hand, \cite{ddyn2005} modeled by the first time the magnetic field associated with ionospheric disturbances, assuming that, for mid-low latitudes, they are mainly driven by DDEF and PPEF. They considered that during the MP, PPEF magnetic effects are dominant, whereas during the recovery phase (RP), regional magnetic field variations are mainly driven by DDEF. Following this initial approach, several studies \citep{ddyn_diag2, angeoddyn} have focused on analyzing local responses at different latitudes and longitudes to analyze the different local responses associate to DDEF phenomena. In \cite{statist_iono}, a statistical study was conducted to understand ionospheric responses as a function of local sectors during GS onset. Later, \cite{amory2020_filtros} proposed using Fourier analysis to isolate magnetic fluctuations related to DDEF and PPEF based on their quasi-periodic behavior, identifying periods of approximately 24 hours for DDEF and less than 4 hours for PPEF. \\
-
-	
-	In case of Mexico, regional space weather has a relatively recent history. On 2014, it was form the Mexican Space Weather Service (SCIESMEX), leading to combined efforts to understand the regional space weather phenomena, in the middle of a global perspective \cite{sciesmex_art}. From this teamwork, studies like \cite{P-corona1, P-corona2} has been focused on local geomagnetic response during GS periods, and the computing of a local K index specific for Mexico. On the other hand, \cite{esmeralda, dramaria_1, dramaria_13} found important ionospheric activity related to geomagnetic storms. In \cite{CASTELLANOSVELAZCO2024}, the main focus was analyzing the local geomagnetic response related to PPEF and DDEF phenomena, during 20 strong GS, from 2003 to 2018, where one of the main conclusions were the need of comparing the geomagnetic response in the center of Mexico with different locations at similar geomagnetic latitudes.\\
+	This study aims to extend our previous results by...[]
 	
 	
-	In this paper, we analyze the PPEF magnetic signatures at different longitude sectors, looking for the sector where these fluctuations are more intense. We compare the results with the Asymmetric Ring Current activity in order to analyze it's influence on PPEF strength and so, on local geomagnetic response. We selected the GS of march $17^{th}$, 2015 which is also known as the St. Patrick's event. This GS is known to be the most intense GS during the solar cycle $24^{th}$, reaching -274 nT during its MP.\\
+	we select the geomagnetic storm of March 17, 2015, which was one of the events analyzed in our previous work \citep{CASTELLANOSVELAZCO2024}. This storm is recognized as the most intense of solar cycle 24, reaching a minimum Dst of -274 nT during its main phase. An additional motivation for selecting this event is the availability of public magnetic data for the different regions of interest, as well as the relatively long duration of its MP (~15 hours) which is crucial since the studied phenomena is strongly related to MP.\\
+	
+	Although more direct methods exist for studying the PPEFs, such as incoherent scatter radar observations, these instruments are not widely distributed. The few available are typically located at either very high or equatorial latitudes, limiting their spatial coverage. In contrast, magnetometers offer a far more global distribution. Moreover, PPEF models, such as \textit{(mention specific model here)}, tend to focus primarily on equatorial latitudes and may present certain limitations. For these reasons, analyzing magnetic fluctuations associated with PPEFs remains a valuable approach, particularly for regions at the boundary between mid and low latitudes.\\
+	
+	
+	To analize the FAC activity related the ARC and how it influence the fluctuations related to PPEF, we are analyzing current density data provided by the Active Magnetosphere and Planetary Electrodynamics Response Experiment (AMPERE) \citep{AMPERE}. This program is carried on by satellite measurements with magnetometers which measure magnetic field over high latitudes. From ten minute recordings of magnetic field, they compute current density related to FAC coupling regions with high latitude ionosphere.\\
+	
 	
 	
 	\section{St. Patrick Geomagnetic Storm}
 	
-	The geomagnetic storm (GS) analyzed in this work is the intense event that occurred on March 17, 2015, widely known as the St. Patrick's Day storm. It is considered the most intense storm of solar cycle 24 \cite{stpatrick_ref}. The storm was triggered by a coronal mass ejection (CME) associated with a C9.1 solar flare and a subsequent dimming observed on March 15. This CME, recorded as a partial halo by the SOHO/LASCO coronagraphs, had an estimated speed of approximately 660 km/s.\\
+	The GS analyzed in this work is the intense event that occurred on March 17, 2015, widely known as the St. Patrick's Day storm. It is considered the most intense storm of solar cycle 24 \citep{stpatrick_ref}. During this event, it was reported GNSS fails, scintillation and even possible affections due to GIC presence \citep{st_patric_effects_rusia}. The storm was triggered by a coronal mass ejection (CME). This CME, recorded as a partial halo by the SOHO/LASCO coronagraphs, had an estimated initial speed of approximately 660 km/s.\\
 
 
 	
-	Figure \ref{fig:ip} provides an overview of the interplanetary conditions that led to the St. Patrick's Day storm. A more detailed description about the trigger event is provided by \cite{stpatrick_ref}. Panel (a) shows the total interplanetary magnetic field, $B_T$ (black line), and its north-south component, $B_Z$ (red line). Panels (b) and (c) presents solar wind properties, including the induced Interplanetary Electric Field ($E_Y$), calculated as $-V_X \times B_Z$; and dynamic pressure. Finally, panel (e) displays the geomagnetic response through the SYMH and ASYH indices (green and yellow lines respectively).\\
+	Figure \ref{fig:ip} provides an overview of the interplanetary conditions that led to the St. Patrick's Day storm. Panel (a) shows the total interplanetary magnetic field, $B_T$ (black line), and its north-south component, $B_Z$ (red line). Panels (b) and (c) presents solar wind properties, including the induced Interplanetary Electric Field ($E_Y$), calculated as $-V_X \times B_Z$; and dynamic pressure. Finally, panel (e) displays the geomagnetic response through the SYMH and ASYH indices (green and yellow lines respectively). A more detailed description about the trigger event is provided by \cite{stpatrick_ref}. The key milestones of the event are marked by three vertical dashed lines in Figure \ref{fig:ip}. The first line (left) indicates the arrival of an interplanetary shock at 04:30 UT at the L1 point, it appears step-like increases in $B_T$, $E_Y$ and $P_{dyn}$. This shock compressed the magnetosphere, causing a Sudden Storm Commencement (SSC) visible as a sharp increase in the SYMH index between 04:30 and 07:00 UT, highlighted by light gray shading. The region following the shock + plasma sheath, is identified by highly fluctuating $B_T$ and $B_Z$, enhanced $P_{dyn}$. A period of southward $B_Z$ between 06:20 and 09:00 UT initiated the what we called, the first stage of main phase (MP), driving the SYMH index down to its first minimum of ~-80 nT. The second dashed line (~14:00 UT) marks the arrival of the magnetic cloud, identified by \cite{stpatrick_ref} as the main driver of the GS. Its passage is identified by a smooth, strong rotation of the magnetic field, a drop in temperature, and so, a corresponding low plasma beta. A sustained and intense southward $B_Z$ component (reaching ~-40 nT) within the cloud triggered of the second (and more intense) stage of the MP. The SYMH index decreased sharply, reaching its global minimum of -234 nT at 22:47 UT. The entire main phase period is shaded in dark gray in panel (e). \\
 	
+	The third dashed line (~23:00 UT) indicates the trailing edge of the magnetic cloud and the entry into a high-speed solar wind stream. While the high solar wind speed persists, the geomagnetic activity subsides as $B_Z$ turns northward and the $E_Y$ drops close to zero, ending the geoeffective driving of the storm.\\
 	
-	The key milestones of the event are marked by three vertical dashed lines in Figure \ref{fig:ip}. The first line (left) indicates the arrival of an interplanetary shock (IPS) at 04:30 UT at the L1 point. The IPS signature is clear from the step-like increases in $B_T$, $E_Y$ and $P_{dyn}$. This shock compressed the magnetosphere, causing a Sudden Storm Commencement (SSC) visible as a sharp increase in the SYMH index between 04:30 and 07:00 UT, highlighted by light gray shading.\\
-
-	The region following the shock, the CME sheath, is identified by highly fluctuating $B_T$ and $B_Z$, enhanced $P_{dyn}$. A period of southward $B_Z$ between ~06:00 and 09:00 UT initiated the what we called, the first stage of main phase (MP), driving the SYMH index down to its first minimum of ~-80 nT.\\
-	
-	The second dashed line (~14:00 UT) marks the arrival of the magnetic cloud, identified by \cite{stpatrick_ref} as the main driver of the GS. Its passage is identified by a smooth, strong rotation of the magnetic field, a drop in temperature, and so, a corresponding low plasma beta. A sustained and intense southward $B_Z$ component (reaching ~-40 nT) within the cloud marked the beginning of the second (and more intense) stage of the MP. The SYMH index decreased sharply, reaching its global minimum of -234 nT at 22:47 UT. The entire main phase period is shaded in dark gray in panel (e). \\
-	
-	The third dashed line (~23:00 UT) indicates the trailing edge of the magnetic cloud and the entry into a high-speed solar wind (HSSW) stream. While the high solar wind speed persists, the geomagnetic activity subsides as $B_Z$ turns northward and the $E_Y$ drops close to zero, ending the geoeffective driving of the storm.\\
-	
-	Since we are interested in the effects of the PRC during its highest activity altogether with PPEF effects, we will focusing on a time window of a few hours during MP. This time window is going to be in function of periods when $E_Y > 0.5 mVm^{-1}$ and $P_{dyn} > 29.71 nPa$. The first criteria is based on the discussion in \cite{burton1975}, where they find the energy injection during MP is dependent of $E_Y$, setting $E_{Y0}=0.5 mVm^{-1}$ as a minimum value. On the other hand, \cite{P_dyn_geoeff} set $P_{dyn} > 15 nPa$ as a good estimator for a geoeffective dynamic pressure for strong geomagnetic storms. Considering that 15 nPa is a very low threshold for the period between march 15 - 17 as it can be seen in the Figure, we set the threshold through computing the $95\%$ of Cumulative Density Function (CDF). Thus, we obtained a threshold of $~29.71$ nPa. Hence, obtain two possible time windows: 6-7 UT and 13-18 UT. Since the second period corresponds to the highest ASYH values, we selected this period for study, and its highlighted by the violet shading. Hence, during the selected time window, we expect higher injection and Electric Field penetration (under shielding) and PRC activity (Over shielding), which implies higher related magnetic fluctuations.\\
+	Since we are interested in the effects of the PRC during its highest activity altogether with PPEF effects, we will focusing on a time window of a few hours during MP. This time window is going to be in function of periods when $E_Y > 0.5 \text{ mVm}^{-1}$ and $P_{dyn} > 29.71 \text{ nPa}$. The first criteria is based on the discussion in \cite{burton1975}, where they find the energy injection during MP is dependent of $E_Y$, setting $E_{Y0}=0.5 \text{ mVm}^{-1}$ as a minimum value. On the other hand, \cite{P_dyn_geoeff} set $P_{dyn} > 15 \text{ nPa}$ as a good estimator for a geoeffective dynamic pressure for strong geomagnetic storms. Considering that 15 nPa is a very low threshold for the period between march 15 - 17 as it can be seen in the Figure, we set the threshold through computing the $95\%$ of cumulative density function (CDF). Thus, we obtained a threshold of $~29.71$ nPa. Hence, obtain two possible time windows: 6-7 UT and 13-18 UT. Since the second period corresponds to the highest ASYH values, we selected this period as study case study, and it is highlighted by the violet shading. Hence, during the selected time window, we expect higher injection and Electric Field penetration (under shielding) and PRC activity (Over shielding), which implies higher related magnetic fluctuations.\\
 	
 	
 	
 	\begin{figure}
 		\centering
 		\includegraphics[width=0.9\textwidth]{fig/ip_2015-03-15_2015-03-20.eps}
-		\caption{Interplanetary measurements. Panel (a): interplanetary magnetic field total component (black line) and z component (red line). Panel (b): $E_Y$ Interplanetary Electric Field (blue line). Panel (c): Dynamyc Pressure [nPa]. Panel (d): SYMH (green line) and ASYMH index (orange line), highlighting the initial phase (light gray shade), main phase 1 (medium gray shade) and main phase 2 (dark gray shade).}
+		\caption{Interplanetary measurements. Panel (a): interplanetary magnetic field total component (black line) and z component (red line). Panel (b): $E_Y$ Interplanetary Electric Field (green line). Panel (c): Dynamyc Pressure [nPa]. Panel (d): SYMH (green line) and ASYMH index (orange line), highlighting the initial phase (light gray shade), main phase 1 (medium gray shade) and main phase 2 (dark gray shade).}
 		\label{fig:ip}
 	\end{figure}	
 	
@@ -157,29 +179,29 @@ This study analyzes the impact of the partial ring current and Prompt Penetratio
 	
 	\subsection{Geomagnetic Data}
 	
-	The geomagnetic data analyzed in this paper were downloaded from the INTERMAGNET public database (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet}), corresponding to the observatories (OB) listed in Table \ref{tab:obs}. % OB are located within a range of magnetic latitude ($18^\circ$--$33^\circ$) and are longitudinally separated by $60^\circ$--$90^\circ$ from each other. The closest OB is KAK, while the farthest is TEO from JAI. However, this spacing was tolerated since KAK is the closest OB to the longitude of $165^\circ$ E.\\  
+	The geomagnetic data analyzed in this paper were obtained from the INTERMAGNET public database (\textit{International Real-Time Magnetic Observatory Network} \citep{intermagnet}), and from the Mexican Magnetic Service (SM) in the case of the magnetic observatory (OB) located in Mexico. The selected observatories are listed in Table \ref{tab:obs}, along with their respective geographic and geomagnetic coordinates. As shown in Table \ref{tab:obs}, the OB are situated within a magnetic latitude range of $\lambda_m \sim 18^\circ$ to $33^\circ$. We focus on pairing OB with nearly opposite geomagnetic longitudes ($\phi_m$) separated by $\phi_m \sim 180-200^\circ$, expecting opposite local magnetic responses depending on their location. Analyzing how this opposing behavior varies across different pairs will help elucidate the influence of the ARC on the local response across different MLT sectors. In this context, MLT is used as a reference for the position of each OB relative to the subsolar point at noon.\\ 
 	
 	
 	\begin{table}[htbp]
 		\centering
-		\caption{List of observatories considered for this study. Each OB is separated longitudinally at $70 - 90^\circ$ apart. The OB selected for the main analysis are light gray shaded.}
+		\caption{List of observatories considered for this study. Each OB is paired with another one at $\sim 180^\circ$.}
 		\begin{tabular}{lcccccc}
 			\hline
-			\multicolumn{1}{l}{Observatory} & \multicolumn{1}{l}{IAGA code} & Country/ & \multicolumn{2}{c}{Latitude} & \multicolumn{2}{c}{Longitude}  \\ 
+			\multicolumn{1}{l}{Observatory} & \multicolumn{1}{l}{IAGA code} & Country/ & \multicolumn{2}{c}{Latitude $\lambda$} & \multicolumn{2}{c}{Longitude $\phi$}  \\ 
 			\multicolumn{1}{l}{} & \multicolumn{1}{l}{} & Territory & \multicolumn{1}{l}{Geographic} & \multicolumn{1}{l}{Magnetic} & \multicolumn{1}{l}{Geographic} & \multicolumn{1}{l}{Magnetic}  \\ \hline
 					Beijing & BMT & China & 40.3 N & 30.53 N & 116.2 E & 172 W  \\ 
-					Cheongyang & CYG & South Korea & 36.37 N & 27 N & 126.854 E & 162.43 W  \\ 
-			\rowcolor{gray!15}
+				%	Cheongyang & CYG & South Korea & 36.37 N & 27 N & 126.854 E & 162.43 W  \\ 
+			%\rowcolor{gray!15}
 			Guimar & GUI & Spain & 28.317 N & 33.21 N & 16.433 W & 61.1 E  \\ 
 					Honolulu & HON & USA & 21.317 N & 21.49 N & 158 W & 90.03 W \\ 
-			\rowcolor{gray!15}
+			%\rowcolor{gray!15}
 			Jaipur & JAI & India & 26.917 N & 18.42 N & 75.8 E & 150.47 E \\
-			\rowcolor{gray!15} 
+			%\rowcolor{gray!15} 
 			Kakioka & KAK & Japan & 36.232 N & 27.8 N & 140.186 E & 149.73 W \\  
-					Lanzhou & LZH & China & 36.083 N & 26.23 N & 103.833 E & 176.79 E \\ 
+					%Lanzhou & LZH & China & 36.083 N & 26.23 N & 103.833 E & 176.79 E \\ 
 					San Juan & SJG & USA, Puerto Rico & 18.11 N & 28.19 N & 66.15 W & 6.1 E \\ 
 					Tamanraset & TAM & Argelia & 22.783 N & 24.3 N & 5.571 E & 82.29 E  \\
-			\rowcolor{gray!15}
+			%\rowcolor{gray!15}
 			Teoloyucan & TEO & Mexico & 19.747 N & 27.81 N & 99.182 W & 28.4 W \\ \hline
 		\end{tabular}
 		\label{tab:obs}
@@ -188,237 +210,342 @@ This study analyzes the impact of the partial ring current and Prompt Penetratio
 	
 	
 	
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.7\textwidth]{fig/map.eps}
-		\caption{Geographic position of the four magnetic OB, distributed at $70-90^\circ$ from each other}
-		\label{fig:map}
-	\end{figure}	
+	%\begin{figure}
+%		\centering
+%		\includegraphics[width=0.7\textwidth]{fig/map.eps}
+%		\caption{Geographic position of the four magnetic OB pairs, each pair represented with a colored diamond symbol.}
+%		\label{fig:map}
+%	\end{figure}	
 	
-	
-	%To study how the local time (LT) sector affects the geomagnetic response during the main phase (MP) of a geomagnetic storm (GS), we focused on data from the four observatories (OB) listed in Table \ref{tab:obs}. Our aim was to analyze the GS response at these OB during the time window (TW) highlighted in Figure \ref{fig:ip}, during which there was a maximum injection from SW and maximum activity from the partial ring current (PRC), from 14:07 to 19:00 UT (4 hours), covering the second stage of the MP.\\
-	
-	To study the different geomagnetic responses, we focused on data from observatories (OB) listed in Table \ref{tab:obs}. As it will be seen later in Section \ref{a2}, OB which are longitudinally too close, will have similar results. Thus, we focus in the four OB highlighted in the Table, which are longitudinally separated by $~60-90^\circ$ from each other and are highlighted in Figure \ref{fig:ip}. As mentioned before, the analysis will be focused during a period of maximum injection, defined by a large $E_Y$ interplanetary electric field penetration and high dynamic pressure and maximum activity from the partial ring current (PRC), measured by ASYH index (273 nT). Both mechanisms imply the under shielding and overshielding of the $PPEF$, thus we could expect high $H_{PPEF}$ fluctuations during this period, from 14:07 to 19:00 UT (5 hours) and shortly after, from 19:00 UT to 23:00 UT which coincides with a period of high magnitude $E_Y$ but low $P_{dyn}$ ($approx 6 nPa`$). Interestingly, the period TW also coincides with each one of the selected OB being transitioning through the four local time sectors:
-	
-	\begin{itemize}
-		\item Dawn-Noon sector (TEO), 06:01 - 12:00 LT.
-		\item Noon-Dusk sector (GUI), 12:01 - 18:00 LT.
-		\item Dusk-Midnight sector (JAI), 18:01 - 00:00 LT.
-		\item Midnight-Dawn sector (KAK), 00:01 - 06:00 LT
-		
-	\end{itemize}
+	%As mentioned previously, the analysis will cover the period of maximum energy injection, defined by a large interplanetary electric field component $E_Y$, high dynamic pressure, and peak asymmetric ring current (ARC) activity as measured by the ASYH index (reaching 273 nT). These conditions imply alternating phases of undershielding and overshielding of PPEF. Accordingly, we will focus on the first two days of the storm's development, specifically March 17 and 18, 2015\\%thus we could expect high $H_{PPEF}$ fluctuations during this period, from 14:07 to 19:00 UT (5 hours) and shortly after, from 19:00 UT to 23:00 UT which coincides with a period of high magnitude $E_Y$ but low $P_{dyn}$ ($\approx 6$ nPa). 
 
 
 	
 	
-	\subsection{Magnetic fluctuations of ionospheric origin}
+	\subsection{PPEF Magnetic fluctuations}
 	
-	It is well accepted that \citep{1969intro_to_iono_p, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt} local recordings $H_{loc}$ of a ground magnetometer can be considered a linear combination of different geomagnetic sources:
+	It is well accepted that local recordings of a ground magnetometer can be considered a linear combination of different geomagnetic sources \citep{1969intro_to_iono_p, Fukushima1973, l_handbook_geof_sw_Geom_field, baseline_Gjerloev, vanKampt}. Such that the horizontal local component ($H_{loc}$):
 	
 	\begin{equation}
+		\label{eq:1}
 		H_{loc} = H_{SQ} + H_0 + H_{MT} + H_{others} + H_{I},
 	\end{equation}
 	
-	\noindent where $H_{SQ}$ represents the diurnal variation and $H_0$ is the main field during a month window. $H_{MT}$ represents the variations induced by the intensification of magnetospheric currents during the GS. In the case of $H_{others}$, it corresponds to magnetic sources less significant, like (and no limited to)) magnetotellurics, crustal magnetization, etc; which can be neglected for not being considered as relevant compared to the others mentioned. Finally, $H_I$ \cite{ddyn2005} corresponds to the magnetic variations driven by ionospheric current activity during the GS. Thus, the local geomagnetic response during a GS is given by:
+	\noindent where $H_{SQ}$ represents the diurnal variation and $H_0$ is the main field baseline for month window. In addition $H_{MT}$ represents the variations induced by the intensification of magnetospheric currents during the GS. In the case of $H_{others}$, it corresponds to magnetic sources less significant, like (but no limited to) magnetotellurics, crustal magnetization, etc; which can be neglected, as for their magnitudes and variations are not considered as relevant compared to the others mentioned. Finally, $H_I$ \citep{ddyn2005} corresponds to the magnetic variations driven by ionospheric current activity during the GS.\\ 
+	
+	The local geomagnetic response ($\Delta H$) during a GS is given by:
 	
 	\begin{equation}
-		\Delta H = H_{loc} - (H_{SQ} + H_0).
+		\Delta H = H_{loc} - (H_{SQ} + H_0),
 	\end{equation}
 	
-	We provide a detailed explanation of how we model the diurnal variation and the monthly baseline in Appendix \ref{a1}.\\
-	
-	
-	From \cite{ddyn2005, amorymazaudier_2017, amory2020_filtros}, for mid-low magnetic latitudes, with $\lambda$ as the geomagnetic latitude of each OB, we can roughly approximate $H_{MT}$ as $H_{MT} \approx SYMH \cdot \cos(\lambda)$. Thus, $H_I$ can be approximated as:  
+
+	\noindent The quiet-time baseline $H_{SQ}$ was computed by adapting the method of \cite{vanKampt}, which involves applying a low-pass filter to extract the first six harmonics from the average of the five quietest days. The baseline $H_0$, on the other hand, was obtained using a least squares fitting procedure applied to undisturbed days, with each data point derived from the average of nighttime measurements. For mid-low magnetic latitudes, with $\lambda$ as the geomagnetic latitude of each OB, we can roughly approximate $H_{MT}$ as $H_{MT} \approx SYMH \cdot \cos(\lambda)$ \citep{ddyn2005}. Thus, $H_I$ can be approximated as:  
 	
 	\begin{equation}
 		\label{eq:H_I}
 		H_I = H_{DDEF} + H_{PPEF} + H_{others} \approx H - (H_{SQ} + H_0 + SYM - H \cdot \cos(\lambda)),
 	\end{equation}
 	
-	\noindent where $H_{DDEF}$ and $H_{PPEF}$ represent the magnetic fields associated with the disturbed dynamo electric fields and the prompt penetration electric fields, respectively. $H_{others}$ on the other hand remains as a noise. \\
+	\noindent where $H_{DDEF}$ and $H_{PPEF}$ represent the magnetic fields associated with the disturbed dynamo electric fields and the prompt penetration electric fields, respectively. $H_{others}$ remains as a noise. \\
 	
 	
-	In order to isolate $H_{DDEF}$ and $H_{PPEF}$ from each other, we proceed under the assumption that both ionospheric currents drive quasi-periodic fluctuations \citep{nishida_68_fluctuations, blanc_ddyn, amory2020_filtros}. Hence, through a Fourier analysis, we apply pass-band filters for frequencies between $69.5 - 550 \mu \text{Hz}$ (corresponding to periods in 4 hours to 30 minutes range). \\
-	
-	
-	Given the role of PRC within local geomagnetic response, \cite{amory2020_filtros} applies an extra step, where:
+	In order to isolate $H_{PPEF}$ from $H_I$, we proceed under the assumption that both types of ionospheric electric fields drive quasi-periodic fluctuations \citep{nishida_68_fluctuations}. Accordingly, we apply a Fourier-based band-pass filter for frequencies between $69.5$ and $550 , \mu \text{Hz}$, corresponding to periods ranging from 4 hours to 30 minutes \citep{amory2020_filtros}. A limitation of applying Fourier analysis directly to Equation \ref{eq:H_I} is that it only accounts for the symmetric component of the ring current, neglecting the asymmetric part. The magnetic contribution of the asymmetric ring current (ARC) can be comparable to, and during certain periods of the main phase even exceed, that of the symmetric ring current. Consequently, a substantial portion of $H_I$ may arise from the ARC rather than from PPEFs and DDEFs \citep{Crooker1972, Fukushima1973, Iyemori1990}. To address this, \cite{amory2020_filtros} proposes incorporating an additional term that accounts for the asymmetric ring current prior to filtering, using the ASYH index as shown in the following equation:
 	
 	\begin{equation}
 		\label{eq:HI2}
-		H'_I = H_I - ASYH \cdot cos (\lambda),
+		H'_I = H_I - ASYH \cdot cos (\lambda).
 	\end{equation}
 	
-	\noindent in order to remove also the contribution from ASYH index. This suggest that PRC effects remains within $H_I$, specially in the night side and early morning \citep{prc_simul}. However, given the short duration of PRC activity, in comparison with the symmetric part of the system, combined with the limited longitudinal extension of the PRC would mean that Eq \ref{eq:HI2} shouldn't be applied equally for the OB, specially when this OB are located by $60-90^\circ$ degrees from each other. \\
+
+	With the ASYH index represents the asymmetry of the ring current during a geomagnetic storm \citep{Iyemori1990}. In mid-to-low geomagnetic latitudes FAC, and by extension the PRC, constitute the primary contribution to this asymmetry \citep{Fukushima1973}. Therefore, most of the residual effects on $H_I$ from Equation \ref{eq:H_I} may be associated with FAC activity. However, given that the asymmetric ring current intensifies and decays more rapidly than the symmetric RC \citep{Fukushima1973}, and considering the complexity of the underlying system, Equation \ref{eq:HI2} should be applied with certain considerations.\\
 	
 	
-	Hence, the analysis will be mainly focused on comparing the result of $H_I$ with ASYH index. Given the order of magnitude of ASYH, compared with $H_{PPEF}$ (and $H_{DDEF}$), this would mean that ASYH will be the main source for $H_I$, depending on the OB position with respect to local Time.
+	Hence, in order to understand how the asymmetry of RC would affect $H_I$, we analyze FAC activity at the magnetic local time (MLT) sectors corresponding with the OB points during the periods of high asymmetry. Hence, we analyze how $H_I^\prime$ is affected by removing the effects of the ACR by Equation \ref{eq:HI2}, in comparison with $H_I$ once we filter $H_{PPEF}$.\\
 
 	
 	\section{Results}
 	\label{sec:results}
 	
-	In the following section, we focus on the results related to the geomagnetic response to the St. Patrick's GS for each OB listed in Table \ref{tab:obs}. Then we show the results of Equation \ref{eq:H_I} for isolating $H_I$, and an analysis related to local time sector in which the GS developed as well as a comparison between each OB result. \\
+	%In the following section, we focus on the results related to the geomagnetic response of Equation \ref{eq:H_I} during march 17 and 18 using the data from the ground magnetometers listed in Table \ref{tab:obs}. Then we compare the response of $H_I$ in function of MLT during high asymmetry periods, with FAC activity $Jr$. \\
 	
 	\begin{figure}
 		\centering
-		%\includegraphics[width=7.0cm]{fig/diono_recons/gui_2015-03-17_2015-03-18.eps}   
-		%\includegraphics[width=7.0cm]{fig/diono_recons/jai_2015-03-17_2015-03-18.eps}  	 
-		%\includegraphics[width=7.0cm]{fig/diono_recons/kak_2015-03-17_2015-03-18.eps}
-		%\includegraphics[width=7.0cm]{fig/diono_recons/teo_2015-03-17_2015-03-18.eps}
 		\includegraphics[width=14.0cm]{fig/asyh_2015-03-17_2015-03-18.png}
-		\caption{Comparison between ASYH index (top panel) with $H_I$ from Eq \ref{eq:H_I}, downward: GUI, JAI, KAK and TEO. The green dashed vertical lines represent the beginning of SSC, MP and RP.}
+		\caption{Comparison between ASYH index (top panel) with $H_I$ from Eq \ref{eq:H_I}, taking in each panel, OB at  $\Delta \phi_m \sim 180^\circ$. The colored points represent periods of high asymmetry within RC system and how each $H_I$. The last panel is a mapping of $H_I$ with respect to MLT and UT. The dashed vertical lines represent the beginning of SSC, MP and RP.}
 		\label{fig:magdata}
 	\end{figure}
 	
 	
-	In Figure \ref{fig:magdata}, we show in top panel, the ASYH index, and the computed ionospheric magnetic contribution $H_I$ (red lines) for GUI, JAI, KAK and KAK (second to fifth panels). The dashed vertical lines represent the transition of quietness-SSC, SSC-MP and MP-RP. Our main attention will be on the first 2 days after the onset of the GS, march 17-18 which envelops the MP and 1 day of RP.\\ %We focus on the period, TW, of high ASYH activity from 13:00 UT to 19:00 UT on March 17. During this period and until the ending of the MP, $H_I$ is primarily driven by $H_{PPEF}$ fluctuations. The results of applying frequency band filters to the FFT($H_I$), compared with the ionospheric response are shown in mid panels, represented by red lines.
-	%Finally, in bottom panels, we show the $\Delta$TEC [$\%$] difference (blue lines).\\
+	Figure \ref{fig:magdata} presents an overview of the magnetic $H_I$ response compared to the asymmetric activity described by ASYH index in panel a. Each black dot represents sampled periods of high asymmetry to be compared at each region at 14:07, 15:07, 16:43, 17:33, 19:14, 21:10 and 23:43 UT respectively. The magnetic contribution $H_I$ from ionosphere phenomena is displayed in magenta and green lines in panels (b) through (e), corresponding to observatories with a geomagnetic longitudes separated $\Delta \phi_m \sim 170^\circ$ each other. In the bottom panel (e), $H_I$ is mapped as a function of MLT over time in UT hours. The dashed vertical lines indicate the transitions between the quiet period and the sudden storm commencement (SSC), the SSC and the MP and RP. The gray shading highlights in panels a-e, the period of highest RC asymmetry, as captured by the ASYH index  from 14 UT until 2 UT on the next day.\\
 	
-	An easy way to acknowledge periods when $H_I$ presents an important contribution from PRC is regarding weather or not it shows a similar/opposed pattern to ASYH index. This is mostly seen during and after TW. In the Figure \ref{fig:magdata}, notice how in the highlighted periods (like 13:00 - 15:00, 16:00 - 18:00, 23:00 - 00:30 UT and 14:00 - 16:00 UT on the next day), $H_I$ present a behavior which can be similar(opposed) to ASYH index, depending on the OB. From \cite{sym_asym_corr}, it is implied that ASYH and SYMH indices are anti-correlated. Thus, $H_I$ behaving opposed(similar) to ASYH means that PRC might be contributing to an intensification (attenuation) to their respective local geomagnetic response $\Delta$H. Among the results, JAI $H_I$ is the one with higher intensities during the highlighted periods, followed by TEO (in opposed way).\\ 
-	
-	The different intensities in $H_I$ OB results (specially during the highlighted periods) suggest how PRC may impact differently depending on the local time sector (being JAI close to dusk, TEO close to dawn, GUI close to noon and KAK close to midnight during the first highlighted period).\\
+	Notice how each OB pair exhibits opposing behavior in their respective $H_I$ signals. By selecting specific points, represented in the Figure \ref{fig:magdata} by filled circles during periods of high asymmetry, distinct trends can be highlighted with an apparent variation as we observe more eastern/western OB.\\ 
 	
 	
-	To quantitatively confirm weather PRC contribution remains in $\Delta$H and so, presents a noise contribution factor within $H_I$. In Figure \ref{fig:corr}, we analyze the check on the Pearson correlation between $H_I$ and ASYH during TW (13:00-19:00 UT), which is the period when it is registered the highest Injection process and highest PRC activity occurs. 
+	The behavior of $H_I$ corresponds to ascending - descending responses, for OB with initial MLT positions in morning–afternoon (TEO and SJG) or afternoon–evening  (JAI and BMT) transitions. In these cases, the local response exhibits nearly linear intensification or attenuation over time. Another case occur when the OB point is initially located near noon or midnight (panel d and e). At these panels, $H_I$ begin with low magnitudes, to grow and gradually attenuate at the end. If we take $H_I$ within the shaded area in longitudinal sequence from TEO to TAM, then from JAI to HON, it seems to follow a sinusoidal pattern. It also tells about how ARC affects $H_I$ differently at global scale.\\
+	
 
-\begin{figure}
+	The regions where $H_I$ is mostly influenced by the ARC can be more easily tracked in panel (f), where positive and negative $H_I$ values are represented using red and blue color scales, respectively, similar to what \cite{Iyemori1990} did. The distribution of positive and negative $H_I$ is sharply defined during the period of highest ASYH activity. Specifically, positive $H_I$ values are most prominent around 3–9 MLT, while negative $H_I$ dominates in the 15–21 MLT sector. This clear contrast in polarity persists until approximately 02 UT on March 18, a few hours after the end of the MP, as indicated by the SYMH minimum. Beyond this point, positive $H_I$ values are no longer sustained, appearing only briefly during minor injection events. Additionally, a gradual migration of the positive $H_I$ response can be observed, shifting from around the noon sector toward earlier MLT.\\ 
+	
+
+\begin{figure}[htpb]
 	\centering
-	\includegraphics[width=7.0cm]{fig/corr/gui_20150317_20150317_corr1.eps}   
-	\includegraphics[width=7.0cm]{fig/corr/jai_20150317_20150317_corr1.eps}  
-	\includegraphics[width=7.0cm]{fig/corr/kak_20150317_20150317_corr1.eps}
-	\includegraphics[width=7.0cm]{fig/corr/teo_20150317_20150317_corr1.eps}
-	\caption{Correlation Analysis ASYH and $H_I$, during the period 1300 - 1900 UT, which is consistent with the period of highest ASYH activity }
-	\label{fig:corr}
-\end{figure}	
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.6.0.png}
+		\caption{}
+		\label{fig:ampere:a}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.14.0.png}
+		\caption{}
+		\label{fig:ampere:b}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.15.0.png}
+		\caption{}
+		\label{fig:ampere:c}
+	\end{subfigure}
+	
+	\vspace{\floatsep}
+	
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.16.40.png}
+		\caption{}
+		\label{fig:ampere:d}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.17.30.png}
+		\caption{}
+		\label{fig:ampere:e}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.19.10.png}
+		\caption{}
+		\label{fig:ampere:f}
+	\end{subfigure}
+
+	\vspace{\floatsep}
+
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.21.16.png}
+		\caption{}
+		\label{fig:ampere:g}
+	\end{subfigure}
+	\hfill	
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150317.23.40.png}
+		\caption{}
+		\label{fig:ampere:h}
+	\end{subfigure}
+	\hfill
+	\begin{subfigure}{0.32\textwidth}
+		\includegraphics[width=\linewidth]{fig/ampere/20150318.5.0.png}
+		\caption{}
+		\label{fig:ampere:i}
+	\end{subfigure}
+	
+	\caption{Radial Current Density, parallel to the geomagnetic field, provided by AMPERE. Blue represents downward current  density meanwhile red represents the upward current. Panels (b–h) correspond to different times of high asymmetry, meanwhile (a) and (i) panels represent periods before and after the high injection activity period.}
+\label{fig:ampere}
+\end{figure}
 
 
-	As mentioned before, strongly positive or negative $\rho$ coefficient can be interpreted as $\Delta$H being influenced (attenuated or intensified) by PRC activity. The two observatories showing stronger correlation (or anti-correlation) are JAI and TEO which coincides with these OB being closer to the terminators during the period of highest PRC activity. \\			
-		
-	A wider perspective of the ASYH - $H_I$ correlation is shown in Figure \ref{fig:corr2}
-	
-\begin{figure}
-	\centering
-	\includegraphics[width=12.0cm]{fig/corr/TScorr_2015-03-17_2015-03-18_4.png}   
-	\caption{Correlation Analysis ASYH and $H_I$, for pairs OB longitudinally separated $170-200 ^\circ$.}
-	\label{fig:corr2}
-\end{figure}		
-	
-	\section{Discussion}
 	
 	
-	Following with the influence of PRC on $H_{PPEF}$ fluctuation amplitudes, we carried out an analysis of $H_{PPEF}$ distribution magnitudes, from march $17^{th}$ to march $18^{th}$, shown in Figure \ref{fig:ppef_dist}. From top panels, we observe that $H_{PPEF}$ magnitudes (blue bars) in each OB seems to approach to a Gaussian distribution (fitted with a red line). All OB present media $\mu \sim 0$ nT and a very small skewness, seen at first glance, being JAI the farther from 0 ($\mu = 0.67$). The standard deviation $\sigma$ seen in each OB has a maximum difference goes from 5.2 to 8.15, being not so significant.\\
+	Once we found that $H_I$ at mid-low latitudes follows a MLT distribution, similar to what we observe on the FAC distribution at high latitude ionospheric regions, the next step is comparing it when the OB was at certain MLT positions during FAC activity. In other words, we compared the radial current density $\mathbf{J_r}$ from AMPERE data with $H_I$ in the same MLT sector during periods of high RC asymmetry.\\
 	
-	Both, the almost symmetry of the distribution and the center near zero are consistent with $H_{PPEF}$ having a periodic behavior. The shape of the distribution on the other hand, so as the length of both tails are a good indicator of the intensity of these fluctuations. From here, it can be seen that the longest tails corresponds to JAI and TEO which is consistent with JAI and TEO having higher peaks of $H_{PPEF}$ amplitudes. GUI and KAK on the other hand, present greatest and minor dispersion respectively. In case of GUI, this is consistent with $H_{PPEF}$ amplitudes not having a noticeable contrast during TW, meanwhile KAK presents minor activity in general, but with a higher contrast of amplitudes during TW.
 	
+	Figure \ref{fig:ampere} presents eight time windows during periods of high asymmetry, as identified in Figure \ref{fig:magdata}. These correspond to periods of high ASYH during following times: 14:07, 15:07, 16:43, 17:33, 19:14, and 23:43 UT (panels b-g). Each window displays the current density $\mathbf{J_r}$ with a radial direction (into and out of the page) using a red–blue color scale, where red denotes upward (positive) and blue downward (negative) currents. Panels (a) and (h) show reference periods before and after the main energy injection into the magnetosphere, specifically at 06:00 UT on March 17 and 05:00 UT on March 18, respectively. In each panel, the MLT positions of the observatories are indicated by green labeled dots. \\
+	
+	In panels (b) through (g), a high concentration of ascending and descending radial current density $\mathbf{J_r}$ is observed within the $70^\circ–80^\circ$ magnetic latitude range, corresponding to the R1-FAC coupling regions with the ionosphere. Three main current regimes can be identified: a predominantly ascending current region ($\mathbf{J_r} > 0 , \mu\text{A/m}^2$) centered around 18–19 MLT, a predominantly descending current region ($\mathbf{J_r} < 0 , \mu\text{A/m}^2$) centered around 6–7 MLT, and transition regions near noon and midnight.\\
+
+	%According to \cite{Iyemori1990}, greater RC asymmetry, and thus stronger $H_I$ responses, would be expected in proximity to the first two regions. This is confirmed i
+	
+	Being consistent with panel (f) of Figure \ref{fig:magdata}, we observe in panel (b) that TEO and SJG are located in a MLT sector with mostly descending currents. There, the color scale indicates $\mathbf{J_r} < -2 , \mu\text{A/m}^2$ at R1-FAC latitudes, contrasting with $\mathbf{J_r} \sim 1 , \mu\text{A/m}^2$ in the R2-FAC region and a much weaker gradient. A similar pattern is observed for TAM and JAI in the same panel, which coincide with ascending currents ($\mathbf{J_r} > 2 , \mu\text{A/m}^2$) and a steep gradient relative to the downward R2-FAC on the dusk side. Analogously, stronger $H_I$ responses would be expected for GUI and HON in panel (c); HON in panel (d); and KAK, BMT, TEO, and SJG in panel (e), based on their alignment with these FAC-dominant regions during periods of high asymmetry.\\
+	
+	
+	Given that FAC constitute the primary source of the ARC \citep{Fukushima1973}, we compute the net current density $I_{MLT}$ \citep{Inet_ampere}, by the following expression:
+	
+	\begin{equation}
+		\label{eq:Inet}
+		I_{MLT} =  \int_{\theta1}^{\theta2} R^2 \cdot J_r(\theta) \cdot sen(\theta) d\theta,
+	\end{equation}
 
 	
 	
-	From here, we are interested in estimating the point at which $H_{PPEF}$ can be considered as extreme, for each OB. We refer this point as \emph{Threshold}. These thresholds can be used for determining periods of more significant PPEF activity. Thus, the higher the threshold, higher PPEF activity in a certain region. \\
+	being $\theta$  the co-latitude and $R$ the radius from the center of the earth to the satellite constellation orbit. We take the co-latitude range $5-40^\circ$, or $60 \geq \lambda \leq 85$, since between 85 and $90^\circ$ are beyond from FAC influence. Given the extension of each latitudinal segment, Equation \ref{eq:Inet} considers the curvature of the earth.\\
 	
-	
-	First, from the good symmetry in all distributions, we can consider the use of an absolute value threshold. From this approach, we set each threshold as the 90$\%$ of each cumulative $H_{PPEF}$ probability distribution function, shown in bottom panels of Figure \ref{fig:ppef_dist} (blue lines). The threshold is indicated by the red dashed line for the 2 days period.\\ 
-	
-	
-	
-The highest thresholds correspond to JAI (28.63 and 40.98 nT) followed by TEO (20.31 and 33.79), meanwhile, in GUI and KAK, have significantly minor thresholds What this difference may indicate is how $H_{PPEF}$ intensity is affected by the LT sector at the moment of the highest ASYH activity. This result is consistent with the results of $\rho_{1,2}$ for these OB, which might reinforce the idea of $H_{PPEF}$ being influenced by PRC activity, indicating not just the impact of PRC activity but also on the proximity of JAI and TEO to the dusk-midnight sectors during the highest PRC activity.\\	
-	
-	%Regarding the ionospheric response, we observe that the TEO and GUI regions (monitored by the UCOE and LPAL receivers) present a positive storm effect, while the JAI and KAK regions (monitored by the NPGJ and TSK2 receivers) present a negative effect. From \cite{theonsetofFregdisturbanceatmidlowlatduringGS, statisticsofGSandISatmidlowlat}, it is understood that positive phases at mid-low latitudes are often initiated on the day-side during the main phase of the storm. The physical mechanism for this is complex and involves thermospheric winds, \textbf{E × B} drift, and, most importantly for this study, the presence of eastward PPEF. According to \cite{statisticsofGSandISatmidlowlat}, the influence of PPEF alone may not always induce large TEC enhancements; its effects are often combined with neutral wind circulation and  \textbf{E × B} drift to produce significant positive ionospheric storms.\\
-	
-	
-	
-	%The negative effects, on the other hand, are more related to regions that were on the night-side during the storm's main phase, which is the case for JAI and KAK in our event. These negative phases, however, typically manifest the following morning in local time. Studies like \cite{responseofthethermosphereandionospheretoGS, prolss1995} describe the mechanism responsible for these negative effects. It involves a storm-induced circulation that pushes molecular-rich air ([N$_2$], [O$_2$]) from high latitudes toward lower latitudes. This increases the $\frac{[N_2]}{[O]}$ ratio, which in turn enhances the loss rate of atomic oxygen ions (O$^+$) through recombination. Although this circulation begins during the night, its effects peak the next morning when photo-ionization commences but is overwhelmed by the heightened recombination rate, resulting in an electron density depletion and a negative TEC storm.\\
+	Considering a simple projection from high latitudes to mid-low latitudes, we seek to confirm whether the $I_{MLT}$ is ascending or descending, in comparison with $H_I$ response at the previously mentioned times. Figure \ref{fig:jrvsHI} presents a scatter plot of $I_{MLT}$, versus $H_I$ for the six sampled periods previously mentioned. The computed correlation coefficient is $\rho = -0.61$. This anticorrelation suggests that energy injection from R1-FAC translates into a positive $H_I$ response in the 5–9 MLT sector, while the strongest negative $H_I$ response is associated with the 15–19 MLT sector, being consistent with $H_I$ distribution seen in Figure \ref{fig:magdata}. These results further support the significant influence of FAC but also, how this influence on Equation \ref{eq:H_I} may evolve through time for each OB.\\ 
 	
 	\begin{figure}
 		\centering
-		\includegraphics[width=7.0cm]{fig/ppef_dist/gui_2015-03-17_2015-03-18.V1.png}      
-		\includegraphics[width=7.0cm]{fig/ppef_dist/jai_2015-03-17_2015-03-18.V1.png}       	 
-		\includegraphics[width=7.0cm]{fig/ppef_dist/kak_2015-03-17_2015-03-18.V1.png}      
-		\includegraphics[width=7.0cm]{fig/ppef_dist/teo_2015-03-17_2015-03-18.V1.png}      	
+		\includegraphics[width=7.0cm]{fig/jrvshi_2.png}   
+		\caption{Correlation Analysis ASYH and $H_I$, for pairs OB longitudinally separated $170-200 ^\circ$. }
+	\end{figure}		
+
+	The next step is analyzing how FAC possibly affected the resulting reconstruction of magnetic fluctuations related to PPEF. We show in Figure \ref{fig:ppef}, both: $H_{PPEF}$ after filtering results of Eq \ref{eq:H_I} and $H_{PPEF}^\prime$ after filtering results of Eq \ref{eq:HI2}.\\
+	
+
+	In general, $H_{PPEF}^\prime$ exhibits higher amplitudes than $H_{PPEF}$. However, for TEO, SJG, KAK, and HON, $H_{PPEF}$ and $H_{PPEF}^\prime$ appear to show a phase shift during the interval from 12 to 19 UT. Interestingly, the other four observatories display lower $H_{PPEF}^\prime$ amplitudes compared to $H_{PPEF}$ for fluctuations around 0 UT. What each group of four observatories has in common is their initial MLT position at 14 UT, the onset of the highest injection period. These groupings are consistent with the MLT positions shown in Figure \ref{fig:ampere:b}: HON, TEO, and SJG were located in the region of predominantly descending current, while TAM, JAI, and BMT were situated in areas of predominantly ascending current. GUI and KAK, on the other hand, were initially positioned near the transition regions.\\
+
+
+	\begin{figure}
+	\centering
+	\includegraphics[width=16.0cm]{fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png}        	
+	\caption{$H_{PPEF}$ reconstruction from Eq \ref{eq:H_I}(blue lines) and from Eq \ref{eq:HI2}, after removing asymmetric RC contribution (orange line). }
+	\label{fig:ppef}
+	\end{figure}
+
+	
+	\section{Discussion}
+	
+	To achieve a reasonable reconstruction of the magnetic fluctuations associated with ($H_{PPEF}$), we used Equation \ref{eq:1}. For the magnetospheric source, we use the SYMH index multiplied by a factor of $\cos(\lambda_m)$, where $\lambda_m$ is the magnetic latitude of the location of interest, as an approximation of the magnetospheric contribution. This approach, proposed by \cite{ddyn2005} and expressed in Equation \ref{eq:H_I}, primarily accounts for RC activity. This is reasonable, since most of the disturbance recorded by ground magnetometers at mid-to-low magnetic latitudes during a geomagnetic storm is attributable to the RC \citep{Fukushima1973}. However, this formulation overlooks the contribution of the asymmetric component of the RC system. As a result, this asymmetric part remains within $H_I$ and constitutes the majority of its magnitude, as seen in \ref{fig:magdata}, where during different periods, $H_I$ from different OB may follow a similar or an opposed pattern.\\
+	
+	The way of how $H_I$ trend evolves as we go toward eastern OB, so as how $H_I$ presents positive and negative responses in function of MLT reinforces the idea of regions of higher or lower ARC influence over $H_I$. Considering this, we decided to compare $H_I$ responses during high asymmetry with the FAC activity within ionosphere at high latitudes. We made a comparison between $H_I$ at mid-low latitudes with $\mathbf{J_r}$ at high latitudes from considering that conservation of $\mathbf{J_r}$ requires a three-dimensional closed circuit extending through the magnetosphere. This complete loop—comprising FAC, the PRC, and high-latitude ionospheric closure currents—generates magnetic fields at mid and low latitudes. According to \cite{Fukushima1973}, this is why FAC constitute the primary source of the ARC at mid-to-low magnetic latitudes. Nevertheless, it must be considered that the observed effect at these latitudes is dominated by the contribution of the curved FAC themselves, and is modulated by coupling and shielding processes within the ionosphere. This represents a limitation of this first-order approach.\\
+	
+	The trend observed in the scatter plot of Figure \ref{fig:jrvsHI}, which compares $I_{net}$ with $H_I$, is consistent with the findings of \cite{Iyemori1990}, who noted that the ASYH index exhibits a strong correlation with injection periods and, consequently, with R1-FAC activity. Therefore, it is reasonable to infer that during the selected periods, there is a higher contribution from R1-FAC, with $I_{MLT} > 0$ (predominantly downward current) around the dawn sector and $I_{MLT} < 0$ (predominantly upward current) around the dusk sector. This is confirmed with the highest $I_{MLT}$ seen from TEO at 14:07 UT ($I_{MLT} = -106 \mu\text{A/m}^2 $) so as BMT ($I_{MLT} = -153 \mu\text{A/m}^2$) and KAK ($I_{MLT} = -123 \mu\text{A/m}^2$) at 23:40 UT .\\
+	
+	The correlation coefficient $\rho = -0.61$ indicates that $H_I$ response tends to be negative or positive, and consequently $\Delta H$ intensified or attenuated, depending on whether a given observatory is located in MLT sectors around dusk or dawn during periods of peak energy injection. This is consistent with the fact that FAC activity constitutes the primary contribution to ring current asymmetry \citep{Fukushima1973}. However, the correlation is not particularly strong. One of the reasons for this discrepancy may be attributed to the PRC, which, according to \cite{Kamide1971, Crooker1972}, contributes to negative $H_I$ values primarily in the 19–23 MLT sector during the early stages of the main phase, thereby enhancing the negative $H_I$ response beyond what would be expected from FAC activity alone.\\ 
+
+	As illustrated in Figure \ref{fig:prc} for the northern hemisphere and, in the equatorial plane perspective, the connection regions can be downward (FAC–PRC) on the eastern side, and upward (PRC–FAC) on the western side, near the dusk sector. The PRC and more specifically, its western side most likely coincides with the 19-23 MLT range. By focusing on OB situated within this range during the sampled periods, we find results consistent with this interpretation. For example, in panel (b), at the TAM position (~14 MLT), a net current density of $I_{MLT} = 62 ,\text{M A}$ coincides with $H_I = -70 , \text{nT}$, while JAI at ~19 MLT, $I_{MLT} = 52 \mu\text{M A}$ corresponds to $H_I = -140 \text{nT}$. In the same period, BMT at 21 MLT coincides with $J_{net} = 62 \text{M A}$ showing $H_I = -140 \text{nT}$. Similarly, in panel (c), GUI and TAM exhibit $I_{MLT} = 43$ and $11 , \text{M A}$, respectively, while their $H_I$ values are $-76$ and $-135 \text{nT}$. Comparable patterns are observed in the other sampled periods for observatories located within the 16–20 MLT range.\\
+
+
+	
+%	As illustrated in Figure \ref{fig:prc} for the northern hemisphere and, in the equatorial plane perspective, the connection regions can be downward (FAC–PRC) on the eastern side, and upward (PRC–FAC) on the western side, near the dusk sector.	If we examine the distribution of $\mathbf{J_r}$ at R2-FAC latitudes in Figure \ref{fig:ampere} (outer rings), more intense and localized regions of upward and downward $\mathbf{J_r}$ become evident. These correspond to areas where R2-FAC connect with the PRC, thereby indicating the likely location of PRC flow in the equatorial plane. By focusing on observatories situated within these MLT ranges during the sampled periods, we find results consistent with this interpretation. For example, in panel (b), at the MLT corresponding to TAM, a net current density of $J_{net} = 62 , \mu\text{A/m}^2$ coincides with $H_I = -70 , \text{nT}$, while at JAI, $J_{net} = 52 , \mu\text{A/m}^2$ corresponds to $H_I = -140 , \text{nT}$, and at BMT, $J_{net} = 62 , \mu\text{A/m}^2$ aligns with $H_I = -140 , \text{nT}$. Similarly, in panel (c), GUI and TAM exhibit $J_{net} = 43$ and $11 , \mu\text{A/m}^2$, respectively, while their $H_I$ values are $-76$ and $-135 , \text{nT}$. Comparable patterns are observed in the other sampled periods for observatories located within the 16–20 MLT range.\\
+	
+	The case of the eastern region of the PRC is way less notorious, several examples illustrate the complexity of the relationship between $I_{MLT}$ and $H_I$. In panel (c), both BMT and KAK exhibit upward $I_{MLT}$, yet their $H_I$ responses differ markedly: BMT shows $H_I = -59 , \text{nT}$, while KAK—located farther east—registers $H_I = 11 , \text{nT}$, despite both observatories being situated at relatively close geomagnetic longitudes. Similarly, in panel (d), BMT's location presents a $J_{net}$ close to zero with an associated $H_I = -20 , \text{nT}$, whereas at JAI, $I_{MLT} = 10 , \text{M A}$ corresponds to a much more negative $H_I = -114 , \text{nT}$. These contrasting examples highlight the influence of localized PRC dynamics and the limitations of using $I_{MLT}$ alone to estimate the asymmetric magnetic response at mid-latitudes.\\
+	
+	%Hence, tracking the western side of the PRC proves to be more straightforward. At 14 UT (panel b), this region coincides with observatories in the 13–22 MLT range, where KAK is located. However, given its notably negative $H_I$ values, it is likely that the boundary between upward and downward flux lies somewhere between KAK and HON. By 16:40 UT (panel c), the affected MLT range extends from 15 to 0 MLT. At 19:10 UT (panel d), it shifts to 18–0 MLT, and finally, by 23:40 UT, it narrows to 16–19 MLT. As observed in this event, the longitudinal extent of the PRC appears to become progressively narrower over time during the main phase.\\
+	
+			\begin{figure}
+		\centering
+		\includegraphics[width=16.0cm]{fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png}        	
 		\caption{$H_{PPEF}$ distribution for each OB. Color dashed vertical lines represent the a threshold for $H_{PPEF}$ to be considered as intense amplitudes}
 		\label{fig:ppef_dist}
 	\end{figure}
 	
-	\section{conclusions}
+	From what we have seen, ARC influence is complex to be considered by just taking $ASYH \cdot cos(\lambda_m)$ from $H_I$. This turns out to be important when evaluating the reconstruction of magnetic fluctuations associated with PPEF using both approaches (Equations \ref{eq:H_I} and \ref{eq:HI2}). As shown in Figure \ref{fig:ppef}, there are cases during certain periods where $H_{PPEF}^\prime$ exhibits significant amplification of its fluctuations compared to $H_{PPEF}$, as well as instances where, rather than amplification, a phase shift in the fluctuations becomes apparent.\\
 	
-	Within this project, we analyzed longitudinal magnetic fluctuations driven by Prompt Penetration Electric Fields (PPEF) during the intense St. Patrick's Day geomagnetic storm on March 17, 2015. To achieve this, we utilized geomagnetic data from ground-based observatories separated by $60–90^\circ$ in longitude.\\
+	Hence we analyzed the distribution of the magnetic fluctuations (Figure \ref{fig:ppef_dist}). The distribution of $H_{PPEF}$ is represented by blue bars meanwhile $H_{PPEF}^\prime$ is represented by yellow bars. In both cases, they approximate to normal distributions. Accordingly, we fitted Gaussian models for each case: solid red lines correspond to the $H_{PPEF}$ model, and dashed red lines to the $H_{PPEF}^\prime$ model. The estimated median ($\mu$) and standard deviation ($\sigma$) for each fitted model are displayed in the corresponding panels.\\
 	
-%	The study focused on isolating the magnetic component associated with the ionospheric current system ($H_I$) and the fluctuations specifically linked to PPEF ($H_{PPEF}$). The $H_{PPEF}$ signal was reconstructed via pass-band filtering to retain fluctuations with periods within re range of 4h and 30 minutes. Our analysis targeted the period of enhanced activity in the ASYH index, which reflects the asymmetric part of the magnetospheric ring current system and is linked to the Partial Ring Current (PRC).\\
+	It was found that $H_{PPEF}^\prime$ may exhibit minor, significant, or pronounced increases in the dispersion ($\sigma$) of the data depending on the observatory. These differences appear to be related to the initial MLT position of each OB at the moment of maximum injection (14 UT). For GUI, TAM, and JAI—all located in the afternoon to early evening sector, as shown in Figure \ref{fig:ampere:b}—the fitted distribution parameters show only minor changes between the $H_{PPEF}$ and $H_{PPEF}^\prime$ models. In contrast, TEO, SJG, HON, and KAK, which lie within the night to morning sector, exhibit a clear enhancement in dispersion, reflected by a notable increase in $\sigma$. BMT, whose initial position appears to correspond to a transition region, presents an intermediate behavior consistent with its location.\\ 
 	
-%	We investigated the influence of the PRC on both $H_I$ and $H_{PPEF}$. These observations were complemented by analyzing relative Vertical TEC variations, considering deviations above 30$\%$ from the 27-day median as significant ionospheric perturbations. We observed positive ionospheric storm effects at the TEO and GUI regions (55$\%$ and 70$\%$ TEC increase, respectively), while the JAI and KAK regions exhibited negative storm effects (70$\%$ and 50$\%$ TEC decrease). This pattern is consistent with the local time of each region during the storm's main phase onset, but also reflects the influence the impact of PPEF and neutral winds flow on electron density over those regions.\\ 
+
+	\begin{figure}
+		\centering
+		\includegraphics[width=12.0cm]{fig/corr/TScorr_2015-03-17_2015-03-18_4.png}   
+		\caption{Correlation Analysis ASYH vs $H_I$ through 4 hours periods for pairs OB longitudinally separated $170-200 ^\circ$. Each X-axis is labeled by their respective MLT series.}
+		\label{fig:corr2}
+	\end{figure}
 	
-%	By comparing $H_I$ and $H_{PPEF}$ with ASYH activity across different local time sectors and integrating TEC observations, we reached the following conclusions:\\
+	Hence, it is clear that FAC can affect $H_I$ differently depending on the initial MLT position of a given OB. Returning to the question of how reliable it would be to apply Equation \ref{eq:HI2} in a general manner, we observe in Figure \ref{fig:magdata} that, for some observatories, $H_I$ may follow either a similar or opposite pattern to the ASYH index during certain periods.\\ 
+	
+	Given the previously discussed chain of influence, from FACs to the ACR, and from FACs to $H_I$, it is reasonable to further examine the correlation between ASYH and $H_I$. We found that most correlation coefficients lie within the range of $-0.5$ to $0.5$. Although these values would not typically be considered indicative of significant (anti)correlation, this result is consistent with the fact that the ARC affects $H_I$ differently depending on the MLT position of each observatory during the event, as also evident in Figure \ref{fig:magdata}. This implies that high positive or negative correlation coefficients ($\pm \rho$) would only be expected during relatively short intervals. To account for this, we applied a moving correlation window of four-hour bins, as shown in Figure \ref{fig:corr2}, with dashed lines indicating thresholds at $\rho = \pm 0.75$, which we consider as strong (anti)correlation.\\	
+	
+	Consistent with our earlier observations, there are periods of both strong and weak (anti)correlation. Three of the four observatory pairs exhibit a high possible influence of ASYH on $H_I$ during the period of maximum asymmetry (12–16 UT on March 17). Later, the pairs in panels (a) and (b) again show strong (anti)correlation after a 4–6 hour interval, which aligns with these observatories reaching the afternoon or morning sectors. However, these tendencies are not always observed. For example, in the case of GUI and KAK, which were located closer to the transition sectors (near noon and midnight) during the peak injection period, the correlation remains weak.\\
 	
 	
+	The variability in results—both across different observatories for the same event and even for a single observatory across different geomagnetic storms, as shown in \cite{CASTELLANOSVELAZCO2024}, demonstrates that the ARC does not always interfere in the same way. The longitudinal extent of the influence of different FAC regions, as well as that driven by the PRC, varies not only spatially but also over time. Therefore, Equation \ref{eq:HI2}, introduced by \cite{amory2020_filtros}, must be applied with caution, taking into account the specific position of the observation point during the period of highest energy injection. Method proposed by \cite{amory_younas2021} wouldn't be an option either since it is mostly focused on anti-correlating $H_I$ from diurnal variations in order to obtain $H_{DDEF}$.\\
 	
-	\appendix
-	\section{Processing magnetic data}
-	\label{a1}
+	%Lastly, \cite{amory_younas2021} proposed a method based on cross-wavelet analysis combined with semblance analysis to identify anti-correlations between $H_I$ signals and a modeled diurnal variation, under the assumption that the disturbed dynamo current flows opposite to the Sq variation. However, this method (the most recent to date and to the best of the author's knowledge) does not account for PPEF fluctuations. The asymmetry sensed by each magnetometer varies considerably depending on its location; consequently, the generalized application of Equation \ref{eq:HI2} leads to significant differences in the reconstruction of $H_{PPEF}$ as a function of observatory position.\\	
 	
-	It is crucial to eliminate regular variations from magnetic records to isolate magnetic contributions of interest. The main field $H_0$ can be removed by modeling a monthly baseline. This baseline was approximated by computing an array of daily mode values for March 2015, following \cite{baseline_Gjerloev}. These daily mode values were obtained from data between 00:00 and 03:00 LT ($H_{0:3}$), then $H_0$ was computed by a linear least squares fitting from these daily values. To exclude data from disturbed days for the fitting, we adapted the procedure outlined in \cite{vanKampt}. Specifically, we applied a moving hourly window to calculate the hourly interquartile range (IQR). Disturbed days were identified by setting a variation threshold where:
 	
-	\begin{equation} 
-		IQR_{med}^i > threshold = disturbed
-	\end{equation}
+	\section{Conclusions}
 	
-	Here, $IQR_{med}^i$ is the median of each daily IQR values, so if more than $50\%$ if IQR values for a given day, surpass a determined threshold, then that day is considered as disturbed day and depreciated for the LS fitting.\\
+	Within this project, we analyzed the magnetic fluctuations driven by prompt penetration electric fields (PPEFs) during the intense geomagnetic storm (GS) of March 17, 2015. To this end, we used geomagnetic data from four pairs of ground-based observatories separated by approximately $160^\circ$ to $200^\circ$ in magnetic longitude. Additionally, we incorporated data from the AMPERE program to examine field-aligned current (FAC) activity during the period of interest, focusing on the same magnetic local time sectors corresponding to the locations of the ground magnetometers along the evolution of the GS.\\
 	
-	The threshold was set, based on the criteria seen in \cite{pot}. Basically, we analyze the monthly distribution of maximum IQR values ($IQR_i^{max}$) within tri-hours IQR bins, by shifting another moving window and sorting those peaks, so $IQR_1^{max} < IQR_2^{max} < ... < IQR_n^{max}$, in order to get a cumulative $IQR^{max}$ distribution.\\
+	We applied the different approaches to study the influence of the asymmetric ring current (ARC) system on the magnetic signature associated with prompt penetration electric fields ($H_{PPEF}$). We also compared the net current density, considering its predominant upward or downward direction, in order to address the degree of influence on $H_I$ over the specific magnetic local time (MLT) sectors where the observatories were located at.\\
 	
-	Hence, we have to compute the parameters of the General Pareto Distribution (GPD) \cite{gpd} which is a type of distribution used for modeling other distributions extreme values, and it is expressed as:\\
+ 	Regarding the end of the GS main phase (MP), the delimitation point is not as clear-cut as it might seem. Depending on the initial MLT position of an observatory, it may continue to experience effects associated with the main phase for few hours after the reconnection process has ceased, as observed in Figure \ref{fig:magdata}. This behavior apparently could depend on the intensity of the geomagnetic storm and the rate of energy injection during the MP.\\
 	
-	\begin{equation}
-		f(x)=
-		\begin{cases}
-			\frac{1}{\sigma} \left( 1 + k \frac{x - u}{\sigma} \right) ^{-1 - \frac{1}{k}} & \text{if } k \neq 0 \\
+	We inspectionated the degree of influence of the ARC on the residual magnetic field $H_I$ and arrived at the following conclusions for this GS:
+	
+	\begin{itemize}
+		%The influence of asym RC seems to be different from one event to other in function of the magnitude of the GS and the nature of the injection process.
+				
+				
+		%\item The rate of injection so as would affect the distribution over temporal and spatial range of affection form the Asym RC over mid-low lat regions.
+		\item Even though the contribution of PRC to the ARC is not as significant as the net contribution from FAC, it can still induce important local differences in $H_I$, particularly on its western side.
+		
+		\item Depending on the initial position of the observation point, the influence of the ARC will vary not only from the onset but throughout the development of the MP and the evolution of the RC system.
+		
+		\item The higher responses of $H_I$ related to ARC can be tracked to the afternoon-evening (most negative) side and the morning side (most positive). In contrast, around noon and midnight sectors, ARC influence might not so relevant.
+		
+		\item The residual influence of the ARC significantly affected $H_{PPEF}$ at the moment of being filtered from $H_I$, particularly in terms of its amplitude and phase fluctuations.
+	\end{itemize}  
+	
+	
+	Due to all the considerations discussed above, it is necessary to adopt an approach that accounts not only for the ARC system but also—where possible—for the relative weight it exerts over a specific point or region of interest, as well as the time intervals during which this influence is most relevant. Such an approach would improve the modeling of $H_{PPEF}$ and could also enhance the estimation of geomagnetically induced currents (GICs) over that particular region.
+
+	
+	%It is crucial to eliminate regular variations from magnetic records to isolate magnetic contributions of interest. The main field $H_0$ can be removed by modeling a monthly baseline. This baseline was approximated by computing an array of daily mode values for March 2015, following \cite{baseline_Gjerloev}. These daily mode values were obtained from data between 00:00 and 03:00 LT ($H_{0:3}$), then $H_0$ was computed by a linear least squares fitting from these daily values. To exclude data from disturbed days for the fitting, we adapted the procedure outlined in \cite{vanKampt}. Specifically, we applied a moving hourly window to calculate the hourly interquartile range (IQR). Disturbed days were identified by setting a variation threshold where:
+	
+	%\begin{equation} 
+	%	IQR_{med}^i > threshold = disturbed
+	%\end{equation}
+	
+	%Here, $IQR_{med}^i$ is the median of each daily IQR values, so if more than $50\%$ if IQR values for a given day, surpass a determined threshold, then that day is considered as disturbed day and depreciated for the LS fitting.\\
+	
+	%The threshold was set, based on the criteria seen in \cite{pot}. Basically, we analyze the monthly distribution of maximum IQR values ($IQR_i^{max}$) within tri-hours IQR bins, by shifting another moving window and sorting those peaks, so $IQR_1^{max} < IQR_2^{max} < ... < IQR_n^{max}$, in order to get a cumulative $IQR^{max}$ distribution.\\
+	
+	%Hence, we have to compute the parameters of the General Pareto Distribution (GPD) \cite{gpd} which is a type of distribution used for modeling other distributions extreme values, and it is expressed as:\\
+	
+	%\begin{equation}
+	%	f(x)=
+	%	\begin{cases}
+	%		\frac{1}{\sigma} \left( 1 + k \frac{x - u}{\sigma} \right) ^{-1 - \frac{1}{k}} & \text{if } k \neq 0 \\
 			
-			\frac{1}{\sigma} exp \left( - \frac{x - u}{\sigma} \right) & \text{if } k = 0
-		\end{cases}
-	\end{equation}
+	%		\frac{1}{\sigma} exp \left( - \frac{x - u}{\sigma} \right) & \text{if } k = 0
+	%	\end{cases}
+	%\end{equation}
 	
 	
-	where the three GPD parameters are shape $k$, scale $\sigma$ and location $u$ for the cumulative $IQR_i^{max}$. The last parameter, $u$ is the one which can be considered as a threshold point \citep{l-moments, pot}. Then, for each $IQR_i^{max}$, we compute [$k_i, \sigma_i, u_i$], then we apply a modified Anderson-Darling test. The threshold, $u_t$, is considered once the test gives the most optimum validation result.\\
+	%where the three GPD parameters are shape $k$, scale $\sigma$ and location $u$ for the cumulative $IQR_i^{max}$. The last parameter, $u$ is the one which can be considered as a threshold point \citep{l-moments, pot}. Then, for each $IQR_i^{max}$, we compute [$k_i, \sigma_i, u_i$], then we apply a modified Anderson-Darling test. The threshold, $u_t$, is considered once the test gives the most optimum validation result.\\
 	
-	To compute the diurnal variation, we identified what we refer to as local quiet days (LQD) for each station. Following the methodology in \cite{vanKampt}, we considered the five days with the smallest daily IQR peaks as LQDs. We then computed the average of the $H$ component data during these five quietest days:
+	%To compute the diurnal variation, we identified what we refer to as local quiet days (LQD) for each station. Following the methodology in \cite{vanKampt}, we considered the five days with the smallest daily IQR peaks as LQDs. We then computed the average of the $H$ component data during these five quietest days:
 	
-	\begin{equation}
-		\label{eq:lqd}
-		\langle LDQ_H(t) \rangle = \frac{1}{5} \sum_{i=1}^5 H_i(t) - \langle H_i0:3 \rangle
-	\end{equation}
+	%\begin{equation}
+	%	\label{eq:lqd}
+	%	\langle LDQ_H(t) \rangle = \frac{1}{5} \sum_{i=1}^5 H_i(t) - \langle H_i0:3 \rangle
+	%\end{equation}
 	
-	\noindent where we normalize the offset of each daily data by subtracting the average of the first four hours of magnetic data in local time, as indicated by the second term in Equation \ref{eq:lqd}. Subsequently, we model the diurnal variation $H_{SQ}$ by applying a low-pass filter to the Fourier Transform of the result from Equation \ref{eq:lqd}, following the procedure in Equation (1) of \cite{vanKampt}.
+	%\noindent where we normalize the offset of each daily data by subtracting the average of the first four hours of magnetic data in local time, as indicated by the second term in Equation \ref{eq:lqd}. Subsequently, we model the diurnal variation $H_{SQ}$ by applying a low-pass filter to the Fourier Transform of the result from Equation \ref{eq:lqd}, following the procedure in Equation (1) of \cite{vanKampt}.
 
 
-	\section{ionospheric and magnetic response}
-\label{a2}
+	%\section{ionospheric and magnetic response}
+%\label{a2}
 
-	\subsection{Total Electron Content}
+	%\subsection{Total Electron Content}
 
-The overall ionosphere dynamics in each considered region were characterized by the vertical Total Electron Content (TEC) variations in the vicinity of the chosen magnetic OB. TEC values were derived from GNSS measurements using TayAbsTEC method \cite{estimating_TEC, influence_of_gnss_diffcodebias, gnss_differential_code}. In particular, data from UCOE, LPAL, NPGJ and TSK2 receivers was used to obtain TEC values for TEO, GUI, JAI and KAK regions, respectively.\\
-
-
-\begin{figure}
-	\centering
-	\includegraphics[width=7.0cm]{fig/gui_TEC_2015-03-15_2015-03-20.eps}   
-	\includegraphics[width=7.0cm]{fig/jai_TEC_2015-03-15_2015-03-20.eps}  	 
-	\includegraphics[width=7.0cm]{fig/kak_TEC_2015-03-15_2015-03-20.eps}
-	\includegraphics[width=7.0cm]{fig/teo_TEC_2015-03-15_2015-03-20.eps}
-	\caption{Total Electron Content from LPAL (GUI), NPGJ (JAI),TSK2 (KAK) and UCOE (TEO)}
-	\label{fig:tec}
-\end{figure}	
+	%The overall ionosphere dynamics in each considered region were characterized by the vertical Total Electron Content (TEC) variations in the vicinity of the chosen magnetic OB. TEC values were derived from GNSS measurements using TayAbsTEC method \cite{estimating_TEC, influence_of_gnss_diffcodebias, gnss_differential_code}. In particular, data from UCOE, LPAL, NPGJ and TSK2 receivers was used to obtain TEC values for TEO, GUI, JAI and KAK regions, respectively.\\
 
 
-In Figure \ref{fig:tec}, it is shown the TEC responses (red line) during the period of the GS, compared with the median of the 27 days TEC prior to the GS (blue line). However, given the different location of the GNSS stations, it is usual to derive different expected daily ranges (in GUI/LPAL is around 16-70 TECu; JAI/NPGJ is 20 - 80 TECu; KAK/TSK2 is 7 - 38; TEO/UCOE is 10 - 55 TECu). The same goes for different amplitude responses over/bellow the median, so checking only the TECu magnitude may not be possible to compare the results between the different GNSS stations.\\
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=7.0cm]{fig/gui_TEC_2015-03-15_2015-03-20.eps}   
+%	\includegraphics[width=7.0cm]{fig/jai_TEC_2015-03-15_2015-03-20.eps}  	 
+%	\includegraphics[width=7.0cm]{fig/kak_TEC_2015-03-15_2015-03-20.eps}
+%	\includegraphics[width=7.0cm]{fig/teo_TEC_2015-03-15_2015-03-20.eps}
+%	\caption{Total Electron Content from LPAL (GUI), NPGJ (JAI),TSK2 (KAK) and UCOE (TEO)}
+%	\label{fig:tec}
+%\end{figure}	
 
 
-Another issue is that we have to consider that the open data obtained for this work, doesn't have the best quality, even more considering the period of time. The quality of data is a sum of errors which depend on the satellite swarm, so as the receptor itself. We could smooth some of these errors but couldn't be avoided at all. Considering also that we are studying results from points in different longitudinal sectors (Mexico, Canarias Islands, India and Japan), there can be issues by comparing absolute TEC values. To deal with this issue, we instead analyze relative values, defined by:
-
-\begin{equation}
-	\label{eq:tec}
-	\Delta TEC = \frac{TEC_{obs} - TEC_{e}}{TEC_e},
-\end{equation}
+%In Figure \ref{fig:tec}, it is shown the TEC responses (red line) during the period of the GS, compared with the median of the 27 days TEC prior to the GS (blue line). However, given the different location of the GNSS stations, it is usual to derive different expected daily ranges (in GUI/LPAL is around 16-70 TECu; JAI/NPGJ is 20 - 80 TECu; KAK/TSK2 is 7 - 38; TEO/UCOE is 10 - 55 TECu). The same goes for different amplitude responses over/bellow the median, so checking only the TECu magnitude may not be possible to compare the results between the different GNSS stations.\\
 
 
-where $TEC_{obs}$ is the observed response during the period of interest and $TEC_e$ is the expected TEC, derived from the 27 days median TEC. $\Delta TEC$ is then, measuring TEC percentage difference between the expected value and the TEC observed during the GS \cite{statisticsofGSandISatmidlowlat, dramaria_1}.\\
+%Another issue is that we have to consider that the open data obtained for this work, doesn't have the best quality, even more considering the period of time. The quality of data is a sum of errors which depend on the satellite swarm, so as the receptor itself. We could smooth some of these errors but couldn't be avoided at all. Considering also that we are studying results from points in different longitudinal sectors (Mexico, Canarias Islands, India and Japan), there can be issues by comparing absolute TEC values. To deal with this issue, we instead analyze relative values, defined by:
+
+%\begin{equation}
+%	\label{eq:tec}
+%	\Delta TEC = \frac{TEC_{obs} - TEC_{e}}{TEC_e},
+%\end{equation}
+
+
+%where $TEC_{obs}$ is the observed response during the period of interest and $TEC_e$ is the expected TEC, derived from the 27 days median TEC. $\Delta TEC$ is then, measuring TEC percentage difference between the expected value and the TEC observed during the GS \cite{statisticsofGSandISatmidlowlat, dramaria_1}.\\
 
 	
 %	\begin{figure}
@@ -464,9 +591,11 @@ where $TEC_{obs}$ is the observed response during the period of interest and $TE
 	
 	
 	\paragraph{Acknowledgements} 
-The authors gratefully acknowledge the data and services provided by various institutions that made this work possible. Geomagnetic indices (ASY/SYM-H) were obtained from the International Service of Geomagnetic Indices (ISGI). Global geomagnetic data from the GUI, JAI, and KAK observatories were provided by INTERMAGNET, while local data from the TEO Observatory were sourced from LANCE-SciesMEX, REGMEX, and the Magnetic Service. GNSS data for the LPAL and TSK2 stations were accessed via the International GNSS Service (IGS), and data for the NPGJ station were provided by the NSF SAGE facility operated by EarthScope Consortium (under NSF award 1724509).
+%The authors gratefully acknowledge the data and services provided by various institutions that made this work possible. Geomagnetic indices (ASY/SYM-H) were obtained from the International Service of Geomagnetic Indices (ISGI). Global geomagnetic data from the GUI, JAI, and KAK observatories were provided by INTERMAGNET, while local data from the TEO Observatory were sourced from LANCE-SciesMEX, REGMEX, and the Magnetic Service. GNSS data for the LPAL and TSK2 stations were accessed via the International GNSS Service (IGS), and data for the NPGJ station were provided by the NSF SAGE facility operated by EarthScope Consortium (under NSF award 1724509).
 
-We extend our special thanks to the personnel of the Servicio de Geodesia Satelital, particularly Luis Salazar Tlaczani, and the TLALOCNet team for the maintenance of the UCOE station, data acquisition, and IT support. The GNSS data from this network, essential for TEC calculations, are supported by project PAPIIT IN111225 (E. Cabral-Cano).
+The authors gratefully acknowledge the data and services provided by various institutions that made this work possible. Geomagnetic indices (ASY/SYM-H) were obtained from the International Service of Geomagnetic Indices (ISGI). Global geomagnetic data from the GUI, JAI, and KAK observatories were provided by INTERMAGNET, while local data from the TEO Observatory were sourced from LANCE-SciesMEX, REGMEX, and the Magnetic Service. $Jr$ data provided by the Active Magnetosphere and Planetary Electrodynamics Response Experiment (AMPERE) public web site. %GNSS data for the LPAL and TSK2 stations were accessed via the International GNSS Service (IGS), and data for the NPGJ station were provided by the NSF SAGE facility operated by EarthScope Consortium (under NSF award 1724509).
+
+%We extend our special thanks to the personnel of the Servicio de Geodesia Satelital, particularly Luis Salazar Tlaczani, and the TLALOCNet team for the maintenance of the UCOE station, data acquisition, and IT support. The GNSS data from this network, essential for TEC calculations, are supported by project PAPIIT IN111225 (E. Cabral-Cano).
 
 Finally, this research was funded by the Universidad Nacional Autónoma de México (UNAM) and the Secretaría de Educación, Ciencia, Tecnología e Innovación (SECIHTI).
 	%	\newpage

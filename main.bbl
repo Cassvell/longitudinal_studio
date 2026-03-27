@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,33 @@ R.~J.~Strangeway C.T~Russell, J. G.~Luhman.
 \newblock Cambridge university press. University Pringting House, Cambridge CB2
   (BS, United Kingdom, 2016.
 \newblock ISBN 978-1-107-09882-4.
+
+\bibitem[{Kamide} and {Fukushima}(1971)]{Kamide1971}
+Yohsuke {Kamide} and Naoshi {Fukushima}.
+\newblock {Analysis of Magnetic Storms with DR Indices for Equatorial
+  Ring-Current Field}.
+\newblock \emph{Radio Science}, 6\penalty0 (2):\penalty0 277--278, February
+  1971.
+\newblock \doi{10.1029/RS006i002p00277}.
+
+\bibitem[Crooker and McPherron(1972)]{Crooker1972}
+Nancy~Uss Crooker and R.~L. McPherron.
+\newblock On the distinction between the auroral electrojet and partial ring
+  current systems.
+\newblock \emph{Journal of Geophysical Research (1896-1977)}, 77\penalty0
+  (34):\penalty0 6886--6889, 1972.
+\newblock \doi{https://doi.org/10.1029/JA077i034p06886}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/JA077i034p06886}.
+
+\bibitem[Fukushima and Kamide(1973)]{Fukushima1973}
+Naoshi Fukushima and Yohsuke Kamide.
+\newblock Partial ring current models for worldwide geomagnetic disturbances.
+\newblock \emph{Reviews of Geophysics}, 11\penalty0 (4):\penalty0 795--853,
+  1973.
+\newblock \doi{https://doi.org/10.1029/RG011i004p00795}.
+\newblock URL
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/RG011i004p00795}.
 
 \bibitem[{Nishida}(1968{\natexlab{a}})]{nishida_68_fluctuations}
 Atsuhiro {Nishida}.
@@ -27,13 +54,6 @@ Atsuhiro {Nishida}.
 \newblock \emph{Journal of Geophysical Research}, 73\penalty0 (17):\penalty0
   5549--5559, September 1968{\natexlab{b}}.
 \newblock \doi{10.1029/JA073i017p05549}.
-
-\bibitem[{Blanc} and {Richmond}(1980)]{blanc_ddyn}
-M.~{Blanc} and A.~D. {Richmond}.
-\newblock {The ionospheric disturbance dynamo}.
-\newblock \emph{Journal of Geophysical Research}, 85\penalty0 (A4):\penalty0
-  1669--1686, April 1980.
-\newblock \doi{10.1029/JA085iA04p01669}.
 
 \bibitem[Vasyliunas(1970)]{PPEF_prediction}
 Vytenis~M. Vasyliunas.
@@ -69,6 +89,13 @@ M.~C. {Kelley}, B.~G. {Fejer}, and C.~A. {Gonzales}.
   301--304, April 1979.
 \newblock \doi{10.1029/GL006i004p00301}.
 
+\bibitem[{Kikuchi} and {Araki}(1979)]{PPEFtransmission1979}
+T.~{Kikuchi} and T.~{Araki}.
+\newblock {Horizontal transmission of the polar electric field to the equator}.
+\newblock \emph{Journal of Atmospheric and Terrestrial Physics}, 41:\penalty0
+  927--936, September 1979.
+\newblock \doi{10.1016/0021-9169(79)90094-1}.
+
 \bibitem[{Vijaya Lekshmi} et~al.(2011){Vijaya Lekshmi}, {Balan}, {Tulasi Ram},
   and {Liu}]{statisticsofGSandISatmidlowlat}
 D.~{Vijaya Lekshmi}, N.~{Balan}, S.~{Tulasi Ram}, and J.~Y. {Liu}.
@@ -84,6 +111,22 @@ G.~W. Pr{\"o}lss.
 \newblock CRC Press, 1995.
 \newblock \doi{10.1201/9780203713297}.
 
+\bibitem[{Vishnupriya} and {Manju}(2025)]{vishnupriya_2025_ppef_gics}
+K.~S. {Vishnupriya} and G.~{Manju}.
+\newblock {Risk Assessment of Geomagnetically Induced Currents (GICs) Over the
+  Indian Sector in Comparison With American and African Sectors}.
+\newblock \emph{Space Weather}, 23\penalty0 (8):\penalty0 e2024SW004133, August
+  2025.
+\newblock \doi{10.1029/2024SW004133}.
+
+\bibitem[{Nilam} and {Tulasi Ram}(2022)]{Nilam_2022_ppef_gics}
+B.~{Nilam} and S.~{Tulasi Ram}.
+\newblock {Large Geomagnetically Induced Currents at Equator Caused by an
+  Interplanetary Magnetic Cloud}.
+\newblock \emph{Space Weather}, 20\penalty0 (6):\penalty0 e2022SW003111, June
+  2022.
+\newblock \doi{10.1029/2022SW003111}.
+
 \bibitem[Fejer et~al.(1983)Fejer, Larsen, and Farley]{Fejer1983}
 B.~G. Fejer, M.~F. Larsen, and D.~T. Farley.
 \newblock Equatorial disturbance dynamo electric fields.
@@ -93,13 +136,6 @@ B.~G. Fejer, M.~F. Larsen, and D.~T. Farley.
 \newblock URL
   \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/GL010i007p00537}.
 
-\bibitem[Amory-Mazaudier(1982)]{DDEF_detection}
-Christine Amory-Mazaudier.
-\newblock Electric currents above saint-santin. i - data.
-\newblock \emph{Journal of Geophysical Research}, 87:\penalty0 2459--2464, 04
-  1982.
-\newblock \doi{10.1029/JA087iA04p02459}.
-
 \bibitem[{Le Huy} and {Amory-Mazaudier}(2005)]{ddyn2005}
 Minh {Le Huy} and Christine {Amory-Mazaudier}.
 \newblock {Magnetic signature of the ionospheric disturbance dynamo at
@@ -107,33 +143,6 @@ Minh {Le Huy} and Christine {Amory-Mazaudier}.
 \newblock \emph{Journal of Geophysical Research (Space Physics)}, 110\penalty0
   (A10):\penalty0 A10301, October 2005.
 \newblock \doi{10.1029/2004JA010578}.
-
-\bibitem[{Le Huy} and {Amory-Mazaudier}(2008)]{ddyn_diag2}
-Minh {Le Huy} and Christine {Amory-Mazaudier}.
-\newblock {Planetary magnetic signature of the storm wind disturbance dynamo
-  currents: D$_{dyn}$}.
-\newblock \emph{Journal of Geophysical Research (Space Physics)}, 113\penalty0
-  (A2):\penalty0 A02312, February 2008.
-\newblock \doi{10.1029/2007JA012686}.
-
-\bibitem[{Zaka} et~al.(2009){Zaka}, {Kobea}, {Assamoi}, {Obrou}, {Doumbia},
-  {Boka}, {Adohi}, and {Mene}]{angeoddyn}
-K.~Z. {Zaka}, A.~T. {Kobea}, P.~{Assamoi}, O.~K. {Obrou}, V.~{Doumbia},
-  K.~{Boka}, B.~J.~P. {Adohi}, and N.~M. {Mene}.
-\newblock {Latitudinal profile of the ionospheric disturbance dynamo magnetic
-  signature: comparison with the DP2 magnetic disturbance}.
-\newblock \emph{Annales Geophysicae}, 27\penalty0 (9):\penalty0 3523--3536,
-  September 2009.
-\newblock \doi{10.5194/angeo-27-3523-2009}.
-
-\bibitem[{Liu} et~al.(2013){Liu}, {Yang}, {Lin}, {Chen}, and
-  {Lee}]{statist_iono}
-J.~Y. {Liu}, W.~H. {Yang}, C.~H. {Lin}, Y.~I. {Chen}, and I.~T. {Lee}.
-\newblock {A statistical study on the characteristics of ionospheric storms in
-  the equatorial ionization anomaly region: GPS-TEC observed over Taiwan}.
-\newblock \emph{Journal of Geophysical Research (Space Physics)}, 118\penalty0
-  (6):\penalty0 3856--3865, June 2013.
-\newblock \doi{10.1002/jgra.50366}.
 
 \bibitem[{Younas} et~al.(2020){Younas}, {Amory-Mazaudier}, {Khan}, and
   {Fleury}]{amory2020_filtros}
@@ -143,69 +152,6 @@ W.~{Younas}, C.~{Amory-Mazaudier}, Majid {Khan}, and R.~{Fleury}.
 \newblock \emph{Journal of Geophysical Research (Space Physics)}, 125\penalty0
   (8):\penalty0 e27981, August 2020.
 \newblock \doi{10.1029/2020JA027981}.
-
-\bibitem[Gonzalez-Esparza et~al.(2017)Gonzalez-Esparza, De~la Luz,
-  Corona-Romero, Mejia-Ambriz, Gonzalez, Sergeeva, Romero-Hernandez, and
-  Aguilar-Rodriguez]{sciesmex_art}
-J.~A. Gonzalez-Esparza, V.~De~la Luz, P.~Corona-Romero, J.~C. Mejia-Ambriz,
-  L.~X. Gonzalez, M.~A. Sergeeva, E.~Romero-Hernandez, and
-  E.~Aguilar-Rodriguez.
-\newblock Mexican space weather service (sciesmex).
-\newblock \emph{Space Weather}, 15\penalty0 (1):\penalty0 3--11, 2017.
-\newblock \doi{https://doi.org/10.1002/2016SW001496}.
-\newblock URL
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016SW001496}.
-
-\bibitem[{Corona-Romero} et~al.(2018){Corona-Romero}, {Sanchez-Garcia},
-  {Sergeeva}, {Gonzalez-Esparza}, {Cifuentes-Nava}, {Hernandez-Quintero},
-  {Caccavari}, {Aguilar-Rodriguez}, {Mejía-Ambriz}, {de-la-Luz}, and
-  {Gonzalez}]{P-corona1}
-P.~{Corona-Romero}, E.~{Sanchez-Garcia}, M.~{Sergeeva}, J.A.
-  {Gonzalez-Esparza}, G.~{Cifuentes-Nava}, E.~{Hernandez-Quintero},
-  A.~{Caccavari}, E.~{Aguilar-Rodriguez}, J.C. {Mejía-Ambriz}, V.~{de-la-Luz},
-  and L.X. {Gonzalez}.
-\newblock Kmex: the mexican geomagnetic k index.
-\newblock In \emph{Proceedings of the II Pan-American Workshopon Geomagnetism},
-  pages 96--100, Basouras, Brazil, 2018.
-
-\bibitem[{Corona-Romero} et~al.(2017){Corona-Romero}, {Sergeeva},
-  {Gonzalez-Esparza}, {Cifuentes-Nava}, {Hernandez-Quintero}, and
-  {Caccavari}]{P-corona2}
-P.~{Corona-Romero}, M.~{Sergeeva}, J.A. {Gonzalez-Esparza},
-  G.~{Cifuentes-Nava}, E.~{Hernandez-Quintero}, and E.~{Caccavari},
-  A.~{Sanchez-Garcia}.
-\newblock Mexican geomagnetic k index.
-\newblock pages 1--6, 2017.
-
-\bibitem[{Romero-Hernandez} et~al.(2017){Romero-Hernandez}, {Gonzalez-Esparza},
-  {Rodriguez-Martinez}, {Sergeeva}, {Aguilar-Rodriguez}, {Mejia-Ambriz}, and
-  {De la Luz}]{esmeralda}
-E.~{Romero-Hernandez}, J.~A. {Gonzalez-Esparza}, M.~{Rodriguez-Martinez}, M.~A.
-  {Sergeeva}, E.~{Aguilar-Rodriguez}, J.~C. {Mejia-Ambriz}, and V.~{De la Luz}.
-\newblock {Study of ionospheric disturbances over Mexico associated with
-  transient space weather events}.
-\newblock \emph{Advances in Space Research}, 60\penalty0 (8):\penalty0
-  1838--1849, October 2017.
-\newblock \doi{10.1016/j.asr.2017.06.042}.
-
-\bibitem[{Sergeeva} et~al.(2017){Sergeeva}, {Maltseva}, {Gonzalez-Esparza}, {De
-  la Luz}, and {Corona-Romero}]{dramaria_1}
-M.~A. {Sergeeva}, O.~A. {Maltseva}, J.~A. {Gonzalez-Esparza}, V.~{De la Luz},
-  and P.~{Corona-Romero}.
-\newblock {Features of TEC behaviour over the low-latitude North-American
-  region during the period of medium solar activity}.
-\newblock \emph{Advances in Space Research}, 60\penalty0 (8):\penalty0
-  1594--1605, October 2017.
-\newblock \doi{10.1016/j.asr.2017.06.021}.
-
-\bibitem[Sergeeva et~al.(2020)Sergeeva, Kalishin, Maltseva, Blagoveshchensky,
-  Gonzalez-Esparza, Corona-Romero, and Gatica~Acevedo]{dramaria_13}
-Maria Sergeeva, Aleksei Kalishin, Olga Maltseva, D.~Blagoveshchensky,
-  A.~Gonzalez-Esparza, Pedro Corona-Romero, and Victor Gatica~Acevedo.
-\newblock Possibility of signal reflection from the northern crest of eia: case
-  study.
-\newblock pages 1--4, 03 2020.
-\newblock \doi{10.23919/EuCAP48036.2020.9135786}.
 
 \bibitem[Castellanos-Velazco et~al.(2024)Castellanos-Velazco, Corona-Romero,
   González-Esparza, Sergeeva, Caccavari-Garza, and
@@ -221,6 +167,14 @@ C.I. Castellanos-Velazco, P.~Corona-Romero, J.A. González-Esparza, M.A.
 \newblock URL
   \url{https://www.sciencedirect.com/science/article/pii/S1364682624000658}.
 
+\bibitem[{Anderson} et~al.(2020){Anderson}, {Vines}, {Waters}, and
+  {Barnes}]{AMPERE}
+B.~J. {Anderson}, S.~K. {Vines}, C.~L. {Waters}, and R.~J. {Barnes}.
+\newblock {Finally! AMPERE-NEXT - it's about TIME
+  (Thermosphere-Ionosphere-Magnetosphere Electrodynamics)}.
+\newblock In \emph{AGU Fall Meeting Abstracts}, volume 2020 of \emph{AGU Fall
+  Meeting Abstracts}, pages SA022--0003, December 2020.
+
 \bibitem[{Wu} et~al.(2016){Wu}, {Liou}, {Lepping}, {Hutting}, {Plunkett},
   {Howard}, and {Socker}]{stpatrick_ref}
 Chin-Chun {Wu}, Kan {Liou}, Ronald~P. {Lepping}, Lynn {Hutting}, Simon
@@ -230,6 +184,15 @@ Chin-Chun {Wu}, Kan {Liou}, Ronald~P. {Lepping}, Lynn {Hutting}, Simon
 \newblock \emph{Earth, Planets and Space}, 68\penalty0 (1):\penalty0 151,
   December 2016.
 \newblock \doi{10.1186/s40623-016-0525-y}.
+
+\bibitem[{Kozyreva} et~al.(2018){Kozyreva}, {Pilipenko}, {Belakhovsky}, and
+  {Sakharov}]{st_patric_effects_rusia}
+Olga~V. {Kozyreva}, Vyacheslav~A. {Pilipenko}, Vladimir~B. {Belakhovsky}, and
+  Yaroslav~A. {Sakharov}.
+\newblock {Ground geomagnetic field and GIC response to March 17, 2015, storm}.
+\newblock \emph{Earth, Planets and Space}, 70\penalty0 (1):\penalty0 157,
+  December 2018.
+\newblock \doi{10.1186/s40623-018-0933-2}.
 
 \bibitem[{Burton} et~al.(1975){Burton}, {McPherron}, and {Russell}]{burton1975}
 R.~K. {Burton}, R.~L. {McPherron}, and C.~T. {Russell}.
@@ -279,114 +242,33 @@ M.~{van de Kamp}.
   2\penalty0 (2):\penalty0 289--304, November 2013.
 \newblock \doi{10.5194/gi-2-289-2013}.
 
-\bibitem[{Amory-Mazaudier} et~al.(2017){Amory-Mazaudier}, {Bolaji}, and
-  {Doumbia}]{amorymazaudier_2017}
-C.~{Amory-Mazaudier}, O.~S. {Bolaji}, and V.~{Doumbia}.
-\newblock {On the historical origins of the CEJ, DP2, and Ddyn current systems
-  and their roles in the predictions of ionospheric responses to geomagnetic
-  storms at equatorial latitudes}.
-\newblock \emph{Journal of Geophysical Research (Space Physics)}, 122\penalty0
-  (7):\penalty0 7827--7833, July 2017.
-\newblock \doi{10.1002/2017JA024132}.
+\bibitem[{Iyemori}(1990)]{Iyemori1990}
+Toshihiko {Iyemori}.
+\newblock {Storm-time magnetospheric currents inferred from mid-latitude
+  geomagnetic field variations}.
+\newblock \emph{Journal of Geomagnetism and Geoelectricity}, 42\penalty0
+  (11):\penalty0 1249--1265, January 1990.
+\newblock \doi{10.5636/jgg.42.1249}.
 
-\bibitem[{Takahashi} et~al.(1991){Takahashi}, {Takeda}, and
-  {Yamada}]{prc_simul}
-Shun {Takahashi}, Masahiko {Takeda}, and Yuji {Yamada}.
-\newblock {Simulation of storm-time partial ring current system and the
-  dawn-dusk asymmetry of geomagnetic variation}.
-\newblock \emph{Planetary and Space Science}, 39\penalty0 (6):\penalty0
-  821--832, June 1991.
-\newblock \doi{10.1016/0032-0633(91)90087-Q}.
-
-\bibitem[{Yasyukevich} et~al.(2015{\natexlab{a}}){Yasyukevich}, {Mylnikova},
-  and {Polyakova}]{estimating_TEC}
-Yu.~V. {Yasyukevich}, A.~A. {Mylnikova}, and A.~S. {Polyakova}.
-\newblock {Estimating the total electron content absolute value from the
-  GPS/GLONASS data}.
-\newblock \emph{Results in Physics}, 5:\penalty0 32--33, January
-  2015{\natexlab{a}}.
-\newblock \doi{10.1016/j.rinp.2014.12.006}.
-
-\bibitem[{Yasyukevich} et~al.(2015{\natexlab{b}}){Yasyukevich}, {Mylnikova},
-  {Kunitsyn}, and {Padokhin}]{influence_of_gnss_diffcodebias}
-Yu.~V. {Yasyukevich}, A.~A. {Mylnikova}, V.~E. {Kunitsyn}, and A.~M.
-  {Padokhin}.
-\newblock {Influence of GPS/GLONASS differential code biases on the
-  determination accuracy of the absolute total electron content in the
-  ionosphere}.
-\newblock \emph{Geomagnetism and Aeronomy}, 55\penalty0 (6):\penalty0 763--769,
-  November 2015{\natexlab{b}}.
-\newblock \doi{10.1134/S001679321506016X}.
-
-\bibitem[{Mylnikova} et~al.(2015){Mylnikova}, {Yasyukevich}, {Kunitsyn}, and
-  {Padokhin}]{gnss_differential_code}
-A.~A. {Mylnikova}, Yu.~V. {Yasyukevich}, V.~E. {Kunitsyn}, and A.~M.
-  {Padokhin}.
-\newblock {Variability of GPS/GLONASS differential code biases}.
-\newblock \emph{Results in Physics}, 5:\penalty0 9--10, January 2015.
-\newblock \doi{10.1016/j.rinp.2014.11.002}.
-
-\bibitem[{Kalegaev} et~al.(2008){Kalegaev}, {Bakhmina}, {Alexeev}, {Belenkaya},
-  {Feldstein}, and {Ganushkina}]{pr_asymmetry}
-V.~V. {Kalegaev}, K.~Yu. {Bakhmina}, I.~I. {Alexeev}, E.~S. {Belenkaya}, Ya.~I.
-  {Feldstein}, and N.~V. {Ganushkina}.
-\newblock {Ring current asymmetry during a magnetic storm}.
-\newblock \emph{Geomagnetism and Aeronomy}, 48\penalty0 (6):\penalty0 747--758,
-  December 2008.
-\newblock \doi{10.1134/S0016793208060078}.
-
-\bibitem[{Makarov}(2022)]{sym_asym_corr}
-Georgy {Makarov}.
-\newblock {Geomagnetic indices ASY-H and SYM-H and their relation to
-  interplanetary parametersGeomagnetic indices ASY-H and SYM-H and their
-  relation to interplanetary parametersGeomagnetic indices ASY-H and SYM-H and
-  their relation to interplanetary parameters}.
-\newblock \emph{Solar-Terrestrial Physics}, 8\penalty0 (4):\penalty0 36--43,
-  December 2022.
-\newblock \doi{10.12737/stp-84202203}.
-
-\bibitem[{Thomas} and
-  {Venables}(1966)]{theonsetofFregdisturbanceatmidlowlatduringGS}
-L.~{Thomas} and F.~H. {Venables}.
-\newblock {The onset of the F-region disturbance at middle latitudes during
-  magnetic storms}.
-\newblock \emph{Journal of Atmospheric and Terrestrial Physics}, 28\penalty0
-  (6-7):\penalty0 599--605, January 1966.
-\newblock \doi{10.1016/0021-9169(66)90073-0}.
-
-\bibitem[{Fuller-Rowell} et~al.(1994){Fuller-Rowell}, {Codrescu}, {Moffett},
-  and {Quegan}]{responseofthethermosphereandionospheretoGS}
-T.~J. {Fuller-Rowell}, M.~V. {Codrescu}, R.~J. {Moffett}, and S.~{Quegan}.
-\newblock {Response of the thermosphere and ionosphere to geomagnetic storms}.
-\newblock \emph{jgr}, 99\penalty0 (A3):\penalty0 3893--3914, March 1994.
-\newblock \doi{10.1029/93JA02015}.
-
-\bibitem[Solari et~al.(2017)Solari, Egüen, Polo, and Losada]{pot}
-Sebastián Solari, Marta Egüen, María~José Polo, and Miguel~A. Losada.
-\newblock Peaks over threshold (pot): A methodology for automatic threshold
-  estimation using goodness of fit p-value.
-\newblock \emph{Water Resources Research}, 53\penalty0 (4):\penalty0
-  2833--2849, 2017.
-\newblock \doi{https://doi.org/10.1002/2016WR019426}.
+\bibitem[Anderson et~al.(2014)Anderson, Korth, Waters, Green, Merkin, Barnes,
+  and Dyrud]{Inet_ampere}
+B.~J. Anderson, H.~Korth, C.~L. Waters, D.~L. Green, V.~G. Merkin, R.~J.
+  Barnes, and L.~P. Dyrud.
+\newblock Development of large-scale birkeland currents determined from the
+  active magnetosphere and planetary electrodynamics response experiment.
+\newblock \emph{Geophysical Research Letters}, 41\penalty0 (9):\penalty0
+  3017--3025, 2014.
+\newblock \doi{https://doi.org/10.1002/2014GL059941}.
 \newblock URL
-  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2016WR019426}.
+  \url{https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1002/2014GL059941}.
 
-\bibitem[Pickands(1975)]{gpd}
-James Pickands.
-\newblock {Statistical Inference Using Extreme Order Statistics}.
-\newblock \emph{The Annals of Statistics}, 3\penalty0 (1):\penalty0 119 -- 131,
-  1975.
-\newblock \doi{10.1214/aos/1176343003}.
-\newblock URL \url{https://doi.org/10.1214/aos/1176343003}.
-
-\bibitem[Hosking(1990)]{l-moments}
-J.~R.~M. Hosking.
-\newblock L-moments: Analysis and estimation of distributions using linear
-  combinations of order statistics.
-\newblock \emph{Journal of the Royal Statistical Society: Series B
-  (Methodological)}, 52\penalty0 (1):\penalty0 105--124, 12 1990.
-\newblock ISSN 0035-9246.
-\newblock \doi{10.1111/j.2517-6161.1990.tb01775.x}.
-\newblock URL \url{https://doi.org/10.1111/j.2517-6161.1990.tb01775.x}.
+\bibitem[{Younas} et~al.(2021){Younas}, {Amory-Mazaudier}, {Khan}, and {Le
+  Huy}]{amory_younas2021}
+Waqar {Younas}, C.~{Amory-Mazaudier}, Majid {Khan}, and M.~{Le Huy}.
+\newblock {Magnetic Signatures of Ionospheric Disturbance Dynamo for CME and
+  HSSWs Generated Storms}.
+\newblock \emph{Space Weather}, 19\penalty0 (9):\penalty0 e02825, September
+  2021.
+\newblock \doi{10.1029/2021SW002825}.
 
 \end{thebibliography}

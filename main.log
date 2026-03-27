@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.8)  11 DEC 2025 13:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.8)  26 MAR 2026 19:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,6 +544,13 @@ Package babel Info: You haven't specified a language as a class or package
 Language: nil 2024/01/07 v24.1 Nil language
 \l@nil=\language90
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count306
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count307
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks44
@@ -593,15 +600,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count306
+\c@section@level=\count308
 )
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count307
+\etb@tempcnta=\count309
 )
 \@linkdim=\dimen285
-\Hy@linkcounter=\count308
-\Hy@pagecounter=\count309
+\Hy@linkcounter=\count310
+\Hy@pagecounter=\count311
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
@@ -611,7 +618,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count310
+\Hy@SavedSpaceFactor=\count312
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
@@ -625,7 +632,7 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count311
+\c@Hy@tempcnt=\count313
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -641,7 +648,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count312
+\Fld@menulength=\count314
 \Field@Width=\dimen287
 \Fld@charsize=\dimen288
 Package hyperref Info: Hyper figures OFF on input line 6063.
@@ -656,9 +663,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count313
-\c@Item=\count314
-\c@Hfootnote=\count315
+\Hy@abspage=\count315
+\c@Item=\count316
+\c@Hfootnote=\count317
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -670,8 +677,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count316
-\c@bookmark@seq@number=\count317
+\Fld@listcount=\count318
+\c@bookmark@seq@number=\count319
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -699,19 +706,19 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 )
 \everycr=\toks47
 \minrowclearance=\skip63
-\rownum=\count318
+\rownum=\count320
 )
-Package hyperref Info: Option `unicode' set `true' on input line 30.
+Package hyperref Info: Option `unicode' set `true' on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip64
 \bibsep=\skip65
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count319
+\c@NAT@ctr=\count321
 )
-\c@theorem=\count320
-\c@claim=\count321
+\c@theorem=\count322
+\c@claim=\count323
 
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -719,7 +726,7 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count322
+\c@float@type=\count324
 \float@exts=\toks48
 \float@box=\box69
 \@float@everytoks=\toks49
@@ -729,7 +736,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks50
-\c@algorithm=\count323
+\c@algorithm=\count325
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -738,15 +745,15 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count324
-\c@ALG@rem=\count325
-\c@ALG@nested=\count326
+\c@ALG@line=\count326
+\c@ALG@rem=\count327
+\c@ALG@nested=\count328
 \ALG@tlm=\skip66
 \ALG@thistlm=\skip67
-\c@ALG@Lnr=\count327
-\c@ALG@blocknr=\count328
-\c@ALG@storecount=\count329
-\c@ALG@tmpcounter=\count330
+\c@ALG@Lnr=\count329
+\c@ALG@blocknr=\count330
+\c@ALG@storecount=\count331
+\c@ALG@tmpcounter=\count332
 \ALG@tmplength=\skip68
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
@@ -761,50 +768,50 @@ Package: expl3 2024-01-22 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count331
+\l__color_backend_stack_int=\count333
 \l__pdf_internal_box=\box71
 ))
 Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count332
-\l__lipsum_a_int=\count333
-\l__lipsum_b_int=\count334
+\g__lipsum_par_int=\count334
+\l__lipsum_a_int=\count335
+\l__lipsum_b_int=\count336
 
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 80.
-LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count335
+\scratchcounter=\count337
 \scratchdimen=\dimen291
 \scratchbox=\box72
-\nofMPsegments=\count336
-\nofMParguments=\count337
+\nofMPsegments=\count338
+\nofMParguments=\count339
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count338
+\MPscratchCnt=\count340
 \MPscratchDim=\dimen292
-\MPnumerator=\count339
-\makeMPintoPDFobject=\count340
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
 \everyMPtoPDFconversion=\toks52
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -853,35 +860,46 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 80.
+Package hyperref Info: Link coloring OFF on input line 81.
 (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 82
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 83
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 85--87
+Overfull \hbox (13.00742pt too wide) in paragraph at lines 86--88
+\OT1/cmr/m/n/9 Fields (PPEF) on the local geomagnetic response, using data from
+ eight mid-to-low latitude observatories
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
@@ -890,30 +908,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-
- []
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+]
+<fig/prc.png, id=73, 236.38312pt x 245.41687pt>
+File: fig/prc.png Graphic file (type png)
+<use fig/prc.png>
+Package pdftex.def Info: fig/prc.png  used on input line 112.
+(pdftex.def)             Requested size: 142.26378pt x 147.70436pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--118
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
@@ -923,37 +932,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+[2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./fig/prc.png>]
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--138
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
+<fig/DP2diagram.png, id=135, 409.53pt x 371.13657pt>
+File: fig/DP2diagram.png Graphic file (type png)
+<use fig/DP2diagram.png>
+Package pdftex.def Info: fig/DP2diagram.png  used on input line 136.
+(pdftex.def)             Requested size: 271.7835pt x 246.31569pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
 
+[3 <./fig/DP2diagram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--158
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
@@ -966,378 +1001,325 @@ Package epstopdf Info: Source file: <fig/ip_2015-03-15_2015-03-20.eps>
 (epstopdf)                    size: 353153 bytes
 (epstopdf)             Command: <repstopdf --outfile=fig/ip_2015-03-15_2015-03-
 20-eps-converted-to.pdf fig/ip_2015-03-15_2015-03-20.eps>
-(epstopdf)             \includegraphics on input line 149.
+(epstopdf)             \includegraphics on input line 171.
 Package epstopdf Info: Output file is already uptodate.
-<fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf, id=174, 722.7pt x 722.7pt>
+<fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf, id=186, 722.7pt x 722.7pt>
 File: fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf Graphic file (type pdf)
 
 <use fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf>
 Package pdftex.def Info: fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf  use
-d on input line 149.
+d on input line 171.
 (pdftex.def)             Requested size: 407.66833pt x 407.66461pt.
 
-Overfull \hbox (14.38779pt too wide) in paragraph at lines 160--161
-\OT1/cmr/m/n/10 database (\OT1/cmr/m/it/10 International Real-Time Magnetic Obs
-ervatory Network \OT1/cmr/m/n/10 [[]INTERMAGNET[], []2021[]]), corresponding
+Overfull \hbox (6.4711pt too wide) in paragraph at lines 182--183
+\OT1/cmr/m/n/10 (\OT1/cmr/m/it/10 International Real-Time Magnetic Observatory 
+Network \OT1/cmr/m/n/10 [[]INTERMAGNET[], []2021[]]), and from the Mexican
  []
 
-[3] [4 <./fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <fig/map.eps>
-(epstopdf)                    date: 2025-09-10 10:25:12
-(epstopdf)                    size: 89207 bytes
-(epstopdf)             Output file: <fig/map-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-09-10 10:25:21
-(epstopdf)                    size: 70503 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/map-eps-converted-to.p
-df fig/map.eps>
-(epstopdf)             \includegraphics on input line 193.
-Package epstopdf Info: Output file is already uptodate.
-<fig/map-eps-converted-to.pdf, id=201, 1156.32pt x 722.7pt>
-File: fig/map-eps-converted-to.pdf Graphic file (type pdf)
-<use fig/map-eps-converted-to.pdf>
-Package pdftex.def Info: fig/map-eps-converted-to.pdf  used on input line 193.
-(pdftex.def)             Requested size: 317.07614pt x 198.16417pt.
- [5 <./fig/map-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
+
+ []
+
+[5 <./fig/ip_2015-03-15_2015-03-20-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--242
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--261
-
- []
-
-<fig/asyh_2015-03-17_2015-03-18.png, id=247, 1156.32pt x 1156.32pt>
+<fig/asyh_2015-03-17_2015-03-18.png, id=258, 1156.32pt x 1445.4pt>
 File: fig/asyh_2015-03-17_2015-03-18.png Graphic file (type png)
 <use fig/asyh_2015-03-17_2015-03-18.png>
 Package pdftex.def Info: fig/asyh_2015-03-17_2015-03-18.png  used on input line
- 268.
-(pdftex.def)             Requested size: 398.33858pt x 398.33093pt.
+ 274.
+(pdftex.def)             Requested size: 398.33858pt x 497.91368pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
-
- []
-
-[6] [7 <./fig/asyh_2015-03-17_2015-03-18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 283--284
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 285--286
 
  []
 
 
-Overfull \hbox (9.08623pt too wide) in paragraph at lines 282--283
-[]\OT1/cmr/m/n/10 To quantitatively confirm weather PRC contribution remains in
- $^^A$H and so, presents a noise contribution
- []
-
-Package epstopdf Info: Source file: <fig/corr/gui_20150317_20150317_corr1.eps>
-(epstopdf)                    date: 2025-12-03 17:08:39
-(epstopdf)                    size: 24359 bytes
-(epstopdf)             Output file: <fig/corr/gui_20150317_20150317_corr1-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2025-12-03 17:08:45
-(epstopdf)                    size: 16790 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/gui_20150317_2015
-0317_corr1-eps-converted-to.pdf fig/corr/gui_20150317_20150317_corr1.eps>
-(epstopdf)             \includegraphics on input line 286.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/gui_20150317_20150317_corr1-eps-converted-to.pdf, id=280, 433.62pt x 
-433.62pt>
-File: fig/corr/gui_20150317_20150317_corr1-eps-converted-to.pdf Graphic file (t
-ype pdf)
-<use fig/corr/gui_20150317_20150317_corr1-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/gui_20150317_20150317_corr1-eps-converted-to.
-pdf  used on input line 286.
-(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
-Package epstopdf Info: Source file: <fig/corr/jai_20150317_20150317_corr1.eps>
-(epstopdf)                    date: 2025-12-03 17:08:33
-(epstopdf)                    size: 24797 bytes
-(epstopdf)             Output file: <fig/corr/jai_20150317_20150317_corr1-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2025-12-03 17:08:46
-(epstopdf)                    size: 16908 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/jai_20150317_2015
-0317_corr1-eps-converted-to.pdf fig/corr/jai_20150317_20150317_corr1.eps>
-(epstopdf)             \includegraphics on input line 287.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/jai_20150317_20150317_corr1-eps-converted-to.pdf, id=281, 433.62pt x 
-433.62pt>
-File: fig/corr/jai_20150317_20150317_corr1-eps-converted-to.pdf Graphic file (t
-ype pdf)
-<use fig/corr/jai_20150317_20150317_corr1-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/jai_20150317_20150317_corr1-eps-converted-to.
-pdf  used on input line 287.
-(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
-Package epstopdf Info: Source file: <fig/corr/kak_20150317_20150317_corr1.eps>
-(epstopdf)                    date: 2025-12-03 17:08:36
-(epstopdf)                    size: 24459 bytes
-(epstopdf)             Output file: <fig/corr/kak_20150317_20150317_corr1-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2025-12-03 17:08:46
-(epstopdf)                    size: 16704 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/kak_20150317_2015
-0317_corr1-eps-converted-to.pdf fig/corr/kak_20150317_20150317_corr1.eps>
-(epstopdf)             \includegraphics on input line 288.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/kak_20150317_20150317_corr1-eps-converted-to.pdf, id=282, 433.62pt x 
-433.62pt>
-File: fig/corr/kak_20150317_20150317_corr1-eps-converted-to.pdf Graphic file (t
-ype pdf)
-<use fig/corr/kak_20150317_20150317_corr1-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/kak_20150317_20150317_corr1-eps-converted-to.
-pdf  used on input line 288.
-(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
-Package epstopdf Info: Source file: <fig/corr/teo_20150317_20150317_corr1.eps>
-(epstopdf)                    date: 2025-12-03 17:08:18
-(epstopdf)                    size: 24742 bytes
-(epstopdf)             Output file: <fig/corr/teo_20150317_20150317_corr1-eps-c
-onverted-to.pdf>
-(epstopdf)                    date: 2025-12-03 17:08:46
-(epstopdf)                    size: 16815 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/corr/teo_20150317_2015
-0317_corr1-eps-converted-to.pdf fig/corr/teo_20150317_20150317_corr1.eps>
-(epstopdf)             \includegraphics on input line 289.
-Package epstopdf Info: Output file is already uptodate.
-<fig/corr/teo_20150317_20150317_corr1-eps-converted-to.pdf, id=283, 433.62pt x 
-433.62pt>
-File: fig/corr/teo_20150317_20150317_corr1-eps-converted-to.pdf Graphic file (t
-ype pdf)
-<use fig/corr/teo_20150317_20150317_corr1-eps-converted-to.pdf>
-Package pdftex.def Info: fig/corr/teo_20150317_20150317_corr1-eps-converted-to.
-pdf  used on input line 289.
-(pdftex.def)             Requested size: 199.16928pt x 199.16988pt.
-
-Overfull \hbox (0.46695pt too wide) in paragraph at lines 295--296
-\OT1/cmr/m/n/10 influenced (attenuated or intensified) by PRC activity. The two
- observatories showing stronger correlation
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 295--296
-
- []
-
-<fig/corr/TScorr_2015-03-17_2015-03-18_4.png, id=285, 1084.05pt x 722.7pt>
-File: fig/corr/TScorr_2015-03-17_2015-03-18_4.png Graphic file (type png)
-<use fig/corr/TScorr_2015-03-17_2015-03-18_4.png>
-Package pdftex.def Info: fig/corr/TScorr_2015-03-17_2015-03-18_4.png  used on i
-nput line 301.
-(pdftex.def)             Requested size: 341.43306pt x 227.61862pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 309--310
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
+[7] [8 <./fig/asyh_2015-03-17_2015-03-18.png>]
+<fig/ampere/20150317.6.0.png, id=281, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.6.0.png Graphic file (type png)
+<use fig/ampere/20150317.6.0.png>
+Package pdftex.def Info: fig/ampere/20150317.6.0.png  used on input line 297.
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.14.0.png, id=282, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.14.0.png Graphic file (type png)
+<use fig/ampere/20150317.14.0.png>
+Package pdftex.def Info: fig/ampere/20150317.14.0.png  used on input line 303.
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.15.0.png, id=283, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.15.0.png Graphic file (type png)
+<use fig/ampere/20150317.15.0.png>
+Package pdftex.def Info: fig/ampere/20150317.15.0.png  used on input line 309.
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.16.40.png, id=284, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.16.40.png Graphic file (type png)
+<use fig/ampere/20150317.16.40.png>
+Package pdftex.def Info: fig/ampere/20150317.16.40.png  used on input line 317.
+
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.17.30.png, id=285, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.17.30.png Graphic file (type png)
+<use fig/ampere/20150317.17.30.png>
+Package pdftex.def Info: fig/ampere/20150317.17.30.png  used on input line 323.
+
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.19.10.png, id=286, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.19.10.png Graphic file (type png)
+<use fig/ampere/20150317.19.10.png>
+Package pdftex.def Info: fig/ampere/20150317.19.10.png  used on input line 329.
+
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.21.16.png, id=287, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.21.16.png Graphic file (type png)
+<use fig/ampere/20150317.21.16.png>
+Package pdftex.def Info: fig/ampere/20150317.21.16.png  used on input line 337.
+
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150317.23.40.png, id=288, 722.7pt x 722.7pt>
+File: fig/ampere/20150317.23.40.png Graphic file (type png)
+<use fig/ampere/20150317.23.40.png>
+Package pdftex.def Info: fig/ampere/20150317.23.40.png  used on input line 343.
+
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+<fig/ampere/20150318.5.0.png, id=289, 722.7pt x 722.7pt>
+File: fig/ampere/20150318.5.0.png Graphic file (type png)
+<use fig/ampere/20150318.5.0.png>
+Package pdftex.def Info: fig/ampere/20150318.5.0.png  used on input line 349.
+(pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 364--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
-
- []
-
-[8] [9 <./fig/corr/gui_20150317_20150317_corr1-eps-converted-to.pdf> <./fig/cor
-r/jai_20150317_20150317_corr1-eps-converted-to.pdf> <./fig/corr/kak_20150317_20
-150317_corr1-eps-converted-to.pdf> <./fig/corr/teo_20150317_20150317_corr1-eps-
-converted-to.pdf>]
-<fig/ppef_dist/gui_2015-03-17_2015-03-18.V1.png, id=343, 867.24pt x 722.7pt>
-File: fig/ppef_dist/gui_2015-03-17_2015-03-18.V1.png Graphic file (type png)
-<use fig/ppef_dist/gui_2015-03-17_2015-03-18.V1.png>
-Package pdftex.def Info: fig/ppef_dist/gui_2015-03-17_2015-03-18.V1.png  used o
-n input line 333.
-(pdftex.def)             Requested size: 199.16928pt x 165.9749pt.
-<fig/ppef_dist/jai_2015-03-17_2015-03-18.V1.png, id=344, 867.24pt x 722.7pt>
-File: fig/ppef_dist/jai_2015-03-17_2015-03-18.V1.png Graphic file (type png)
-<use fig/ppef_dist/jai_2015-03-17_2015-03-18.V1.png>
-Package pdftex.def Info: fig/ppef_dist/jai_2015-03-17_2015-03-18.V1.png  used o
-n input line 334.
-(pdftex.def)             Requested size: 199.16928pt x 165.9749pt.
-<fig/ppef_dist/kak_2015-03-17_2015-03-18.V1.png, id=345, 867.24pt x 722.7pt>
-File: fig/ppef_dist/kak_2015-03-17_2015-03-18.V1.png Graphic file (type png)
-<use fig/ppef_dist/kak_2015-03-17_2015-03-18.V1.png>
-Package pdftex.def Info: fig/ppef_dist/kak_2015-03-17_2015-03-18.V1.png  used o
-n input line 335.
-(pdftex.def)             Requested size: 199.16928pt x 165.9749pt.
-<fig/ppef_dist/teo_2015-03-17_2015-03-18.V1.png, id=346, 867.24pt x 722.7pt>
-File: fig/ppef_dist/teo_2015-03-17_2015-03-18.V1.png Graphic file (type png)
-<use fig/ppef_dist/teo_2015-03-17_2015-03-18.V1.png>
-Package pdftex.def Info: fig/ppef_dist/teo_2015-03-17_2015-03-18.V1.png  used o
-n input line 336.
-(pdftex.def)             Requested size: 199.16928pt x 165.9749pt.
+LaTeX Warning: Command \textendash invalid in math mode on input line 366.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 343.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 343--344
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 365--366
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--368
+LaTeX Warning: Reference `fig:jrvsHI' on page 9 undefined on input line 384.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
 
  []
 
-[10 <./fig/corr/TScorr_2015-03-17_2015-03-18_4.png>] [11 <./fig/ppef_dist/gui_2
-015-03-17_2015-03-18.V1.png> <./fig/ppef_dist/jai_2015-03-17_2015-03-18.V1.png>
- <./fig/ppef_dist/kak_2015-03-17_2015-03-18.V1.png> <./fig/ppef_dist/teo_2015-0
-3-17_2015-03-18.V1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+<fig/jrvshi_2.png, id=300, 462.528pt x 346.896pt>
+File: fig/jrvshi_2.png Graphic file (type png)
+<use fig/jrvshi_2.png>
+Package pdftex.def Info: fig/jrvshi_2.png  used on input line 388.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Overfull \hbox (3.10788pt too wide) in paragraph at lines 395--396
+\OT1/cmr/m/n/10 HON, $\OML/cmm/m/it/10 H[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/
+10 H[]$ \OT1/cmr/m/n/10 appear to show a phase shift during the interval from 1
+2 to 19 UT. Interestingly,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
-Package epstopdf Info: Source file: <fig/gui_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)                    date: 2025-12-03 16:57:10
-(epstopdf)                    size: 122143 bytes
-(epstopdf)             Output file: <fig/gui_TEC_2015-03-15_2015-03-20-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2025-12-03 16:57:27
-(epstopdf)                    size: 120698 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/gui_TEC_2015-03-15_201
-5-03-20-eps-converted-to.pdf fig/gui_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)             \includegraphics on input line 401.
-Package epstopdf Info: Output file is already uptodate.
-<fig/gui_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf, id=387, 722.7pt x 289.
-08pt>
-File: fig/gui_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf Graphic file (type
- pdf)
-<use fig/gui_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf>
-Package pdftex.def Info: fig/gui_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf
-  used on input line 401.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/jai_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)                    date: 2025-12-03 16:57:19
-(epstopdf)                    size: 123304 bytes
-(epstopdf)             Output file: <fig/jai_TEC_2015-03-15_2015-03-20-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2025-12-03 16:57:27
-(epstopdf)                    size: 118654 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/jai_TEC_2015-03-15_201
-5-03-20-eps-converted-to.pdf fig/jai_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)             \includegraphics on input line 402.
-Package epstopdf Info: Output file is already uptodate.
-<fig/jai_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf, id=388, 722.7pt x 289.
-08pt>
-File: fig/jai_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf Graphic file (type
- pdf)
-<use fig/jai_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf>
-Package pdftex.def Info: fig/jai_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf
-  used on input line 402.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/kak_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)                    date: 2025-12-03 16:57:21
-(epstopdf)                    size: 124113 bytes
-(epstopdf)             Output file: <fig/kak_TEC_2015-03-15_2015-03-20-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2025-12-03 16:57:27
-(epstopdf)                    size: 115744 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/kak_TEC_2015-03-15_201
-5-03-20-eps-converted-to.pdf fig/kak_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)             \includegraphics on input line 403.
-Package epstopdf Info: Output file is already uptodate.
-<fig/kak_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf, id=389, 722.7pt x 289.
-08pt>
-File: fig/kak_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf Graphic file (type
- pdf)
-<use fig/kak_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf>
-Package pdftex.def Info: fig/kak_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf
-  used on input line 403.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
-Package epstopdf Info: Source file: <fig/teo_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)                    date: 2025-12-03 16:57:16
-(epstopdf)                    size: 126089 bytes
-(epstopdf)             Output file: <fig/teo_TEC_2015-03-15_2015-03-20-eps-conv
-erted-to.pdf>
-(epstopdf)                    date: 2025-12-03 16:57:28
-(epstopdf)                    size: 116859 bytes
-(epstopdf)             Command: <repstopdf --outfile=fig/teo_TEC_2015-03-15_201
-5-03-20-eps-converted-to.pdf fig/teo_TEC_2015-03-15_2015-03-20.eps>
-(epstopdf)             \includegraphics on input line 404.
-Package epstopdf Info: Output file is already uptodate.
-<fig/teo_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf, id=390, 722.7pt x 289.
-08pt>
-File: fig/teo_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf Graphic file (type
- pdf)
-<use fig/teo_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf>
-Package pdftex.def Info: fig/teo_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf
-  used on input line 404.
-(pdftex.def)             Requested size: 199.16928pt x 79.66705pt.
+[9] [10 <./fig/ampere/20150317.6.0.png> <./fig/ampere/20150317.14.0.png> <./fig
+/ampere/20150317.15.0.png> <./fig/ampere/20150317.16.40.png> <./fig/ampere/2015
+0317.17.30.png> <./fig/ampere/20150317.19.10.png> <./fig/ampere/20150317.21.16.
+png> <./fig/ampere/20150317.23.40.png> <./fig/ampere/20150318.5.0.png>]
+<fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png, id=331, 867.24pt x 867.24pt>
+File: fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png Graphic file (type png)
+<use fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png>
+Package pdftex.def Info: fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png  used on
+ input line 400.
+(pdftex.def)             Requested size: 455.24408pt x 455.24167pt.
+
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 400--401
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
-[12 <./fig/gui_TEC_2015-03-15_2015-03-20-eps-converted-to.pdf> <./fig/jai_TEC_2
-015-03-15_2015-03-20-eps-converted-to.pdf> <./fig/kak_TEC_2015-03-15_2015-03-20
--eps-converted-to.pdf> <./fig/teo_TEC_2015-03-15_2015-03-20-eps-converted-to.pd
-f>]
-Underfull \hbox (badness 10000) in paragraph at lines 421--422
+
+LaTeX Warning: Reference `fig:jrvsHI' on page 11 undefined on input line 412.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
-(./main.bbl [13] [14]
-Underfull \hbox (badness 5504) in paragraph at lines 339--347
-\OT1/cmr/m/n/10 parametersGeomagnetic indices ASY-H and SYM-H and their relatio
-n to interplanetary
+[11 <./fig/jrvshi_2.png>] [12 <./fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
+
  []
 
-[15]) [16] (./main.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
+
+ []
+
+<fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png, id=367, 867.24pt x 867.24pt
+>
+File: fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png Graphic file (type png)
+
+<use fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png>
+Package pdftex.def Info: fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png  use
+d on input line 428.
+(pdftex.def)             Requested size: 455.24408pt x 455.24167pt.
+
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 428--429
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
+
+ []
+
+<fig/corr/TScorr_2015-03-17_2015-03-18_4.png, id=373, 1084.05pt x 722.7pt>
+File: fig/corr/TScorr_2015-03-17_2015-03-18_4.png Graphic file (type png)
+<use fig/corr/TScorr_2015-03-17_2015-03-18_4.png>
+Package pdftex.def Info: fig/corr/TScorr_2015-03-17_2015-03-18_4.png  used on i
+nput line 442.
+(pdftex.def)             Requested size: 341.43306pt x 227.61862pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+[13] [14 <./fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 454--455
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 461--462
+
+ []
+
+[15 <./fig/corr/TScorr_2015-03-17_2015-03-18_4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+(./main.bbl
+Underfull \hbox (badness 5908) in paragraph at lines 34--41
+\OT1/cmr/m/n/10 disturbances.  \OT1/cmr/m/it/10 Reviews of Geophysics\OT1/cmr/m
+/n/10 , 11(4):795--853, 1973.  doi: $https : / / doi . org / 10 .
+ []
+
+[16] [17]) [18] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F5167F1B1FA6C401770987A47D17AED0;1645.
+(rerunfilecheck)             Checksum: B92D8A9D8BBFB1C136AC44F884AE834D;990.
  ) 
 Here is how much of TeX's memory you used:
- 25993 strings out of 474222
- 480570 string characters out of 5748734
- 1944975 words of memory out of 5000000
- 47714 multiletter control sequences out of 15000+600000
+ 26077 strings out of 474222
+ 480424 string characters out of 5748734
+ 1943975 words of memory out of 5000000
+ 47811 multiletter control sequences out of 15000+600000
  572159 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,12n,121p,1666b,880s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,13n,121p,1992b,840s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texli
@@ -1345,25 +1327,23 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/shar
-e/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (16 pages, 4444284 bytes).
+/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (18 pages, 9324153 bytes).
 PDF statistics:
- 596 PDF objects out of 1000 (max. 8388607)
- 488 compressed objects within 5 object streams
- 90 named destinations out of 1000 (max. 500000)
- 181 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 443 compressed objects within 5 object streams
+ 76 named destinations out of 1000 (max. 500000)
+ 162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
