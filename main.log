@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.8)  27 MAR 2026 13:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.8)  27 MAR 2026 17:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1057,6 +1057,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
+
+ []
+
 [7] [8 <./fig/asyh_2015-03-17_2015-03-18.png>]
 <fig/ampere/20150317.6.0.png, id=280, 722.7pt x 722.7pt>
 File: fig/ampere/20150317.6.0.png Graphic file (type png)
@@ -1109,55 +1114,40 @@ File: fig/ampere/20150318.5.0.png Graphic file (type png)
 Package pdftex.def Info: fig/ampere/20150318.5.0.png  used on input line 357.
 (pdftex.def)             Requested size: 144.95303pt x 144.94545pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 370.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 370--371
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 374--375
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
 
-LaTeX Warning: Reference `fig:jrvsHI' on page 9 undefined on input line 388.
+LaTeX Warning: Reference `fig:jrvHi' on page 9 undefined on input line 396.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--389
-
- []
-
-<fig/jrvshi_2.png, id=299, 462.528pt x 346.896pt>
-File: fig/jrvshi_2.png Graphic file (type png)
-<use fig/jrvshi_2.png>
-Package pdftex.def Info: fig/jrvshi_2.png  used on input line 392.
-(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
+<fig/jrvshi_2.png, id=297, 462.528pt x 346.896pt>
+File: fig/jrvshi_2.png Graphic file (type png)
+<use fig/jrvshi_2.png>
+Package pdftex.def Info: fig/jrvshi_2.png  used on input line 400.
+(pdftex.def)             Requested size: 199.16928pt x 149.37938pt.
 
-Overfull \hbox (3.10788pt too wide) in paragraph at lines 399--400
-\OT1/cmr/m/n/10 HON, $\OML/cmm/m/it/10 H[]$ \OT1/cmr/m/n/10 and $\OML/cmm/m/it/
-10 H[]$ \OT1/cmr/m/n/10 appear to show a phase shift during the interval from 1
-2 to 19 UT. Interestingly,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 399--400
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
@@ -1165,23 +1155,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--400
 /ampere/20150317.15.0.png> <./fig/ampere/20150317.16.40.png> <./fig/ampere/2015
 0317.17.30.png> <./fig/ampere/20150317.19.10.png> <./fig/ampere/20150317.21.16.
 png> <./fig/ampere/20150317.23.40.png> <./fig/ampere/20150318.5.0.png>]
-<fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png, id=330, 867.24pt x 867.24pt>
-File: fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png Graphic file (type png)
-<use fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png>
-Package pdftex.def Info: fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png  used on
- input line 404.
-(pdftex.def)             Requested size: 455.24408pt x 455.24167pt.
-
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 404--405
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
@@ -1199,8 +1172,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 418--419
 
  []
 
-[11 <./fig/jrvshi_2.png>] [12 <./fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png>
-]
+[11 <./fig/jrvshi_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
@@ -1210,40 +1182,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
-<fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png, id=366, 867.24pt x 867.24pt
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--431
+
+ []
+
+<fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png, id=352, 867.24pt x 867.24pt>
+File: fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png Graphic file (type png)
+<use fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png>
+Package pdftex.def Info: fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png  used on
+ input line 435.
+(pdftex.def)             Requested size: 455.24408pt x 455.24167pt.
+
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 435--436
+ [][] 
+ []
+
+<fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png, id=357, 867.24pt x 867.24pt
 >
 File: fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png Graphic file (type png)
 
 <use fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png>
 Package pdftex.def Info: fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png  use
-d on input line 432.
+d on input line 444.
 (pdftex.def)             Requested size: 455.24408pt x 455.24167pt.
 
-Overfull \hbox (2.27618pt too wide) in paragraph at lines 432--433
+Overfull \hbox (2.27618pt too wide) in paragraph at lines 444--445
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 449--450
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--440
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
-
- []
-
-<fig/corr/TScorr_2015-03-17_2015-03-18_4.png, id=372, 1084.05pt x 722.7pt>
-File: fig/corr/TScorr_2015-03-17_2015-03-18_4.png Graphic file (type png)
-<use fig/corr/TScorr_2015-03-17_2015-03-18_4.png>
-Package pdftex.def Info: fig/corr/TScorr_2015-03-17_2015-03-18_4.png  used on i
-nput line 446.
-(pdftex.def)             Requested size: 341.43306pt x 227.61862pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
@@ -1254,13 +1226,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 453--454
 
  []
 
-[13] [14 <./fig/ppef_dist/HPPEFdist_2015-03-17_2015-03-18.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 455--456
+<fig/corr/TScorr_2015-03-17_2015-03-18_4.png, id=363, 1084.05pt x 722.7pt>
+File: fig/corr/TScorr_2015-03-17_2015-03-18_4.png Graphic file (type png)
+<use fig/corr/TScorr_2015-03-17_2015-03-18_4.png>
+Package pdftex.def Info: fig/corr/TScorr_2015-03-17_2015-03-18_4.png  used on i
+nput line 458.
+(pdftex.def)             Requested size: 341.43306pt x 227.61862pt.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 458--459
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
@@ -1269,13 +1242,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
-
+[12] [13 <./fig/ppef_dist/HPPEF_2015-03-17_2015-03-18.png>] [14 <./fig/ppef_dis
+t/HPPEFdist_2015-03-17_2015-03-18.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 467--468
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 470--471
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 479--480
+
+ []
+
 [15 <./fig/corr/TScorr_2015-03-17_2015-03-18_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
@@ -1298,10 +1287,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B92D8A9D8BBFB1C136AC44F884AE834D;990.
  ) 
 Here is how much of TeX's memory you used:
- 26081 strings out of 474222
- 480498 string characters out of 5748734
- 1943975 words of memory out of 5000000
- 47813 multiletter control sequences out of 15000+600000
+ 26083 strings out of 474222
+ 480516 string characters out of 5748734
+ 1944975 words of memory out of 5000000
+ 47815 multiletter control sequences out of 15000+600000
  572159 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,13n,121p,1992b,842s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1325,10 +1314,10 @@ s/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000
 .pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (18 pages, 9323353 bytes).
+Output written on main.pdf (18 pages, 9324368 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 442 compressed objects within 5 object streams
+ 550 PDF objects out of 1000 (max. 8388607)
+ 440 compressed objects within 5 object streams
  78 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
